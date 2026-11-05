@@ -19,6 +19,9 @@ La interfaz `os.nodalix.Nxpm1` ofrece:
 | `GetTransaction` | `s` id | `a{sv}` |
 | `Cancel` | `s` id | `b` |
 | `GetHistory` | `u` límite | `aa{sv}` |
+| `Import` | `s` tipo (`appimage` o `deb`), `s` ruta | `s` transacción |
+| `GetPermissions` | `s` id Flatpak | `aa{sv}` |
+| `ResetPermissions` | `s` id Flatpak de usuario | `aa{sv}` |
 
 La señal `TransactionChanged` envía un `a{sv}` con el estado de la operación.
 
@@ -27,6 +30,7 @@ Los identificadores válidos son:
 - `flatpak:user:app/org.ejemplo.App/x86_64/stable`
 - `flatpak:system:runtime/org.freedesktop.Platform/x86_64/24.08`
 - `pacman:nombre`
+- `appimage:Nombre`
 
 Cualquier otro texto se rechaza antes de tocar el sistema.
 
@@ -49,6 +53,27 @@ Las consultas usan `pyalpm` con la configuración que lee `pycman` desde `/etc/p
 Instalar o actualizar un solo paquete oficial desde la tienda está rechazado. La actualización oficial es `UpgradeSystem`, que llama a `transaction.sysupgrade(False)` y por tanto resuelve el conjunto completo. Ese camino solo se ejecuta como root. Desde la sesión, la tienda lo lanza con `pkexec` y el comando `nxpm privileged-upgrade`. Si la autorización no se concede, la operación termina en error y no cambia el sistema.
 
 Antes de esa actualización se guarda en el estado del usuario un inventario `nombre versión`. Es un registro, no una instantánea de disco ni una vuelta atrás automática. No se asume Btrfs, Snapper ni ningún otro mecanismo.
+
+## Aplicaciones
+
+`~/Applications` es la carpeta de programas que el usuario añade, en el mismo sentido en que macOS usa `/Applications`. No sustituye a pacman ni a Flatpak.
+
+```bash
+PYTHONPATH=nxpm/src python -m nxpm import appimage ~/Descargas/Programa.AppImage
+PYTHONPATH=nxpm/src python -m nxpm import deb ~/Descargas/programa.deb
+PYTHONPATH=nxpm/src python -m nxpm permissions flatpak:user:app/org.ejemplo.App/x86_64/stable
+PYTHONPATH=nxpm/src python -m nxpm permissions-reset flatpak:user:app/org.ejemplo.App/x86_64/stable
+```
+
+Un AppImage se copia y se registra en el menú del usuario. NXPM lee la sección ELF `.upd_info` sin ejecutar el archivo. Si el canal es `gh-releases-zsync`, Actualizar descarga el `.AppImage` publicado en GitHub por HTTPS y lo sustituye solo si el archivo recibido sigue siendo un ELF. Si el canal es `zsync`, NXPM lo muestra y no lo aplica.
+
+Un `.deb` se abre como archivo `ar`, se desempaqueta `data.tar` y se ignoran los scripts de `control.tar`. No se llama a `dpkg`. Los bits setuid se quitan. El programa queda en un AppDir con un `AppRun` propio. `appimagetool`, si está en el `PATH`, genera además el AppImage; esta instalación de desarrollo no lo tiene, así que el resultado comprobado es el AppDir.
+
+No todos los paquetes Debian pueden funcionar: sus bibliotecas no se instalan en el sistema. NXPM no promete compatibilidad con cualquier `.deb` o `.rpm`. El formato RPM no tiene extractor.
+
+## Permisos Flatpak
+
+`GetPermissions` lee el grupo `Context` del metadato que publicó la aplicación y, en la instalación de usuario, el override local. El riesgo `high` marca acceso al sistema, al directorio personal, a todos los dispositivos o a los buses de sesión y de sistema. `ResetPermissions` borra el archivo de override de esa aplicación y deja exactamente los permisos declarados. No crea permisos nuevos.
 
 ## CLI
 

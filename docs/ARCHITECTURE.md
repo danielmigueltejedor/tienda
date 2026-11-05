@@ -37,8 +37,9 @@ Nodalix Store  --D-Bus-->  os.nodalix.Nxpm1
 CLI nxpm       --llamada--> Engine
 Engine --> FlatpakBackend (libflatpak)
        --> PacmanBackend  (pyalpm / pycman)
+       --> AppImageBackend (~/Applications)
 ```
 
 La interfaz de sesión es `os.nodalix.Nxpm1`, en el nombre `os.nodalix.Nxpm` y la ruta `/os/nodalix/Nxpm`. La versión de API expuesta es 1.
 
-AUR y AppImage existen en la configuración como fuentes deshabilitadas e imposibles de activar. No hay un backend que simule instalaciones de esas fuentes.
+AUR existe en la configuración como fuente deshabilitada e imposible de activar. No hay un backend que simule instalaciones de AUR. AppImage importa archivos reales; no hay un catálogo remoto inventado.

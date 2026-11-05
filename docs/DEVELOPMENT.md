@@ -28,9 +28,10 @@ El servicio de usuario que Bazaar espera sigue siendo el demonio de la tienda. N
 cd nxpm
 python -m pytest
 PYTHONPATH=src python -m nxpm sources
+PYTHONPATH=src python -m nxpm import appimage /ruta/Programa.AppImage
 ```
 
-Las pruebas no instalan ni borran paquetes. El backend de Pacman se prueba con un handle falso. Flatpak se prueba con una referencia falsa. Las consultas reales de solo lectura pueden ejecutarse con la CLI.
+Las pruebas no instalan ni borran paquetes del sistema. El backend de Pacman se prueba con un handle falso. Flatpak se prueba con una referencia falsa. La importación de AppImage y de Debian usa un directorio temporal, no `~/Applications` del usuario. Las consultas reales de solo lectura pueden ejecutarse con la CLI.
 
 PyGObject, Flatpak, pyalpm y pycman son dependencias del sistema, no de pip.
 
