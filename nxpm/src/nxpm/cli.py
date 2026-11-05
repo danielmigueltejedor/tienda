@@ -22,7 +22,17 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("privileged-upgrade", help=argparse.SUPPRESS)
 
     installed = sub.add_parser("list", help="List installed packages")
-    installed.add_argument("--source", default="", choices=["", "flatpak", "pacman"])
+    installed.add_argument("--source", default="", choices=["", "flatpak", "pacman", "appimage"])
+
+    imported = sub.add_parser("import", help="Copy an AppImage or Debian package into ~/Applications")
+    imported.add_argument("kind", choices=["appimage", "deb"])
+    imported.add_argument("path")
+
+    permissions = sub.add_parser("permissions", help="Show the permissions a Flatpak declares")
+    permissions.add_argument("package_id")
+
+    reset = sub.add_parser("permissions-reset", help="Remove local Flatpak overrides for one user application")
+    reset.add_argument("package_id")
 
     search = sub.add_parser("search", help="Search enabled sources")
     search.add_argument("query")
@@ -97,6 +107,12 @@ def run(args) -> int:
 
             record_check(updates, notify=engine.config.notify and engine.config.check_updates)
         return emit(args, updates)
+    if args.command == "import":
+        return emit(args, engine.import_file(args.kind, args.path).record().to_dict())
+    if args.command == "permissions":
+        return emit(args, engine.permissions(args.package_id))
+    if args.command == "permissions-reset":
+        return emit(args, engine.reset_permissions(args.package_id))
     if args.command == "install":
         return emit(args, engine.install(args.package_id, args.source).record().to_dict())
     if args.command == "remove":
@@ -140,4 +156,6 @@ def format_row(item: dict) -> str:
         return f"{item['id']:10} {state}: {item['reason']}"
     if "state" in item:
         return f"{item['id']} {item['state']} {item.get('message', '')}"
+    if "risk" in item and "value" in item:
+        return f"{item['risk']:6} {item.get('origin', ''):9} {item.get('kind', '')}={item['value']}"
     return json.dumps(item, ensure_ascii=False)

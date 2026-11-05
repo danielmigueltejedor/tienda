@@ -23,9 +23,9 @@ DEFAULT_SOURCES = {
         "Disabled. AUR builds are not offered until review and unprivileged builds exist.",
     ),
     "appimage": SourceSpec(
-        False,
-        False,
-        "Disabled. AppImage import is not implemented.",
+        True,
+        True,
+        "User applications copied into ~/Applications. Debian packages are unpacked, not installed into the system.",
     ),
 }
 
@@ -53,7 +53,7 @@ def load_config(path: Path | None = None) -> Config:
         name: SourceSpec(spec.enabled, spec.implemented, spec.reason)
         for name, spec in DEFAULT_SOURCES.items()
     }
-    preference = ["flatpak", "pacman"]
+    preference = ["flatpak", "pacman", "appimage"]
     check_updates = True
     notify = True
     location = path if path is not None else config_path()

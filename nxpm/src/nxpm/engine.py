@@ -103,16 +103,45 @@ class Engine:
 
         return self.transactions.submit("upgrade-system", "pacman:*", "pacman", runner)
 
+    def import_file(self, kind: str, path: str) -> Transaction:
+        if kind not in {"appimage", "deb"}:
+            raise NxpmError("invalid-input", "NXPM can import an AppImage or a Debian package.")
+        backend = self._backend("appimage")
+
+        def runner(transaction: Transaction, manager: TransactionManager) -> None:
+            package = backend.import_file(
+                kind,
+                path,
+                lambda progress, message: self._progress(transaction, manager, progress, message),
+            )
+            transaction.message = package.summary or package.id
+
+        return self.transactions.submit("import", "appimage:import", "appimage", runner)
+
+    def permissions(self, package_id: str) -> list[dict]:
+        source, _payload = parse_package_id(package_id)
+        if source != "flatpak":
+            raise NxpmError("unsupported", "Permission control is available for Flatpak applications.")
+        return self._backend("flatpak").permissions(package_id)
+
+    def reset_permissions(self, package_id: str) -> list[dict]:
+        source, _payload = parse_package_id(package_id)
+        if source != "flatpak":
+            raise NxpmError("unsupported", "Permission control is available for Flatpak applications.")
+        return self._backend("flatpak").reset_permissions(package_id)
+
     def _change(self, operation: str, package_id: str, source: str) -> Transaction:
         parsed_source, _payload = parse_package_id(package_id)
         if source and source != parsed_source:
             raise NxpmError("invalid-input", "The requested source does not match the package.")
-        if parsed_source != "flatpak":
+        if parsed_source == "pacman":
             raise NxpmError(
                 "authorization-required",
                 "Changing official packages from this service needs a separate authorized system update.",
             )
-        backend = self._backend("flatpak")
+        if parsed_source not in {"flatpak", "appimage"}:
+            raise NxpmError("unsupported", "That software source cannot be changed.")
+        backend = self._backend(parsed_source)
 
         def runner(transaction: Transaction, manager: TransactionManager) -> None:
             backend.apply(
@@ -121,7 +150,7 @@ class Engine:
                 lambda progress, message: self._progress(transaction, manager, progress, message),
             )
 
-        return self.transactions.submit(operation, package_id, "flatpak", runner)
+        return self.transactions.submit(operation, package_id, parsed_source, runner)
 
     def _progress(self, transaction: Transaction, manager: TransactionManager, progress: float, message: str) -> None:
         if progress >= 0:
@@ -160,6 +189,10 @@ def build_engine(config: Config | None = None) -> Engine:
         from nxpm.backends.pacman import PacmanBackend
 
         backends["pacman"] = PacmanBackend()
+    if loaded.sources["appimage"].enabled and loaded.sources["appimage"].implemented:
+        from nxpm.backends.appimage import AppImageBackend
+
+        backends["appimage"] = AppImageBackend()
     for name, spec in loaded.sources.items():
         if spec.enabled and not spec.implemented:
             log.warning("%s was requested but stays disabled: %s", name, spec.reason)

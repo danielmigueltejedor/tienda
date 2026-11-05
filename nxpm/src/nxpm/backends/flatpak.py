@@ -3,9 +3,12 @@
 from __future__ import annotations
 
 import logging
+from pathlib import Path
 
+from nxpm.applications import data_home
 from nxpm.errors import NxpmError
 from nxpm.model import Package, parse_package_id
+from nxpm.permissions import parse_metadata, reset_override
 
 log = logging.getLogger("nxpm.flatpak")
 _RESULT_LIMIT = 80
@@ -174,6 +177,31 @@ class FlatpakBackend:
                 return package_from_ref(scope, ref, installed=False)
         raise NxpmError("not-found", "Flatpak does not know that application.")
 
+    def permissions(self, package_id: str) -> list[dict]:
+        scope, ref_text, ref = self._require_installed(package_id)
+        if not ref_text.startswith("app/"):
+            raise NxpmError("unsupported", "Permissions are available for applications.")
+        metadata = ref.load_metadata()
+        raw = metadata.get_data() if hasattr(metadata, "get_data") else bytes(metadata)
+        rows = parse_metadata(bytes(raw).decode("utf-8", "replace"), "declared")
+        if scope == "user":
+            override = self._override_path(scope, str(ref.get_name()))
+            if override.is_file():
+                rows.extend(parse_metadata(override.read_text(encoding="utf-8", errors="replace"), "override"))
+        return rows
+
+    def reset_permissions(self, package_id: str) -> list[dict]:
+        scope, ref_text, ref = self._require_installed(package_id)
+        if scope != "user":
+            raise NxpmError(
+                "authorization-required",
+                "System Flatpak overrides are not changed by the user service.",
+            )
+        if not ref_text.startswith("app/"):
+            raise NxpmError("unsupported", "Permissions are available for applications.")
+        reset_override(str(ref.get_name()), self._override_dir(scope))
+        return self.permissions(package_id)
+
     def apply(self, package_id: str, operation: str, progress) -> None:
         source, payload = parse_package_id(package_id)
         if source != "flatpak":
@@ -200,6 +228,29 @@ class FlatpakBackend:
         self._connect_progress(transaction, progress)
         progress(0.05, "Contacting Flatpak")
         transaction.run()
+
+    def _require_installed(self, package_id: str):
+        source, payload = parse_package_id(package_id)
+        if source != "flatpak":
+            raise NxpmError("invalid-input", "That identifier is not a Flatpak package.")
+        scope, ref_text = payload.split(":", 1)
+        installation = self.installations().get(scope)
+        if installation is None:
+            raise NxpmError("not-found", f"The {scope} Flatpak installation is not available.")
+        for ref in self._installed_refs(installation):
+            if str(ref.format_ref()) == ref_text:
+                return scope, ref_text, ref
+        raise NxpmError("not-found", "That Flatpak application is not installed.")
+
+    def _override_dir(self, scope: str) -> Path:
+        if scope != "user":
+            raise NxpmError("authorization-required", "System Flatpak overrides need an administrator.")
+        return data_home() / "flatpak" / "overrides"
+
+    def _override_path(self, scope: str, app_id: str):
+        from nxpm.permissions import user_override_path
+
+        return user_override_path(app_id, self._override_dir(scope))
 
     def _installed_refs(self, installation):
         try:

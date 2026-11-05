@@ -140,6 +140,27 @@ class NxpmObject:
                 except NxpmError as exc:
                     raise dbus_error(exc) from exc
 
+            @dbus.service.method(IFACE, in_signature="ss", out_signature="s")
+            def Import(self, kind, path):
+                try:
+                    return self.engine.import_file(str(kind), str(path)).id
+                except NxpmError as exc:
+                    raise dbus_error(exc) from exc
+
+            @dbus.service.method(IFACE, in_signature="s", out_signature="aa{sv}")
+            def GetPermissions(self, package_id):
+                try:
+                    return variant_list(self.engine.permissions(str(package_id)))
+                except NxpmError as exc:
+                    raise dbus_error(exc) from exc
+
+            @dbus.service.method(IFACE, in_signature="s", out_signature="aa{sv}")
+            def ResetPermissions(self, package_id):
+                try:
+                    return variant_list(self.engine.reset_permissions(str(package_id)))
+                except NxpmError as exc:
+                    raise dbus_error(exc) from exc
+
             @dbus.service.method(IFACE, in_signature="s", out_signature="s")
             def Update(self, package_id):
                 try:

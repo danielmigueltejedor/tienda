@@ -9,6 +9,7 @@ _FLATPAK_ID = re.compile(
     r"^flatpak:(user|system):(app|runtime)/[A-Za-z0-9._-]+/[A-Za-z0-9._-]+/[A-Za-z0-9._-]+$"
 )
 _PACMAN_ID = re.compile(r"^pacman:[A-Za-z0-9@._+-]+$")
+_APPIMAGE_ID = re.compile(r"^appimage:[A-Za-z0-9][A-Za-z0-9._+-]{0,80}$")
 _QUERY = re.compile(r"^[\w .@+_:-]{1,200}$", re.UNICODE)
 
 
@@ -69,6 +70,8 @@ def parse_package_id(package_id: str) -> tuple[str, str]:
         return "flatpak", f"{scope}:{ref}"
     if _PACMAN_ID.match(package_id or ""):
         return "pacman", package_id.split(":", 1)[1]
+    if _APPIMAGE_ID.match(package_id or ""):
+        return "appimage", package_id.split(":", 1)[1]
     raise NxpmError("invalid-input", "The package identifier is not valid.")
 
 

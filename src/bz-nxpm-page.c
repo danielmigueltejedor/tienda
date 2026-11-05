@@ -171,15 +171,42 @@ make_row (BzNxpmPage *self,
   adw_preferences_row_set_title (ADW_PREFERENCES_ROW (row), name[0] != '\0' ? name : package_id);
   adw_action_row_set_subtitle (ADW_ACTION_ROW (row), subtitle);
 
-  if (g_strcmp0 (source, "flatpak") == 0)
+  if (g_strcmp0 (source, "flatpak") == 0 || g_strcmp0 (source, "appimage") == 0)
     {
-      button = gtk_button_new_with_label (update ? _ ("Update") : (installed ? _ ("Remove") : _ ("Install")));
-      g_object_set_data_full (G_OBJECT (button), "nxpm-method", g_strdup (update ? "Update" : (installed ? "Remove" : "Install")), g_free);
-      g_object_set_data_full (G_OBJECT (button), "nxpm-id", g_strdup (package_id), g_free);
-      g_object_set_data_full (G_OBJECT (button), "nxpm-source", g_strdup (source), g_free);
-      g_signal_connect (button, "clicked", G_CALLBACK (on_row_clicked), self);
-      gtk_widget_add_css_class (button, "pill");
-      adw_action_row_add_suffix (ADW_ACTION_ROW (row), button);
+      const char *label;
+      const char *method;
+
+      if (update)
+        {
+          label = _ ("Update");
+          method = "Update";
+        }
+      else if (installed)
+        {
+          label = _ ("Remove");
+          method = "Remove";
+        }
+      else if (g_strcmp0 (source, "flatpak") == 0)
+        {
+          label = _ ("Install");
+          method = "Install";
+        }
+      else
+        {
+          label = NULL;
+          method = NULL;
+        }
+
+      if (method != NULL)
+        {
+          button = gtk_button_new_with_label (label);
+          g_object_set_data_full (G_OBJECT (button), "nxpm-method", g_strdup (method), g_free);
+          g_object_set_data_full (G_OBJECT (button), "nxpm-id", g_strdup (package_id), g_free);
+          g_object_set_data_full (G_OBJECT (button), "nxpm-source", g_strdup (source), g_free);
+          g_signal_connect (button, "clicked", G_CALLBACK (on_row_clicked), self);
+          gtk_widget_add_css_class (button, "pill");
+          adw_action_row_add_suffix (ADW_ACTION_ROW (row), button);
+        }
     }
 
   return row;
