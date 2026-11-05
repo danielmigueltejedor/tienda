@@ -1,0 +1,5 @@
+[Shell Search Provider]
+DesktopId=os.nodalix.Store.desktop
+BusName=os.nodalix.Store.SearchProvider
+ObjectPath=/os/nodalix/Store/SearchProvider
+Version=2

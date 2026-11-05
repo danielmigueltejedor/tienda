@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/io/github/kolunmi/Bazaar/">
+  <gresource prefix="/os/nodalix/Store/">
 
     <file>style.css</file>
     <file>inspector.css</file>
@@ -56,6 +56,7 @@
     <file preprocess="xml-stripblanks">bz-license-dialog.ui</file>
     <file preprocess="xml-stripblanks">bz-login-page.ui</file>
     <file preprocess="xml-stripblanks">bz-metainfo-preview-page.ui</file>
+    <file preprocess="xml-stripblanks">bz-nxpm-page.ui</file>
     <file preprocess="xml-stripblanks">bz-preferences-dialog.ui</file>
     <file preprocess="xml-stripblanks">bz-progress-bar.ui</file>
     <file preprocess="xml-stripblanks">bz-releases-dialog.ui</file>
@@ -216,11 +217,11 @@
     <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Kde.svg</file>
     <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Cosmic.svg</file>
 
-    <file preprocess="xml-stripblanks">icons/io.github.kolunmi.Bazaar.login-github.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolunmi.Bazaar.login-gitlab.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolunmi.Bazaar.login-gnome.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolunmi.Bazaar.login-kde.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolunmi.Bazaar.login-google.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.login-github.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.login-gitlab.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.login-gnome.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.login-kde.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.login-google.svg</file>
 
 
   </gresource>

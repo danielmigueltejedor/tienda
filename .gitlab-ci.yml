@@ -9,8 +9,8 @@ include:
   image: "quay.io/gnome_infrastructure/gnome-runtime-images:gnome-51"
   variables:
     FLATPAK_MODULE: "bazaar"
-    MANIFEST_PATH: "build-aux/flatpak/io.github.kolunmi.Bazaar.json"
-    APP_ID: "io.github.kolunmi.Bazaar"
+    MANIFEST_PATH: "build-aux/flatpak/os.nodalix.Store.json"
+    APP_ID: "os.nodalix.Store"
     RUNTIME_REPO: "https://dl.flathub.org/repo/flathub.flatpakrepo"
 
 flatpak@x86_64:

@@ -61,7 +61,7 @@ rows:
       disable-auto-rotate: true
       appids:
         list:
-          - io.github.kolunmi.Bazaar
+          - os.nodalix.Store
           - be.alexandervanhee.gradia
   - section:
       title: "Web Browsers"

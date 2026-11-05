@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-        input: 'io.github.kolunmi.Bazaar.desktop.in',
-       output: 'io.github.kolunmi.Bazaar.desktop',
+        input: 'os.nodalix.Store.desktop.in',
+       output: 'os.nodalix.Store.desktop',
          type: 'desktop',
        po_dir: '../po',
       install: true,
@@ -13,8 +13,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-        input: 'io.github.kolunmi.Bazaar.metainfo.xml.in',
-       output: 'io.github.kolunmi.Bazaar.metainfo.xml',
+        input: 'os.nodalix.Store.metainfo.xml.in',
+       output: 'os.nodalix.Store.metainfo.xml',
        po_dir: '../po',
       install: true,
   install_dir: get_option('datadir') / 'metainfo'
@@ -24,7 +24,7 @@ appstreamcli = find_program('appstreamcli', required: false, disabler: true)
 test('Validate appstream file', appstreamcli,
      args: ['validate', '--no-net', '--explain', appstream_file])
 
-install_data('io.github.kolunmi.Bazaar.gschema.xml',
+install_data('os.nodalix.Store.gschema.xml',
   install_dir: get_option('datadir') / 'glib-2.0' / 'schemas'
 )
 
@@ -37,16 +37,16 @@ test('Validate schema file',
 service_conf = configuration_data()
 service_conf.set('bindir', get_option('prefix') / get_option('bindir'))
 configure_file(
-  input: 'io.github.kolunmi.Bazaar.service.in',
-  output: 'io.github.kolunmi.Bazaar.service',
+  input: 'os.nodalix.Store.service.in',
+  output: 'os.nodalix.Store.service',
   configuration: service_conf,
   install_dir: get_option('prefix') / 'lib' / 'systemd' / 'user'
 )
 
 service_conf = configuration_data()
 configure_file(
-  input: 'io.github.kolunmi.Bazaar.search-provider.ini.in',
-  output: 'io.github.kolunmi.Bazaar.search-provider.ini',
+  input: 'os.nodalix.Store.search-provider.ini.in',
+  output: 'os.nodalix.Store.search-provider.ini',
   configuration: service_conf,
   install_dir: get_option('datadir') / 'gnome-shell' / 'search-providers'
 )

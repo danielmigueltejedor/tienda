@@ -21,36 +21,36 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: data/os.nodalix.Store.desktop.in:3
+#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
 #: src/bz-window.blp:193 src/bz-window.c:437 src/bz-window.c:438
 msgid "Bazaar"
 msgstr "Bazar"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Trgovina programov"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:5
+#: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr ""
 "Dodajajte, odstranjujte in posodabljajte programsko opremo flatpak na tem "
 "računalniku"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:11
+#: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
 "sistem;paket;upravitelj;odkrij;Flatpak;pogramska oprema;aplikacija;trgovina;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:18
+#: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
 msgstr "Novo okno"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
+#: data/os.nodalix.Store.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "Odkrijte in namestite programe"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
+#: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -58,44 +58,44 @@ msgstr ""
 "Hitra in sodobna trgovina s programi za Linux, namenjena predvsem odkrivanju "
 "in namestitvi programov ter dodatkov v obliki Flatpak, zlasti iz Flathuba."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "Postavite več namestitev v vrsto in nadaljujte z brskanjem"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/os.nodalix.Store.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "Enostavno preglejte pravice programa"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "Vpišite se v Flathub, da vidite in upravljate svoje priljubljene"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
+#: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Programe iščite neposredno iz lupine GNOME"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:825
+#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:825
 msgid "The Bazaar Contributors"
 msgstr "Avtorji prispevkov Bazarja"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
+#: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "Domača stran, ki prikaže programe Flathub"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+#: data/os.nodalix.Store.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "Stran predstavitve programa"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+#: data/os.nodalix.Store.metainfo.xml.in:67
 msgid "Library page"
 msgstr "Stran knjižnic"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+#: data/os.nodalix.Store.metainfo.xml.in:71
 msgid "Search page"
 msgstr "Iskalna stran"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
+#: data/os.nodalix.Store.metainfo.xml.in:75
 msgid "Category page"
 msgstr "Stran kategorij"
 

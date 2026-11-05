@@ -875,7 +875,7 @@ apply_icon_theme (BzFlatpakEntry *self)
                   ? bz_state_info_get_user_icon_theme (state)
                   : bz_state_info_get_system_icon_theme (state);
 
-  if (theme != NULL)
+  if (theme != NULL && icon_name != NULL && gtk_icon_theme_has_icon (theme, icon_name))
     {
       g_autoptr (GtkIconPaintable) paintable = NULL;
 

@@ -22,35 +22,35 @@ msgstr ""
 "X-Generator: Lokalize 25.12.1\n"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: data/os.nodalix.Store.desktop.in:3
+#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
 #: src/bz-window.blp:193 src/bz-window.c:437 src/bz-window.c:438
 msgid "Bazaar"
 msgstr "Базар"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Крамниця програм"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:5
+#: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Встановлюйте, видаляйте та оновлюйте пакунки Flatpak на Ваш компʼютер"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:11
+#: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
 "System;Package;Manager;Discover;Flatpak;Software;App;Store;система;пакунок;ке"
 "рування;виявлення;програми;застосунок;крамниця;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:18
+#: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
 msgstr "Нове вікно"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
+#: data/os.nodalix.Store.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "Пошук і встановлення програм"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
+#: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -58,44 +58,44 @@ msgstr ""
 "Швидка та сучасна крамниця застосунків для Linux, зосереджена на знаходженні "
 "та встановленні застосунків і розширень зі сховищ Flatpak, зокрема Flathub."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "Шукайте та завантажуйте водночас"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/os.nodalix.Store.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "Легко переглядайте дозволи застосунків"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "Увійдіть із допомогою Flathub, аби керувати вподобаннями"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
+#: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Шукайте застосунки безпосередньо з оболонки GNOME"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:825
+#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:825
 msgid "The Bazaar Contributors"
 msgstr "Внесники Базару"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
+#: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "Домашня сторінка із застосунками з Flathub"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+#: data/os.nodalix.Store.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "Сторінка програми для Exhibit"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+#: data/os.nodalix.Store.metainfo.xml.in:67
 msgid "Library page"
 msgstr "Сторінка бібліотеки"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+#: data/os.nodalix.Store.metainfo.xml.in:71
 msgid "Search page"
 msgstr "Сторінка пошуку"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
+#: data/os.nodalix.Store.metainfo.xml.in:75
 msgid "Category page"
 msgstr "Сторінка пошуку з категоріями"
 
@@ -3674,7 +3674,7 @@ msgstr "Включає %s, %s і %s."
 #~ "\n"
 #~ "You can then remove this Flatpak version with\n"
 #~ "\n"
-#~ "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
 #~ msgstr ""
 #~ "У Ubuntu 25.10 та новіших версіях змінені стандартні правила безпеки, що "
 #~ "робить <b>неможливим встановлення програм</b> з версії Bazaar для "
@@ -3685,7 +3685,7 @@ msgstr "Включає %s, %s і %s."
 #~ "\n"
 #~ "Потім ви можете вилучити цю версію Flatpak за допомогою команди\n"
 #~ "\n"
-#~ "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
 
 #~ msgid "Continue Anyway"
 #~ msgstr "Продовжити попри це"

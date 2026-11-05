@@ -1,0 +1,8 @@
+[Unit]
+Description=Nodalix Store service
+PartOf=graphical-session.target
+
+[Service]
+Type=dbus
+BusName=os.nodalix.Store
+ExecStart=@bindir@/nodalix-store-daemon --no-window

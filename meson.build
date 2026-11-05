@@ -96,28 +96,28 @@ else
     config_h.set_quoted('PACKAGE_VCS_VERSION', bz_vcs_version)
     config_h.set_quoted('CACHE_VERSION', bz_cache_version)
     config_h.set_quoted('GETTEXT_PACKAGE', 'bazaar')
-    config_h.set_quoted('APPLICATION_ID', 'io.github.kolunmi.Bazaar')
+    config_h.set_quoted('APPLICATION_ID', 'os.nodalix.Store')
     config_h.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
     config_h.set_quoted('DONATE_LINK', 'https://ko-fi.com/kolunmi')
     config_h.set_quoted('RELEASE_PAGE', run_command('version.sh', 'get-gitlab-release').stdout().strip())
 
-    bazaar_bin_name = 'bazaar'
+    bazaar_bin_name = 'nodalix-store'
     config_h.set_quoted('BAZAAR_BIN_NAME', bazaar_bin_name)
     config_h.set_quoted('REFRESH_WORKER_CLI_OPTION', '--run-refresh-worker')
     config_h.set_quoted('UPDATE_WORKER_CLI_OPTION', '--run-update-worker')
 
-    dl_worker_bin_name = 'bazaar-dl-worker'
+    dl_worker_bin_name = 'nodalix-store-dl-worker'
     config_h.set_quoted('DL_WORKER_BIN_NAME', dl_worker_bin_name)
 
-    daemon_bin_name = 'bazaar-daemon'
+    daemon_bin_name = 'nodalix-store-daemon'
     config_h.set_quoted('DAEMON_BIN_NAME', daemon_bin_name)
 
-    bazaar_bin_name = 'bazaar'
+    bazaar_bin_name = 'nodalix-store'
     config_h.set_quoted('BAZAAR_BIN_NAME', bazaar_bin_name)
     config_h.set_quoted('BAZAAR_BIN_PATH', get_option('prefix') / get_option('bindir') / bazaar_bin_name)
 
-    login_page_module_dir = get_option('libdir') / 'bazaar'
-    config_h.set_quoted('LOGIN_PAGE_MODULE_PATH', get_option('prefix') / login_page_module_dir / 'libbazaar-login-page.so')
+    login_page_module_dir = get_option('libdir') / 'nodalix-store'
+    config_h.set_quoted('LOGIN_PAGE_MODULE_PATH', get_option('prefix') / login_page_module_dir / 'libnodalix-store-login-page.so')
 
     if get_option('hardcoded_main_config_path') != ''
       config_h.set_quoted('HARDCODED_MAIN_CONFIG', get_option('hardcoded_main_config_path'))
@@ -130,11 +130,11 @@ else
     endif
     if get_option('sandboxed_libflatpak')
       config_h.set_quoted('SANDBOXED_LIBFLATPAK', '1')
-      config_h.set_quoted('BWRAP_WRAPPER_PATH', get_option('prefix') / get_option('libexecdir') / 'bazaar-host-bwrap')
+      config_h.set_quoted('BWRAP_WRAPPER_PATH', get_option('prefix') / get_option('libexecdir') / 'nodalix-store-host-bwrap')
       install_data(
         'build-aux/flatpak/bwrap-wrapper.sh',
         install_dir: get_option('libexecdir'),
-        rename: 'bazaar-host-bwrap',
+        rename: 'nodalix-store-host-bwrap',
         install_mode: 'rwxr-xr-x',
       )
     endif
@@ -142,10 +142,10 @@ else
 
     if get_option('development')
       config_h.set10('DEVELOPMENT_BUILD', get_option('development'))
-      config_h.set_quoted('DEVELOPMENT_EXAMPLE_YAML', get_option('prefix') / get_option('datadir') / 'bazaar' / 'example.yaml')
+      config_h.set_quoted('DEVELOPMENT_EXAMPLE_YAML', get_option('prefix') / get_option('datadir') / 'nodalix-store' / 'example.yaml')
       install_data(
         'docs/example.yaml',
-        install_dir: get_option('datadir') / 'bazaar',
+        install_dir: get_option('datadir') / 'nodalix-store',
       )
     endif
 

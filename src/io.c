@@ -480,7 +480,7 @@ bz_dup_root_cache_dir (void)
   if (application != NULL)
     id = g_application_get_application_id (application);
   if (id == NULL)
-    id = "io.github.kolunmi.Bazaar";
+    id = "os.nodalix.Store";
 
   return g_build_filename (user_cache, id, NULL);
 }

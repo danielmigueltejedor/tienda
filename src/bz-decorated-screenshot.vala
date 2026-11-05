@@ -19,7 +19,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-[GtkTemplate (ui = "/io/github/kolunmi/Bazaar/bz-decorated-screenshot.ui")]
+[GtkTemplate (ui = "/os/nodalix/Store/bz-decorated-screenshot.ui")]
 public class Bz.DecoratedScreenshot : Gtk.Button {
     public Bz.AsyncTexture? async_texture { get; set; }
 }

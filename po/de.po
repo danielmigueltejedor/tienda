@@ -22,34 +22,34 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 50.0\n"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:2
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:7 src/bz-window.blp:47
+#: data/os.nodalix.Store.desktop.in:2
+#: data/os.nodalix.Store.metainfo.xml.in:7 src/bz-window.blp:47
 #: src/bz-window.blp:203 src/bz-window.c:391 src/bz-window.c:392
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
+#: data/os.nodalix.Store.desktop.in:3
 msgid "App Store"
 msgstr "App-Marktplatz"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/os.nodalix.Store.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Hinzufügen, Entfernen oder Aktualisieren von Apps auf diesem Computer"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:10
+#: data/os.nodalix.Store.desktop.in:10
 #, fuzzy
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr "GTK;System;Paketverwaltung;Discover;Flatpak;Software;Store;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:17
+#: data/os.nodalix.Store.desktop.in:17
 msgid "New Window"
 msgstr "Neues Fenster"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8
+#: data/os.nodalix.Store.metainfo.xml.in:8
 msgid "Discover and install apps"
 msgstr "Apps entdecken und verwalten"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:10
+#: data/os.nodalix.Store.metainfo.xml.in:10
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -58,46 +58,46 @@ msgstr ""
 "Entdecken und der Installation von Flatpak-Apps und -Erweiterungen, "
 "insbesondere von Flathub."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:15
+#: data/os.nodalix.Store.metainfo.xml.in:15
 msgid "Queue multiple installs and keep browsing"
 msgstr ""
 "Mehrere Installationen in die Warteschlange setzen und weiter nach Apps "
 "stöbern"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Easily view app permissions"
 msgstr "App-Berechtigungen übersichtlich einsehen"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/os.nodalix.Store.metainfo.xml.in:17
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr ""
 "Melden Sie sich bei Flathub an, um Ihre Favoriten zu sehen und zu verwalten"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Search apps directly from GNOME Shell"
 msgstr ""
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:30 src/bz-application.c:723
+#: data/os.nodalix.Store.metainfo.xml.in:30 src/bz-application.c:723
 msgid "The Bazaar Contributors"
 msgstr "Die Bazaar Mitwirkenden"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:55
+#: data/os.nodalix.Store.metainfo.xml.in:55
 msgid "The home page displaying Flathub apps"
 msgstr "Die Startseite mit den Flathub-Apps"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
+#: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "App page for Exhibit"
 msgstr ""
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+#: data/os.nodalix.Store.metainfo.xml.in:63
 msgid "Library page"
 msgstr "Bibliotheksseite"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+#: data/os.nodalix.Store.metainfo.xml.in:67
 msgid "Search page"
 msgstr "Suchseite"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+#: data/os.nodalix.Store.metainfo.xml.in:71
 msgid "Category page"
 msgstr "Kategorienseite"
 
@@ -786,7 +786,7 @@ msgid ""
 "\n"
 "You can then remove this Flatpak version with\n"
 "\n"
-"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+"<tt>flatpak uninstall os.nodalix.Store</tt>"
 msgstr ""
 
 #: src/bz-application.c:1009

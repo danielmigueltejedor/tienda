@@ -19,7 +19,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-[GtkTemplate (ui = "/io/github/kolunmi/Bazaar/bz-install-controls.ui")]
+[GtkTemplate (ui = "/os/nodalix/Store/bz-install-controls.ui")]
 public class Bz.InstallControls : Gtk.Widget {
     private const float RING_WIDTH = 5.0f;
     private const float RING_PADDING = 4.0f;

@@ -20,35 +20,35 @@ msgstr ""
 "X-Generator: Gtranslator 51.0\n"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: data/os.nodalix.Store.desktop.in:3
+#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
 #: src/bz-window.blp:211 src/bz-window.c:438 src/bz-window.c:439
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Sklep z aplikacjami"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:5
+#: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Dodawaj, usuwaj i aktualizuj flatpaki na tym komputerze"
 
 # Note from Marcel:
 # Są to "search queries", więc dobrym pomysłem jest oprócz przetłumaczenia domyślnych jest wymyślenie nowych, które mógły użytkownik posługujący się danym językiem docelowym wpisać w pole wyszukiwania aplikacji w menu aplikacji. Tak też zrobiłem.
-#: data/io.github.kolunmi.Bazaar.desktop.in:11
+#: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr "System;Package;Manager;Discover;Flatpak;Software;Store;Marketplace;Pakiet;Paczka;Zarządzanie;Oprogramowaniem;Odkryj;Odkrywaj;Odkrywca;Oprogramowanie;Sklep;Bazar;AppStore;Play;Aplikacja;Aplikacje;Rynek;Targ;Bazar;Apki;Apka;Program;Programy;Pobieranie;Pobierz;Instalowanie;Instaluj;Instalacja;Flathub;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:18
+#: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
 msgstr "Nowe okno"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
+#: data/os.nodalix.Store.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "Odkrywaj i zarządzaj aplikacjami"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
+#: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -57,45 +57,45 @@ msgstr ""
 "oraz instalowanie aplikacji i dodatków z repozytoriów flatpaka, szczególnie "
 "z Flathuba."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr ""
 "Dodawaj do kolejki kilka aplikacji do zainstalowania i przeglądaj dalej"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/os.nodalix.Store.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "W łatwy sposób sprawdzaj uprawnienia aplikacji"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "Zaloguj się do Flathuba, aby przeglądać i zarządzać ulubionymi"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
+#: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Wyszukuj aplikacje prosto z powłoki GNOME"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:755
+#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:755
 msgid "The Bazaar Contributors"
 msgstr "Współtwórcy Bazaaru"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
+#: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "Strona domowa pokazująca aplikacje z Flathuba"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+#: data/os.nodalix.Store.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "Strona aplikacji „Exhibit”"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+#: data/os.nodalix.Store.metainfo.xml.in:67
 msgid "Library page"
 msgstr "Strona biblioteki"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+#: data/os.nodalix.Store.metainfo.xml.in:71
 msgid "Search page"
 msgstr "Strona wyszukiwania"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
+#: data/os.nodalix.Store.metainfo.xml.in:75
 msgid "Category page"
 msgstr "Strona kategorii"
 
@@ -785,7 +785,7 @@ msgid ""
 "\n"
 "You can then remove this Flatpak version with\n"
 "\n"
-"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+"<tt>flatpak uninstall os.nodalix.Store</tt>"
 msgstr ""
 "Wydania Ubuntu 25.10 i nowsze zmieniły domyślne zasady bezpieczeństwa, "
 "powodując, że <b>aplikacje są niemożliwe do zainstalowania</b> z flatpakowej "
@@ -796,7 +796,7 @@ msgstr ""
 "\n"
 "Flatpakową wersję aplikacji można usunąć poleceniem\n"
 "\n"
-"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+"<tt>flatpak uninstall os.nodalix.Store</tt>"
 
 #: src/bz-application.c:1069
 msgid "Continue Anyway"

@@ -1,5 +1,9 @@
+# Nodalix Store
+
+Tienda de Nodalix OS, basada en Bazaar 0.9.11 (`8a7556f`) y acompañada por NXPM. La documentación de arquitectura, API, compilación y estado está en `docs/`. El texto que sigue es el README original de Bazaar.
+
 <h1 align="center">
-<img src="data/icons/hicolor/scalable/apps/io.github.kolunmi.Bazaar.svg" width="128" height="128" />
+<img src="data/icons/hicolor/scalable/apps/os.nodalix.Store.svg" width="128" height="128" />
 <br/>
 Bazaar
 <br/>
@@ -39,7 +43,7 @@ Bazaar's market stall icon.
 
 Pre-built binaries are distributed via Flathub:
 
-<a href='https://flathub.org/apps/details/io.github.kolunmi.Bazaar'><img width='240' alt='Get it on Flathub' src='https://flathub.org/api/badge?svg&locale=en'/></a>
+<a href='https://flathub.org/apps/details/os.nodalix.Store'><img width='240' alt='Get it on Flathub' src='https://flathub.org/api/badge?svg&locale=en'/></a>
 
 You can also beta-test Bazaar using the gnome-nightly flatpak repository:
 ```sh
@@ -48,7 +52,7 @@ flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome
 
 Then:
 ```sh
-flatpak install gnome-nightly io.github.kolunmi.Bazaar
+flatpak install gnome-nightly os.nodalix.Store
 ```
 
 There also exist packages for [Debian](https://tracker.debian.org/pkg/bazaar)

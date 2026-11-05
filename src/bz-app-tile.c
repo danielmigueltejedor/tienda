@@ -263,7 +263,7 @@ bz_app_tile_class_init (BzAppTileClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-app-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/os/nodalix/Store/bz-app-tile.ui");
   gtk_widget_class_set_layout_manager_type (widget_class, BZ_TYPE_APP_TILE_LAYOUT);
 
   gtk_widget_class_bind_template_child (widget_class, BzAppTile, content_box);

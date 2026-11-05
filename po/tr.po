@@ -1,6 +1,6 @@
-# Turkish translation for io.github.kolunmi.Bazaar.
-# Copyright (C) 2025-2026 io.github.kolunmi.Bazaar's COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.github.kolunmi.Bazaar package.
+# Turkish translation for os.nodalix.Store.
+# Copyright (C) 2025-2026 os.nodalix.Store's COPYRIGHT HOLDER
+# This file is distributed under the same license as the os.nodalix.Store package.
 #
 # Sabri Ünal <yakushabb@gmail.com>, 2025-2026.
 # Emin Tufan Çetin <etcetin@gmail.com>, 2026.
@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.kolunmi.Bazaar master\n"
+"Project-Id-Version: os.nodalix.Store master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
 "POT-Creation-Date: 2026-10-19 20:52+0000\n"
 "PO-Revision-Date: 2026-10-22 08:00+0300\n"
@@ -22,33 +22,33 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: data/os.nodalix.Store.desktop.in:3
+#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
 #: src/bz-window.blp:193 src/bz-window.c:435 src/bz-window.c:436
 msgid "Bazaar"
 msgstr "Bazaar"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Uygulama Mağazası"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:5
+#: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Bu bilgisayara flatpak yazılımı ekle, kaldır ya da güncelle"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:11
+#: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr "Bazaar;System;Package;Manager;Discover;Flatpak;Software;App;Store;Paket;Yönetici;Keşfet;Yazılım;Uygulama;Mağaza;Program;Pazar;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:18
+#: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
 msgstr "Yeni Pencere"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
+#: data/os.nodalix.Store.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "Uygulamaları keşfet ve kur"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
+#: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -56,44 +56,44 @@ msgstr ""
 "Özellikle Flathubʼdan Flatpak uygulamalarını ve eklentilerini keşfetmeye ve "
 "kurmaya odaklanan, Linux için hızlı ve çağdaş uygulama mağazası."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "Birden çok kurulumu kuyrukla ve gezin"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/os.nodalix.Store.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "Uygulama izinlerini kolayca görüntüle"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "Gözdelerinizi görüntülemek ve yönetmek için Flathub ile oturum açın"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
+#: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Uygulamaları GNOME Shell üstünden ara"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:818
+#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:818
 msgid "The Bazaar Contributors"
 msgstr "Bazaar Katkıcıları"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
+#: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "Flathub uygulamalarını görüntüleyen ana görünüm"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+#: data/os.nodalix.Store.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "Sergi için uygulama sayfası"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+#: data/os.nodalix.Store.metainfo.xml.in:67
 msgid "Library page"
 msgstr "Kitaplık sayfası"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+#: data/os.nodalix.Store.metainfo.xml.in:71
 msgid "Search page"
 msgstr "Arama sayfası"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
+#: data/os.nodalix.Store.metainfo.xml.in:75
 msgid "Category page"
 msgstr "Kategori sayfası"
 
@@ -3601,7 +3601,7 @@ msgstr "%s, %s ve %s içerir."
 #~ "\n"
 #~ "You can then remove this Flatpak version with\n"
 #~ "\n"
-#~ "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
 #~ msgstr ""
 #~ "Ubuntu 25.10 ve yenilerinde öntanımlı güvenlik kuralları Bazaarʼın "
 #~ "Flatpak sürümünden <b>uygulama kurmayı olanaksızlaştıracak</b> biçimde "
@@ -3611,7 +3611,7 @@ msgstr "%s, %s ve %s içerir."
 #~ "\n"
 #~ "Ardından bu Flatpak sürümünü şununla kaldırabilirsiniz:\n"
 #~ "\n"
-#~ "<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
 
 #~ msgid "Continue Anyway"
 #~ msgstr "Yine De Sürdür"
