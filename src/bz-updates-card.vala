@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-[GtkTemplate (ui = "/io/github/kolunmi/Bazaar/bz-updates-card.ui")]
+[GtkTemplate (ui = "/os/nodalix/Store/bz-updates-card.ui")]
 public class Bz.UpdatesCard : Adw.Bin {
     private Bz.StateInfo? _state;
     public Bz.StateInfo? state {

@@ -521,7 +521,7 @@ bz_application_command_line (GApplication            *app,
         }
 
       if (no_window)
-        g_application_command_line_printerr (cmdline, "--no-window only works with bazaar-daemon\n");
+        g_application_command_line_printerr (cmdline, "--no-window only works with nodalix-store-daemon\n");
     }
 
   if (!self->running)
@@ -813,9 +813,9 @@ bz_application_about_action (GSimpleAction *action,
 
   g_object_set (
       dialog,
-      "application-name", "Bazaar",
-      "application-icon", "io.github.kolunmi.Bazaar",
-      "developer-name", _ ("The Bazaar Contributors"),
+      "application-name", "Nodalix Store",
+      "application-icon", "os.nodalix.Store",
+      "developer-name", "Nodalix",
       "developers", developers,
       // Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
       "translator-credits", _ ("translator-credits"),
@@ -954,9 +954,9 @@ bz_application_quit_action (GSimpleAction *action,
   conn = g_bus_get_sync (G_BUS_TYPE_SESSION, NULL, &error);
   if (conn != NULL)
     g_dbus_connection_call_sync (
-        conn, "io.github.kolunmi.Bazaar.SearchProvider",
-        "/io/github/kolunmi/Bazaar/SearchProvider",
-        "io.github.kolunmi.Bazaar.Daemon",
+        conn, "os.nodalix.Store.SearchProvider",
+        "/os/nodalix/Store/SearchProvider",
+        "os.nodalix.Store.Daemon",
         "Quit", NULL, NULL, G_DBUS_CALL_FLAGS_NONE,
         -1, NULL, &error);
 
@@ -3422,12 +3422,12 @@ init_service_struct (BzApplication *self,
   g_type_ensure (BZ_TYPE_INTERNAL_CONFIG);
   g_type_ensure (BZ_TYPE_SEARCH_BIAS);
   internal_config_bytes = g_resources_lookup_data (
-      "/io/github/kolunmi/Bazaar/internal-config.yaml",
+      "/os/nodalix/Store/internal-config.yaml",
       G_RESOURCE_LOOKUP_FLAGS_NONE,
       NULL);
   g_assert (internal_config_bytes != NULL);
   internal_config_parser = bz_yaml_parser_new_for_resource_schema (
-      "/io/github/kolunmi/Bazaar/internal-config-schema.xml");
+      "/os/nodalix/Store/internal-config-schema.xml");
   g_assert (internal_config_parser != NULL);
   internal_config_parse_results = bz_parser_process_bytes (
       BZ_PARSER (internal_config_parser), internal_config_bytes, &local_error);
@@ -3450,7 +3450,7 @@ init_service_struct (BzApplication *self,
       g_autoptr (GHashTable) parse_results = NULL;
 
       parser = bz_yaml_parser_new_for_resource_schema (
-          "/io/github/kolunmi/Bazaar/main-config-schema.xml");
+          "/os/nodalix/Store/main-config-schema.xml");
 
       parse_results = bz_parser_process_bytes (
           BZ_PARSER (parser), config_bytes, &local_error);
@@ -3605,7 +3605,7 @@ init_service_struct (BzApplication *self,
   g_type_ensure (BZ_TYPE_BLOCKLIST);
   g_type_ensure (BZ_TYPE_BLOCKLIST_CONDITION);
   self->blocklist_parser = bz_yaml_parser_new_for_resource_schema (
-      "/io/github/kolunmi/Bazaar/blocklist-schema.xml");
+      "/os/nodalix/Store/blocklist-schema.xml");
 
   self->txt_blocklist_parser = bz_newline_parser_new (
       TRUE, MAX_IDS_PER_BLOCKLIST);
@@ -3615,7 +3615,7 @@ init_service_struct (BzApplication *self,
   g_type_ensure (BZ_TYPE_CURATED_SECTION);
   g_type_ensure (BZ_TYPE_CURATED_ARTICLE);
   self->curated_parser = bz_yaml_parser_new_for_resource_schema (
-      "/io/github/kolunmi/Bazaar/curated-config-schema.xml");
+      "/os/nodalix/Store/curated-config-schema.xml");
 
   self->cache = bz_entry_cache_manager_new ();
 

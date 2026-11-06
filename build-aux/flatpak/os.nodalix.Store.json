@@ -1,9 +1,9 @@
 {
-  "id": "io.github.kolunmi.Bazaar",
+  "id": "os.nodalix.Store",
   "runtime": "org.gnome.Platform",
   "runtime-version": "51",
   "sdk": "org.gnome.Sdk",
-  "command": "bazaar-daemon",
+  "command": "nodalix-store-daemon",
   "sdk-extensions": [
     "org.freedesktop.Sdk.Extension.llvm22"
   ],

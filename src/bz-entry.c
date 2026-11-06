@@ -31,6 +31,7 @@
 #include <bzvala.h>
 #include "bz-entry.h"
 #include "bz-serializable.h"
+#include "bz-themed-paintable.h"
 #include "env.h"
 #include "global-net.h"
 #include "io.h"
@@ -476,6 +477,13 @@ bz_entry_set_property (GObject      *object,
     case PROP_ID:
       g_clear_pointer (&priv->id, g_free);
       priv->id = g_value_dup_string (value);
+      if (BZ_IS_THEMED_PAINTABLE (priv->icon_paintable))
+        bz_themed_paintable_set_icon_name (BZ_THEMED_PAINTABLE (priv->icon_paintable), priv->id);
+      else if (priv->icon_paintable == NULL && priv->id != NULL)
+        {
+          priv->icon_paintable = GDK_PAINTABLE (bz_themed_paintable_new (priv->id, NULL));
+          g_object_notify_by_pspec (object, props[PROP_ICON_PAINTABLE]);
+        }
       break;
     case PROP_UNIQUE_ID:
       g_clear_pointer (&priv->unique_id, g_free);
@@ -518,8 +526,15 @@ bz_entry_set_property (GObject      *object,
       priv->installed_size = g_value_get_uint64 (value);
       break;
     case PROP_ICON_PAINTABLE:
-      g_clear_object (&priv->icon_paintable);
-      priv->icon_paintable = g_value_dup_object (value);
+      {
+        GdkPaintable *incoming = g_value_get_object (value);
+
+        g_clear_object (&priv->icon_paintable);
+        if (BZ_IS_THEMED_PAINTABLE (incoming))
+          priv->icon_paintable = g_object_ref (incoming);
+        else if (incoming != NULL || priv->id != NULL)
+          priv->icon_paintable = GDK_PAINTABLE (bz_themed_paintable_new (priv->id, incoming));
+      }
       break;
     case PROP_MINI_ICON:
       g_clear_object (&priv->mini_icon);
@@ -2785,7 +2800,10 @@ maybe_save_paintable (BzEntryPrivate  *priv,
   g_autoptr (GFile) save_file    = NULL;
   gboolean result                = FALSE;
 
-  if (!BZ_IS_ASYNC_TEXTURE (paintable))
+  if (BZ_IS_THEMED_PAINTABLE (paintable))
+    paintable = bz_themed_paintable_get_fallback (BZ_THEMED_PAINTABLE (paintable));
+
+  if (paintable == NULL || !BZ_IS_ASYNC_TEXTURE (paintable))
     {
       return FALSE;
     }

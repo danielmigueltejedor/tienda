@@ -253,7 +253,7 @@ bz_installed_tile_class_init (BzInstalledTileClass *klass)
   g_type_ensure (BZ_TYPE_ENTRY_GROUP);
   g_type_ensure (BZ_TYPE_TRANSACT_ICON);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-installed-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/os/nodalix/Store/bz-installed-tile.ui");
   gtk_widget_class_bind_template_child (widget_class, BzInstalledTile, title_label);
   gtk_widget_class_bind_template_child (widget_class, BzInstalledTile, support_button);
   gtk_widget_class_bind_template_child (widget_class, BzInstalledTile, remove_button);

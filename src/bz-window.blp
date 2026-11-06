@@ -51,8 +51,8 @@ template $BzWindow: Adw.ApplicationWindow {
 
             Adw.NavigationPage {
               tag: "main";
-              // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-              title: _("Bazaar");
+              // Translators: Please treat "Nodalix Store" as a brand name and avoid translating.
+              title: _("Nodalix Store");
 
               child: Adw.ToolbarView toolbar_view {
                 top-bar-style: flat;
@@ -107,7 +107,7 @@ template $BzWindow: Adw.ApplicationWindow {
 
                       Adw.ViewStackPage {
                         name: "flathub";
-                        title: _("Explore");
+                        title: _("Discover");
                         icon-name: "explore-symbolic";
 
                         child: $BzFlathubPage {
@@ -140,6 +140,14 @@ template $BzWindow: Adw.ApplicationWindow {
                         child: $BzSearchPage search_page {
                           state: bind template.state;
                         };
+                      }
+
+                      Adw.ViewStackPage {
+                        name: "updates";
+                        title: _("Updates");
+                        icon-name: "software-update-available-symbolic";
+
+                        child: $BzNxpmPage {};
                       }
                     };
                   }
@@ -189,8 +197,8 @@ template $BzWindow: Adw.ApplicationWindow {
                         visible: bind $invert_boolean(template.state as <$BzStateInfo>.busy) as <bool>;
                       }
                       Label {
-                        // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-                        label: _("Bazaar");
+                        // Translators: Please treat "Nodalix Store" as a brand name and avoid translating.
+                        label: _("Nodalix Store");
                         visible: bind template.state as <$BzStateInfo>.busy as <bool>;
                         styles [
                           "title",
@@ -214,7 +222,7 @@ template $BzWindow: Adw.ApplicationWindow {
 
                     revealed: bind $invert_boolean(template.state as <$BzStateInfo>.donation-prompt-dismissed as <bool>) as <bool>;
                     // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-                    title: _("You are running a new version of Bazaar!");
+                    title: _("You are running a new version of Nodalix Store!");
                     button-label: _("See What's New");
                     action-name: "app.donate";
                   }
@@ -270,7 +278,7 @@ menu primary_menu {
   section {
     item {
       // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-      label: _("_Donate to Bazaar");
+      label: _("_Donate to the Bazaar authors");
       action: "app.donate";
     }
   }
@@ -303,14 +311,14 @@ menu primary_menu {
 
     item {
       // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-      label: _("_About Bazaar");
+      label: _("_About Nodalix Store");
       action: "app.about";
     }
   }
   section {
     item {
       // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-      label: _("_Quit Bazaar");
+      label: _("_Quit Nodalix Store");
       action: "app.quit";
     }
   }

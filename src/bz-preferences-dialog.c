@@ -29,8 +29,8 @@
 #include "template-callbacks.h"
 #include "util.h"
 
-#define AUTOSTART_DESKTOP_FILE_NAME     "bazaar.desktop"
-#define AUTOSTART_DESKTOP_RESOURCE_PATH "/io/github/kolunmi/Bazaar/bazaar.desktop"
+#define AUTOSTART_DESKTOP_FILE_NAME     "os.nodalix.Store.desktop"
+#define AUTOSTART_DESKTOP_RESOURCE_PATH "/os/nodalix/Store/bazaar.desktop"
 
 typedef struct
 {
@@ -281,10 +281,10 @@ request_autostart_fiber (gpointer user_data)
   options = g_variant_new_parsed (
       "{'handle_token': <%s>, 'reason': <%s>, "
       "'autostart': <%b>, 'dbus-activatable': <false>, "
-      "'commandline': <['bazaar-daemon', '--no-window']>}",
+      "'commandline': <['nodalix-store-daemon', '--no-window']>}",
       token,
       // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-      _ ("Bazaar needs to run in the background to check for app updates"),
+      _ ("Nodalix Store needs to run in the background to check for app updates"),
       enable);
 
   reply = dex_await_variant (
@@ -384,7 +384,7 @@ bz_preferences_dialog_class_init (BzPreferencesDialogClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-preferences-dialog.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/os/nodalix/Store/bz-preferences-dialog.ui");
 
   bz_widget_class_bind_all_util_callbacks (widget_class);
 

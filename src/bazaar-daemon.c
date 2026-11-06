@@ -1,4 +1,4 @@
-/* bazaar-daemon.c
+/* nodalix-store-daemon.c
  *
  * Copyright 2026 Alexander Vanhee
  *
@@ -34,9 +34,9 @@
 
 #include "search-index.h"
 
-#define BUS_NAME            "io.github.kolunmi.Bazaar.SearchProvider"
-#define OBJECT_PATH         "/io/github/kolunmi/Bazaar/SearchProvider"
-#define DAEMON_IFACE        "io.github.kolunmi.Bazaar.Daemon"
+#define BUS_NAME            "os.nodalix.Store.SearchProvider"
+#define OBJECT_PATH         "/os/nodalix/Store/SearchProvider"
+#define DAEMON_IFACE        "os.nodalix.Store.Daemon"
 #define SEARCH_IFACE        "org.gnome.Shell.SearchProvider2"
 #define MAX_SEARCH_RESULTS  25
 #define ACTIVATE_TIMEOUT_MS 2000
@@ -392,7 +392,7 @@ auto_update_enabled (void)
   char  buf[8]  = { 0 };
   int   enabled = 0;
 
-  fp = popen ("gsettings get io.github.kolunmi.Bazaar auto-update", "r");
+  fp = popen ("gsettings get os.nodalix.Store auto-update", "r");
   if (fp == NULL)
     return 0;
 
@@ -508,7 +508,7 @@ handle_relaunch (DBusConnection *connection, DBusMessage *message)
   log_msg ("Relaunch requested via D-Bus");
 
   if (strv_count_local (terms) == 0 && child_pid > 0 &&
-      !dbus_bus_name_has_owner (connection, "io.github.kolunmi.Bazaar", NULL))
+      !dbus_bus_name_has_owner (connection, "os.nodalix.Store", NULL))
     {
       send_empty_reply (connection, message);
       return DBUS_HANDLER_RESULT_HANDLED;
@@ -545,7 +545,7 @@ log_msg (const char *fmt, ...)
 {
   va_list args;
 
-  printf ("(bazaar-daemon): ");
+  printf ("(nodalix-store-daemon): ");
 
   va_start (args, fmt);
   vprintf (fmt, args);
@@ -581,7 +581,7 @@ build_index_path (void)
   if (cache_home != NULL && *cache_home != '\0')
     {
       snprintf (buf, sizeof (buf),
-                "%s/io.github.kolunmi.Bazaar/core/search-index",
+                "%s/os.nodalix.Store/core/search-index",
                 cache_home);
       return strdup (buf);
     }
@@ -590,7 +590,7 @@ build_index_path (void)
   if (home != NULL && *home != '\0')
     {
       snprintf (buf, sizeof (buf),
-                "%s/.cache/io.github.kolunmi.Bazaar/core/search-index",
+                "%s/.cache/os.nodalix.Store/core/search-index",
                 home);
       return strdup (buf);
     }

@@ -1,7 +1,7 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/io.github.kolunmi.Bazaar.desktop.in
-data/io.github.kolunmi.Bazaar.metainfo.xml.in
+data/os.nodalix.Store.desktop.in
+data/os.nodalix.Store.metainfo.xml.in
 src/bz-addon-tile.blp
 src/bz-addon-tile.c
 src/bz-addons-dialog.blp

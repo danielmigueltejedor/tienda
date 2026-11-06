@@ -478,7 +478,7 @@ bz_featured_tile_class_init (BzFeaturedTileClass *klass)
 
   g_type_ensure (BZ_TYPE_SCREENSHOT);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-featured-tile.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/os/nodalix/Store/bz-featured-tile.ui");
   gtk_widget_class_bind_template_callback (widget_class, invert_boolean);
   gtk_widget_class_bind_template_callback (widget_class, get_start_margin);
   gtk_widget_class_bind_template_callback (widget_class, get_icon_box_v_margin);

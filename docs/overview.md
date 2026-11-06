@@ -44,7 +44,7 @@ managing software through the GUI:
 You can start the bazaar daemon like this:
 
 ```
-bazaar-daemon [ARGS] [PACKAGE PATH/URI]
+nodalix-store-daemon [ARGS] [PACKAGE PATH/URI]
 ```
 
 `[PACKAGE PATH/URI]` could be a `.flatpakref` file. flatpak+https and regular
@@ -53,14 +53,14 @@ https is supported.
 To avoid spawning an initial window, use:
 
 ```
-bazaar-daemon --no-window
+nodalix-store-daemon --no-window
 ```
 
 To refresh remotes in the background without ever opening a window, and quit
 automatically once the refresh finishes, use:
 
 ```
-bazaar-daemon --no-window-refresh
+nodalix-store-daemon --no-window-refresh
 ```
 Running this automatically in the background after the first boot of the OS
 makes it so the user doesn't have to wait for the initial cache/remote sync
@@ -236,7 +236,7 @@ com\.place\..*
 Check that the path of the blocklist exists and that Bazaar can access it. This command is useful for debugging this:
 
 ```
-flatpak run --command=bash io.github.kolunmi.Bazaar
+flatpak run --command=bash os.nodalix.Store
 ```
 
 The `/etc` of the host system accessed from a Flatpak requires the `host-etc` permission.
@@ -252,7 +252,7 @@ the value of `XDG_CURRENT_DESKTOP`:
 ```yaml
 blocklists:
   - block:
-      - io.github.kolunmi.Bazaar
+      - os.nodalix.Store
       - com.valvesoftware.Steam
 
   - block:
@@ -268,7 +268,7 @@ Let's add another for GNOME:
 ```yaml
 blocklists:
   - block:
-      - io.github.kolunmi.Bazaar
+      - os.nodalix.Store
       - com.valvesoftware.Steam
 
   - block:
@@ -298,7 +298,7 @@ priority:
 blocklists:
   - priority: 1
     block:
-      - io.github.kolunmi.Bazaar
+      - os.nodalix.Store
       - com.valvesoftware.Steam
 
   - block:
@@ -328,7 +328,7 @@ You could also make a new blocklist matching both `KDE` and `GNOME`:
 blocklists:
   - priority: 1
     block:
-      - io.github.kolunmi.Bazaar
+      - os.nodalix.Store
       - com.valvesoftware.Steam
 
   - block:
@@ -389,15 +389,15 @@ An example can be found in docs/example.yaml
 
 For more practical examples check out the configuration from [Bluefin](https://github.com/projectbluefin/common/tree/a868eba107b91c4eae60b6d1d6d2e2cdf05eb1c8/system_files/bluefin/etc/bazaar) and [Aurora](https://github.com/get-aurora-dev/common/tree/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/etc/bazaar).
 
-Bazaar by default looks for a config file in `/etc/bazaar` or `/run/host/etc/bazaar` inside the sandbox, this is [configured on build time](https://github.com/flathub/io.github.kolunmi.Bazaar/blob/709faccd8c4198c5fdabf20eb4a98db98a5aa1c6/io.github.kolunmi.Bazaar.yaml#L43-L46) This needs permission to `/etc` which can be granted with the `filesystem=host-etc` permission, the build on Flathub doesn't have this permission by default.
+Bazaar by default looks for a config file in `/etc/bazaar` or `/run/host/etc/bazaar` inside the sandbox, this is [configured on build time](https://github.com/flathub/os.nodalix.Store/blob/709faccd8c4198c5fdabf20eb4a98db98a5aa1c6/os.nodalix.Store.yaml#L43-L46) This needs permission to `/etc` which can be granted with the `filesystem=host-etc` permission, the build on Flathub doesn't have this permission by default.
 
-This is not super straightforward to setup currently as Flatpak doesn't support overriding permissions in `/etc` or `/usr` yet, so you have to resort to `systemd-tmpfiles` to create this permission override in `/var/lib/flatpak/overrides/io.github.kolunmi.Bazaar`.
+This is not super straightforward to setup currently as Flatpak doesn't support overriding permissions in `/etc` or `/usr` yet, so you have to resort to `systemd-tmpfiles` to create this permission override in `/var/lib/flatpak/overrides/os.nodalix.Store`.
 
 Here is how they did it:
 
 - [tmpfiles](https://github.com/get-aurora-dev/common/blob/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/usr/lib/tmpfiles.d/bazaar-flatpak.conf)
 
-- [actual permission override](https://github.com/get-aurora-dev/common/blob/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/usr/share/ublue-os/flatpak-overrides/io.github.kolunmi.Bazaar), the filepath for this doesn't really matter, just a way for you to ship the symlink with tmpfiles
+- [actual permission override](https://github.com/get-aurora-dev/common/blob/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/usr/share/ublue-os/flatpak-overrides/os.nodalix.Store), the filepath for this doesn't really matter, just a way for you to ship the symlink with tmpfiles
 
 ## Article markdown
 

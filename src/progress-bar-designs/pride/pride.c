@@ -48,7 +48,7 @@ bz_get_pride_style_provider (void)
       g_autoptr (GtkCssProvider) tmp       = NULL;
 
       config_bytes = g_resources_lookup_data (
-          "/io/github/kolunmi/Bazaar/pride-flags.yaml",
+          "/os/nodalix/Store/pride-flags.yaml",
           G_RESOURCE_LOOKUP_FLAGS_NONE,
           NULL);
       g_assert (config_bytes != NULL);
@@ -58,7 +58,7 @@ bz_get_pride_style_provider (void)
       g_type_ensure (BZ_TYPE_PRIDE_FLAG_STRIPE_SPEC);
 
       parser = bz_yaml_parser_new_for_resource_schema (
-          "/io/github/kolunmi/Bazaar/pride-flag-config-schema.xml");
+          "/os/nodalix/Store/pride-flag-config-schema.xml");
       parse_results = bz_parser_process_bytes (
           BZ_PARSER (parser), config_bytes, &local_error);
       if (parse_results == NULL)

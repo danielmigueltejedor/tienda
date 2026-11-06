@@ -21,7 +21,7 @@
 
 using GLib.Intl;
 
-[GtkTemplate (ui = "/io/github/kolunmi/Bazaar/bz-flathub-curated-section.ui")]
+[GtkTemplate (ui = "/os/nodalix/Store/bz-flathub-curated-section.ui")]
 public class Bz.FlathubCuratedSection : Adw.Bin {
     private class ThemeInfo {
         public string title;

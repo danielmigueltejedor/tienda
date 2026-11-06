@@ -40,7 +40,7 @@ docs](https://docs.flatpak.org/en/latest/debugging.html).
 Installing debug extensions so the stacktrace is actually useful for developers:
 
 ```sh
-flatpak install --include-debug --include-sdk io.github.kolunmi.Bazaar
+flatpak install --include-debug --include-sdk os.nodalix.Store
 ```
 
 You can remove all the gnome sdk and debug extensions again when you are
@@ -51,18 +51,18 @@ finished with debugging. This is quite a big download, please have patience.
 Bazaar starts a background service once started, make sure it is not running first:
 
 ```sh
-flatpak kill io.github.kolunmi.Bazaar
+flatpak kill os.nodalix.Store
 ```
 
 ```sh
-flatpak run --devel --command=bash io.github.kolunmi.Bazaar
+flatpak run --devel --command=bash os.nodalix.Store
 ```
 
 This will get you a shell inside the flatpak sandbox: run this: `gdb
-/app/bin/bazaar-daemon`
+/app/bin/nodalix-store-daemon`
 
 ```sh
-[📦 io.github.kolunmi.Bazaar ~]$ gdb /app/bin/bazaar-daemon
+[📦 os.nodalix.Store ~]$ gdb /app/bin/nodalix-store-daemon
 ```
 
 Actually run bazaar:

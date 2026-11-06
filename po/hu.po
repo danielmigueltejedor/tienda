@@ -20,35 +20,35 @@ msgstr ""
 "X-Generator: Lokalize 25.12.3\n"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.desktop.in:3
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:8 src/bz-window.blp:55
+#: data/os.nodalix.Store.desktop.in:3
+#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
 #: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
 msgid "Bazaar"
 msgstr "Bazár"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:4
+#: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Alkalmazásbolt"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:5
+#: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr ""
 "Flatpak szoftverek telepítése, eltávolítása és frissítése ezen a számítógépen"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:11
+#: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
 "Rendszer;Csomag;Kezelő;Felfedezés;Flatpak;Szoftver;Alkalmazás;Áruház;Bolt;"
 
-#: data/io.github.kolunmi.Bazaar.desktop.in:18
+#: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
 msgstr "Új ablak"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:9
+#: data/os.nodalix.Store.metainfo.xml.in:9
 msgid "Discover and install apps"
 msgstr "Alkalmazások felfedezése és telepítése"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:11
+#: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
@@ -57,44 +57,44 @@ msgstr ""
 "alkalmazások és kiegészítők – különösen a Flathubról származók – felfedezése "
 "és telepítése áll."
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:16
+#: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
 msgstr "Több telepítés sorba állítása és a böngészés folytatása"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:17
+#: data/os.nodalix.Store.metainfo.xml.in:17
 msgid "Easily view app permissions"
 msgstr "Alkalmazásjogosultságok egyszerű megtekintése"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:18
+#: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
 msgstr "Jelentkezzen be a Flathubba a kedvencei megtekintéséhez és kezeléséhez"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:19
+#: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Alkalmazások keresése közvetlenül a GNOME Shellből"
 
 #. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:34 src/bz-application.c:754
+#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:754
 msgid "The Bazaar Contributors"
 msgstr "A Bazár közreműködői"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:59
+#: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
 msgstr "A Flathub-alkalmazásokat megjelenítő kezdőlap"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:63
+#: data/os.nodalix.Store.metainfo.xml.in:63
 msgid "App page for Exhibit"
 msgstr "Az Exhibit alkalmazásoldala"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:67
+#: data/os.nodalix.Store.metainfo.xml.in:67
 msgid "Library page"
 msgstr "Gyűjtemény oldal"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:71
+#: data/os.nodalix.Store.metainfo.xml.in:71
 msgid "Search page"
 msgstr "Keresés oldal"
 
-#: data/io.github.kolunmi.Bazaar.metainfo.xml.in:75
+#: data/os.nodalix.Store.metainfo.xml.in:75
 msgid "Category page"
 msgstr "Kategória oldal"
 
@@ -791,7 +791,7 @@ msgid ""
 "\n"
 "You can then remove this Flatpak version with\n"
 "\n"
-"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+"<tt>flatpak uninstall os.nodalix.Store</tt>"
 msgstr ""
 "Az Ubuntu 25.10 és újabb verziói olyan módon változtatták meg az "
 "alapértelmezett biztonsági szabályokat, hogy az <b>lehetetlenné teszi az "
@@ -802,7 +802,7 @@ msgstr ""
 "\n"
 "Azután eltávolíthatja ezt a Flatpak-verziót ezzel a paranccsal:\n"
 "\n"
-"<tt>flatpak uninstall io.github.kolunmi.Bazaar</tt>"
+"<tt>flatpak uninstall os.nodalix.Store</tt>"
 
 #: src/bz-application.c:1068
 msgid "Continue Anyway"

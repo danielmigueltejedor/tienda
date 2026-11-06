@@ -262,7 +262,7 @@ bz_inspector_class_init (BzInspectorClass *klass)
 
   g_object_class_install_properties (object_class, LAST_PROP, props);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/io/github/kolunmi/Bazaar/bz-inspector.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/os/nodalix/Store/bz-inspector.ui");
   bz_widget_class_bind_all_util_callbacks (widget_class);
 
   gtk_widget_class_bind_template_child (widget_class, BzInspector, debug_mode_check);
@@ -605,7 +605,7 @@ bz_inspector_page_get_property (GObject    *object,
                                 GParamSpec *pspec)
 {
   if (prop_id == PAGE_PROP_TITLE)
-    g_value_set_string (value, "Bazaar");
+    g_value_set_string (value, "Nodalix Store");
   else
     G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
 }
@@ -629,14 +629,14 @@ bz_inspector_page_map (GtkWidget *widget)
       BzInspector *inspector              = NULL;
 
       provider = gtk_css_provider_new ();
-      gtk_css_provider_load_from_resource (provider, "/io/github/kolunmi/Bazaar/inspector.css");
+      gtk_css_provider_load_from_resource (provider, "/os/nodalix/Store/inspector.css");
       gtk_style_context_add_provider_for_display (
           gtk_widget_get_display (widget),
           GTK_STYLE_PROVIDER (provider),
           GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
       gtk_icon_theme_add_resource_path (
           gtk_icon_theme_get_for_display (gtk_widget_get_display (widget)),
-          "/io/github/kolunmi/Bazaar/icons");
+          "/os/nodalix/Store/icons");
 
       inspector = bz_inspector_new ();
       adw_bin_set_child (ADW_BIN (widget), GTK_WIDGET (inspector));

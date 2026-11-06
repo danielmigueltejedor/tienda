@@ -19,7 +19,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-[GtkTemplate (ui = "/io/github/kolunmi/Bazaar/bz-flathub-category-section.ui")]
+[GtkTemplate (ui = "/os/nodalix/Store/bz-flathub-category-section.ui")]
 public class Bz.FlathubCategorySection : Gtk.Box {
     // Shared by all sections so that lazy sections fill one per frame
     private static int64 lazy_fill_frame = -1;

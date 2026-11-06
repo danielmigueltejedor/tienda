@@ -1,0 +1,125 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $BzNxpmPage : Adw.Bin {
+  child: Box {
+    orientation: vertical;
+
+    Adw.Clamp {
+      maximum-size: 760;
+      margin-start: 16;
+      margin-end: 16;
+      margin-top: 12;
+      margin-bottom: 6;
+
+      child: Box {
+        spacing: 6;
+
+        SearchEntry search_entry {
+          hexpand: true;
+          placeholder-text: _("Search Flatpak and official packages");
+          activate => $nxpm_search_activate(template);
+        }
+
+        Button {
+          icon-name: "view-refresh-symbolic";
+          tooltip-text: _("Refresh updates");
+          clicked => $nxpm_refresh_clicked(template);
+
+          styles ["flat"]
+        }
+      };
+    }
+
+    Box banner_box {
+      visible: false;
+      margin-start: 16;
+      margin-end: 16;
+      margin-bottom: 6;
+
+      Button {
+        hexpand: true;
+        label: _("Update official packages");
+        tooltip-text: _("Apply the pending official repository updates together");
+        clicked => $nxpm_system_update_clicked(template);
+
+        styles ["pill"]
+      }
+    }
+
+    Stack stack {
+      vexpand: true;
+
+      StackPage {
+        name: "busy";
+
+        child: Adw.StatusPage {
+          title: _("Checking software");
+          description: _("Asking NXPM for Flatpak and official repository updates.");
+
+          child: Adw.Spinner {
+            width-request: 32;
+            height-request: 32;
+          };
+        };
+      }
+
+      StackPage {
+        name: "results";
+
+        child: ScrolledWindow {
+          child: ListBox results_list {
+            selection-mode: none;
+
+            styles ["boxed-list"]
+          };
+        };
+      }
+
+      StackPage {
+        name: "empty";
+
+        child: Adw.StatusPage {
+          title: _("Software is up to date");
+          description: _("Flatpak applications and official packages have no pending updates. AUR and AppImage are not enabled.");
+          icon-name: "emblem-ok-symbolic";
+        };
+      }
+
+      StackPage {
+        name: "error";
+
+        child: Adw.StatusPage error_page {
+          title: _("NXPM is unavailable");
+          icon-name: "dialog-warning-symbolic";
+        };
+      }
+    }
+
+    Revealer progress_revealer {
+      reveal-child: false;
+
+      child: Box {
+        orientation: vertical;
+        margin-start: 16;
+        margin-end: 16;
+        margin-top: 8;
+        margin-bottom: 12;
+        spacing: 8;
+
+        Label progress_label {
+          wrap: true;
+          xalign: 0;
+        }
+
+        ProgressBar progress_bar {}
+
+        Button {
+          label: _("Cancel");
+          halign: center;
+          clicked => $nxpm_cancel_clicked(template);
+        }
+      };
+    }
+  };
+}

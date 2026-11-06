@@ -1,6 +1,6 @@
 flag-specs:
   - # the internal ID of the flag; this should match the gsettings file at
-    # /data/io.github.kolunmi.Bazaar.gschema.xml
+    # /data/os.nodalix.Store.gschema.xml
     id: "pride-rainbow-flag"
     # the user-facing name
     name: "Pride Rainbow Flag"

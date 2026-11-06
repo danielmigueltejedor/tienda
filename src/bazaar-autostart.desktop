@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Bazaar
-Exec=bazaar-daemon --no-window
+Name=Nodalix Store
+Exec=nodalix-store-daemon --no-window
 NoDisplay=true
 X-GNOME-Autostart-enabled=true

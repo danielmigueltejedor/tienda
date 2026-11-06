@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.kolunmi.Bazaar</id>
+  <id>os.nodalix.Store</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
 
-  <!-- Translators: Please treat "Bazaar" as a brand name and avoid translating. -->
-  <name>Bazaar</name>
+  <!-- Translators: Please treat "Nodalix Store" as a brand name and avoid translating. -->
+  <name>Nodalix Store</name>
   <summary>Discover and install apps</summary>
   <description>
+    <p>
+      Nodalix Store is the application store for Nodalix OS. It is based on
+      Bazaar and keeps its Flatpak browser, while software operations are
+      moving to the Nodalix package manager.
+    </p>
     <p>
       A fast and modern app store for Linux with a focus on discovering
       and installing Flatpak apps and add-ons, particularly from Flathub.
@@ -45,7 +50,7 @@
   <url type="contribute">https://gitlab.gnome.org/World/bazaar</url>
 
   <translation type="gettext">bazaar</translation>
-  <launchable type="desktop-id">io.github.kolunmi.Bazaar.desktop</launchable>
+  <launchable type="desktop-id">os.nodalix.Store.desktop</launchable>
   <content_rating type="oars-1.1" />
 
   <branding>

@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-[GtkTemplate (ui = "/io/github/kolunmi/Bazaar/bz-screenshot-page.ui")]
+[GtkTemplate (ui = "/os/nodalix/Store/bz-screenshot-page.ui")]
 public class Bz.ScreenshotPage : Adw.Bin {
     private const uint MOUSE_BACK_BUTTON = 8;
 
