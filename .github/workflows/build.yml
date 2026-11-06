@@ -25,6 +25,7 @@ jobs:
           pacman -Fy
           pacman -Fx 'glycin.*(\.pc|\.so)$' || true
           pacman -Ss glycin || true
+          exit 1
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
