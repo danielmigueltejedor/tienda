@@ -20,14 +20,11 @@ jobs:
             desktop-file-utils appstream gtk4 libadwaita libdex flatpak libxmlb libyaml libsoup3 \
             json-glib glycin webkitgtk-6.0 libsecret libproxy malcontent \
             gtksourceview5 md4c systemd-libs dbus python perl glib2-devel
-      - name: Install libraries whose Arch package name is only known from their pkg-config file
+      - name: Show which Arch packages ship glycin
         run: |
           pacman -Fy
-          for pc in glycin-gtk4-2.pc; do
-            package="$(pacman -Fq "/pkgconfig/$pc" | head -n 1)"
-            test -n "$package" || { echo "no package ships $pc"; exit 1; }
-            pacman -S --noconfirm --needed "$package"
-          done
+          pacman -Fx 'glycin.*(\.pc|\.so)$' || true
+          pacman -Ss glycin || true
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
