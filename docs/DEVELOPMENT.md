@@ -24,23 +24,4 @@ El servicio de usuario que Bazaar espera sigue siendo el demonio de la tienda. N
 
 ## NXPM
 
-```bash
-cd nxpm
-python -m pytest
-PYTHONPATH=src python -m nxpm sources
-PYTHONPATH=src python -m nxpm import appimage /ruta/Programa.AppImage
-```
-
-Las pruebas no instalan ni borran paquetes del sistema. El backend de Pacman se prueba con un handle falso. Flatpak se prueba con una referencia falsa. La importación de AppImage y de Debian usa un directorio temporal, no `~/Applications` del usuario. Las consultas reales de solo lectura pueden ejecutarse con la CLI.
-
-PyGObject, Flatpak, pyalpm y pycman son dependencias del sistema, no de pip.
-
-## Sesión
-
-```bash
-PYTHONPATH=nxpm/src python -m nxpm install-session
-systemctl --user enable --now nxpm-check.timer
-PYTHONPATH=nxpm/src python -m nxpm daemon
-```
-
-La política de Polkit está en `nxpm/share/os.nodalix.nxpm.policy`. Instalarla en `/usr/share/polkit-1/actions` requiere administración y no se hace desde el árbol de desarrollo.
+NXPM se desarrolla en el repositorio de Nodalix OS (`nxpm/`). Para probar la tienda en un árbol de desarrollo hace falta el servicio instalado (`nodalix-nxpm`) o arrancado desde ese repositorio con `PYTHONPATH=nxpm/src python -m nxpm daemon`.

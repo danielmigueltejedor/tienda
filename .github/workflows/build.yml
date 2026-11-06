@@ -1,0 +1,35 @@
+name: build
+
+on:
+  push:
+    branches: [main, nodalix/store]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  arch:
+    # Nodalix OS is Arch Linux: build the store against the same libraries it ships with.
+    runs-on: ubuntu-latest
+    container: archlinux:base-devel
+    steps:
+      - name: Install build dependencies
+        run: |
+          pacman -Syu --noconfirm --needed git meson ninja vala blueprint-compiler gettext libxml2 \
+            desktop-file-utils appstream gtk4 libadwaita libdex flatpak libxmlb libyaml libsoup3 \
+            json-glib glycin libglycin-gtk4 webkitgtk-6.0 libsecret libproxy malcontent \
+            gtksourceview5 systemd-libs dbus
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - run: meson setup build --prefix=/usr
+      - run: meson compile -C build
+      - name: Install into a staging directory and validate the metadata
+        run: |
+          DESTDIR="$PWD/stage" meson install -C build
+          desktop-file-validate stage/usr/share/applications/os.nodalix.Store.desktop
+          appstreamcli validate --no-net stage/usr/share/metainfo/os.nodalix.Store.metainfo.xml
+          test -x stage/usr/bin/nodalix-store
+          test -x stage/usr/bin/nodalix-store-daemon
