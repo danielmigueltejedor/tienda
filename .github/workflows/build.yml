@@ -18,14 +18,8 @@ jobs:
         run: |
           pacman -Syu --noconfirm --needed git meson ninja vala blueprint-compiler gettext libxml2 \
             desktop-file-utils appstream gtk4 libadwaita libdex flatpak libxmlb libyaml libsoup3 \
-            json-glib glycin webkitgtk-6.0 libsecret libproxy malcontent \
+            json-glib glycin glycin-gtk4 webkitgtk-6.0 libsecret libproxy malcontent \
             gtksourceview5 md4c systemd-libs dbus python perl glib2-devel
-      - name: Show which Arch packages ship glycin
-        run: |
-          pacman -Fy
-          pacman -Fx 'glycin.*(\.pc|\.so)$' || true
-          pacman -Ss glycin || true
-          exit 1
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
