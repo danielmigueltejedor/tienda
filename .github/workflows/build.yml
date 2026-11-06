@@ -19,7 +19,7 @@ jobs:
           pacman -Syu --noconfirm --needed git meson ninja vala blueprint-compiler gettext libxml2 \
             desktop-file-utils appstream gtk4 libadwaita libdex flatpak libxmlb libyaml libsoup3 \
             json-glib glycin webkitgtk-6.0 libsecret libproxy malcontent \
-            gtksourceview5 systemd-libs dbus
+            gtksourceview5 md4c systemd-libs dbus
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
