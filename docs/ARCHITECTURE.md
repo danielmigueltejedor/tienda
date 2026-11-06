@@ -30,14 +30,10 @@ La coincidencia usa el identificador de la aplicación y, si existe, el campo `I
 
 ## NXPM
 
-NXPM es un paquete Python en `nxpm/`. La CLI y el servicio D-Bus usan la misma clase `Engine`.
+NXPM vive en el repositorio de Nodalix OS (`nxpm/`) y se instala como `nodalix-nxpm`. La tienda lo usa por D-Bus y no importa su código.
 
 ```text
-Nodalix Store  --D-Bus-->  os.nodalix.Nxpm1
-CLI nxpm       --llamada--> Engine
-Engine --> FlatpakBackend (libflatpak)
-       --> PacmanBackend  (pyalpm / pycman)
-       --> AppImageBackend (~/Applications)
+Nodalix Store  --D-Bus-->  os.nodalix.Nxpm1  (servicio de sesión de nodalix-nxpm)
 ```
 
 La interfaz de sesión es `os.nodalix.Nxpm1`, en el nombre `os.nodalix.Nxpm` y la ruta `/os/nodalix/Nxpm`. La versión de API expuesta es 1.
