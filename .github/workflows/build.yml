@@ -18,7 +18,7 @@ jobs:
         run: |
           pacman -Syu --noconfirm --needed git meson ninja vala blueprint-compiler gettext libxml2 \
             desktop-file-utils appstream gtk4 libadwaita libdex flatpak libxmlb libyaml libsoup3 \
-            json-glib glycin libglycin-gtk4 webkitgtk-6.0 libsecret libproxy malcontent \
+            json-glib glycin webkitgtk-6.0 libsecret libproxy malcontent \
             gtksourceview5 systemd-libs dbus
       - uses: actions/checkout@v4
         with:
