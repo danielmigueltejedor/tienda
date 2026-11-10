@@ -1,6 +1,12 @@
 [Desktop Entry]
 Type=Application
-Name=Nodalix Store
+Name=Store
+Name[es]=Tienda
+Name[ca]=Botiga
+Name[fr]=Boutique
+Name[it]=Negozio
+Name[pt]=Loja
+Name[pt_BR]=Loja
 Exec=nodalix-store-daemon --no-window
 NoDisplay=true
 X-GNOME-Autostart-enabled=true

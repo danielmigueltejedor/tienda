@@ -133,7 +133,7 @@ scan_icon_dir (const char *directory,
 }
 
 static GPtrArray *
-nodalix_theme_names (void)
+scan_nodalix_theme_names (void)
 {
   GPtrArray *names            = g_ptr_array_new_with_free_func (g_free);
   GtkSettings *settings       = gtk_settings_get_default ();
@@ -162,6 +162,42 @@ nodalix_theme_names (void)
     }
 
   return names;
+}
+
+/* Resolving an icon used to scan the icon directories and build a new
+ * GtkIconTheme for every tile of a catalog with hundreds of apps. The theme
+ * list and one GtkIconTheme per theme are shared and refreshed after a short
+ * while, which keeps scrolling smooth and uses far less memory and CPU. */
+#define THEME_CACHE_SECONDS 30
+
+static GPtrArray  *cached_names       = NULL;
+static char       *cached_active      = NULL;
+static gint64      cached_names_time  = 0;
+static GHashTable *cached_themes      = NULL;
+static gint64      cached_themes_time = 0;
+
+static GPtrArray *
+nodalix_theme_names (void)
+{
+  GtkSettings *settings   = gtk_settings_get_default ();
+  g_autofree char *active = NULL;
+  gint64 now              = g_get_monotonic_time ();
+
+  if (settings != NULL)
+    g_object_get (settings, "gtk-icon-theme-name", &active, NULL);
+
+  if (cached_names == NULL ||
+      g_strcmp0 (active, cached_active) != 0 ||
+      now - cached_names_time > THEME_CACHE_SECONDS * G_USEC_PER_SEC)
+    {
+      g_clear_pointer (&cached_names, g_ptr_array_unref);
+      g_free (cached_active);
+      cached_names       = scan_nodalix_theme_names ();
+      cached_active      = g_steal_pointer (&active);
+      cached_names_time  = now;
+    }
+
+  return g_ptr_array_ref (cached_names);
 }
 
 static char *
@@ -258,17 +294,40 @@ add_icon_search_paths (GtkIconTheme *theme)
     }
 }
 
+static GtkIconTheme *
+shared_theme (const char *theme_name)
+{
+  GtkIconTheme *theme = NULL;
+  gint64 now          = g_get_monotonic_time ();
+
+  if (cached_themes == NULL ||
+      now - cached_themes_time > THEME_CACHE_SECONDS * G_USEC_PER_SEC)
+    {
+      g_clear_pointer (&cached_themes, g_hash_table_unref);
+      cached_themes      = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, g_object_unref);
+      cached_themes_time = now;
+    }
+
+  theme = g_hash_table_lookup (cached_themes, theme_name);
+  if (theme == NULL)
+    {
+      theme = gtk_icon_theme_new ();
+      add_icon_search_paths (theme);
+      gtk_icon_theme_set_theme_name (theme, theme_name);
+      g_hash_table_insert (cached_themes, g_strdup (theme_name), theme);
+    }
+
+  return theme;
+}
+
 static GtkIconPaintable *
 lookup_in_theme (const char *theme_name,
                  const char *icon_name)
 {
-  g_autoptr (GtkIconTheme) theme = NULL;
+  GtkIconTheme *theme                    = shared_theme (theme_name);
   g_autoptr (GtkIconPaintable) paintable = NULL;
   GFile *file                            = NULL;
 
-  theme = gtk_icon_theme_new ();
-  add_icon_search_paths (theme);
-  gtk_icon_theme_set_theme_name (theme, theme_name);
   if (!gtk_icon_theme_has_icon (theme, icon_name))
     return NULL;
 
@@ -310,6 +369,56 @@ generic_icon (void)
   return GDK_PAINTABLE (paintable);
 }
 
+/* Catalog entries that are not installed have no .desktop file to name their
+ * icon, and reverse-DNS application ids (org.mozilla.Thunderbird) are not always
+ * what a theme calls its artwork (thunderbird). Offer the conventional names
+ * after the exact id, never a generic word that could match an unrelated icon. */
+static gboolean
+is_generic_word (const char *word)
+{
+  static const char *const generic[] = {
+    "client", "desktop", "editor", "player", "manager", "browser", "viewer", "reader",
+    "studio", "launcher", "settings", "terminal", "console", "mobile", "server",
+    "service", "gtk", "qt", "app", "application", "tool", "tools", "main", "stable",
+    "beta", "nightly", "devel", "development", "portable", "flatpak", NULL
+  };
+  guint i;
+
+  for (i = 0; generic[i] != NULL; i++)
+    {
+      if (g_strcmp0 (word, generic[i]) == 0)
+        return TRUE;
+    }
+  return FALSE;
+}
+
+static void
+add_derived_names (GPtrArray  *icons,
+                   const char *app_id)
+{
+  g_autofree char *trimmed = NULL;
+  g_autofree char *lower   = NULL;
+  const char *last         = NULL;
+  const char *dot          = NULL;
+
+  if (app_id == NULL || strchr (app_id, '.') == NULL)
+    return;
+
+  trimmed = g_strdup (app_id);
+  if (g_str_has_suffix (trimmed, ".desktop"))
+    trimmed[strlen (trimmed) - strlen (".desktop")] = '\0';
+  add_unique (icons, trimmed);
+
+  dot  = strrchr (trimmed, '.');
+  last = dot != NULL ? dot + 1 : trimmed;
+  if (strlen (last) < 5)
+    return;
+
+  lower = g_ascii_strdown (last, -1);
+  if (!is_generic_word (lower))
+    add_unique (icons, lower);
+}
+
 static GdkPaintable *
 resolve_icon (BzThemedPaintable *self)
 {
@@ -323,6 +432,7 @@ resolve_icon (BzThemedPaintable *self)
   add_unique (icons, self->icon_name);
   desktop = desktop_icon_name (self->icon_name);
   add_unique (icons, desktop);
+  add_derived_names (icons, self->icon_name);
 
   themes = nodalix_theme_names ();
   for (theme_index = 0; theme_index < themes->len; theme_index++)

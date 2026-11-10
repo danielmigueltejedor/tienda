@@ -3476,3 +3476,14 @@ msgstr "В том числе %s, %s и %s."
 
 #~ msgid "Clear search"
 #~ msgstr "Очистить поиск"
+
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
+#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+msgid "Store"
+msgstr "Магазин"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Магазин — %s"

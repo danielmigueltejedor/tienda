@@ -4,8 +4,8 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
 
-  <!-- Translators: Please treat "Nodalix Store" as a brand name and avoid translating. -->
-  <name>Nodalix Store</name>
+  <!-- Translators: Name of the application; translate it (Spanish: "Tienda"). -->
+  <name>Store</name>
   <summary>Discover and install apps</summary>
   <description>
     <p>

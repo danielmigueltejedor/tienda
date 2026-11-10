@@ -3,7 +3,8 @@
 ## Hecho y comprobado en código
 
 - Importación trazable de Bazaar 0.9.11, commit `8a7556f`.
-- Identidad `os.nodalix.Store` y nombre visible Nodalix Store, sin pisar el clon anterior de GNOME Software en `nodalix/main`.
+- Identidad `os.nodalix.Store`; el nombre visible es «Store» y se traduce como hacen las apps de Apple (español: «Tienda»), sin pisar el clon anterior de GNOME Software en `nodalix/main`. El icono es el de `nodalix-icon-theme` (`os.nodalix.Store`), no el de Bazaar.
+- El catálogo muestra los iconos del tema Nodalix-Icons también para apps aún no instaladas y para entradas leídas de la caché (antes solo las recién analizadas pasaban por el tema).
 - Navegación Discover, Search, Library y Updates, además de la vista curada que ya traía Bazaar.
 - Resolución visual de iconos del tema Nodalix, con vuelta al icono original y a un icono genérico.
 - NXPM 0.1 con motor único para la CLI y D-Bus.

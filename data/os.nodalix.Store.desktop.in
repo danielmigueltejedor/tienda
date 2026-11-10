@@ -1,6 +1,7 @@
 [Desktop Entry]
-# Translators: Please treat "Nodalix Store" as a brand name and avoid translating.
-Name=Nodalix Store
+# Translators: Name of the application, translated like the stock apps of other
+# systems (English "Store", Spanish "Tienda").
+Name=Store
 GenericName=App Store
 Comment=Find, install and update software on Nodalix OS
 Exec=nodalix-store-daemon %U

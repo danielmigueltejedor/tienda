@@ -3913,3 +3913,14 @@ msgstr "Keluar dari Bazaar"
 
 #~ msgid "Pause the execution of transactions"
 #~ msgstr "Hentikan sementara proses transaksi"
+
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
+#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+msgid "Store"
+msgstr "Toko"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Toko — %s"

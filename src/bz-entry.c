@@ -1723,6 +1723,19 @@ bz_entry_real_deserialize (BzSerializable *serializable,
         }
     }
 
+  /* Entries restored from the disk cache carry a plain texture. Wrap it the
+   * same way the property setter does, so the Nodalix icon theme is consulted
+   * for catalog tiles exactly as for freshly parsed entries. */
+  if (priv->icon_paintable != NULL && !BZ_IS_THEMED_PAINTABLE (priv->icon_paintable))
+    {
+      GdkPaintable *plain = g_steal_pointer (&priv->icon_paintable);
+
+      priv->icon_paintable = GDK_PAINTABLE (bz_themed_paintable_new (priv->id, plain));
+      g_object_unref (plain);
+    }
+  else if (priv->icon_paintable == NULL && priv->id != NULL)
+    priv->icon_paintable = GDK_PAINTABLE (bz_themed_paintable_new (priv->id, NULL));
+
   if (priv->permissions == NULL)
     priv->permissions = bz_app_permissions_new ();
 
