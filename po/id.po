@@ -3924,3 +3924,11 @@ msgstr "Toko"
 #, c-format
 msgid "Store — %s"
 msgstr "Toko — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Tentang Toko"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "_Tutup Toko"

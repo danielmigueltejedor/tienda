@@ -3607,3 +3607,11 @@ msgstr "Butikk"
 #, c-format
 msgid "Store — %s"
 msgstr "Butikk — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Om Butikk"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "_Avslutt Butikk"

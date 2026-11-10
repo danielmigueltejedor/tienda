@@ -3144,3 +3144,11 @@ msgstr "Winkel"
 #, c-format
 msgid "Store — %s"
 msgstr "Winkel — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Over Winkel"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "Winkel _sluiten"

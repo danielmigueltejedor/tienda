@@ -1802,3 +1802,11 @@ msgstr "Cửa hàng"
 #, c-format
 msgid "Store — %s"
 msgstr "Cửa hàng — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Giới thiệu Cửa hàng"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "Thoát _Cửa hàng"

@@ -4098,3 +4098,11 @@ msgstr "商店"
 #, c-format
 msgid "Store — %s"
 msgstr "商店 — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "關於商店(&A)"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "退出商店(&Q)"
