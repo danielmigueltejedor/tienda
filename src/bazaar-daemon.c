@@ -981,8 +981,10 @@ handle_activate_result (DBusConnection *connection, DBusMessage *message)
   dbus_message_iter_init (message, &iter);
   dbus_message_iter_get_basic (&iter, &id);
 
-  uri_arg = malloc_or_bail (strlen ("appstream:") + strlen (id) + 1);
-  sprintf (uri_arg, "appstream:%s", id);
+  size_t uri_len = strlen ("appstream:") + strlen (id) + 1;
+
+  uri_arg = malloc_or_bail (uri_len);
+  snprintf (uri_arg, uri_len, "appstream:%s", id);
 
   args[0] = uri_arg;
   launch_app (args, 1);
@@ -1032,8 +1034,10 @@ handle_launch_search (DBusConnection *connection, DBusMessage *message)
         strcat (joined, " ");
     }
 
-  arg = malloc_or_bail (strlen ("--search-for=") + strlen (joined) + 1);
-  sprintf (arg, "--search-for=%s", joined);
+  size_t arg_len = strlen ("--search-for=") + strlen (joined) + 1;
+
+  arg = malloc_or_bail (arg_len);
+  snprintf (arg, arg_len, "--search-for=%s", joined);
 
   args[0] = arg;
   launch_app (args, 1);
