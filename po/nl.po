@@ -3133,3 +3133,22 @@ msgstr "Venster sluiten"
 msgctxt "shortcut window"
 msgid "Quit Bazaar"
 msgstr "Bazaar sluiten"
+
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
+#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+msgid "Store"
+msgstr "Winkel"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Winkel — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Over Winkel"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "Winkel _sluiten"

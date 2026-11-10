@@ -4087,3 +4087,22 @@ msgstr "包括《%s》、《%s》以及《%s》。"
 
 #~ msgid "Pause the execution of transactions"
 #~ msgstr "暫停執行中的作業"
+
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
+#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+msgid "Store"
+msgstr "商店"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "商店 — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "關於商店(_A)"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "退出商店(_Q)"

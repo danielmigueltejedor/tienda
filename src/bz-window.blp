@@ -51,8 +51,8 @@ template $BzWindow: Adw.ApplicationWindow {
 
             Adw.NavigationPage {
               tag: "main";
-              // Translators: Please treat "Nodalix Store" as a brand name and avoid translating.
-              title: _("Nodalix Store");
+              // Translators: Name of the application; translate it (Spanish: "Tienda").
+              title: _("Store");
 
               child: Adw.ToolbarView toolbar_view {
                 top-bar-style: flat;
@@ -197,8 +197,8 @@ template $BzWindow: Adw.ApplicationWindow {
                         visible: bind $invert_boolean(template.state as <$BzStateInfo>.busy) as <bool>;
                       }
                       Label {
-                        // Translators: Please treat "Nodalix Store" as a brand name and avoid translating.
-                        label: _("Nodalix Store");
+                        // Translators: Name of the application; translate it (Spanish: "Tienda").
+                        label: _("Store");
                         visible: bind template.state as <$BzStateInfo>.busy as <bool>;
                         styles [
                           "title",
@@ -310,15 +310,15 @@ menu primary_menu {
     }
 
     item {
-      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-      label: _("_About Nodalix Store");
+      // Translators: Menu entry; "Store" is the translated name of the application.
+      label: _("_About Store");
       action: "app.about";
     }
   }
   section {
     item {
-      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-      label: _("_Quit Nodalix Store");
+      // Translators: "Store" is the translated name of the application.
+      label: _("_Quit Store");
       action: "app.quit";
     }
   }

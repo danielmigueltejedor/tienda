@@ -4203,3 +4203,11 @@ msgstr ""
 #~ msgid "Hide filtering and sorting behind a crossfade effect"
 #~ msgstr ""
 #~ "Filterung und Sortierung hinter einem Überblendungseffekt verstecken"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Über Store"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "_Store beenden"

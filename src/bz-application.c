@@ -813,7 +813,7 @@ bz_application_about_action (GSimpleAction *action,
 
   g_object_set (
       dialog,
-      "application-name", "Nodalix Store",
+      "application-name", _ ("Store"),
       "application-icon", "os.nodalix.Store",
       "developer-name", "Nodalix",
       "developers", developers,

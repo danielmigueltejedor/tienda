@@ -431,11 +431,12 @@ static char *
 format_title (gpointer    object,
               const char *title)
 {
-  // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-  if (title == NULL || *title == '\0' || g_strcmp0 (title, _ ("Nodalix Store")) == 0)
-    return g_strdup (_ ("Nodalix Store"));
-  /* Translators: Please treat "Nodalix Store" as a brand name and avoid translating. %s is the title of the current page. */
-  return g_strdup_printf (_ ("Nodalix Store — %s"), title);
+  /* Translators: This is the name of the application, like "App Store" or
+   * "Mail" on other systems: translate it (Spanish: "Tienda"). */
+  if (title == NULL || *title == '\0' || g_strcmp0 (title, _ ("Store")) == 0)
+    return g_strdup (_ ("Store"));
+  /* Translators: %s is the title of the current page. The first word is the name of the application. */
+  return g_strdup_printf (_ ("Store — %s"), title);
 }
 
 static gboolean

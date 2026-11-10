@@ -33,6 +33,7 @@
 #include "bz-flatpak-private.h"
 #include "bz-result.h"
 #include "bz-serializable.h"
+#include "bz-themed-paintable.h"
 #include <bzvala.h>
 #include "io.h"
 
@@ -91,6 +92,19 @@ static GParamSpec *props[LAST_PROP] = { 0 };
 
 static void
 clear_entry (BzFlatpakEntry *self);
+
+/* The base class wraps a missing icon in an empty themed paintable (it only
+ * consults the Nodalix icon theme), so "no icon" also means a themed
+ * paintable without a fallback. */
+static gboolean
+has_real_icon (GdkPaintable *icon)
+{
+  if (icon == NULL)
+    return FALSE;
+  if (BZ_IS_THEMED_PAINTABLE (icon))
+    return bz_themed_paintable_get_fallback (BZ_THEMED_PAINTABLE (icon)) != NULL;
+  return TRUE;
+}
 
 static void
 apply_icon_theme (BzFlatpakEntry *self);
@@ -355,7 +369,7 @@ bz_flatpak_entry_real_deserialize (BzSerializable *serializable,
     return FALSE;
 
   if (self->is_installed_ref &&
-      bz_entry_get_icon_paintable (BZ_ENTRY (self)) == NULL)
+      !has_real_icon (bz_entry_get_icon_paintable (BZ_ENTRY (self))))
     apply_icon_theme (self);
 
   return TRUE;
@@ -581,8 +595,9 @@ bz_flatpak_entry_new_for_ref (FlatpakRef    *ref,
     }
 
   g_object_get (self, "icon-paintable", &icon_paintable, NULL);
-  if (icon_paintable == NULL)
+  if (!has_real_icon (icon_paintable))
     {
+      g_clear_object (&icon_paintable);
       if (FLATPAK_IS_BUNDLE_REF (ref))
         {
           for (int size = 128; size > 0; size -= 64)
@@ -605,7 +620,11 @@ bz_flatpak_entry_new_for_ref (FlatpakRef    *ref,
             }
         }
       else if (FLATPAK_IS_INSTALLED_REF (ref))
-        apply_icon_theme (self);
+        {
+          /* apply_icon_theme() sets the property on the entry itself */
+          apply_icon_theme (self);
+          g_object_get (self, "icon-paintable", &icon_paintable, NULL);
+        }
     }
 
   g_object_get (self, "title", &title, NULL);
