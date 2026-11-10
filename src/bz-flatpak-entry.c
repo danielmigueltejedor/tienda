@@ -620,7 +620,11 @@ bz_flatpak_entry_new_for_ref (FlatpakRef    *ref,
             }
         }
       else if (FLATPAK_IS_INSTALLED_REF (ref))
-        apply_icon_theme (self);
+        {
+          /* apply_icon_theme() sets the property on the entry itself */
+          apply_icon_theme (self);
+          g_object_get (self, "icon-paintable", &icon_paintable, NULL);
+        }
     }
 
   g_object_get (self, "title", &title, NULL);
