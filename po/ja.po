@@ -4799,3 +4799,11 @@ msgstr "ストア"
 #, c-format
 msgid "Store — %s"
 msgstr "ストア — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "ストアについて(_A)"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "ストアを終了(_Q)"

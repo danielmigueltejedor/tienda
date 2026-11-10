@@ -3305,3 +3305,11 @@ msgstr "المتجر"
 #, c-format
 msgid "Store — %s"
 msgstr "المتجر — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_عَنِ المتجر"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "_أخرج من المتجر"
