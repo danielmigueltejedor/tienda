@@ -24,8 +24,16 @@ jobs:
         with:
           fetch-depth: 0
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
-      - name: Check the vendored NDL sheets are untouched
-        run: cd src/ndl && sha256sum -c SHA256SUMS
+      - name: Check the vendored NDL sheets match the pinned upstream commit
+        run: |
+          cd src/ndl
+          sha256sum -c SHA256SUMS
+          # Every sheet must be listed, so dropping an entry cannot hide an edit.
+          test "$(ls nodalia-*.css | wc -l)" = "$(awk '{print $2}' SHA256SUMS | grep -c '^nodalia-.*\.css$')"
+          commit=$(grep -oE '[0-9a-f]{40}' PROVENANCE.md | head -n 1)
+          for sheet in nodalia-*.css; do
+            curl -fsSL "https://raw.githubusercontent.com/danielmigueltejedor/nodalia-design/$commit/packages/gtk/crate/src/css/$sheet" | cmp - "$sheet"
+          done
       - run: meson setup build --prefix=/usr
       - run: meson compile -C build
       - name: Install into a staging directory and validate the metadata

@@ -9,3 +9,8 @@ copia las ocho hojas del commit nuevo, actualiza este fichero y `SHA256SUMS`,
 y ejecuta `sha256sum -c SHA256SUMS` desde este directorio. Lo propio de
 Nodalix OS (tipografía del sistema, islas de libadwaita) va en
 `nodalix-overrides.css`, que se carga después y sí es nuestro.
+
+Los iconos de `icons/` (marca de selección, guion y glifos de ventana) son los
+de `ndl-*-symbolic` de `packages/gtk/crate/src/icons_generated.rs` del mismo
+commit, extraídos tal cual; la hoja de widgets los pide con `-gtk-icontheme()`
+y se registran en el tema de iconos desde `src/bz-ndl-theme.c`.
