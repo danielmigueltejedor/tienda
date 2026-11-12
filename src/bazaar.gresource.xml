@@ -5,6 +5,20 @@
     <file>style.css</file>
     <file>inspector.css</file>
 
+    <file>ndl/nodalia-light.css</file>
+    <file>ndl/nodalia-dark.css</file>
+    <file>ndl/nodalia-light-hc.css</file>
+    <file>ndl/nodalia-dark-hc.css</file>
+    <file>ndl/nodalia-metrics-regular.css</file>
+    <file>ndl/nodalia-gtk.css</file>
+    <file>ndl/nodalix-overrides.css</file>
+    <file alias="icons/scalable/actions/ndl-check-symbolic.svg">ndl/icons/ndl-check-symbolic.svg</file>
+    <file alias="icons/scalable/actions/ndl-minus-symbolic.svg">ndl/icons/ndl-minus-symbolic.svg</file>
+    <file alias="icons/scalable/actions/ndl-window-minimize-symbolic.svg">ndl/icons/ndl-window-minimize-symbolic.svg</file>
+    <file alias="icons/scalable/actions/ndl-window-maximize-symbolic.svg">ndl/icons/ndl-window-maximize-symbolic.svg</file>
+    <file alias="icons/scalable/actions/ndl-window-restore-symbolic.svg">ndl/icons/ndl-window-restore-symbolic.svg</file>
+    <file alias="icons/scalable/actions/ndl-window-close-symbolic.svg">ndl/icons/ndl-window-close-symbolic.svg</file>
+
     <file>internal-config.yaml</file>
     <file alias="pride-flags.yaml">progress-bar-designs/pride/pride-flags.yaml</file>
     <file alias="bazaar.desktop">bazaar-autostart.desktop</file>

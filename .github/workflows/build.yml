@@ -24,6 +24,20 @@ jobs:
         with:
           fetch-depth: 0
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: Check the vendored NDL sheets match the pinned upstream commit
+        run: |
+          cd src/ndl
+          sha256sum -c SHA256SUMS
+          # The expected set is spelled out here, so removing or duplicating a
+          # sheet (or its manifest entry) cannot slip through.
+          expected="nodalia-dark-hc.css nodalia-dark.css nodalia-gtk.css nodalia-light-hc.css nodalia-light.css nodalia-metrics-comfortable.css nodalia-metrics-compact.css nodalia-metrics-regular.css"
+          want=$(printf '%s\n' $expected | sort)
+          test "$(ls nodalia-*.css | sort)" = "$want"
+          test "$(awk '{print $2}' SHA256SUMS | grep '^nodalia-.*\.css$' | sort)" = "$want"
+          commit=$(grep -oE '[0-9a-f]{40}' PROVENANCE.md | head -n 1)
+          for sheet in $expected; do
+            curl --proto "=https" --tlsv1.2 -fsSL "https://raw.githubusercontent.com/danielmigueltejedor/nodalia-design/$commit/packages/gtk/crate/src/css/$sheet" | cmp - "$sheet"
+          done
       - run: meson setup build --prefix=/usr
       - run: meson compile -C build
       - name: Install into a staging directory and validate the metadata
