@@ -576,26 +576,25 @@ build_index_path (void)
   const char *cache_home = NULL;
   const char *home       = NULL;
   char        buf[4096]  = { 0 };
+  int         length    = 0;
 
   cache_home = getenv ("XDG_CACHE_HOME");
-  if (cache_home != NULL && *cache_home != '\0')
-    {
-      snprintf (buf, sizeof (buf),
-                "%s/os.nodalix.Store/core/search-index",
-                cache_home);
-      return strdup (buf);
-    }
-
   home = getenv ("HOME");
-  if (home != NULL && *home != '\0')
-    {
-      snprintf (buf, sizeof (buf),
-                "%s/.cache/os.nodalix.Store/core/search-index",
-                home);
-      return strdup (buf);
-    }
+  if (cache_home != NULL && *cache_home == '/')
+    length = snprintf (buf, sizeof (buf),
+                       "%s/os.nodalix.Store/core/search-index",
+                       cache_home);
+  else if (home != NULL && *home == '/')
+    length = snprintf (buf, sizeof (buf),
+                       "%s/.cache/os.nodalix.Store/core/search-index",
+                       home);
+  else
+    return NULL;
 
-  return strdup ("/tmp/search-index");
+  if (length < 0 || (size_t) length >= sizeof (buf))
+    return NULL;
+
+  return strdup (buf);
 }
 
 static void
@@ -603,6 +602,9 @@ ensure_index_loaded (void)
 {
   if (g_index_path == NULL)
     g_index_path = build_index_path ();
+
+  if (g_index_path == NULL)
+    return;
 
   if (g_index == NULL)
     {
