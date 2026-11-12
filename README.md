@@ -3,7 +3,7 @@
 Tienda de Nodalix OS, basada en Bazaar 0.9.11 (`8a7556f`) y que usa NXPM (gestor de paquetes de Nodalix OS, en el repositorio nodalix-os). La documentación de arquitectura, API, compilación y estado está en `docs/`. El texto que sigue es el README original de Bazaar.
 
 <h1 align="center">
-<img src="data/icons/hicolor/scalable/apps/os.nodalix.Store.svg" width="128" height="128" />
+<img src="data/icons/hicolor/scalable/apps/os.nodalix.Store.svg" width="192" height="192" />
 <br/>
 Bazaar
 <br/>
