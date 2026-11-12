@@ -1,0 +1,8 @@
+/* Ajustes de Nodalix OS sobre NDL. Se carga después de las hojas de NDL.
+ *
+ * Tipografía: Nodalix usa la fuente del sistema (Adwaita Sans) y no empaqueta
+ * Inter ni Sora, así que las variables de fuente de NDL apuntan a ella. */
+:root {
+  --ndl-font-family-ui: "Adwaita Sans", Cantarell, sans-serif;
+  --ndl-font-family-display: "Adwaita Sans", Cantarell, sans-serif;
+}

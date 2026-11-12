@@ -96,6 +96,7 @@ bz_sources = files(
   'bz-entry-inspector.c',
   'bz-entry.c',
   'bz-nxpm-page.c',
+  'bz-ndl-theme.c',
   'bz-themed-paintable.c',
   'bz-error-dialog.c',
   'bz-favorite-button.c',

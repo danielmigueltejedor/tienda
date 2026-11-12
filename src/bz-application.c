@@ -35,6 +35,7 @@
 
 #include "bz-application-map-factory.h"
 #include "bz-application.h"
+#include "bz-ndl-theme.h"
 #include "bz-appstream-parser.h"
 #include "bz-auth-state.h"
 #include <bzvala.h>
@@ -645,6 +646,7 @@ bz_application_startup (GApplication *app)
 {
   G_APPLICATION_CLASS (bz_application_parent_class)->startup (app);
 
+  bz_ndl_theme_init ();
   bz_inspector_page_register ();
 }
 

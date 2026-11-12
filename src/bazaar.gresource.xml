@@ -5,6 +5,14 @@
     <file>style.css</file>
     <file>inspector.css</file>
 
+    <file>ndl/nodalia-light.css</file>
+    <file>ndl/nodalia-dark.css</file>
+    <file>ndl/nodalia-light-hc.css</file>
+    <file>ndl/nodalia-dark-hc.css</file>
+    <file>ndl/nodalia-metrics-regular.css</file>
+    <file>ndl/nodalia-gtk.css</file>
+    <file>ndl/nodalix-overrides.css</file>
+
     <file>internal-config.yaml</file>
     <file alias="pride-flags.yaml">progress-bar-designs/pride/pride-flags.yaml</file>
     <file alias="bazaar.desktop">bazaar-autostart.desktop</file>

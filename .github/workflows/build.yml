@@ -24,6 +24,8 @@ jobs:
         with:
           fetch-depth: 0
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: Check the vendored NDL sheets are untouched
+        run: cd src/ndl && sha256sum -c SHA256SUMS
       - run: meson setup build --prefix=/usr
       - run: meson compile -C build
       - name: Install into a staging directory and validate the metadata
