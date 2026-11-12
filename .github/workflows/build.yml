@@ -32,7 +32,7 @@ jobs:
           test "$(ls nodalia-*.css | wc -l)" = "$(awk '{print $2}' SHA256SUMS | grep -c '^nodalia-.*\.css$')"
           commit=$(grep -oE '[0-9a-f]{40}' PROVENANCE.md | head -n 1)
           for sheet in nodalia-*.css; do
-            curl -fsSL "https://raw.githubusercontent.com/danielmigueltejedor/nodalia-design/$commit/packages/gtk/crate/src/css/$sheet" | cmp - "$sheet"
+            curl --proto "=https" --tlsv1.2 -fsSL "https://raw.githubusercontent.com/danielmigueltejedor/nodalia-design/$commit/packages/gtk/crate/src/css/$sheet" | cmp - "$sheet"
           done
       - run: meson setup build --prefix=/usr
       - run: meson compile -C build
