@@ -6,3 +6,10 @@
   --ndl-font-family-ui: "Adwaita Sans", Cantarell, sans-serif;
   --ndl-font-family-display: "Adwaita Sans", Cantarell, sans-serif;
 }
+
+/* AdwSpinRow: el campo numérico va dentro de la fila, sin la píldora de NDL. */
+row.spin spinbutton {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
