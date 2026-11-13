@@ -66,28 +66,82 @@ style_changed_cb (AdwStyleManager *manager,
     load_resource (mode_provider, mode_sheet (manager));
 }
 
-/* GtkWindowControls sit in a header that is as tall as its tallest child (the
- * view switcher, a search entry), and the buttons are stretched to that height,
+/* GtkWindowControls ask the icon theme for window-minimize-symbolic and its
+ * siblings by name, so the CSS `-gtk-icon-source` of the sheet never gets to
+ * draw them and the system icon theme's glyphs show instead. Swap the names for
+ * NDL's own glyphs (registered from the gresource), and keep doing it when GTK
+ * changes the name itself, as it does between maximise and restore. */
+static void
+window_glyph_notify_cb (GtkImage *image)
+{
+  const char *name = gtk_image_get_icon_name (image);
+
+  if (name == NULL)
+    return;
+
+  if (g_str_equal (name, "window-minimize-symbolic"))
+    gtk_image_set_from_icon_name (image, "ndl-window-minimize-symbolic");
+  else if (g_str_equal (name, "window-maximize-symbolic"))
+    gtk_image_set_from_icon_name (image, "ndl-window-maximize-symbolic");
+  else if (g_str_equal (name, "window-restore-symbolic"))
+    gtk_image_set_from_icon_name (image, "ndl-window-restore-symbolic");
+  else if (g_str_equal (name, "window-close-symbolic"))
+    gtk_image_set_from_icon_name (image, "ndl-window-close-symbolic");
+}
+
+static void
+use_ndl_glyph (GtkImage *image)
+{
+  if (g_object_get_data (G_OBJECT (image), "ndl-glyph") != NULL)
+    return;
+
+  g_object_set_data (G_OBJECT (image), "ndl-glyph", GINT_TO_POINTER (1));
+  g_signal_connect (image, "notify::icon-name",
+                    G_CALLBACK (window_glyph_notify_cb), NULL);
+  window_glyph_notify_cb (image);
+}
+
+/* The header is as tall as its tallest child (the view switcher, a search
+ * entry), and the buttons of the window controls are stretched to that height,
  * which turns the round NDL controls into ovals. Centre the controls and their
  * buttons so each stays the 28 px circle the sheet asks for. */
+static void
+style_window_controls (GtkWidget *controls)
+{
+  GtkWidget *button = NULL;
+
+  gtk_widget_set_valign (controls, GTK_ALIGN_CENTER);
+  for (button = gtk_widget_get_first_child (controls);
+       button != NULL;
+       button = gtk_widget_get_next_sibling (button))
+    {
+      GtkWidget *child = NULL;
+
+      gtk_widget_set_valign (button, GTK_ALIGN_CENTER);
+      child = gtk_widget_get_first_child (button);
+      if (GTK_IS_IMAGE (child))
+        use_ndl_glyph (GTK_IMAGE (child));
+    }
+}
+
+/* Runs for every widget that maps; only the window controls matter. */
 static gboolean
-center_window_controls_hook (GSignalInvocationHint *ihint,
-                             guint                  n_param_values,
-                             const GValue          *param_values,
-                             gpointer               user_data)
+window_controls_map_hook (GSignalInvocationHint *ihint,
+                          guint                  n_param_values,
+                          const GValue          *param_values,
+                          gpointer               user_data)
 {
   gpointer instance = g_value_get_object (&param_values[0]);
 
   if (GTK_IS_WINDOW_CONTROLS (instance))
+    style_window_controls (GTK_WIDGET (instance));
+  else if (GTK_IS_IMAGE (instance))
     {
-      GtkWidget *controls = GTK_WIDGET (instance);
-      GtkWidget *child    = NULL;
+      GtkWidget *button   = gtk_widget_get_parent (GTK_WIDGET (instance));
+      GtkWidget *controls = button != NULL ? gtk_widget_get_parent (button) : NULL;
 
-      gtk_widget_set_valign (controls, GTK_ALIGN_CENTER);
-      for (child = gtk_widget_get_first_child (controls);
-           child != NULL;
-           child = gtk_widget_get_next_sibling (child))
-        gtk_widget_set_valign (child, GTK_ALIGN_CENTER);
+      if (GTK_IS_BUTTON (button) && GTK_IS_WINDOW_CONTROLS (controls))
+        use_ndl_glyph (GTK_IMAGE (instance));
     }
 
   return TRUE;
@@ -125,7 +179,7 @@ bz_ndl_theme_init (void)
   g_type_class_ref (GTK_TYPE_WIDGET);
   map_signal = g_signal_lookup ("map", GTK_TYPE_WIDGET);
   if (map_signal != 0)
-    g_signal_add_emission_hook (map_signal, 0, center_window_controls_hook, NULL, NULL);
+    g_signal_add_emission_hook (map_signal, 0, window_controls_map_hook, NULL, NULL);
 
   /* Order matters among providers of one priority: colours first, then the
    * metrics and the widget sheet that read them, then the Nodalix overrides. */
