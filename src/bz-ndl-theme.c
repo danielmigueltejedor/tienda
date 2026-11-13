@@ -46,15 +46,23 @@ load_resource (GtkCssProvider *provider,
 }
 
 static void
-install_resource (GdkDisplay *display,
-                  const char *name)
+install_resource_at (GdkDisplay *display,
+                     const char *name,
+                     int         priority)
 {
   GtkCssProvider *provider = gtk_css_provider_new ();
 
   load_resource (provider, name);
   gtk_style_context_add_provider_for_display (
-      display, GTK_STYLE_PROVIDER (provider), NDL_PRIORITY);
+      display, GTK_STYLE_PROVIDER (provider), priority);
   g_object_unref (provider);
+}
+
+static void
+install_resource (GdkDisplay *display,
+                  const char *name)
+{
+  install_resource_at (display, name, NDL_PRIORITY);
 }
 
 static void
@@ -195,6 +203,10 @@ bz_ndl_theme_init (void)
   install_resource (display, "nodalia-metrics-regular.css");
   install_resource (display, "nodalia-gtk.css");
   install_resource (display, "nodalix-overrides.css");
+  /* The Store's own widgets, above the Store's style.css (which is at the
+   * application priority) so they take NDL's look. */
+  install_resource_at (display, "nodalix-store.css",
+                       GTK_STYLE_PROVIDER_PRIORITY_APPLICATION + 10);
 
   g_signal_connect (manager, "notify::dark", G_CALLBACK (style_changed_cb), NULL);
   g_signal_connect (manager, "notify::high-contrast", G_CALLBACK (style_changed_cb), NULL);

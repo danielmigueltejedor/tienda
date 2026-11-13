@@ -12,6 +12,7 @@
     <file>ndl/nodalia-metrics-regular.css</file>
     <file>ndl/nodalia-gtk.css</file>
     <file>ndl/nodalix-overrides.css</file>
+    <file>ndl/nodalix-store.css</file>
     <file alias="icons/scalable/actions/ndl-check-symbolic.svg">ndl/icons/ndl-check-symbolic.svg</file>
     <file alias="icons/scalable/actions/ndl-minus-symbolic.svg">ndl/icons/ndl-minus-symbolic.svg</file>
     <file alias="icons/scalable/actions/ndl-window-minimize-symbolic.svg">ndl/icons/ndl-window-minimize-symbolic.svg</file>

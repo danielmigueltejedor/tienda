@@ -77,9 +77,10 @@
   </screenshots>
 
   <releases>
-    <release version="0.9.11" date="2026-11-03">
+    <release version="0.6.0" date="2026-11-13">
       <description>
-        <p>Nodalix Store uses the Nodalia Design Language and works with the Nodalix package manager.</p>
+        <p>Nodalix Store uses the Nodalia Design Language across the whole app, with its window controls, category tiles and status colours.</p>
+        <p>It lists what is installed and what can be updated through the Nodalix package manager, and its Spanish translation is complete.</p>
       </description>
     </release>
   </releases>
