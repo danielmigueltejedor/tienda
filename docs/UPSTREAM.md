@@ -6,7 +6,7 @@ El archivo `~/Descargas/bazaar-main.zip` no contiene historial Git. Su comentari
 
 https://gitlab.gnome.org/World/bazaar
 
-La fecha del commit es el 3 de noviembre de 2026. `version.sh` declara la versión 0.9.11. La licencia del código importado sigue siendo GPL-3.0-or-later y se conserva en `COPYING`.
+La fecha del commit es el 3 de noviembre de 2026. `version.sh` ya no declara la versión de Bazaar (0.9.11) sino la de la Tienda dentro de Nodalix OS (0.6.0). La licencia del código importado sigue siendo GPL-3.0-or-later y se conserva en `COPYING`.
 
 El remoto `bazaar` apunta a ese repositorio de GNOME GitLab para poder sincronizar en el futuro. La rama `nodalix/store` nace en ese commit.
 

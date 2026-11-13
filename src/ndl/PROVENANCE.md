@@ -8,7 +8,8 @@ No se editan a mano: están generadas por `@nodalia/gtk`. Para actualizarlas,
 copia las ocho hojas del commit nuevo, actualiza este fichero y `SHA256SUMS`,
 y ejecuta `sha256sum -c SHA256SUMS` desde este directorio. Lo propio de
 Nodalix OS (tipografía del sistema, islas de libadwaita) va en
-`nodalix-overrides.css`, que se carga después y sí es nuestro.
+`nodalix-overrides.css`, que se carga después y sí es nuestro, y lo propio de la
+Tienda (teselas, píldoras, portada) en `nodalix-store.css`.
 
 Los iconos de `icons/` (marca de selección, guion y glifos de ventana) son los
 de `ndl-*-symbolic` de `packages/gtk/crate/src/icons_generated.rs` del mismo

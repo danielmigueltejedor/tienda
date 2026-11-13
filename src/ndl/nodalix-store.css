@@ -1,0 +1,230 @@
+/* Nodalix Store sobre NDL. Se carga por encima de style.css (la hoja propia de
+ * la Tienda) y solo cuando NDL está activo, así que NODALIX_NDL=0 devuelve el
+ * aspecto original. Aquí van las piezas de la Tienda que no son de libadwaita:
+ * la barra de búsqueda, las teselas de categoría, las píldoras, los
+ * indicadores de color y las secciones de la portada. Todo sale de los tokens
+ * de NDL, en claro, oscuro y alto contraste. */
+
+/* ------------------------------------------------------------------ búsqueda */
+
+.search-box {
+  background-color: var(--ndl-color-control-field-bg);
+  border: var(--ndl-border-width-thin) solid var(--ndl-color-border-subtle);
+  border-radius: var(--ndl-radius-full);
+}
+
+.search-box:focus-within {
+  outline-color: var(--ndl-color-border-focus);
+  outline-width: var(--ndl-border-width-thick);
+}
+
+.search-box.hide-focus:focus-within {
+  outline-color: transparent;
+}
+
+.search-grid {
+  background-color: transparent;
+}
+
+.search-grid > child {
+  border-radius: var(--ndl-radius-lg);
+}
+
+/* ------------------------------------------------------- teselas de categoría */
+
+/* NDL no usa degradados de colores: una tesela es una tarjeta, y la categoría la
+ * dice su icono y su nombre. */
+.category-tile {
+  background: var(--ndl-color-surface-raised);
+  background-image: none;
+  color: var(--ndl-color-text-primary);
+  text-shadow: none;
+  border: var(--ndl-border-width-thin) solid var(--ndl-color-border-subtle);
+  border-radius: var(--ndl-radius-xl);
+  font-weight: var(--ndl-font-weight-semibold);
+  font-size: var(--ndl-font-size-large);
+  box-shadow: none;
+}
+
+.category-tile:hover {
+  background: var(--ndl-color-control-bg-hover);
+  background-image: none;
+}
+
+.category-tile:active {
+  background: var(--ndl-color-control-bg-pressed);
+  background-image: none;
+}
+
+.category-tile:focus-visible {
+  outline: var(--ndl-border-width-thick) solid var(--ndl-color-border-focus);
+  outline-offset: 2px;
+}
+
+/* La oficina dibuja una cuadrícula con su propio fondo; que no se vea. */
+.category-tile.category-office {
+  padding: 0;
+  background-size: auto;
+}
+
+window.narrow .category-tile {
+  font-size: var(--ndl-font-size-large);
+}
+
+/* ------------------------------------------------------------ colores de estado */
+
+/* Los colores con nombre de la Tienda (.green, .blue, .orange…) pasan a los
+ * tokens de estado y de acento de NDL. */
+.green {
+  --accent-fg-color: var(--ndl-color-status-success-fg);
+  --accent-bg-color: var(--ndl-color-status-success-fg);
+  --accent-color: var(--ndl-color-status-success-fg);
+}
+
+.blue,
+.dark-blue,
+.flathub,
+.favorite {
+  --accent-fg-color: var(--ndl-color-accent-text);
+  --accent-bg-color: var(--ndl-color-accent-default);
+  --accent-color: var(--ndl-color-accent-text);
+}
+
+.orange {
+  --accent-fg-color: var(--ndl-color-status-warning-fg);
+  --accent-bg-color: var(--ndl-color-status-warning-fg);
+  --accent-color: var(--ndl-color-status-warning-fg);
+}
+
+.verified,
+.app-developer link {
+  color: var(--ndl-color-accent-text);
+}
+
+.lozenge,
+.circular-lozenge {
+  font-weight: var(--ndl-font-weight-semibold);
+}
+
+.circular-lozenge.green {
+  color: var(--ndl-color-status-success-fg);
+  background-color: var(--ndl-color-status-success-bg);
+}
+
+.circular-lozenge.yellow,
+.circular-lozenge.orange {
+  color: var(--ndl-color-status-warning-fg);
+  background-color: var(--ndl-color-status-warning-bg);
+}
+
+.circular-lozenge.red {
+  color: var(--ndl-color-status-danger-fg);
+  background-color: var(--ndl-color-status-danger-bg);
+}
+
+.circular-lozenge.grey,
+.grey > .lozenge {
+  color: var(--ndl-color-text-secondary);
+  background-color: var(--ndl-color-control-bg);
+}
+
+.installed-pill {
+  color: var(--ndl-color-status-success-fg);
+  background-color: var(--ndl-color-status-success-bg);
+  font-weight: var(--ndl-font-weight-medium);
+}
+
+.sp-section .installed-pill {
+  color: var(--ndl-color-text-secondary);
+  background-color: var(--ndl-color-control-bg);
+}
+
+.small-pill.dimmed {
+  background-color: var(--ndl-color-control-bg);
+}
+
+.small-pill.error {
+  color: var(--ndl-color-status-danger-fg);
+  background-color: var(--ndl-color-status-danger-bg);
+}
+
+.origin-rounded-box {
+  background-color: var(--ndl-color-control-bg);
+}
+
+/* ---------------------------------------------------------- portada y secciones */
+
+/* Las franjas de colores de la portada de Flathub son superficies de NDL. */
+.otg,
+.wlg,
+.after-hero,
+.after-top-apps,
+.after-first-category-block {
+  background: var(--ndl-color-surface-panel);
+  background-image: none;
+  border-radius: var(--ndl-radius-xl);
+}
+
+.sp-section .card:hover {
+  background: var(--ndl-color-control-bg-hover);
+}
+
+.sp-section .card:active {
+  background: var(--ndl-color-control-bg-pressed);
+}
+
+.flathub-page-section {
+  border-radius: var(--ndl-radius-xl);
+}
+
+.screenshot {
+  border-radius: var(--ndl-radius-xl);
+}
+
+.decorated-screenshot,
+.decorated-screenshot:focus-visible > picture {
+  border-radius: var(--ndl-radius-lg);
+}
+
+.decorated-screenshot:focus-visible {
+  outline: var(--ndl-border-width-thick) solid var(--ndl-color-border-focus);
+}
+
+.carousel-box {
+  background-color: transparent;
+}
+
+/* ------------------------------------------------------------- transacciones */
+
+.operations {
+  background-color: var(--ndl-color-surface-sunken);
+  border-radius: 0 0 var(--ndl-radius-xl) var(--ndl-radius-xl);
+}
+
+.floating-tooltip {
+  background-color: var(--ndl-color-surface-overlay);
+  border: var(--ndl-border-width-thin) solid var(--ndl-color-border-subtle);
+  border-radius: var(--ndl-radius-lg);
+}
+
+.markdown-table,
+.markdown-table > label {
+  border-color: var(--ndl-color-border-subtle);
+}
+
+.markdown-table > label.row-odd {
+  background-color: var(--ndl-color-surface-sunken);
+}
+
+.code-block {
+  border-color: var(--ndl-color-border-subtle);
+}
+
+/* Las listas de apps instaladas y de datos de usuario son filas de NDL. */
+.installed-list-view > * {
+  border-radius: var(--ndl-radius-lg);
+}
+
+.article-image-button {
+  border-radius: var(--ndl-radius-xl);
+}
