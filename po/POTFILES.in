@@ -91,6 +91,8 @@ src/bz-login-page.c
 src/bz-login-page.h
 src/bz-metainfo-preview.c
 src/bz-new-permissions-dialog.vala
+src/bz-nxpm-page.blp
+src/bz-nxpm-page.c
 src/bz-other-sources-list.vala
 src/bz-preferences-dialog.blp
 src/bz-preferences-dialog.c

@@ -21,6 +21,7 @@ struct _BzNxpmPage
   GtkSearchEntry   *search_entry;
   GtkToggleButton  *updates_button;
   GtkToggleButton  *installed_button;
+  GtkToggleButton  *nodalia_button;
   AdwStatusPage    *empty_page;
   GtkWidget      *banner_box;
   GtkStack       *stack;
@@ -145,12 +146,13 @@ on_row_clicked (GtkButton *button,
 static char *
 package_icon_name (const char *package_id,
                    const char *name,
-                   const char *source)
+                   const char *source,
+                   const char *hint)
 {
   GtkIconTheme *theme = gtk_icon_theme_get_for_display (gdk_display_get_default ());
   g_autofree char *app_id = NULL;
   g_autofree char *lower  = NULL;
-  const char *candidates[4] = { NULL, NULL, NULL, NULL };
+  const char *candidates[5] = { NULL, NULL, NULL, NULL, NULL };
   const char *slash       = NULL;
 
   if (g_strcmp0 (source, "flatpak") == 0)
@@ -176,6 +178,12 @@ package_icon_name (const char *package_id,
   candidates[1] = lower;
   if (name[0] != '\0')
     candidates[2] = name;
+  /* An icon the source names itself (the Nodalia catalogue) comes first. */
+  if (hint[0] != '\0')
+    {
+      candidates[3] = candidates[0];
+      candidates[0] = hint;
+    }
 
   for (guint i = 0; i < G_N_ELEMENTS (candidates); i++)
     {
@@ -221,7 +229,7 @@ make_row (BzNxpmPage *self,
 
   row = adw_action_row_new ();
   {
-    g_autofree char *icon_name = package_icon_name (package_id, name, source);
+    g_autofree char *icon_name = package_icon_name (package_id, name, source, variant_string (dict, "icon_name"));
     GtkWidget       *icon      = gtk_image_new_from_icon_name (icon_name);
 
     gtk_image_set_pixel_size (GTK_IMAGE (icon), 40);
@@ -230,7 +238,8 @@ make_row (BzNxpmPage *self,
   adw_preferences_row_set_title (ADW_PREFERENCES_ROW (row), name[0] != '\0' ? name : package_id);
   adw_action_row_set_subtitle (ADW_ACTION_ROW (row), subtitle);
 
-  if (g_strcmp0 (source, "flatpak") == 0 || g_strcmp0 (source, "appimage") == 0)
+  if (g_strcmp0 (source, "flatpak") == 0 || g_strcmp0 (source, "appimage") == 0 ||
+      g_strcmp0 (source, "nodalia") == 0)
     {
       const char *label;
       const char *method;
@@ -245,7 +254,7 @@ make_row (BzNxpmPage *self,
           label = _ ("Remove");
           method = "Remove";
         }
-      else if (g_strcmp0 (source, "flatpak") == 0)
+      else if (g_strcmp0 (source, "flatpak") == 0 || g_strcmp0 (source, "nodalia") == 0)
         {
           label = _ ("Install");
           method = "Install";
@@ -297,7 +306,12 @@ present_packages (BzNxpmPage *self,
   gtk_widget_set_visible (self->banner_box, pacman_updates);
   if (count == 0)
     {
-      if (gtk_toggle_button_get_active (self->installed_button))
+      if (gtk_toggle_button_get_active (self->nodalia_button))
+        {
+          adw_status_page_set_title (self->empty_page, _ ("Nothing found"));
+          adw_status_page_set_description (self->empty_page, _ ("NXPM has no Nodalia apps to offer."));
+        }
+      else if (gtk_toggle_button_get_active (self->installed_button))
         {
           adw_status_page_set_title (self->empty_page, _ ("Nothing found"));
           adw_status_page_set_description (self->empty_page, _ ("NXPM found no installed software."));
@@ -306,7 +320,7 @@ present_packages (BzNxpmPage *self,
         {
           adw_status_page_set_title (self->empty_page, _ ("Software is up to date"));
           adw_status_page_set_description (self->empty_page,
-                                           _ ("Flatpak applications and official packages have no pending updates. AUR and AppImage are not enabled."));
+                                           _ ("Flatpak applications, Nodalia apps and official packages have no pending updates."));
         }
       gtk_stack_set_visible_child_name (self->stack, "empty");
     }
@@ -365,7 +379,9 @@ refresh_updates (BzNxpmPage *self)
 {
   if (self->connection == NULL)
     return;
-  if (gtk_toggle_button_get_active (self->installed_button))
+  if (gtk_toggle_button_get_active (self->nodalia_button))
+    request_list (self, "ListCatalog", g_variant_new ("(s)", "nodalia"), FALSE);
+  else if (gtk_toggle_button_get_active (self->installed_button))
     request_list (self, "ListInstalled", g_variant_new ("(s)", ""), FALSE);
   else
     request_list (self, "ListUpdates", g_variant_new ("()"), TRUE);
@@ -569,6 +585,7 @@ bz_nxpm_page_class_init (BzNxpmPageClass *klass)
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, search_entry);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, updates_button);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, installed_button);
+  gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, nodalia_button);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, empty_page);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, banner_box);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, stack);
