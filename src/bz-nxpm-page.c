@@ -8,6 +8,7 @@
 #include "bz-nxpm-page.h"
 
 #include <glib/gi18n.h>
+#include <string.h>
 
 #define NXPM_NAME "os.nodalix.Nxpm"
 #define NXPM_PATH "/os/nodalix/Nxpm"
@@ -17,7 +18,10 @@ struct _BzNxpmPage
 {
   AdwBin parent_instance;
 
-  GtkSearchEntry *search_entry;
+  GtkSearchEntry   *search_entry;
+  GtkToggleButton  *updates_button;
+  GtkToggleButton  *installed_button;
+  AdwStatusPage    *empty_page;
   GtkWidget      *banner_box;
   GtkStack       *stack;
   GtkListBox     *results_list;
@@ -135,6 +139,54 @@ on_row_clicked (GtkButton *button,
     call_method (self, method, g_variant_new ("(ss)", package, source));
 }
 
+/* The theme icon of an app or package, so the list shows the same Colloid
+ * icons as the rest of the desktop. The id is "flatpak:user:app/<app id>/..."
+ * for Flatpak, "appimage:<name>" or "pacman:<name>". */
+static char *
+package_icon_name (const char *package_id,
+                   const char *name,
+                   const char *source)
+{
+  GtkIconTheme *theme = gtk_icon_theme_get_for_display (gdk_display_get_default ());
+  g_autofree char *app_id = NULL;
+  g_autofree char *lower  = NULL;
+  const char *candidates[4] = { NULL, NULL, NULL, NULL };
+  const char *slash       = NULL;
+
+  if (g_strcmp0 (source, "flatpak") == 0)
+    {
+      const char *app = strstr (package_id, "app/");
+
+      if (app != NULL)
+        {
+          app += strlen ("app/");
+          slash = strchr (app, '/');
+          app_id = slash != NULL ? g_strndup (app, slash - app) : g_strdup (app);
+          candidates[0] = app_id;
+        }
+    }
+  else
+    {
+      const char *colon = strchr (package_id, ':');
+
+      candidates[0] = colon != NULL ? colon + 1 : package_id;
+    }
+
+  lower         = g_ascii_strdown (name[0] != '\0' ? name : package_id, -1);
+  candidates[1] = lower;
+  if (name[0] != '\0')
+    candidates[2] = name;
+
+  for (guint i = 0; i < G_N_ELEMENTS (candidates); i++)
+    {
+      if (candidates[i] != NULL && candidates[i][0] != '\0' &&
+          gtk_icon_theme_has_icon (theme, candidates[i]))
+        return g_strdup (candidates[i]);
+    }
+
+  return g_strdup (g_strcmp0 (source, "pacman") == 0 ? "package-x-generic" : "application-x-executable");
+}
+
 static GtkWidget *
 make_row (BzNxpmPage *self,
           GVariant   *dict)
@@ -168,6 +220,13 @@ make_row (BzNxpmPage *self,
     }
 
   row = adw_action_row_new ();
+  {
+    g_autofree char *icon_name = package_icon_name (package_id, name, source);
+    GtkWidget       *icon      = gtk_image_new_from_icon_name (icon_name);
+
+    gtk_image_set_pixel_size (GTK_IMAGE (icon), 40);
+    adw_action_row_add_prefix (ADW_ACTION_ROW (row), icon);
+  }
   adw_preferences_row_set_title (ADW_PREFERENCES_ROW (row), name[0] != '\0' ? name : package_id);
   adw_action_row_set_subtitle (ADW_ACTION_ROW (row), subtitle);
 
@@ -237,7 +296,20 @@ present_packages (BzNxpmPage *self,
 
   gtk_widget_set_visible (self->banner_box, pacman_updates);
   if (count == 0)
-    gtk_stack_set_visible_child_name (self->stack, "empty");
+    {
+      if (gtk_toggle_button_get_active (self->installed_button))
+        {
+          adw_status_page_set_title (self->empty_page, _ ("Nothing found"));
+          adw_status_page_set_description (self->empty_page, _ ("NXPM found no installed software."));
+        }
+      else
+        {
+          adw_status_page_set_title (self->empty_page, _ ("Software is up to date"));
+          adw_status_page_set_description (self->empty_page,
+                                           _ ("Flatpak applications and official packages have no pending updates. AUR and AppImage are not enabled."));
+        }
+      gtk_stack_set_visible_child_name (self->stack, "empty");
+    }
   else
     gtk_stack_set_visible_child_name (self->stack, "results");
 }
@@ -293,7 +365,10 @@ refresh_updates (BzNxpmPage *self)
 {
   if (self->connection == NULL)
     return;
-  request_list (self, "ListUpdates", g_variant_new ("()"), TRUE);
+  if (gtk_toggle_button_get_active (self->installed_button))
+    request_list (self, "ListInstalled", g_variant_new ("(s)", ""), FALSE);
+  else
+    request_list (self, "ListUpdates", g_variant_new ("()"), TRUE);
 }
 
 static void
@@ -406,6 +481,19 @@ nxpm_search_activate (GtkSearchEntry *entry,
 }
 
 static void
+nxpm_view_toggled (GtkToggleButton *button,
+                   BzNxpmPage      *self)
+{
+  /* Both buttons report a change; act on the one that became active. This
+   * also runs while the template is still being built, before the bus is up. */
+  if (self->connection == NULL || !gtk_toggle_button_get_active (button))
+    return;
+
+  gtk_editable_set_text (GTK_EDITABLE (self->search_entry), "");
+  refresh_updates (self);
+}
+
+static void
 nxpm_refresh_clicked (GtkButton  *button,
                       BzNxpmPage *self)
 {
@@ -479,6 +567,9 @@ bz_nxpm_page_class_init (BzNxpmPageClass *klass)
 
   gtk_widget_class_set_template_from_resource (widget_class, "/os/nodalix/Store/bz-nxpm-page.ui");
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, search_entry);
+  gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, updates_button);
+  gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, installed_button);
+  gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, empty_page);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, banner_box);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, stack);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, results_list);
@@ -487,6 +578,7 @@ bz_nxpm_page_class_init (BzNxpmPageClass *klass)
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, progress_label);
   gtk_widget_class_bind_template_child (widget_class, BzNxpmPage, progress_bar);
   gtk_widget_class_bind_template_callback (widget_class, nxpm_search_activate);
+  gtk_widget_class_bind_template_callback (widget_class, nxpm_view_toggled);
   gtk_widget_class_bind_template_callback (widget_class, nxpm_refresh_clicked);
   gtk_widget_class_bind_template_callback (widget_class, nxpm_system_update_clicked);
   gtk_widget_class_bind_template_callback (widget_class, nxpm_cancel_clicked);

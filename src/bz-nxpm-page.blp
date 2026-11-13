@@ -5,6 +5,25 @@ template $BzNxpmPage : Adw.Bin {
   child: Box {
     orientation: vertical;
 
+    Box {
+      halign: center;
+      margin-top: 12;
+
+      styles ["linked"]
+
+      ToggleButton updates_button {
+        label: _("Updates");
+        active: true;
+        toggled => $nxpm_view_toggled(template);
+      }
+
+      ToggleButton installed_button {
+        label: _("Installed");
+        group: updates_button;
+        toggled => $nxpm_view_toggled(template);
+      }
+    }
+
     Adw.Clamp {
       maximum-size: 760;
       margin-start: 16;
@@ -79,7 +98,7 @@ template $BzNxpmPage : Adw.Bin {
       StackPage {
         name: "empty";
 
-        child: Adw.StatusPage {
+        child: Adw.StatusPage empty_page {
           title: _("Software is up to date");
           description: _("Flatpak applications and official packages have no pending updates. AUR and AppImage are not enabled.");
           icon-name: "emblem-ok-symbolic";
