@@ -1,13 +1,13 @@
-# Italian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Italian translations for nodalix-store package.
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2025.
 # Pietro F. <pfwork@tutamail.com>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2025-11-11 10:39+0100\n"
 "PO-Revision-Date: 2025-11-11 11:25+0100\n"
 "Last-Translator: Pietro F. <pfwork@tutamail.com>\n"
@@ -18,12 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 49.0\n"
-
-#: data/os.nodalix.Store.desktop.in:2
-#: data/os.nodalix.Store.metainfo.xml.in:7 src/bz-window.blp:5
-#: src/bz-window.blp:225
-msgid "Bazaar"
-msgstr "Bazaar"
 
 #: data/os.nodalix.Store.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
@@ -51,8 +45,8 @@ msgid ""
 "Whether to attempt to detect and show \"star counts\" for projects in the "
 "full view"
 msgstr ""
-"Se tentare di rilevare e mostrare il “numero di stelle” per i progetti nella "
-"vista completa"
+"Se tentare di rilevare e mostrare il “numero di stelle” per i progetti "
+"nella vista completa"
 
 #: data/os.nodalix.Store.gschema.xml:16
 msgid "Only Show Free Software"
@@ -94,11 +88,6 @@ msgstr "Descrive l'aspetto della barra di avanzamento globale"
 msgid "Saved Window Dimensions"
 msgstr "Dimensioni finestra salvate"
 
-#: data/os.nodalix.Store.gschema.xml:51
-msgid "The window dimensions to be used by the next Bazaar window"
-msgstr ""
-"Le dimensioni della finestra da utilizzare per la prossima finestra Bazaar"
-
 #: data/os.nodalix.Store.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Scopri e installa applicazioni"
@@ -111,16 +100,6 @@ msgstr ""
 "Un nuovo app store per GNOME incentrato sulla ricerca e l'installazione di "
 "applicazioni e componenti aggiuntivi dai repository remoti Flatpak, in "
 "particolare Flathub."
-
-#: data/os.nodalix.Store.metainfo.xml.in:14
-msgid ""
-"It emphasizes supporting the developers who make the Linux desktop possible. "
-"Bazaar features a \"curated\" tab that can be configured by distributors to "
-"allow for a more localized experience."
-msgstr ""
-"Sottolinea l'importanza di supportare gli sviluppatori che rendono possibile "
-"il desktop Linux. Bazaar presenta una scheda “Consigliate” che può essere "
-"configurata dai distributori per consentire un'esperienza più personalizzata."
 
 #: data/os.nodalix.Store.metainfo.xml.in:29 src/bz-application.c:494
 msgid "Adam Masciola"
@@ -206,11 +185,11 @@ msgstr "Dimensione Download"
 
 #: src/bz-application.c:416
 msgid ""
-"This functionality is currently disabled. It is recommended you download and "
-"install Flatseal to manage app permissions."
+"This functionality is currently disabled. It is recommended you download "
+"and install Flatseal to manage app permissions."
 msgstr ""
-"Questa funzionalità è attualmente disabilitata. Si consiglia di scaricare e "
-"installare Flatseal per gestire le autorizzazioni delle app."
+"Questa funzionalità è attualmente disabilitata. Si consiglia di scaricare e"
+" installare Flatseal per gestire le autorizzazioni delle app."
 
 #: src/bz-application.c:479
 msgctxt "About Dialog Developer Credit"
@@ -222,7 +201,8 @@ msgctxt "About Dialog Developer Credit"
 msgid "Alexander Vanhee"
 msgstr "Alexander Vanhee"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:497
 msgid "translator-credits"
 msgstr "Pietro F. <pfwork@tutamail.com>, 2025"
@@ -241,8 +221,8 @@ msgstr "Flathub non è registrato su questo sistema"
 
 #: src/bz-application.c:1114
 msgid ""
-"Would you like to add Flathub as a remote? If you decline, the Flathub page "
-"will not be available. You can change this later."
+"Would you like to add Flathub as a remote? If you decline, the Flathub page"
+" will not be available. You can change this later."
 msgstr ""
 "Vuoi aggiungere Flathub come repository remoto? Se rifiuti, la pagina "
 "Flathub non sarà disponibile. Puoi cambiare questa impostazione in un "
@@ -303,8 +283,8 @@ msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
 msgstr ""
-"Non sono disponibili informazioni sulle app consigliate per questo sistema. "
-"È comunque possibile sfogliare le applicazioni su Flathub"
+"Non sono disponibili informazioni sulle app consigliate per questo sistema."
+" È comunque possibile sfogliare le applicazioni su Flathub"
 
 #: src/bz-browse-widget.blp:18
 msgid "Browse Flathub"
@@ -533,8 +513,8 @@ msgid ""
 "We could not connect to Flathub. You can still manage and search for "
 "applications."
 msgstr ""
-"Impossibile connettersi a Flathub. È comunque possibile gestire e cercare le "
-"applicazioni."
+"Impossibile connettersi a Flathub. È comunque possibile gestire e cercare "
+"le applicazioni."
 
 #: src/bz-flathub-page.blp:52
 msgid "Search Apps"
@@ -754,8 +734,8 @@ msgstr "Nessun URL"
 
 #: src/bz-full-view.c:446
 msgid ""
-"This application has a FLOSS license, meaning the source code can be audited "
-"for safety."
+"This application has a FLOSS license, meaning the source code can be "
+"audited for safety."
 msgstr ""
 "Questa applicazione ha una licenza FLOSS, il che significa che il codice "
 "sorgente può essere controllato per sicurezza."
@@ -766,8 +746,8 @@ msgid ""
 "developed privately and cannot be audited by an independent third party."
 msgstr ""
 "Questa applicazione ha una licenza proprietaria, il che significa che il "
-"codice sorgente è sviluppato privatamente e non può essere verificato da una "
-"terza parte indipendente."
+"codice sorgente è sviluppato privatamente e non può essere verificato da "
+"una terza parte indipendente."
 
 #: src/bz-full-view.c:454
 msgid "Other Apps by this Developer"
@@ -880,10 +860,6 @@ msgstr "%s funziona sulla maggior parte dei dispositivi"
 msgid "Hardware Support"
 msgstr "Supporto Hardware"
 
-#: src/bz-inspector.blp:5
-msgid "Bazaar Inspector"
-msgstr "Ispettore di Bazaar"
-
 #: src/bz-inspector.blp:22
 msgid "Enable Global Debug Mode"
 msgstr "Abilita Modalità di Debug globale"
@@ -933,15 +909,13 @@ msgstr "Annulla"
 
 #: src/bz-license-dialog.c:115
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may not be able to contribute to this app."
 msgstr ""
 "Questa app non è sviluppata in modo trasparente, quindi solo i suoi "
-"sviluppatori sanno come funziona. Potrebbe essere insicura in modi difficili "
-"da rilevare e potrebbe cambiare senza preavviso o supervisione."
+"sviluppatori sanno come funziona. Potrebbe essere insicura in modi "
+"difficili da rilevare e potrebbe cambiare senza preavviso o supervisione."
 
 #: src/bz-license-dialog.c:124
 msgid ""
@@ -956,13 +930,11 @@ msgstr ""
 #: src/bz-license-dialog.c:135
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the <a href=\"%s\">%s</a> license.\n"
+"This app is developed in the open by an international community, and released under the <a href=\"%s\">%s</a> license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Questa applicazione è sviluppata apertamente da una comunità internazionale "
-"e rilasciata con licenza <a href=\"%s\">%s</a>.\n"
+"Questa applicazione è sviluppata apertamente da una comunità internazionale e rilasciata con licenza <a href=\"%s\">%s</a>.\n"
 "\n"
 "Puoi partecipare e contribuire a migliorarla."
 
@@ -998,8 +970,8 @@ msgstr "Mostra Risultati di Ricerca"
 #: src/bz-preferences-dialog.blp:37
 msgid "Improve results performance by debouncing search terms"
 msgstr ""
-"Migliorare le prestazioni dei risultati applicando il debouncing ai termini "
-"di ricerca"
+"Migliorare le prestazioni dei risultati applicando il debouncing ai termini"
+" di ricerca"
 
 #: src/bz-preferences-dialog.blp:42
 msgid "Application Details"
@@ -1034,17 +1006,6 @@ msgstr "Nascondi App obsolete"
 #: src/bz-preferences-dialog.blp:102
 msgid "Hide apps which are no longer supported by their developers"
 msgstr "Nascondi le app non più supportate dagli sviluppatori"
-
-#: src/bz-preferences-dialog.blp:116
-msgid ""
-"Bazaar can fetch and display the star count from an application's source "
-"code repository on a remote Git forge. \n"
-" For projects on GitHub, rate limits may cause them not to appear."
-msgstr ""
-"Bazaar può recuperare e visualizzare il numero di stelle dal repository del "
-"codice sorgente di un'applicazione su una piattaforma Git remota.\n"
-"Per i progetti su GitHub, i limiti di richieste potrebbero impedirne la "
-"visualizzazione."
 
 #: src/bz-preferences-dialog.c:32
 msgid "Accent Color"
@@ -1200,7 +1161,8 @@ msgstr "Sono disponibili aggiornamenti"
 msgid ""
 "The following applications are eligible for updates. Would you like to "
 "install them?"
-msgstr "Le seguenti applicazioni possono essere aggiornate. Vuoi installarle?"
+msgstr ""
+"Le seguenti applicazioni possono essere aggiornate. Vuoi installarle?"
 
 #: src/bz-update-dialog.c:134
 #, c-format
@@ -1248,10 +1210,6 @@ msgstr "Consigliate"
 msgid "Flathub"
 msgstr "Flathub"
 
-#: src/bz-window.blp:481
-msgid "_Donate to Bazaar ❤️"
-msgstr "_Dona a Bazaar ❤️"
-
 #: src/bz-window.blp:486
 msgid "_Refresh Content"
 msgstr "_Ricarica Contenuto"
@@ -1264,29 +1222,15 @@ msgstr "_Preferenze"
 msgid "_Keyboard Shortcuts"
 msgstr "_Scorciatoie da tastiera"
 
-#: src/bz-window.blp:503
-msgid "_About Bazaar"
-msgstr "_Info su Bazaar"
-
-#: src/bz-window.blp:510
-msgid "_Quit Bazaar"
-msgstr "_Chiude Bazaar"
-
-#: src/bz-window.blp:519
-msgid "Open Bazaar Inspector"
-msgstr "Apri Ispettore di Bazaar"
-
 #: src/bz-window.c:819
 msgid ""
-"The ability to inspect and install local .flatpak bundle files is coming "
-"soon! In the meantime, try running\n"
+"The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
 "\n"
 "flatpak install --bundle your-bundle.flatpak\n"
 "\n"
 "on the command line."
 msgstr ""
-"La possibilità di ispezionare e installare i file bundle .flatpak locali è "
-"in arrivo! Nel frattempo, provate a eseguire\n"
+"La possibilità di ispezionare e installare i file bundle .flatpak locali è in arrivo! Nel frattempo, provate a eseguire\n"
 "\n"
 "flatpak install --bundle your-bundle.flatpak\n"
 "\n"
@@ -1368,6 +1312,26 @@ msgstr "Mostra scorciatoie da tastiera"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Esce"
+
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "Negozio"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Negozio — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Informazioni su Negozio"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "_Esci da Negozio"
 
 #~ msgid "Searching for Blender"
 #~ msgstr "Ricerca di Blender"
@@ -1452,17 +1416,9 @@ msgstr "Esce"
 #~ msgstr "robotta"
 
 #, c-format
-#~ msgid ""
-#~ "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+#~ msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
 #~ msgstr ""
 #~ "Avvio recupero delle voci remote facendo riferimento a %d blocklist..."
-
-#~ msgid ""
-#~ "Bazaar was not provided a curated content configuration. Contact your "
-#~ "operating system's support channels for assistance."
-#~ msgstr ""
-#~ "Non è stata fornita alcuna configurazione di contenuti consigliati per "
-#~ "Bazaar. Per assistenza, contattare il supporto del sistema operativo."
 
 #~ msgid "Games"
 #~ msgstr "Giochi"
@@ -1696,8 +1652,8 @@ msgstr "Esce"
 #~ "If you do not have an access token, turning this setting on may cause "
 #~ "GitHub to eventually rate limit you."
 #~ msgstr ""
-#~ "Se non disponi di un token di accesso, attivando questa impostazione "
-#~ "GitHub potrebbe eventualmente limitare la tua velocità di accesso."
+#~ "Se non disponi di un token di accesso, attivando questa impostazione GitHub"
+#~ " potrebbe eventualmente limitare la tua velocità di accesso."
 
 #~ msgid "Type to filter"
 #~ msgstr "Digita per cercare"
@@ -1759,11 +1715,11 @@ msgstr "Esce"
 #, c-format
 #~ msgid ""
 #~ "\"%s\" does not provide a donations link. This does not mean you cannot "
-#~ "support them! Try looking at their <a href=\"%s\">project page</a> for "
-#~ "more information."
+#~ "support them! Try looking at their <a href=\"%s\">project page</a> for more"
+#~ " information."
 #~ msgstr ""
-#~ "“%s” non fornisce un link per le donazioni. Ciò non significa che non "
-#~ "puoi sostenerli! Prova a consultare la loro <a href=\"%s\">pagina del "
+#~ "“%s” non fornisce un link per le donazioni. Ciò non significa che non puoi "
+#~ "sostenerli! Prova a consultare la loro <a href=\"%s\">pagina del "
 #~ "progetto</a> per ulteriori informazioni."
 
 #, c-format
@@ -1771,9 +1727,9 @@ msgstr "Esce"
 #~ "\"%s\" does not provide a donations link. This does not mean you cannot "
 #~ "support them! Try finding their project page for more information."
 #~ msgstr ""
-#~ "“%s” non fornisce un link per le donazioni. Ciò non significa che non "
-#~ "puoi sostenerli! Prova a cercare la pagina del loro progetto per "
-#~ "ulteriori informazioni."
+#~ "“%s” non fornisce un link per le donazioni. Ciò non significa che non puoi "
+#~ "sostenerli! Prova a cercare la pagina del loro progetto per ulteriori "
+#~ "informazioni."
 
 #~ msgid "How the application looks"
 #~ msgstr "Aspetto dell'applicazione"
@@ -1790,9 +1746,6 @@ msgstr "Esce"
 #~ msgid "No description"
 #~ msgstr "Nessuna descrizione"
 
-#~ msgid "Main Bazaar window showing Blender"
-#~ msgstr "Finestra principale di Bazaar nella pagina di Blender"
-
 #~ msgid "Match using regular expressions"
 #~ msgstr "Corrispondenza tramite espressioni regolari"
 
@@ -1800,22 +1753,3 @@ msgstr "Esce"
 #~ msgstr ""
 #~ "Nascondere il filtro e l'ordinamento con un effetto di dissolvenza "
 #~ "incrociata"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "Negozio"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "Negozio — %s"
-
-#: src/bz-window.blp:314
-msgid "_About Store"
-msgstr "_Informazioni su Negozio"
-
-#: src/bz-window.blp:321
-msgid "_Quit Store"
-msgstr "_Esci da Negozio"

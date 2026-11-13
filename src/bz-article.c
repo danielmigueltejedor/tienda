@@ -391,7 +391,7 @@ build_appstream_wrap_box (const char *remainder)
           if (group != NULL)
             g_list_store_append (groups, group);
         }
-      else if (g_str_has_prefix (item, "bazaar-hook://"))
+      else if (g_str_has_prefix (item, "store-hook://"))
         {
           g_autoptr (BzEntryGroup) group = NULL;
           group                          = parse_hook_group (item);
@@ -534,7 +534,7 @@ markdown_bind_inline_uri (BzArticle         *self,
   if (src == NULL)
     return NULL;
 
-  if (g_str_has_prefix (src, "appstream://") || g_str_has_prefix (src, "bazaar-hook://"))
+  if (g_str_has_prefix (src, "appstream://") || g_str_has_prefix (src, "store-hook://"))
     return build_appstream_wrap_box (src);
 
   file = g_file_new_for_uri (src);

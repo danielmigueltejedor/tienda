@@ -5,12 +5,12 @@
 You do this the same as with any other GLib application:
 
 ```sh
-pkill bazaar; env G_MESSAGES_DEBUG=all bazaar
+pkill nodalix-store; env G_MESSAGES_DEBUG=all nodalix-store
 ```
 
 This will produce a flood of output. If you know the specific log domain you
 want to see, you can replace `all` with that domain name, such as `flatpak` or
-`BAZAAR::CORE`.
+`NODALIX-STORE::CORE`.
 
 ## Nodalix Store in GtkInspector
 
@@ -65,7 +65,7 @@ This will get you a shell inside the flatpak sandbox: run this: `gdb
 [📦 os.nodalix.Store ~]$ gdb /app/bin/nodalix-store-daemon
 ```
 
-Actually run bazaar:
+Actually run nodalix-store:
 ```sh
 $ (gdb) run
 ```

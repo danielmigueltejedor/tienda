@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::HOOKS"
+#define G_LOG_DOMAIN "NODALIX-STORE::HOOKS"
 
 #include <adwaita.h>
 
@@ -278,28 +278,28 @@ execute_hook_fiber (BzHook               *hook,
       launcher = g_subprocess_launcher_new (G_SUBPROCESS_FLAGS_STDOUT_PIPE);
       g_subprocess_launcher_set_cwd (launcher, g_get_home_dir ());
 
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_INITIATED_UNIX_STAMP", timestamp_sec, TRUE);
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_INITIATED_UNIX_STAMP_USEC", timestamp_usec, TRUE);
+      g_subprocess_launcher_setenv (launcher, "STORE_HOOK_INITIATED_UNIX_STAMP", timestamp_sec, TRUE);
+      g_subprocess_launcher_setenv (launcher, "STORE_HOOK_INITIATED_UNIX_STAMP_USEC", timestamp_usec, TRUE);
 
       stage_str = g_strdup_printf ("%d", stage);
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_STAGE_IDX", stage_str, TRUE);
+      g_subprocess_launcher_setenv (launcher, "STORE_HOOK_STAGE_IDX", stage_str, TRUE);
 
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_ID", id, TRUE);
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_TYPE", signal_enum->value_nick, TRUE);
+      g_subprocess_launcher_setenv (launcher, "STORE_HOOK_ID", id, TRUE);
+      g_subprocess_launcher_setenv (launcher, "STORE_HOOK_TYPE", signal_enum->value_nick, TRUE);
 
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_WAS_ABORTED", hook_aborted ? "true" : "false", TRUE);
+      g_subprocess_launcher_setenv (launcher, "STORE_HOOK_WAS_ABORTED", hook_aborted ? "true" : "false", TRUE);
 
       switch (signal)
         {
         case BZ_HOOK_SIGNAL_BEFORE_TRANSACTION:
         case BZ_HOOK_SIGNAL_AFTER_TRANSACTION:
-          g_subprocess_launcher_setenv (launcher, "BAZAAR_TS_APPID", ts_appid, TRUE);
-          g_subprocess_launcher_setenv (launcher, "BAZAAR_TS_TYPE", ts_type_enum->value_nick, TRUE);
+          g_subprocess_launcher_setenv (launcher, "STORE_TS_APPID", ts_appid, TRUE);
+          g_subprocess_launcher_setenv (launcher, "STORE_TS_TYPE", ts_type_enum->value_nick, TRUE);
           break;
         case BZ_HOOK_SIGNAL_VIEW_APP:
         case BZ_HOOK_SIGNAL_ARTICLE_APP:
         default:
-          g_subprocess_launcher_setenv (launcher, "BAZAAR_APPID", bz_entry_group_get_id (group), TRUE);
+          g_subprocess_launcher_setenv (launcher, "STORE_APPID", bz_entry_group_get_id (group), TRUE);
           break;
         }
 
@@ -342,10 +342,10 @@ execute_hook_fiber (BzHook               *hook,
                        adw_alert_dialog_get_default_response (
                            ADW_ALERT_DIALOG (current_dialog->dialog)));
 
-          g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_DIALOG_ID", current_dialog->id, TRUE);
+          g_subprocess_launcher_setenv (launcher, "STORE_HOOK_DIALOG_ID", current_dialog->id, TRUE);
           g_subprocess_launcher_setenv (
               launcher,
-              "BAZAAR_HOOK_DIALOG_RESPONSE_ID",
+              "STORE_HOOK_DIALOG_RESPONSE_ID",
               response != NULL
                   ? response
                   : adw_alert_dialog_get_default_response (
@@ -358,11 +358,11 @@ execute_hook_fiber (BzHook               *hook,
           hook_stage = "setup-dialog";
 
           current_dialog = g_ptr_array_steal_index (dialogs, 0);
-          g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_DIALOG_ID", current_dialog->id, TRUE);
+          g_subprocess_launcher_setenv (launcher, "STORE_HOOK_DIALOG_ID", current_dialog->id, TRUE);
         }
       else
         hook_stage = "action";
-      g_subprocess_launcher_setenv (launcher, "BAZAAR_HOOK_STAGE", hook_stage, TRUE);
+      g_subprocess_launcher_setenv (launcher, "STORE_HOOK_STAGE", hook_stage, TRUE);
 
       subprocess = g_subprocess_launcher_spawn (
           launcher,

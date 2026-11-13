@@ -276,7 +276,7 @@ request_autostart_fiber (gpointer user_data)
       return dex_future_new_for_error (g_steal_pointer (&local_error));
     }
 
-  token = g_strdup_printf ("bazaar_autostart_%u", request_count++);
+  token = g_strdup_printf ("store_autostart_%u", request_count++);
 
   options = g_variant_new_parsed (
       "{'handle_token': <%s>, 'reason': <%s>, "

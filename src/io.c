@@ -74,7 +74,6 @@ bz_get_io_limiter (void)
          processors divided by 2
 
         See:
-          https://gitlab.gnome.org/World/bazaar/-/work_items/497
           https://docs.gtk.org/glib/func.get_num_processors.html */
       concurrent_io = MIN (32, MAX (1, g_get_num_processors () / 2));
 

@@ -27,8 +27,7 @@ managing software through the GUI:
   info, using the same search routine as in-application
   - GNOME will work out of the box, as Nodalix Store implements the
     `org.gnome.Shell.SearchProvider2` dbus interface
-  - KDE Plasma will require a [krunner
-    plugin](https://github.com/ublue-os/krunner-bazaar)
+  - Other desktops can talk to the same dbus interface
 
 * Hide applications you do not want users to see with blocklists, which is
   useful for discouraging the use of certain packages which you deem to be
@@ -41,7 +40,7 @@ managing software through the GUI:
 
 ## CLI Usage
 
-You can start the bazaar daemon like this:
+You can start the nodalix-store daemon like this:
 
 ```
 nodalix-store-daemon [ARGS] [PACKAGE PATH/URI]
@@ -78,7 +77,7 @@ to see an example config file.
 
 Nodalix Store reads the following environment variables, which may be of interest:
 
-* `BAZAAR_DESKTOP_SEARCH_PROVIDER_ICON_SIZE`: may be read as an unsigned integer
+* `STORE_DESKTOP_SEARCH_PROVIDER_ICON_SIZE`: may be read as an unsigned integer
 from 1 to 256 to specify the square pixel size of icons sent to the desktop
 search provider. This should be configured to be a higher value than its default
 value of 24x24 when on KDE, as krunner paints result icons as much larger than
@@ -86,8 +85,8 @@ gnome-shell does. This way, the images will not appear blurry.
 
 ## Main Configuration
 
-This is the primary YAML configuration file for bazaar, as designated by the
-`hardcoded_main_config_path` meson option. Here, you will point bazaar to where
+This is the primary YAML configuration file for nodalix-store, as designated by the
+`hardcoded_main_config_path` meson option. Here, you will point nodalix-store to where
 your other configs are located. You can also define hooks in this file. See the
 "Hooks" section of this document for an overview of the hooks system and an
 example of integration into the main config.
@@ -99,17 +98,17 @@ yaml-blocklist-paths:
   - /path/to/yaml/blocklist.yaml
   - /path/to/another/yaml/blocklist.yaml
   # Flatpak path with host-etc permission
-  - /run/host/etc/bazaar/blocklist.yaml
+  - /run/host/etc/nodalix-store/blocklist.yaml
 txt-blocklist-paths:
   - /path/to/txt/blocklist.txt
   - /path/to/another/txt/blocklist.txt
   # Flatpak path with host-etc permission
-  - /run/host/etc/bazaar/blocklist.txt
+  - /run/host/etc/nodalix-store/blocklist.txt
 curated-config-paths:
   - /path/to/yaml/file.yaml
   - /path/to/another/yaml/file.yaml
   # Flatpak path with host-etc permission
-  - /run/host/etc/bazaar/curated.yaml
+  - /run/host/etc/nodalix-store/curated.yaml
 # Make the app start on the curated page instead of the explore page, try to only use if you have an interesting news section
 start-on-curated: true
 # Hide the auto update options in the preferences dialog, useful when you want to avoid confusion if your distro handles auto-updates of Flatpaks already.
@@ -241,7 +240,7 @@ flatpak run --command=bash os.nodalix.Store
 
 The `/etc` of the host system accessed from a Flatpak requires the `host-etc` permission.
 
-This means `/etc/bazaar/banner.png` turns into `/run/host/etc/bazaar/banner.png`.
+This means `/etc/nodalix-store/banner.png` turns into `/run/host/etc/nodalix-store/banner.png`.
 
 #### I want to to block a list of applications all the time, and also another list only on desktop environment X:
 
@@ -387,17 +386,10 @@ An example can be found in docs/example.yaml
 
 ### Integrate the curated section + blocklist with the official Flatpak for Administrators/Vendors
 
-For more practical examples check out the configuration from [Bluefin](https://github.com/projectbluefin/common/tree/a868eba107b91c4eae60b6d1d6d2e2cdf05eb1c8/system_files/bluefin/etc/bazaar) and [Aurora](https://github.com/get-aurora-dev/common/tree/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/etc/bazaar).
-
-Nodalix Store by default looks for a config file in `/etc/bazaar` or `/run/host/etc/bazaar` inside the sandbox, this is [configured on build time](https://github.com/flathub/os.nodalix.Store/blob/709faccd8c4198c5fdabf20eb4a98db98a5aa1c6/os.nodalix.Store.yaml#L43-L46) This needs permission to `/etc` which can be granted with the `filesystem=host-etc` permission, the build on Flathub doesn't have this permission by default.
+Nodalix Store by default looks for a config file in `/etc/nodalix-store` or `/run/host/etc/nodalix-store` inside the sandbox, this is [configured on build time](https://github.com/flathub/os.nodalix.Store/blob/709faccd8c4198c5fdabf20eb4a98db98a5aa1c6/os.nodalix.Store.yaml#L43-L46) This needs permission to `/etc` which can be granted with the `filesystem=host-etc` permission, the build on Flathub doesn't have this permission by default.
 
 This is not super straightforward to setup currently as Flatpak doesn't support overriding permissions in `/etc` or `/usr` yet, so you have to resort to `systemd-tmpfiles` to create this permission override in `/var/lib/flatpak/overrides/os.nodalix.Store`.
 
-Here is how they did it:
-
-- [tmpfiles](https://github.com/get-aurora-dev/common/blob/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/usr/lib/tmpfiles.d/bazaar-flatpak.conf)
-
-- [actual permission override](https://github.com/get-aurora-dev/common/blob/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/usr/share/ublue-os/flatpak-overrides/os.nodalix.Store), the filepath for this doesn't really matter, just a way for you to ship the symlink with tmpfiles
 
 ## Article markdown
 
@@ -428,7 +420,7 @@ Two special URI schemes can be used instead to render app tiles inline:
 
 * `appstream://<appid>`: looks up a real app by its appid and renders like any
   other app button.
-* `bazaar-hook://?id=<id>&title=<title>&subtitle=<subtitle>&icon=<icon-uri>`:
+* `store-hook://?id=<id>&title=<title>&subtitle=<subtitle>&icon=<icon-uri>`:
   renders a fake tile that is not backed by a real app. Clicking it runs an
   `article-app` hook instead of opening a full app view.
 
@@ -436,7 +428,7 @@ You can mix multiple tiles of either kind into one row by comma-separating them
 inside a single image tag:
 
 ```markdown
-![](appstream://org.gnome.Calculator,bazaar-hook://?id=neovim&title=Neovim&subtitle=Vim-fork%20focused%20on%20extensibility%20and%20useablitiy&icon=https://gitlab.com/uploads/-/system/project/avatar/56714943/nvim-icon.png)
+![](appstream://org.gnome.Calculator,store-hook://?id=neovim&title=Neovim&subtitle=Vim-fork%20focused%20on%20extensibility%20and%20useablitiy&icon=https://gitlab.com/uploads/-/system/project/avatar/56714943/nvim-icon.png)
 ```
 
 Every curated article already shows the title from the curated section at the
@@ -451,7 +443,7 @@ user input. Currently, these are the event signals you can subscribe to:
 * `view-app`: run the hook when the user clicks on an app tile or otherwise
   views an application in the main app page
 
-* `article-app`: run the hook when the user clicks a `bazaar-hook://` tile
+* `article-app`: run the hook when the user clicks a `store-hook://` tile
   inside a curated article
 
 * `before-transaction`: run the hook right as the user invokes a transaction
@@ -490,41 +482,41 @@ This opens up a lot of possibilities for customization; here are a few examples:
 
 Here is an overview of the environment variables the shell snippet will receive:
 
-* `BAZAAR_HOOK_INITIATED_UNIX_STAMP`: the unix timestamp in seconds at which
+* `STORE_HOOK_INITIATED_UNIX_STAMP`: the unix timestamp in seconds at which
   this hook was first invoked (the number of seconds that have elapsed since
   1970-01-01 00:00:00 UTC)
 
-* `BAZAAR_HOOK_INITIATED_UNIX_STAMP_USEC`: the unix timestamp in microseconds at
+* `STORE_HOOK_INITIATED_UNIX_STAMP_USEC`: the unix timestamp in microseconds at
   which this hook was first invoked (the number of microseconds that have
   elapsed since 1970-01-01 00:00:00 UTC)
 
-* `BAZAAR_HOOK_STAGE_IDX`: the number of stages this hook has run so far
+* `STORE_HOOK_STAGE_IDX`: the number of stages this hook has run so far
 
-* `BAZAAR_HOOK_ID`: the value of the "id" mapping
+* `STORE_HOOK_ID`: the value of the "id" mapping
 
-* `BAZAAR_HOOK_TYPE`: the value of the "when" mapping
+* `STORE_HOOK_TYPE`: the value of the "when" mapping
 
-* `BAZAAR_HOOK_WAS_ABORTED`: "true" if a dialog aborted the hook
+* `STORE_HOOK_WAS_ABORTED`: "true" if a dialog aborted the hook
 
-* `BAZAAR_HOOK_DIALOG_ID`: if applicable, the id of the current dialog
+* `STORE_HOOK_DIALOG_ID`: if applicable, the id of the current dialog
 
-* `BAZAAR_HOOK_DIALOG_RESPONSE_ID`: if applicable, the user response given
+* `STORE_HOOK_DIALOG_RESPONSE_ID`: if applicable, the user response given
   through the current dialog
 
-* `BAZAAR_APPID`: if applicable, the appid of the entry Nodalix Store is currently
+* `STORE_APPID`: if applicable, the appid of the entry Nodalix Store is currently
   dealing with. Use this for hooks that are not related to transactions. If your
   hook deals with transactions, such as `before-transaction` or
-  `after-transaction`, use `BAZAAR_TS_APPID` instead.
+  `after-transaction`, use `STORE_TS_APPID` instead.
 
-* `BAZAAR_TS_APPID`: if applicable, the appid of the entry Nodalix Store is currently
+* `STORE_TS_APPID`: if applicable, the appid of the entry Nodalix Store is currently
   dealing with. Use this for hooks that are related to transactions. If your
-  hook does not deal with transactions, such as `view-app`, use `BAZAAR_APPID`
+  hook does not deal with transactions, such as `view-app`, use `STORE_APPID`
   instead.
 
-* `BAZAAR_TS_TYPE`: if applicable, the type of transaction being run. Can be
+* `STORE_TS_TYPE`: if applicable, the type of transaction being run. Can be
   "install", "update", or "removal".
 
-* `BAZAAR_HOOK_STAGE`: the stage at which the hook is running. This will
+* `STORE_HOOK_STAGE`: the stage at which the hook is running. This will
   indicate what the shell body is instructed to do at this time. The shell body
   must respond by outputting to stdout with a valid answer; the structure of a
   valid answer will depend on the stage, and if the structure is not valid the
@@ -538,14 +530,14 @@ Here is an overview of the environment variables the shell snippet will receive:
     next registered hook
 
   * `setup-dialog` Nodalix Store is ready to ask the user a question with one of the
-    dialogs you've defined inside the "dialogs" mapping. `BAZAAR_HOOK_DIALOG_ID`
+    dialogs you've defined inside the "dialogs" mapping. `STORE_HOOK_DIALOG_ID`
     will tell you which one. Respond with "ok" to spawn the dialog, or "pass" to
     skip the dialog.
 
   * `teardown-dialog` Nodalix Store has received input from the user after asking them
     a question with one of the dialogs you've defined inside the "dialogs"
-    mapping. `BAZAAR_HOOK_DIALOG_ID` will tell you which one.
-    `BAZAAR_HOOK_DIALOG_RESPONSE_ID` will tell you the response the user chose.
+    mapping. `STORE_HOOK_DIALOG_ID` will tell you which one.
+    `STORE_HOOK_DIALOG_RESPONSE_ID` will tell you the response the user chose.
     Respond with "ok" to continue, or "abort" to stop the execution of this
     hook.
 
@@ -598,7 +590,7 @@ hooks:
             # can be "destructive" or "suggested" or omit for no
             # styling
             style: suggested
-    shell: exec /absolute/path/to/bazaar-jetbrains-hook.bash
+    shell: exec /absolute/path/to/store-jetbrains-hook.bash
     # This gives you the opportunity to add a basic regex check on an incoming
     # appid before incurring the overhead of spawning a subprocess. This
     # improves performance and reduces script boilerplate for long lists of
@@ -606,7 +598,7 @@ hooks:
     check-appid-regex: ^com\.jetbrains\..*$
 ```
 
-`/absolute/path/to/bazaar-jetbrains-hook.bash`:
+`/absolute/path/to/store-jetbrains-hook.bash`:
 ```bash
   #!/usr/bin/env bash
 
@@ -614,8 +606,8 @@ hooks:
   handle_setup_stage() {
 
       # only proceed if the user is installing something
-      if [ "$BAZAAR_TS_TYPE" = install ]; then
-          case "$BAZAAR_TS_APPID" in
+      if [ "$STORE_TS_TYPE" = install ]; then
+          case "$STORE_TS_APPID" in
               com\.jetbrains\.*)
                   # since the appid belongs to jetbrains, we continue
                   # with the hook
@@ -644,7 +636,7 @@ hooks:
 
   handle_teardown_dialog_stage() {
 
-      case "$BAZAAR_HOOK_DIALOG_RESPONSE_ID" in
+      case "$STORE_HOOK_DIALOG_RESPONSE_ID" in
           goto-web)
               # if the user pressed "Download JetBrains Toolbox",
               # continue
@@ -672,7 +664,7 @@ hooks:
   handle_action_stage() {
 
       # this is where we do the thing! it is important to use `nohup`
-      # here so bazaar doesn't hang
+      # here so nodalix-store doesn't hang
       nohup xdg-open 'https://www.jetbrains.com/toolbox-app/'
 
   }
@@ -687,7 +679,7 @@ hooks:
 
 
   # Branch based on the stage
-  case "$BAZAAR_HOOK_STAGE" in
+  case "$STORE_HOOK_STAGE" in
       setup) handle_setup_stage ;;
       setup-dialog) handle_setup_dialog_stage ;;
       teardown-dialog) handle_teardown_dialog_stage ;;
@@ -798,7 +790,7 @@ debugging search biases!
 
 ## Translations in YAML Configs
 
-For any string scalar property in YAML configs parsed by bazaar, you can
+For any string scalar property in YAML configs parsed by nodalix-store, you can
 optionally provide a map of language code ids -> translated strings. This is for
 strings only, thus it doesn't apply to scalars which are explicitly parsed as
 numbers, etc.

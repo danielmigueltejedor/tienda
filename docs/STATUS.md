@@ -3,7 +3,7 @@
 ## Hecho y comprobado en código
 
 - Origen del código documentado en `docs/UPSTREAM.md`.
-- Identidad `os.nodalix.Store`; el nombre visible es «Store» y se traduce como hacen las apps de Apple (español: «Tienda»), sin pisar el clon anterior de GNOME Software en `nodalix/main`. El icono es el de `nodalix-icon-theme` (`os.nodalix.Store`), no el de Bazaar.
+- Identidad `os.nodalix.Store`; el nombre visible es «Store» y se traduce como hacen las apps de Apple (español: «Tienda»), sin pisar el clon anterior de GNOME Software en `nodalix/main`. El icono es el de `nodalix-icon-theme` (`os.nodalix.Store`).
 - El catálogo muestra los iconos del tema Nodalix-Icons también para apps aún no instaladas y para entradas leídas de la caché (antes solo las recién analizadas pasaban por el tema).
 - Navegación Discover, Search, Library y Updates, además de la vista curada.
 - Resolución visual de iconos del tema Nodalix, con vuelta al icono original y a un icono genérico.

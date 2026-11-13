@@ -1,13 +1,13 @@
-# Vietnamese translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Vietnamese translations for nodalix-store package.
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2025.
 # Loc Huynh <https://github.com/hthienloc>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2025-12-02 18:34+0700\n"
 "PO-Revision-Date: 2025-12-10 18:23+0700\n"
 "Last-Translator: Loc Huynh <https://github.com/hthienloc>\n"
@@ -19,12 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 49.0\n"
 
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:7 src/bz-window.blp:5
-#: src/bz-window.blp:234
-msgid "Bazaar"
-msgstr "Bazaar"
-
 #: data/os.nodalix.Store.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Thêm, xóa hoặc cập nhật phần mềm Flatpak trên máy tính này"
@@ -32,8 +26,8 @@ msgstr "Thêm, xóa hoặc cập nhật phần mềm Flatpak trên máy tính n�
 #: data/os.nodalix.Store.desktop.in:10
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
 msgstr ""
-"GTK;System;PackageManager;Discover;Flatpak;Software;Store;Trình quản lý gói; "
-"Khám phá; Phần mềm; Cửa hàng;"
+"GTK;System;PackageManager;Discover;Flatpak;Software;Store;Trình quản lý "
+"gói; Khám phá; Phần mềm; Cửa hàng;"
 
 #: data/os.nodalix.Store.gschema.xml:6
 msgid "Hide EOL Entries"
@@ -91,10 +85,6 @@ msgstr "Mô tả giao diện của thanh tiến trình toàn cục"
 msgid "Saved Window Dimensions"
 msgstr "Kích thước cửa sổ đã lưu"
 
-#: data/os.nodalix.Store.gschema.xml:57
-msgid "The window dimensions to be used by the next Bazaar window"
-msgstr "Kích thước cửa sổ sẽ được sử dụng cho cửa sổ Bazaar tiếp theo"
-
 #: data/os.nodalix.Store.metainfo.xml.in:8
 msgid "Discover and install applications"
 msgstr "Khám phá và cài đặt ứng dụng"
@@ -106,16 +96,6 @@ msgid ""
 msgstr ""
 "Một cửa hàng ứng dụng mới cho GNOME tập trung vào việc khám phá và cài đặt "
 "ứng dụng cùng tiện ích mở rộng từ các remote Flatpak, đặc biệt là Flathub."
-
-#: data/os.nodalix.Store.metainfo.xml.in:14
-msgid ""
-"It emphasizes supporting the developers who make the Linux desktop possible. "
-"Bazaar features a \"curated\" tab that can be configured by distributors to "
-"allow for a more localized experience."
-msgstr ""
-"Nó nhấn mạnh việc hỗ trợ các nhà phát triển làm nên môi trường desktop "
-"Linux. Bazaar có tab \"chọn lọc\" có thể được nhà phân phối cấu hình để mang "
-"lại trải nghiệm địa phương hóa tốt hơn."
 
 #: data/os.nodalix.Store.metainfo.xml.in:29 src/bz-application.c:661
 msgid "Adam Masciola"
@@ -146,8 +126,9 @@ msgstr "Quản lý tiện ích mở rộng"
 msgid "Remove"
 msgstr "Gỡ bỏ"
 
-#: src/bz-addons-dialog.c:95 src/bz-full-view.blp:277 src/bz-full-view.blp:492
-#: src/bz-transaction-view.blp:186 src/bz-window.c:1102
+#: src/bz-addons-dialog.c:95 src/bz-full-view.blp:277
+#: src/bz-full-view.blp:492 src/bz-transaction-view.blp:186
+#: src/bz-window.c:1102
 msgid "Install"
 msgstr "Cài đặt"
 
@@ -321,15 +302,18 @@ msgid "Identifying Information"
 msgstr "Thông tin nhận dạng"
 
 #: src/bz-age-rating-dialog.c:216
-msgid "No information regarding sharing of user information with third parties"
-msgstr "Không có thông tin về việc chia sẻ thông tin người dùng với bên thứ ba"
+msgid ""
+"No information regarding sharing of user information with third parties"
+msgstr ""
+"Không có thông tin về việc chia sẻ thông tin người dùng với bên thứ ba"
 
 #: src/bz-age-rating-dialog.c:219
 msgid "Location Sharing"
 msgstr "Chia sẻ vị trí"
 
 #: src/bz-age-rating-dialog.c:220
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr "Không có thông tin về việc chia sẻ vị trí thực với người dùng khác"
 
 #: src/bz-age-rating-dialog.c:223
@@ -531,8 +515,8 @@ msgstr "Không có media"
 
 #: src/bz-application.c:556
 msgid ""
-"This functionality is currently disabled. It is recommended you download and "
-"install Flatseal to manage app permissions."
+"This functionality is currently disabled. It is recommended you download "
+"and install Flatseal to manage app permissions."
 msgstr ""
 "Chức năng này hiện bị tắt. Khuyến nghị bạn tải và cài Flatseal để quản lý "
 "quyền ứng dụng."
@@ -547,7 +531,8 @@ msgctxt "About Dialog Developer Credit"
 msgid "Alexander Vanhee"
 msgstr "Alexander Vanhee"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:664
 msgid "translator-credits"
 msgstr "Loc Huynh <huynhloc.contact@gmail.com>, 2025"
@@ -559,18 +544,6 @@ msgstr "Đang thực hiện thiết lập..."
 #: src/bz-application.c:817 src/bz-application.c:826
 msgid "Set Up Flathub"
 msgstr "Thiết lập Flathub"
-
-#: src/bz-application.c:820
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub chưa được thiết lập trên hệ thống này. Bạn sẽ không thể duyệt và cài "
-"đặt ứng dụng trong Bazaar nếu nó không khả dụng.\n"
-"\n"
-"Bạn vẫn có thể dùng Bazaar để duyệt và gỡ bỏ các ứng dụng đã cài."
 
 #: src/bz-application.c:825 src/bz-update-dialog.blp:6
 msgid "Later"
@@ -603,8 +576,8 @@ msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
 msgstr ""
-"Không có thông tin chọn lọc trên hệ thống này. Bạn vẫn có thể duyệt ứng dụng "
-"trên Flathub"
+"Không có thông tin chọn lọc trên hệ thống này. Bạn vẫn có thể duyệt ứng "
+"dụng trên Flathub"
 
 #: src/bz-curated-view.blp:18
 msgid "Browse Flathub"
@@ -636,13 +609,15 @@ msgstr ""
 msgid ""
 "The ownership of the %s app ID has been manually verified by the Flathub "
 "team."
-msgstr "Quyền sở hữu ID ứng dụng %s đã được đội ngũ Flathub xác minh thủ công."
+msgstr ""
+"Quyền sở hữu ID ứng dụng %s đã được đội ngũ Flathub xác minh thủ công."
 
 #: src/bz-developer-badge.c:161
 #, c-format
 msgid ""
 "The ownership of the %s app ID has been verified by <b>%s</b> on <b>%s</b>."
-msgstr "Quyền sở hữu ID ứng dụng %s đã được <b>%s</b> xác minh trên <b>%s</b>."
+msgstr ""
+"Quyền sở hữu ID ứng dụng %s đã được <b>%s</b> xác minh trên <b>%s</b>."
 
 #: src/bz-developer-badge.c:168
 #, c-format
@@ -1099,8 +1074,8 @@ msgstr "Không có URL"
 
 #: src/bz-full-view.c:511
 msgid ""
-"This application has a FLOSS license, meaning the source code can be audited "
-"for safety."
+"This application has a FLOSS license, meaning the source code can be "
+"audited for safety."
 msgstr ""
 "Ứng dụng này có giấy phép FLOSS, nghĩa là mã nguồn có thể được kiểm tra để "
 "đảm bảo an toàn."
@@ -1110,8 +1085,8 @@ msgid ""
 "This application has a proprietary license, meaning the source code is "
 "developed privately and cannot be audited by an independent third party."
 msgstr ""
-"Ứng dụng này có giấy phép độc quyền, nghĩa là mã nguồn được phát triển riêng "
-"tư và không thể được kiểm tra bởi bên thứ ba độc lập."
+"Ứng dụng này có giấy phép độc quyền, nghĩa là mã nguồn được phát triển "
+"riêng tư và không thể được kiểm tra bởi bên thứ ba độc lập."
 
 #: src/bz-full-view.c:519
 msgid "More Apps"
@@ -1243,10 +1218,6 @@ msgstr "%s hoạt động tốt nhất trên phần cứng cụ thể"
 msgid "%s works on most devices"
 msgstr "%s hoạt động trên hầu hết thiết bị"
 
-#: src/bz-inspector.blp:5
-msgid "Bazaar Inspector"
-msgstr "Trình kiểm tra Bazaar"
-
 #: src/bz-inspector.blp:33
 msgid "Background Task Info:"
 msgstr "Thông tin tác vụ nền:"
@@ -1292,8 +1263,8 @@ msgid ""
 "You have multiple versions of this app installed. Which one would you like "
 "to proceed with? "
 msgstr ""
-"Bạn đã cài nhiều phiên bản của ứng dụng này. Bạn muốn tiếp tục với phiên bản "
-"nào? "
+"Bạn đã cài nhiều phiên bản của ứng dụng này. Bạn muốn tiếp tục với phiên "
+"bản nào? "
 
 #: src/bz-installed-page.c:402 src/bz-window.c:1101 src/bz-window.c:1124
 msgid "Cancel"
@@ -1309,15 +1280,11 @@ msgstr "Tham gia"
 
 #: src/bz-license-dialog.c:115
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may not be able to contribute to this app."
 msgstr ""
-"Ứng dụng này không được phát triển công khai, chỉ nhà phát triển biết cách "
-"nó hoạt động. Có thể không an toàn theo cách khó phát hiện và có thể thay "
-"đổi mà không được giám sát.\n"
+"Ứng dụng này không được phát triển công khai, chỉ nhà phát triển biết cách nó hoạt động. Có thể không an toàn theo cách khó phát hiện và có thể thay đổi mà không được giám sát.\n"
 "\n"
 "Bạn có thể không đóng góp được cho ứng dụng này."
 
@@ -1334,13 +1301,11 @@ msgstr ""
 #: src/bz-license-dialog.c:135
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the <a href=\"%s\">%s</a> license.\n"
+"This app is developed in the open by an international community, and released under the <a href=\"%s\">%s</a> license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Ứng dụng này được cộng đồng quốc tế phát triển công khai và phát hành theo "
-"giấy phép <a href=\"%s\">%s</a>.\n"
+"Ứng dụng này được cộng đồng quốc tế phát triển công khai và phát hành theo giấy phép <a href=\"%s\">%s</a>.\n"
 "\n"
 "Bạn có thể tham gia và giúp nó tốt hơn."
 
@@ -1408,17 +1373,6 @@ msgstr "Thanh tiến trình"
 #: src/bz-preferences-dialog.blp:81
 msgid "Choose a theme for the progress bar!"
 msgstr "Chọn chủ đề cho thanh tiến trình!"
-
-#: src/bz-preferences-dialog.blp:116
-msgid ""
-"Bazaar can fetch and display the star count from an application's source "
-"code repository on a remote Git forge. \n"
-" For projects on GitHub, rate limits may cause them not to appear."
-msgstr ""
-"Bazaar có thể lấy và hiển thị số sao từ kho mã nguồn ứng dụng trên git forge "
-"từ xa.\n"
-"Đối với dự án trên GitHub, giới hạn tốc độ có thể khiến chúng không xuất "
-"hiện."
 
 #: src/bz-preferences-dialog.c:32
 msgid "Accent Color"
@@ -1675,10 +1629,6 @@ msgstr "Flathub"
 msgid "Sync"
 msgstr "Đồng bộ"
 
-#: src/bz-window.blp:466
-msgid "_Donate to Bazaar ❤️"
-msgstr "_Quyên góp cho Bazaar ❤️"
-
 #: src/bz-window.blp:473
 msgid "_Preferences"
 msgstr "_Tùy chỉnh"
@@ -1687,29 +1637,15 @@ msgstr "_Tùy chỉnh"
 msgid "_Keyboard Shortcuts"
 msgstr "_Phím tắt"
 
-#: src/bz-window.blp:483
-msgid "_About Bazaar"
-msgstr "_Giới thiệu Bazaar"
-
-#: src/bz-window.blp:490
-msgid "_Quit Bazaar"
-msgstr "Thoát _Bazaar"
-
-#: src/bz-window.blp:499
-msgid "Open Bazaar Inspector"
-msgstr "Mở Trình kiểm tra Bazaar"
-
 #: src/bz-window.c:844
 msgid ""
-"The ability to inspect and install local .flatpak bundle files is coming "
-"soon! In the meantime, try running\n"
+"The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
 "\n"
 "flatpak install --bundle your-bundle.flatpak\n"
 "\n"
 "on the command line."
 msgstr ""
-"Khả năng kiểm tra và cài đặt tập tin .flatpak bundle cục bộ sẽ sớm có! Trong "
-"lúc chờ đợi, hãy thử chạy\n"
+"Khả năng kiểm tra và cài đặt tập tin .flatpak bundle cục bộ sẽ sớm có! Trong lúc chờ đợi, hãy thử chạy\n"
 "\n"
 "flatpak install --bundle your-bundle.flatpak\n"
 "\n"
@@ -1793,8 +1729,9 @@ msgid "Quit"
 msgstr "Thoát"
 
 #: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
 msgid "Store"
 msgstr "Cửa hàng"
 

@@ -1045,10 +1045,10 @@ transact_fiber (TransactData *data)
   /* Prevent the Store from being removed by itself */
   if (data->remove)
     {
-      const char *bazaar_id = NULL;
+      const char *app_id = NULL;
 
-      bazaar_id = g_application_get_application_id (g_application_get_default ());
-      if (g_strcmp0 (id_dup, bazaar_id) == 0)
+      app_id = g_application_get_application_id (g_application_get_default ());
+      if (g_strcmp0 (id_dup, app_id) == 0)
         {
           GtkWidget *window = NULL;
           window            = GTK_WIDGET (gtk_application_get_active_window (GTK_APPLICATION (g_application_get_default ())));

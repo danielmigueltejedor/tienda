@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::APPSTREAM-PARSER"
-#define BAZAAR_MODULE "appstream-parser"
+#define G_LOG_DOMAIN  "NODALIX-STORE::APPSTREAM-PARSER"
+#define STORE_MODULE "appstream-parser"
 
 #include "config.h"
 

@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::NEWLINE-TXT-PARSER"
+#define G_LOG_DOMAIN "NODALIX-STORE::NEWLINE-TXT-PARSER"
 
 #include "config.h"
 

@@ -1,13 +1,13 @@
-# Hungarian translation for bazaar.
+# Hungarian translation for nodalix-store.
 # Copyright (C) 2025, 2026 Free Software Foundation, Inc.
-# This file is distributed under the same license as the bazaar package.
+# This file is distributed under the same license as the nodalix-store package.
 #
 # Benedek Dévényi <rdbende@proton.me>, 2025.
 # Balázs Úr <ur.balazs at fsf dot hu>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-09-12 21:13+0000\n"
 "PO-Revision-Date: 2026-09-13 10:59+0200\n"
 "Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
@@ -19,13 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 25.12.3\n"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
-msgid "Bazaar"
-msgstr "Bazár"
-
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Alkalmazásbolt"
@@ -33,7 +26,8 @@ msgstr "Alkalmazásbolt"
 #: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr ""
-"Flatpak szoftverek telepítése, eltávolítása és frissítése ezen a számítógépen"
+"Flatpak szoftverek telepítése, eltávolítása és frissítése ezen a "
+"számítógépen"
 
 #: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
@@ -54,8 +48,8 @@ msgid ""
 "installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
 "Gyors és modern alkalmazásbolt Linuxhoz, amelynek középpontjában a Flatpak-"
-"alkalmazások és kiegészítők – különösen a Flathubról származók – felfedezése "
-"és telepítése áll."
+"alkalmazások és kiegészítők – különösen a Flathubról származók – "
+"felfedezése és telepítése áll."
 
 #: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
@@ -67,16 +61,12 @@ msgstr "Alkalmazásjogosultságok egyszerű megtekintése"
 
 #: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
-msgstr "Jelentkezzen be a Flathubba a kedvencei megtekintéséhez és kezeléséhez"
+msgstr ""
+"Jelentkezzen be a Flathubba a kedvencei megtekintéséhez és kezeléséhez"
 
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Alkalmazások keresése közvetlenül a GNOME Shellből"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:754
-msgid "The Bazaar Contributors"
-msgstr "A Bazár közreműködői"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -130,11 +120,11 @@ msgstr "Nincsenek látható kiegészítők"
 
 #: src/bz-addons-dialog.blp:82
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
-"A jelenlegi szűrőbeállításai elrejtik az összes ismert kiegészítőt. Próbálja "
-"meg módosítani azokat."
+"A jelenlegi szűrőbeállításai elrejtik az összes ismert kiegészítőt. "
+"Próbálja meg módosítani azokat."
 
 #: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
@@ -153,8 +143,8 @@ msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
 msgstr ""
-"Ez a kiegészítő olyan futtatókörnyezetet használ, amelyhez már nem érkeznek "
-"frissítések vagy biztonsági javítások. A használata veszélyessé válhat."
+"Ez a kiegészítő olyan futtatókörnyezetet használ, amelyhez már nem érkeznek"
+" frissítések vagy biztonsági javítások. A használata veszélyessé válhat."
 
 #: src/bz-addons-dialog.blp:328 src/bz-full-view.blp:602
 msgid "Other Sources"
@@ -169,7 +159,8 @@ msgstr "Kiegészítő ehhez: %s"
 msgid "Show Less"
 msgstr "Kevesebb megjelenítése"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Több megjelenítése"
 
@@ -188,7 +179,8 @@ msgstr "Korhatár-besorolás"
 msgid "Cartoon Violence"
 msgstr "Rajzfilmes erőszak"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Nincs információ a rajzfilmes erőszakkal kapcsolatban"
@@ -198,7 +190,8 @@ msgstr "Nincs információ a rajzfilmes erőszakkal kapcsolatban"
 msgid "Fantasy Violence"
 msgstr "Kitalált erőszak"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Nincs információ a kitalált erőszakkal kapcsolatban"
@@ -208,7 +201,8 @@ msgstr "Nincs információ a kitalált erőszakkal kapcsolatban"
 msgid "Realistic Violence"
 msgstr "Valósághű erőszak"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Nincs információ a valósághű erőszakkal kapcsolatban"
@@ -218,7 +212,8 @@ msgstr "Nincs információ a valósághű erőszakkal kapcsolatban"
 msgid "Violence Depicting Bloodshed"
 msgstr "Vérontást ábrázoló erőszak"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Nincs információ a vérontással kapcsolatban"
@@ -228,7 +223,8 @@ msgstr "Nincs információ a vérontással kapcsolatban"
 msgid "Sexual Violence"
 msgstr "Szexuális erőszak"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Nincs információ a szexuális erőszakkal kapcsolatban"
@@ -238,7 +234,8 @@ msgstr "Nincs információ a szexuális erőszakkal kapcsolatban"
 msgid "Alcohol"
 msgstr "Alkohol"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Nincs információ az alkoholra történő hivatkozásokkal kapcsolatban"
@@ -248,7 +245,8 @@ msgstr "Nincs információ az alkoholra történő hivatkozásokkal kapcsolatban
 msgid "Narcotics"
 msgstr "Kábítószerek"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr ""
@@ -260,7 +258,8 @@ msgstr ""
 msgid "Tobacco"
 msgstr "Dohány"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr ""
@@ -271,7 +270,8 @@ msgstr ""
 msgid "Nudity"
 msgstr "Meztelenség"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Nincs információ semmilyen meztelenséggel kapcsolatban"
@@ -281,7 +281,8 @@ msgstr "Nincs információ semmilyen meztelenséggel kapcsolatban"
 msgid "Sexual Themes"
 msgstr "Szexuális témák"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr ""
@@ -293,7 +294,8 @@ msgstr ""
 msgid "Profanity"
 msgstr "Káromkodás"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Nincs információ semmiféle káromkodással kapcsolatban"
@@ -303,7 +305,8 @@ msgstr "Nincs információ semmiféle káromkodással kapcsolatban"
 msgid "Inappropriate Humor"
 msgstr "Nem helyénvaló humor"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Nincs információ a nem helyénvaló humorral kapcsolatban"
@@ -313,7 +316,8 @@ msgstr "Nincs információ a nem helyénvaló humorral kapcsolatban"
 msgid "Discrimination"
 msgstr "Diszkrimináció"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Nincs információ semmiféle diszkriminatív nyelvezettel kapcsolatban"
@@ -323,7 +327,8 @@ msgstr "Nincs információ semmiféle diszkriminatív nyelvezettel kapcsolatban"
 msgid "Advertising"
 msgstr "Reklám"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Nincs információ semmiféle reklámozással kapcsolatban"
@@ -333,7 +338,8 @@ msgstr "Nincs információ semmiféle reklámozással kapcsolatban"
 msgid "Gambling"
 msgstr "Szerencsejáték"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Nincs információ semmiféle szerencsejátékkal kapcsolatban"
@@ -343,7 +349,8 @@ msgstr "Nincs információ semmiféle szerencsejátékkal kapcsolatban"
 msgid "Purchasing"
 msgstr "Vásárlás"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Nincs információ a pénzköltési lehetőséggel kapcsolatban"
@@ -353,7 +360,8 @@ msgstr "Nincs információ a pénzköltési lehetőséggel kapcsolatban"
 msgid "Chat Between Users"
 msgstr "Felhasználók közötti csevegés"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr ""
@@ -365,7 +373,8 @@ msgstr ""
 msgid "Audio Chat Between Users"
 msgstr "Hangalapú csevegés a felhasználók között"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr ""
@@ -377,7 +386,8 @@ msgstr ""
 msgid "Contact Details"
 msgstr "Partner részletei"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
@@ -391,21 +401,25 @@ msgstr ""
 msgid "Identifying Information"
 msgstr "Azonosításra alkalmas információk"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr ""
-"Nincs információ a felhasználói adatok harmadik felekkel való megosztásával "
-"kapcsolatban"
+"Nincs információ a felhasználói adatok harmadik felekkel való megosztásával"
+" kapcsolatban"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:208
 msgid "Location Sharing"
 msgstr "Helymegosztás"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr ""
 "Nincs információ a fizikai hely más felhasználókkal való megosztásával "
 "kapcsolatban"
@@ -415,17 +429,20 @@ msgstr ""
 msgid "Prostitution"
 msgstr "Prostitúció"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
-msgstr "Nincs információ a prostitúcióra történő hivatkozásokkal kapcsolatban"
+msgstr ""
+"Nincs információ a prostitúcióra történő hivatkozásokkal kapcsolatban"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:220
 msgid "Adultery"
 msgstr "Házasságtörés"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr ""
@@ -436,7 +453,8 @@ msgstr ""
 msgid "Sexualized Characters"
 msgstr "Szexualizált karakterek"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Nincs információ a szexualizált karakterekkel kapcsolatban"
@@ -446,7 +464,8 @@ msgstr "Nincs információ a szexualizált karakterekkel kapcsolatban"
 msgid "Desecration"
 msgstr "Gyalázás"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Nincs információ a gyalázásra történő hivatkozásokkal kapcsolatban"
@@ -456,7 +475,8 @@ msgstr "Nincs információ a gyalázásra történő hivatkozásokkal kapcsolatb
 msgid "Human Remains"
 msgstr "Emberi maradványok"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Nincs információ a látható halott emberi maradványokkal kapcsolatban"
@@ -466,10 +486,12 @@ msgstr "Nincs információ a látható halott emberi maradványokkal kapcsolatba
 msgid "Slavery"
 msgstr "Rabszolgaság"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
-msgstr "Nincs információ a rabszolgaságra történő hivatkozásokkal kapcsolatban"
+msgstr ""
+"Nincs információ a rabszolgaságra történő hivatkozásokkal kapcsolatban"
 
 #: src/bz-age-rating-dialog.c:424
 msgid "Does not include references to drugs"
@@ -761,7 +783,8 @@ msgstr "Ellenőrizve"
 msgid "Installed"
 msgstr "Telepítve"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:757
 msgid "translator-credits"
 msgstr ""
@@ -780,30 +803,6 @@ msgstr "Sikeresen kijelentkezett!"
 msgid "Notice for Ubuntu Users"
 msgstr "Tájékoztatás Ubuntu-felhasználóknak"
 
-#: src/bz-application.c:1060
-msgid ""
-"Ubuntu 25.10 and newer have changed default security rules in a way that "
-"makes it <b>impossible to install apps</b> from the Flatpak version of "
-"Bazaar. For the time being, please use the apt package instead. Install it "
-"with\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"You can then remove this Flatpak version with\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-msgstr ""
-"Az Ubuntu 25.10 és újabb verziói olyan módon változtatták meg az "
-"alapértelmezett biztonsági szabályokat, hogy az <b>lehetetlenné teszi az "
-"alkalmazások telepítését</b> a Bazaar Flatpak-verziójából. Egyelőre "
-"használja helyette az apt-csomagot. Ezzel a paranccsal telepítheti:\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"Azután eltávolíthatja ezt a Flatpak-verziót ezzel a paranccsal:\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-
 #: src/bz-application.c:1068
 msgid "Continue Anyway"
 msgstr "Folytatás mindenképp"
@@ -816,37 +815,9 @@ msgstr "Beállítás végrehajtása…"
 msgid "Set Up System Flathub?"
 msgstr "Beállítja a rendszer Flathubot?"
 
-#: src/bz-application.c:1186
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"A rendszer Flathub távolija nincs beállítva. A Bazár azt igényli, hogy a "
-"Flathub be legyen állítva a rendszer Flatpak-telepítésén az alkalmazások "
-"böngészéséhez és telepítéséhez.\n"
-"\n"
-"Továbbra is használhatja a Bazár alkalmazást a böngészéshez és a már "
-"telepített alkalmazások eltávolításához."
-
 #: src/bz-application.c:1193
 msgid "Set Up Flathub?"
 msgstr "Beállítja a Flathubot?"
-
-#: src/bz-application.c:1196
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"A Flathub nincs beállítva ezen a rendszeren. Nem fog tudni böngészni és "
-"alkalmazásokat telepíteni a Bazár alkalmazásban, ha az nem érhető el.\n"
-"\n"
-"Továbbra is használhatja a Bazár alkalmazást a böngészéshez és a már "
-"telepített alkalmazások eltávolításához."
 
 #: src/bz-application.c:1202
 msgid "Later"
@@ -942,8 +913,8 @@ msgid ""
 "The following will be installed. Additional shared components may also be "
 "installed"
 msgstr ""
-"A következők lesznek telepítve. További megosztott összetevők is telepítésre "
-"kerülhetnek."
+"A következők lesznek telepítve. További megosztott összetevők is "
+"telepítésre kerülhetnek."
 
 #: src/bz-bulk-install-dialog.c:114
 #, c-format
@@ -970,19 +941,6 @@ msgstr "Csomagtelepítés"
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
 msgstr "A további függőségek több helyet igényelhetnek"
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Az alkalmazás telepítéséhez új szoftverforrás hozzáadására lehet szükség. Az "
-"ebből a forrásból származó egyéb alkalmazások meg fognak jelenni a Bazár "
-"alkalmazásban.\n"
-"\n"
-"Csak akkor adja hozzá ezt a forrást, ha biztosan megbízik benne."
 
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
@@ -1107,11 +1065,6 @@ msgstr ""
 msgid "The ownership of the %s app ID has been verified."
 msgstr "A(z) %s alkalmazásazonosító tulajdonjog ellenőrizve lett."
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "Bazár kiadás"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Teljes kiadási megjegyzések"
@@ -1120,27 +1073,15 @@ msgstr "Teljes kiadási megjegyzések"
 msgid "This release was made possible by users like you!"
 msgstr "Ezt a kiadást olyan felhasználók tették lehetővé, mint Ön!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Imádom a Bazár készítését, de egyedül nem tudom megcsinálni. Segítsen a "
-"jövőbeli fejlesztés támogatásában a Ko-Fi-n keresztüli adományozással."
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "Adományozás a Bazár fejlesztéséhez"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "A(z) %s újdonságai"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Kiadva: %Y. %B %-e."
@@ -1553,8 +1494,8 @@ msgstr "Új év, új munkafolyamatok"
 #: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
 msgstr ""
-"Alkalmazások jegyzetek készítéséhez, feladatok nyomon követéséhez és tervek "
-"készítéséhez"
+"Alkalmazások jegyzetek készítéséhez, feladatok nyomon követéséhez és tervek"
+" készítéséhez"
 
 #: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
@@ -1722,8 +1663,9 @@ msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr ""
-"Ez az alkalmazás olyan futtatókörnyezetet használ, amelyhez már nem érkeznek "
-"frissítések vagy biztonsági javítások. A használata veszélyessé válhat."
+"Ez az alkalmazás olyan futtatókörnyezetet használ, amelyhez már nem "
+"érkeznek frissítések vagy biztonsági javítások. A használata veszélyessé "
+"válhat."
 
 #: src/bz-full-view.blp:533
 msgid "Trash Data"
@@ -1762,8 +1704,8 @@ msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
 msgstr ""
-"Ez az alkalmazás tulajdonosi licenccel rendelkezik, ami azt jelenti, hogy a "
-"forráskódot zárt körben fejlesztik, és független harmadik fél nem "
+"Ez az alkalmazás tulajdonosi licenccel rendelkezik, ami azt jelenti, hogy a"
+" forráskódot zárt körben fejlesztik, és független harmadik fél nem "
 "ellenőrizheti."
 
 #: src/bz-full-view.c:210
@@ -2060,27 +2002,21 @@ msgstr "Az alkalmazás licence nem ismert"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Ezt az alkalmazást egy nemzetközi közösség nyíltan fejleszti, és %s licenc "
-"alatt adja ki.\n"
+"Ezt az alkalmazást egy nemzetközi közösség nyíltan fejleszti, és %s licenc alatt adja ki.\n"
 "\n"
 "Ön is részt vehet benne, és segíthet még jobbá tenni."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Ezt az alkalmazást nem nyíltan fejlesztik, így csak a fejlesztői tudják, "
-"hogy hogyan működik. Lehet, hogy nem biztonságos olyan módon, amely nehezen "
-"észrevehető, és felügyelet nélkül változhat.\n"
+"Ezt az alkalmazást nem nyíltan fejlesztik, így csak a fejlesztői tudják, hogy hogyan működik. Lehet, hogy nem biztonságos olyan módon, amely nehezen észrevehető, és felügyelet nélkül változhat.\n"
 "\n"
 "Lehet, hogy közreműködhet ebben az alkalmazásban, de lehet, hogy nem."
 
@@ -2170,12 +2106,14 @@ msgid "Preferences"
 msgstr "Beállítások"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 "A hálózati kapcsolat forgalomkorlátos – az automatikus boltadatfrissítés "
 "szüneteltetve van"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244
+#: src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "Frissítés kézileg"
 
@@ -2206,7 +2144,8 @@ msgstr "_Kézi"
 
 #: src/bz-preferences-dialog.blp:50
 msgid "Checking for and downloading app updates must be done manually"
-msgstr "Az alkalmazásfrissítések keresését és letöltését kézzel kell elvégezni"
+msgstr ""
+"Az alkalmazásfrissítések keresését és letöltését kézzel kell elvégezni"
 
 #: src/bz-preferences-dialog.blp:69
 msgid "Automatic Update _Notifications"
@@ -2346,13 +2285,6 @@ msgstr "Lányos fiú büszkeség színei"
 msgid "Neutrois Pride Colors"
 msgstr "Neutrois büszkeség színei"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:286
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr ""
-"A Bazár alkalmazásnak a háttérben kell futnia az alkalmazásfrissítések "
-"kereséséhez"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
 msgid "Version History"
 msgstr "Verziótörténet"
@@ -2366,7 +2298,8 @@ msgstr "_Verziótörténet"
 msgid "Today"
 msgstr "Ma"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "Tegnap"
@@ -2426,7 +2359,8 @@ msgstr "További információk beszerzése"
 msgid "Uninstall"
 msgstr "Eltávolítás"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "Lekérés"
@@ -2438,25 +2372,17 @@ msgstr "Tetszőleges jogosultságok"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
-"Ez az alkalmazás olyan jogosultsággal rendelkezik, amely közvetett módon "
-"lehetővé teszi számára, hogy <b>bármely más, általa kívánt jogosultságot</b> "
-"megadjon magának, megkerülve ezzel a Flatpak biztonságos, zárt környezetét.\n"
+"Ez az alkalmazás olyan jogosultsággal rendelkezik, amely közvetett módon lehetővé teszi számára, hogy <b>bármely más, általa kívánt jogosultságot</b> megadjon magának, megkerülve ezzel a Flatpak biztonságos, zárt környezetét.\n"
 "\n"
-"Ezért bármit megtehet, amit egy kiváltságos, nem a biztonságos, zárt "
-"környezetben futó alkalmazás megtehet, például hozzáférhet az összes fájlhoz "
-"és kapcsolódhat az internethez.\n"
+"Ezért bármit megtehet, amit egy kiváltságos, nem a biztonságos, zárt környezetben futó alkalmazás megtehet, például hozzáférhet az összes fájlhoz és kapcsolódhat az internethez.\n"
 "\n"
-"A többi jogosultság megtekintése még mindig jobb képet adhat arról, hogy az "
-"alkalmazás várhatóan miket fog csinálni."
+"A többi jogosultság megtekintése még mindig jobb képet adhat arról, hogy az alkalmazás várhatóan miket fog csinálni."
 
 #: src/bz-safety-dialog.blp:53
 msgid "View Other Permissions"
@@ -2768,7 +2694,8 @@ msgstr "Hivatkozás másolása"
 msgid "Timeline"
 msgstr "Idővonal"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Telepítés:"
@@ -2850,39 +2777,23 @@ msgstr "A(z) „%s” magas kockázatú"
 
 #: src/bz-transaction-dialog.c:221
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Ennek az alkalmazásnak teljes hozzáférése van a rendszerhez, beleértve az Ön "
-"összes <b>fájlját, a böngészőelőzményeit, a mentett jelszavait</b> és "
-"egyebeket. Emellett hozzáféréssel rendelkezik az internethez is, ami azt "
-"jelenti, hogy elküldheti az adatait külső feleknek.\n"
+"Ennek az alkalmazásnak teljes hozzáférése van a rendszerhez, beleértve az Ön összes <b>fájlját, a böngészőelőzményeit, a mentett jelszavait</b> és egyebeket. Emellett hozzáféréssel rendelkezik az internethez is, ami azt jelenti, hogy elküldheti az adatait külső feleknek.\n"
 "\n"
-"Mivel az alkalmazás tulajdonosi, nem lehet ellenőrizni, hogy mit csinál "
-"ezekkel a jogosultságokkal."
+"Mivel az alkalmazás tulajdonosi, nem lehet ellenőrizni, hogy mit csinál ezekkel a jogosultságokkal."
 
 #: src/bz-transaction-dialog.c:230
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Ez az alkalmazás az örökölt X11 ablakkezelő rendszert használja, amely "
-"lehetővé teszi számára, hogy <b>rögzítse az összes billentyűleütést, "
-"képernyőképeket készítsen, és megfigyelje a többi alkalmazást</b>. Emellett "
-"hozzáféréssel rendelkezik az internethez is, ami azt jelenti, hogy "
-"elküldheti az adatait külső feleknek.\n"
+"Ez az alkalmazás az örökölt X11 ablakkezelő rendszert használja, amely lehetővé teszi számára, hogy <b>rögzítse az összes billentyűleütést, képernyőképeket készítsen, és megfigyelje a többi alkalmazást</b>. Emellett hozzáféréssel rendelkezik az internethez is, ami azt jelenti, hogy elküldheti az adatait külső feleknek.\n"
 "\n"
-"Mivel az alkalmazás tulajdonosi, nem lehet ellenőrizni, hogy mit csinál "
-"ezekkel a jogosultságokkal."
+"Mivel az alkalmazás tulajdonosi, nem lehet ellenőrizni, hogy mit csinál ezekkel a jogosultságokkal."
 
 #: src/bz-transaction-dialog.c:246
 msgid "_Install Anyway"
@@ -2980,8 +2891,8 @@ msgstr "Nem található megmaradt felhasználói adat"
 #: src/bz-user-data-page.blp:33
 msgid "Personal data left behind by apps that were removed will show up here"
 msgstr ""
-"Az eltávolított alkalmazások által hátrahagyott személyes adatok itt fognak "
-"megjelenni"
+"Az eltávolított alkalmazások által hátrahagyott személyes adatok itt fognak"
+" megjelenni"
 
 #: src/bz-user-data-page.c:229
 #, c-format
@@ -3028,11 +2939,6 @@ msgstr "Keresés"
 msgid "Main Menu"
 msgstr "Főmenü"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:235
-msgid "You are running a new version of Bazaar!"
-msgstr "A Bazár új verzióját futtatja!"
-
 #: src/bz-window.blp:236
 msgid "See What's New"
 msgstr "Újdonságok megtekintése"
@@ -3040,18 +2946,14 @@ msgstr "Újdonságok megtekintése"
 #: src/bz-window.blp:243
 msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
-msgstr "Van hálózati kapcsolata, de a Flathub gyorsítótárazott verzióját nézi"
+msgstr ""
+"Van hálózati kapcsolata, de a Flathub gyorsítótárazott verzióját nézi"
 
 #: src/bz-window.blp:254
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr ""
-"A hálózati kapcsolat forgalomkorlátos – az automatikus frissítések le vannak "
-"tiltva"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:291
-msgid "_Donate to Bazaar"
-msgstr "_Adományozás a Bazár fejlesztéséhez"
+"A hálózati kapcsolat forgalomkorlátos – az automatikus frissítések le "
+"vannak tiltva"
 
 #: src/bz-window.blp:297
 msgid "_Refresh"
@@ -3073,25 +2975,9 @@ msgstr "_Beállítások"
 msgid "_Keyboard Shortcuts"
 msgstr "_Gyorsbillentyűk"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:324
-msgid "_About Bazaar"
-msgstr "A Bazár _névjegye"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:331
-msgid "_Quit Bazaar"
-msgstr "_Kilépés a Bazárból"
-
 #: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "Kijelentkezés"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:382
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazár – %s"
 
 #: src/bz-window.c:662 src/bz-window.c:711
 msgid "Failed to launch application"
@@ -3100,11 +2986,6 @@ msgstr "Nem sikerült elindítani az alkalmazást"
 #: src/bz-window.c:790
 msgid "Could not open link"
 msgstr "Nem sikerült megnyitni a hivatkozást"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:999
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Nem távolíthatja el a Bazárt a Bazárból!"
 
 #: src/bz-window.c:1383 src/bz-window.c:1417
 msgid "Can't do that right now!"
@@ -3190,7 +3071,8 @@ msgstr "Tulajdonosi szoftver"
 msgid "Special License: %s"
 msgstr "Különleges licenc: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "Szabad szoftver"
@@ -3264,7 +3146,8 @@ msgstr "Felhasználói eszközhöz való hozzáférés"
 
 #: src/safety-calculator.c:118
 msgid "Can access devices such as webcams or gaming controllers"
-msgstr "Hozzáférhet olyan eszközökhöz, mint a webkamerák vagy a játékvezérlők"
+msgstr ""
+"Hozzáférhet olyan eszközökhöz, mint a webkamerák vagy a játékvezérlők"
 
 #: src/safety-calculator.c:120
 msgid "No User Device Access"
@@ -3425,7 +3308,8 @@ msgid "Verified App Developer"
 msgstr "Ellenőrzött alkalmazás-fejlesztő"
 
 #: src/safety-calculator.c:355
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr ""
 "Ellenőrizve lett, hogy az alkalmazás fejlesztője valóban az, akinek mondja "
 "magát"
@@ -3439,8 +3323,8 @@ msgid ""
 "The source code is not public, so it cannot be independently audited and "
 "might be unsafe"
 msgstr ""
-"A forráskód nem nyilvános, így nem lehet függetlenül ellenőrizni, és lehet, "
-"hogy nem biztonságos"
+"A forráskód nem nyilvános, így nem lehet függetlenül ellenőrizni, és lehet,"
+" hogy nem biztonságos"
 
 #: src/safety-calculator.c:375
 msgid "Auditable Code"
@@ -3448,8 +3332,8 @@ msgstr "Auditálható kód"
 
 #: src/safety-calculator.c:376
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
 "A forráskód nyilvános, és függetlenül ellenőrizhető, emiatt az alkalmazás "
 "valószínűbb, hogy biztonságos"
@@ -3539,7 +3423,8 @@ msgstr "KDE Connect integráció"
 
 #: src/safety-calculator.c:591
 msgid "Can interact with devices paired via KDE Connect"
-msgstr "Interakcióba léphet a KDE Connect használatával párosított eszközökkel"
+msgstr ""
+"Interakcióba léphet a KDE Connect használatával párosított eszközökkel"
 
 #: src/shortcuts-dialog.blp:5
 msgctxt "shortcut window"
@@ -3591,11 +3476,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Ablak bezárása"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Kilépés a Bazárból"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3636,8 +3516,9 @@ msgid "Includes %s, %s and %s."
 msgstr "Tartalmazza a következőket: %s, %s és %s."
 
 #: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
 msgid "Store"
 msgstr "Áruház"
 

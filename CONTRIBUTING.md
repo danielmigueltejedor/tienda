@@ -26,7 +26,7 @@ Or without flatpak, if your system permits it:
 meson setup build --prefix=/usr --libdir=/usr/lib64
 ninja -C build
 sudo ninja -C build install
-bazaar
+nodalix-store
 ```
 
 You will need the following dependencies installed, along with a C compiler, meson, and ninja:

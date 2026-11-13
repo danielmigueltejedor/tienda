@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN                 "BAZAAR::FLATHUB"
+#define G_LOG_DOMAIN                 "NODALIX-STORE::FLATHUB"
 #define COLLECTION_FETCH_SIZE        192
 #define CATEGORY_FETCH_SIZE          48
 #define QUALITY_MODERATION_PAGE_SIZE 300
@@ -890,10 +890,10 @@ initialize_fiber (GWeakRef *wr)
     g_autofree char *made_for_route = NULL;
 
     made_for_route = g_strdup_printf ("/made-for/%s", de);
-    toolkit_f = bz_query_bazaar_json (made_for_route);
+    toolkit_f = bz_query_catalog_json (made_for_route);
     if (!dex_await (dex_ref (toolkit_f), &local_error))
       {
-        g_warning ("Failed to complete request to bazaar %s: %s", made_for_route, local_error->message);
+        g_warning ("Failed to complete request for the made-for list %s: %s", made_for_route, local_error->message);
         g_clear_error (&local_error);
         dex_clear (&toolkit_f);
       }

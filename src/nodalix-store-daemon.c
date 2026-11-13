@@ -685,7 +685,7 @@ launch_app (char **extra_args,
   sigset_t                         mask = { 0 };
 
   argv    = malloc_or_bail (sizeof (char *) * (size_t) (n_extra_args + 2));
-  argv[0] = (char *) BAZAAR_BIN_PATH;
+  argv[0] = (char *) STORE_BIN_PATH;
   for (i = 0; i < n_extra_args; i++)
     argv[i + 1] = extra_args[i];
   argv[n_extra_args + 1] = NULL;
@@ -725,7 +725,7 @@ run_update_worker_once (void)
   char    *argv[3] = { NULL };
   sigset_t mask    = { 0 };
 
-  argv[0] = (char *) BAZAAR_BIN_PATH;
+  argv[0] = (char *) STORE_BIN_PATH;
   argv[1] = (char *) UPDATE_WORKER_CLI_OPTION;
   argv[2] = NULL;
 

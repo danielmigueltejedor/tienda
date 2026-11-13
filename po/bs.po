@@ -1,12 +1,12 @@
-# Bosnian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Bosnian translations for nodalix-store package.
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Manually modified from a previous translation, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2025-09-02 08:40+0200\n"
 "PO-Revision-Date: 2025-09-02 09:06+0200\n"
 "Last-Translator: Automatically generated\n"
@@ -17,11 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Poedit 3.6\n"
-
-#: data/os.nodalix.Store.desktop.in:2
-#: data/os.nodalix.Store.metainfo.xml.in:7 src/bz-window.blp:5
-msgid "Bazaar"
-msgstr "Bazaar"
 
 #: data/os.nodalix.Store.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
@@ -52,10 +47,6 @@ msgstr "Nema opisa"
 msgid "Adam Masciola"
 msgstr "Adam Masciola"
 
-#: data/os.nodalix.Store.metainfo.xml.in:41
-msgid "Main Bazaar window showing Blender"
-msgstr "Glavni prozor Bazaara koji prikazuje Blender"
-
 #: src/bz-addons-dialog.blp:13 src/bz-installed-page.blp:162
 #: src/bz-installed-page.blp:174
 msgid "Manage Addons"
@@ -63,14 +54,16 @@ msgstr "Upravljanje dodacima"
 
 #: src/bz-app-tile.blp:65 src/bz-full-view.blp:139
 msgid "This flatpak is verified by the original developers of the software."
-msgstr "Ovaj flatpak je verifikovan od strane originalnih programera softvera."
+msgstr ""
+"Ovaj flatpak je verifikovan od strane originalnih programera softvera."
 
 #: src/bz-application.c:1186
 msgctxt "About Dialog Developer Credit"
 msgid "Adam Masciola <kolunmi@posteo.net>"
 msgstr "Adam Masciola <kolunmi@posteo.net>"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:481
 msgid "translator-credits"
 msgstr "SecularSteve"
@@ -128,10 +121,6 @@ msgstr "Prazno"
 #: src/bz-browse-widget.blp:15
 msgid "No Curated Applications"
 msgstr "Nema izloženih aplikacija"
-
-#: src/bz-browse-widget.blp:16
-msgid "Bazaar was not provided a curated content configuration. Contact your operating system's support channels for assistance."
-msgstr "Bazaaru nije pružena konfiguracija izloženog sadržaja. Za pomoć kontaktirajte kanale podrške vašeg operativnog sistema."
 
 #: src/bz-browse-widget.blp:22 src/bz-flathub-page.blp:11
 msgid "Browser"
@@ -202,8 +191,12 @@ msgid "Share this application"
 msgstr "Podijelite ovu aplikaciju"
 
 #: src/bz-full-view.blp:274
-msgid "The number of downloads in the last 30 days. Click to view this application's download statistics."
-msgstr "Broj preuzimanja u posljednjih 30 dana. Kliknite za pregled statistike preuzimanja ove aplikacije."
+msgid ""
+"The number of downloads in the last 30 days. Click to view this "
+"application's download statistics."
+msgstr ""
+"Broj preuzimanja u posljednjih 30 dana. Kliknite za pregled statistike "
+"preuzimanja ove aplikacije."
 
 #: src/bz-full-view.blp:316
 msgid "Support this developer"
@@ -235,12 +228,20 @@ msgid "No URL"
 msgstr "Nema URL-a"
 
 #: src/bz-full-view.c:233
-msgid "This application has a FLOSS license, meaning the source code can be audited for safety."
-msgstr "Ova aplikacija ima FLOSS licencu, što znači da se izvorni kod može revidirati radi sigurnosti."
+msgid ""
+"This application has a FLOSS license, meaning the source code can be "
+"audited for safety."
+msgstr ""
+"Ova aplikacija ima FLOSS licencu, što znači da se izvorni kod može "
+"revidirati radi sigurnosti."
 
 #: src/bz-full-view.c:234
-msgid "This application has a proprietary license, meaning the source code is developed privately and cannot be audited by an independent third party."
-msgstr "Ova aplikacija ima vlasničku licencu, što znači da je izvorni kod razvijen privatno i ne može ga revidirati nezavisna treća strana."
+msgid ""
+"This application has a proprietary license, meaning the source code is "
+"developed privately and cannot be audited by an independent third party."
+msgstr ""
+"Ova aplikacija ima vlasničku licencu, što znači da je izvorni kod razvijen "
+"privatno i ne može ga revidirati nezavisna treća strana."
 
 #: src/bz-installed-page.blp:15
 msgid "No Flatpaks Installed"
@@ -364,18 +365,28 @@ msgid "Updates Are Available"
 msgstr "Dostupna su ažuriranja"
 
 #: src/bz-update-dialog.blp:11
-msgid "The following applications are eligible for updates. Would you like to install them?"
-msgstr "Sljedeće aplikacije ispunjavaju uslove za ažuriranja. Želite li ih instalirati?"
+msgid ""
+"The following applications are eligible for updates. Would you like to "
+"install them?"
+msgstr ""
+"Sljedeće aplikacije ispunjavaju uslove za ažuriranja. Želite li ih "
+"instalirati?"
 
 #: src/bz-update-dialog.c:135
 #, c-format
-msgid "%d runtimes and/or addons are eligible for updates. Would you like to install them?"
-msgstr "%d okruženja za izvršavanje i/ili dodaci ispunjavaju uslove za ažuriranja. Želite li ih instalirati?"
+msgid ""
+"%d runtimes and/or addons are eligible for updates. Would you like to "
+"install them?"
+msgstr ""
+"%d okruženja za izvršavanje i/ili dodaci ispunjavaju uslove za ažuriranja. "
+"Želite li ih instalirati?"
 
 #: src/bz-update-dialog.c:143
 #, c-format
 msgid "Additionally, %d runtimes and/or addons will be updated."
-msgstr "Pored toga, ažurirat će se i sljedeći broj runtime okruženja i/ili dodataka: %d."
+msgstr ""
+"Pored toga, ažurirat će se i sljedeći broj runtime okruženja i/ili "
+"dodataka: %d."
 
 #: src/bz-window.blp:36
 msgid "Transactions Will Appear Here"
@@ -460,14 +471,6 @@ msgstr "Ažurno!"
 #: src/bz-window.blp:425
 msgid "_Keyboard Shortcuts"
 msgstr "_Prečice na tastaturi"
-
-#: src/bz-window.blp:430
-msgid "_About Bazaar"
-msgstr "_O Bazaar-u"
-
-#: src/bz-window.blp:435
-msgid "_Donate to Bazaar ❤️"
-msgstr "_Donirajte Bazaaru ❤️"
 
 #: src/bz-window.c:856
 msgid ""
@@ -576,8 +579,9 @@ msgid "Quit"
 msgstr "Odustani"
 
 #: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
 msgid "Store"
 msgstr "Trgovina"
 

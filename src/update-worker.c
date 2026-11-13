@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::UPDATE-WORKER"
+#define G_LOG_DOMAIN "NODALIX-STORE::UPDATE-WORKER"
 
 #include "config.h"
 
@@ -274,7 +274,7 @@ notify_stale (GSettings *settings)
   if (!timestamp_more_than_days_ago (settings, "last-stale-notification", STALE_NOTIFY_THROTTLE_DAYS))
     return;
 
-  send_portal_notification ("bazaar-update-stale",
+  send_portal_notification ("store-update-stale",
                             _ ("Updates Are Out of Date"),
                             _ ("Please check for available updates"),
                             NULL, NULL);
@@ -566,7 +566,7 @@ send_update_notification (GPtrArray *history)
                              new_ver != NULL ? new_ver : "");
     }
 
-  send_portal_notification ("bazaar-update", summary, body->str,
+  send_portal_notification ("store-update", summary, body->str,
                             "app.show-update-history",
                             g_variant_builder_end (&builder));
 }

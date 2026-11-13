@@ -1,12 +1,12 @@
-# Greek translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Greek translations for nodalix-store package.
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-10-02 10:53+0000\n"
 "PO-Revision-Date: 2025-12-18 04:30+0200\n"
 "Last-Translator: Automatically generated\n"
@@ -17,13 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.8\n"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:437 src/bz-window.c:438
-msgid "Bazaar"
-msgstr "Bazaar"
 
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
@@ -71,16 +64,12 @@ msgstr "Δείτε εύκολα τα δικαιώματα εφαρμογών"
 
 #: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Sign in to Flathub to view and manage your favorites"
-msgstr "Συνδεθείτε στο Flathub για να δείτε και να διαχειριστείτε τα αγαπημένα σας"
+msgstr ""
+"Συνδεθείτε στο Flathub για να δείτε και να διαχειριστείτε τα αγαπημένα σας"
 
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Αναζήτηση εφαρμογών απευθείας από το GNOME Shell"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:755
-msgid "The Bazaar Contributors"
-msgstr "Οι συντελεστές του Bazaar"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -139,8 +128,8 @@ msgstr "Δεν υπάρχουν ορατά πρόσθετα"
 
 #: src/bz-addons-dialog.blp:82
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
 "Οι τρέχουσες προτιμήσεις φίλτρων σας αποκρύπτουν όλα τα γνωστά πρόσθετα. "
 "Δοκιμάστε να τις προσαρμόσετε."
@@ -156,8 +145,8 @@ msgid "Download"
 msgstr "Λήψη"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:282
-#: src/bz-releases-list.c:204
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356
+#: src/bz-full-view.blp:282 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "Εγκατεστημένη"
 
@@ -172,8 +161,8 @@ msgstr "Δεν λαμβάνει πλέον βασικές ενημερώσεις
 
 #: src/bz-addons-dialog.blp:261
 #| msgid ""
-#| "This app uses a runtime that no longer receives updates or security "
-#| "fixes. It may become unsafe to use."
+#| "This app uses a runtime that no longer receives updates or security fixes. "
+#| "It may become unsafe to use."
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
@@ -196,7 +185,8 @@ msgstr "Πρόσθετο για το %s"
 msgid "Show Less"
 msgstr "Εμφάνιση λιγότερων"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:612 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:612
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Εμφάνιση περισσότερων"
 
@@ -216,7 +206,8 @@ msgstr "Βαθμολογία ηλικίας"
 msgid "Cartoon Violence"
 msgstr "Βία κινουμένων σχεδίων"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με βία κινουμένων σχεδίων"
@@ -226,7 +217,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με βί�
 msgid "Fantasy Violence"
 msgstr "Βία φαντασίας"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με βία φαντασίας"
@@ -236,7 +228,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με βί�
 msgid "Realistic Violence"
 msgstr "Ρεαλιστική βία"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με ρεαλιστική βία"
@@ -246,7 +239,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με ρε�
 msgid "Violence Depicting Bloodshed"
 msgstr "Βία με απεικόνιση αιματοχυσίας"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αιματοχυσία"
@@ -256,7 +250,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αι�
 msgid "Sexual Violence"
 msgstr "Σεξουαλική βία"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με σεξουαλική βία"
@@ -266,7 +261,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με σε�
 msgid "Alcohol"
 msgstr "Αλκοόλ"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αναφορές στο αλκοόλ"
@@ -276,7 +272,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αν�
 msgid "Narcotics"
 msgstr "Ναρκωτικά"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr ""
@@ -287,7 +284,8 @@ msgstr ""
 msgid "Tobacco"
 msgstr "Καπνός"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αναφορές σε προϊόντα καπνού"
@@ -297,7 +295,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αν�
 msgid "Nudity"
 msgstr "Γυμνότητα"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Καμία πληροφορία σχετικά με γυμνότητα οποιουδήποτε είδους"
@@ -307,7 +306,8 @@ msgstr "Καμία πληροφορία σχετικά με γυμνότητα �
 msgid "Sexual Themes"
 msgstr "Σεξουαλικά θέματα"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr ""
@@ -319,7 +319,8 @@ msgstr ""
 msgid "Profanity"
 msgstr "Βωμολοχίες"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με οποιαδήποτε μορφή βωμολοχίας"
@@ -329,7 +330,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με οπ�
 msgid "Inappropriate Humor"
 msgstr "Ακατάλληλο χιούμορ"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με ακατάλληλο χιούμορ"
@@ -339,7 +341,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με ακ�
 msgid "Discrimination"
 msgstr "Διακρίσεις"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Καμία πληροφορία σχετικά με διακριτική γλώσσα οποιουδήποτε είδους"
@@ -349,7 +352,8 @@ msgstr "Καμία πληροφορία σχετικά με διακριτική
 msgid "Advertising"
 msgstr "Διαφήμιση"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Καμία πληροφορία σχετικά με διαφημίσεις οποιουδήποτε είδους"
@@ -359,7 +363,8 @@ msgstr "Καμία πληροφορία σχετικά με διαφημίσει
 msgid "Gambling"
 msgstr "Τυχερά παιχνίδια"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Καμία πληροφορία σχετικά με τυχερά παιχνίδια οποιουδήποτε είδους"
@@ -369,7 +374,8 @@ msgstr "Καμία πληροφορία σχετικά με τυχερά παι�
 msgid "Purchasing"
 msgstr "Αγορές"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με τη δυνατότητα δαπάνης χρημάτων"
@@ -379,7 +385,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με τη 
 msgid "Chat Between Users"
 msgstr "Συνομιλία μεταξύ χρηστών"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr ""
@@ -391,7 +398,8 @@ msgstr ""
 msgid "Audio Chat Between Users"
 msgstr "Ηχητική συνομιλία μεταξύ χρηστών"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr ""
@@ -403,7 +411,8 @@ msgstr ""
 msgid "Contact Details"
 msgstr "Στοιχεία επικοινωνίας"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
@@ -417,9 +426,11 @@ msgstr ""
 msgid "Identifying Information"
 msgstr "Πληροφορίες ταυτοποίησης"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr ""
 "Δεν υπάρχουν πληροφορίες σχετικά με την κοινοποίηση πληροφοριών χρηστών σε "
 "τρίτους"
@@ -429,9 +440,11 @@ msgstr ""
 msgid "Location Sharing"
 msgstr "Κοινή χρήση τοποθεσίας"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr ""
 "Δεν υπάρχουν πληροφορίες σχετικά με την κοινοποίηση της φυσικής τοποθεσίας "
 "σε άλλους χρήστες"
@@ -441,7 +454,8 @@ msgstr ""
 msgid "Prostitution"
 msgstr "Πορνεία"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αναφορές σε πορνεία"
@@ -451,7 +465,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αν�
 msgid "Adultery"
 msgstr "Μοιχεία"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αναφορές σε μοιχεία"
@@ -461,7 +476,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αν�
 msgid "Sexualized Characters"
 msgstr "Σεξουαλικοποιημένοι χαρακτήρες"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με Σεξουαλικοποιημένους χαρακτήρες"
@@ -471,7 +487,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με Σε�
 msgid "Desecration"
 msgstr "Βεβήλωση"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αναφορές σε βεβήλωση"
@@ -481,7 +498,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αν�
 msgid "Human Remains"
 msgstr "Ανθρώπινα λείψανα"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με ορατά ανθρώπινα λείψανα"
@@ -491,7 +509,8 @@ msgstr "Δεν υπάρχουν πληροφορίες σχετικά με ορ�
 msgid "Slavery"
 msgstr "Δουλεία"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Δεν υπάρχουν πληροφορίες σχετικά με αναφορές στη δουλεία"
@@ -592,6 +611,7 @@ msgstr "Το %s είναι κατάλληλο για %s"
 #, c-format
 msgid "%s • %s"
 msgstr "%s • %s"
+
 #: src/bz-app-permissions.c:175
 #, c-format
 msgid "System folder %s"
@@ -793,7 +813,8 @@ msgstr "Αποθηκευτικός χώρος"
 msgid "Verified"
 msgstr "Επαληθευμένο"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:758
 msgid "translator-credits"
 msgstr "Xarishark-Zacharias Xenakis"
@@ -811,30 +832,6 @@ msgstr "Αποσυνδεθήκατε με επιτυχία!"
 msgid "Notice for Ubuntu Users"
 msgstr "Σημείωση για τους χρήστες Ubuntu"
 
-#: src/bz-application.c:1061
-msgid ""
-"Ubuntu 25.10 and newer have changed default security rules in a way that "
-"makes it <b>impossible to install apps</b> from the Flatpak version of "
-"Bazaar. For the time being, please use the apt package instead. Install it "
-"with\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"You can then remove this Flatpak version with\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-msgstr ""
-"Το Ubuntu 25.10 και νεότερες εκδόσεις έχουν αλλάξει τους προεπιλεγμένους κανόνες ασφαλείας κατά τρόπο που "
-"καθιστά <b>αδύνατη την εγκατάσταση εφαρμογών</b> από την έκδοση Flatpak του "
-"Bazaar. Προς το παρόν, παρακαλούμε χρησιμοποιήστε το πακέτο apt. Εγκαταστήστε το "
-"με\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"Στη συνέχεια, μπορείτε να αφαιρέσετε αυτήν την έκδοση Flatpak με\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-
 #: src/bz-application.c:1069
 msgid "Continue Anyway"
 msgstr "Συνέχεια ούτως ή άλλως"
@@ -849,43 +846,10 @@ msgstr "Εκτέλεση ρύθμισης…"
 msgid "Set Up System Flathub?"
 msgstr "Ρύθμιση Flathub συστήματος;"
 
-#: src/bz-application.c:1187
-#| msgid ""
-#| "Flathub is not set up on this system. You will not be able to browse and "
-#| "install applications in Bazaar if its unavailable.\n"
-#| "\n"
-#| "You can still use Bazaar to browse and remove already installed apps."
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Το απομακρυσμένο Flathub του συστήματος δεν έχει ρυθμιστεί. Το Bazaar απαιτεί να είναι "
-"διαμορφωμένο το Flathub στην εγκατάσταση Flatpak του συστήματος για την περιήγηση και "
-"εγκατάσταση εφαρμογών.\n"
-"\n"
-"Μπορείτε ακόμα να χρησιμοποιήσετε το Bazaar για να περιηγηθείτε και να αφαιρέσετε ήδη εγκατεστημένες εφαρμογές."
-
 #: src/bz-application.c:1194
 #| msgid "Set Up Flathub"
 msgid "Set Up Flathub?"
 msgstr "Ρύθμιση του Flathub;"
-
-#: src/bz-application.c:1197
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Το Flathub δεν έχει ρυθμιστεί σε αυτό το σύστημα. Δεν θα μπορείτε να "
-"περιηγηθείτε και να εγκαταστήσετε εφαρμογές στο Bazaar εάν δεν είναι "
-"διαθέσιμο.\n"
-"\n"
-"Μπορείτε ακόμα να χρησιμοποιήσετε το Bazaar για να περιηγηθείτε και να "
-"αφαιρέσετε ήδη εγκατεστημένες εφαρμογές."
 
 #: src/bz-application.c:1203
 msgid "Later"
@@ -989,8 +953,8 @@ msgid ""
 "The following will be installed. Additional shared components may also be "
 "installed"
 msgstr ""
-"Θα εγκατασταθούν τα ακόλουθα. Ενδέχεται επίσης να εγκατασταθούν "
-"επιπλέον κοινόχρηστα στοιχεία"
+"Θα εγκατασταθούν τα ακόλουθα. Ενδέχεται επίσης να εγκατασταθούν επιπλέον "
+"κοινόχρηστα στοιχεία"
 
 #: src/bz-bulk-install-dialog.c:114
 #, c-format
@@ -1021,18 +985,6 @@ msgstr "Εγκατάσταση πακέτου"
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
 msgstr "Επιπλέον εξαρτήσεις ενδέχεται να καταλάβουν πρόσθετο χώρο"
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Η εγκατάσταση αυτής της εφαρμογής ενδέχεται να απαιτεί την προσθήκη μιας νέας πηγής λογισμικού. Άλλες εφαρμογές "
-"από αυτήν την πηγή θα εμφανίζονται στο Bazaar.\n"
-"\n"
-"Προσθέστε αυτήν την πηγή μόνο εάν είστε βέβαιοι ότι την εμπιστεύεστε."
 
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
@@ -1105,8 +1057,8 @@ msgid ""
 "There is no curation information provided on this system. You can still "
 "browse apps on Flathub"
 msgstr ""
-"Δεν παρέχονται πληροφορίες επιμέλειας σε αυτό το σύστημα. Μπορείτε "
-"ακόμα να περιηγηθείτε σε εφαρμογές στο Flathub"
+"Δεν παρέχονται πληροφορίες επιμέλειας σε αυτό το σύστημα. Μπορείτε ακόμα να"
+" περιηγηθείτε σε εφαρμογές στο Flathub"
 
 #: src/bz-curated-view.blp:33
 msgid "Browse Flathub"
@@ -1139,20 +1091,19 @@ msgid ""
 "The ownership of the %s app ID has been manually verified by the Flathub "
 "team."
 msgstr ""
-"Η ιδιοκτησία του αναγνωριστικού της εφαρμογής %s έχει επαληθευτεί χειροκίνητα "
-"από την ομάδα του Flathub."
+"Η ιδιοκτησία του αναγνωριστικού της εφαρμογής %s έχει επαληθευτεί "
+"χειροκίνητα από την ομάδα του Flathub."
 
 #: src/bz-developer-badge.c:253
 #, c-format
 #| msgid ""
-#| "The ownership of the %s app ID has been verified by <b>%s</b> on <b>%s</"
-#| "b>."
+#| "The ownership of the %s app ID has been verified by <b>%s</b> on <b>%s</b>."
 msgid ""
 "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
 "<b>%3$s</b>."
 msgstr ""
-"Η ιδιοκτησία του αναγνωριστικού της εφαρμογής %1$s έχει επαληθευτεί από <b>%2$s</b> στις "
-"<b>%3$s</b>."
+"Η ιδιοκτησία του αναγνωριστικού της εφαρμογής %1$s έχει επαληθευτεί από "
+"<b>%2$s</b> στις <b>%3$s</b>."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -1167,12 +1118,6 @@ msgstr ""
 msgid "The ownership of the %s app ID has been verified."
 msgstr "Η ιδιοκτησία του αναγνωριστικού της εφαρμογής %s έχει επαληθευτεί."
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-#| msgid "Bazaar Inspector"
-msgid "Bazaar Release"
-msgstr "Κυκλοφορία του Bazaar"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Πλήρεις σημειώσεις κυκλοφορίας"
@@ -1181,28 +1126,15 @@ msgstr "Πλήρεις σημειώσεις κυκλοφορίας"
 msgid "This release was made possible by users like you!"
 msgstr "Αυτή η κυκλοφορία έγινε δυνατή χάρη σε χρήστες σαν εσάς!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Μου αρέσει να αναπτύσσω το Bazaar, αλλά δεν μπορώ να το κάνω μόνος μου. Βοηθήστε "
-"στην περαιτέρω ανάπτυξή του κάνοντας μια δωρεά στο Ko-Fi."
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-#| msgid "_Donate to Bazaar ❤️"
-msgid "Donate to Bazaar"
-msgstr "Δωρεά στο Bazaar"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "Τι νέο υπάρχει στο %s;"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Κυκλοφόρησε στις %-e %B %Y"
@@ -1213,8 +1145,8 @@ msgstr "Επιλέξτε μια εγκατάσταση"
 
 #: src/bz-entry-group-util.c:76
 #| msgid ""
-#| "You have multiple versions of this app installed. Which one would you "
-#| "like to proceed with? "
+#| "You have multiple versions of this app installed. Which one would you like "
+#| "to proceed with? "
 msgid ""
 "You have multiple versions of this app installed. Which one would you like "
 "to proceed with?"
@@ -1653,7 +1585,8 @@ msgstr "Νέα χρονιά, νέες ροές εργασίας"
 
 #: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
-msgstr "Εφαρμογές για λήψη σημειώσεων, παρακολούθηση εργασιών και προγραμματισμό"
+msgstr ""
+"Εφαρμογές για λήψη σημειώσεων, παρακολούθηση εργασιών και προγραμματισμό"
 
 #: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
@@ -1670,7 +1603,9 @@ msgstr "Γίνετε δημιουργικοί"
 
 #: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
-msgstr "Βασικές εφαρμογές για σχεδίαση, επεξεργασία φωτογραφιών και ψηφιακό σχεδιασμό"
+msgstr ""
+"Βασικές εφαρμογές για σχεδίαση, επεξεργασία φωτογραφιών και ψηφιακό "
+"σχεδιασμό"
 
 #: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
@@ -1719,7 +1654,8 @@ msgstr "Βασικά εργαλεία προγραμματιστών ιστού"
 
 #: src/bz-flathub-curated-section.vala:49
 msgid "Making websites is more fun with these apps"
-msgstr "Η δημιουργία ιστοσελίδων γίνεται πιο διασκεδαστική με αυτές τις εφαρμογές"
+msgstr ""
+"Η δημιουργία ιστοσελίδων γίνεται πιο διασκεδαστική με αυτές τις εφαρμογές"
 
 #: src/bz-flathub-curated-section.vala:50
 msgid "Take Better Notes"
@@ -1829,9 +1765,9 @@ msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr ""
-"Αυτή η εφαρμογή χρησιμοποιεί ένα περιβάλλον εκτέλεσης που δεν λαμβάνει πλέον "
-"ενημερώσεις ή διορθώσεις ασφαλείας. Η χρήση της ενδέχεται να μην είναι "
-"ασφαλής."
+"Αυτή η εφαρμογή χρησιμοποιεί ένα περιβάλλον εκτέλεσης που δεν λαμβάνει "
+"πλέον ενημερώσεις ή διορθώσεις ασφαλείας. Η χρήση της ενδέχεται να μην "
+"είναι ασφαλής."
 
 #: src/bz-full-view.blp:533
 #| msgid "User Data"
@@ -1880,9 +1816,9 @@ msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
 msgstr ""
-"Αυτή η εφαρμογή διαθέτει ιδιόκτητη άδεια χρήσης, που σημαίνει ότι ο πηγαίος "
-"κώδικας έχει αναπτυχθεί ιδιωτικά και δεν μπορεί να ελεγχθεί από ανεξάρτητο "
-"τρίτο μέρος."
+"Αυτή η εφαρμογή διαθέτει ιδιόκτητη άδεια χρήσης, που σημαίνει ότι ο πηγαίος"
+" κώδικας έχει αναπτυχθεί ιδιωτικά και δεν μπορεί να ελεγχθεί από ανεξάρτητο"
+" τρίτο μέρος."
 
 #: src/bz-full-view.c:209
 #| msgid "Other Apps by this Developer"
@@ -2129,7 +2065,8 @@ msgstr "Μέγεθος"
 #: src/bz-library-page.c:181
 #, c-format
 msgid "No matches found for \"%s\" in the list of installed apps"
-msgstr "Δεν βρέθηκαν αποτελέσματα για \"%s\" στη λίστα των εγκατεστημένων εφαρμογών"
+msgstr ""
+"Δεν βρέθηκαν αποτελέσματα για \"%s\" στη λίστα των εγκατεστημένων εφαρμογών"
 
 #: src/bz-library-page.c:194 src/bz-updates-card.vala:51
 #, c-format
@@ -2201,31 +2138,23 @@ msgstr "Η άδεια χρήσης αυτής της εφαρμογής δεν �
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Αυτή η εφαρμογή έχει αναπτυχθεί ανοιχτά από μια διεθνή κοινότητα και "
-"διατίθεται με άδεια χρήσης %s.\n"
+"Αυτή η εφαρμογή έχει αναπτυχθεί ανοιχτά από μια διεθνή κοινότητα και διατίθεται με άδεια χρήσης %s.\n"
 "\n"
 "Μπορείτε να συμμετάσχετε και να βοηθήσετε να γίνει ακόμα καλύτερη."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Αυτή η εφαρμογή δεν έχει αναπτυχθεί ανοιχτά, επομένως μόνο οι "
-"προγραμματιστές της γνωρίζουν πώς λειτουργεί. Μπορεί να είναι ανασφαλής με "
-"τρόπους που είναι δύσκολο να εντοπιστούν και μπορεί να αλλάξει χωρίς "
-"εποπτεία.\n"
+"Αυτή η εφαρμογή δεν έχει αναπτυχθεί ανοιχτά, επομένως μόνο οι προγραμματιστές της γνωρίζουν πώς λειτουργεί. Μπορεί να είναι ανασφαλής με τρόπους που είναι δύσκολο να εντοπιστούν και μπορεί να αλλάξει χωρίς εποπτεία.\n"
 "\n"
-"Μπορεί να έχετε ή να μην έχετε τη δυνατότητα να συνεισφέρετε σε αυτήν την "
-"εφαρμογή."
+"Μπορεί να έχετε ή να μην έχετε τη δυνατότητα να συνεισφέρετε σε αυτήν την εφαρμογή."
 
 #: src/bz-license-dialog.c:226
 #, c-format
@@ -2236,8 +2165,7 @@ msgid ""
 msgstr ""
 "Αυτή η εφαρμογή έχει αναπτυχθεί με την ειδική άδεια %s.\n"
 "\n"
-"Μπορεί να έχετε ή να μην έχετε τη δυνατότητα να συνεισφέρετε σε αυτήν την "
-"εφαρμογή."
+"Μπορεί να έχετε ή να μην έχετε τη δυνατότητα να συνεισφέρετε σε αυτήν την εφαρμογή."
 
 #: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
 #: src/bz-safety-dialog.blp:103
@@ -2341,13 +2269,16 @@ msgstr "Προτιμήσεις"
 
 #: src/bz-preferences-dialog.blp:25
 #, fuzzy
-#| msgid "Network connection is metered — automatic store data sync is paused"
-msgid "Network connection is metered — automatic store data refresh is paused"
+#| msgid ""
+#| "Network connection is metered — automatic store data sync is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 "Η σύνδεση δικτύου μετράται — η αυτόματη συγχρονισμός δεδομένων του "
 "καταστήματος έχει παυθεί"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244
+#: src/bz-window.blp:255
 #, fuzzy
 #| msgid "Sync Manually"
 msgid "Refresh Manually"
@@ -2419,8 +2350,8 @@ msgstr "Αποτελέσματα μόνο από το Flathub"
 #| "Limit search and browse results to applications only available on Flathub"
 msgid "Limit search and browse results to apps only available on Flathub"
 msgstr ""
-"Περιορίστε τα αποτελέσματα αναζήτησης και περιήγησης σε εφαρμογές που είναι "
-"διαθέσιμες μόνο στο Flathub"
+"Περιορίστε τα αποτελέσματα αναζήτησης και περιήγησης σε εφαρμογές που είναι"
+" διαθέσιμες μόνο στο Flathub"
 
 #: src/bz-preferences-dialog.blp:90
 #, fuzzy
@@ -2443,7 +2374,8 @@ msgstr "Απόκρυψη εφαρμογών EOL"
 #: src/bz-preferences-dialog.blp:97
 msgid "Hide apps which are no longer supported by their developers"
 msgstr ""
-"Απόκρυψη εφαρμογών που δεν υποστηρίζονται πλέον από τους προγραμματιστές τους"
+"Απόκρυψη εφαρμογών που δεν υποστηρίζονται πλέον από τους προγραμματιστές "
+"τους"
 
 #: src/bz-preferences-dialog.blp:103
 #, fuzzy
@@ -2547,11 +2479,6 @@ msgstr "Χρώματα υπερηφάνειας"
 msgid "Neutrois Pride Colors"
 msgstr "Χρώματα Υπερηφάνειας Intersex"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:286
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr ""
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "Ιστορικό εκδόσεων"
@@ -2561,7 +2488,8 @@ msgstr "Ιστορικό εκδόσεων"
 msgid "Today"
 msgstr ""
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr ""
@@ -2631,7 +2559,8 @@ msgstr "Ιστορικό εκδόσεων"
 msgid "Uninstall"
 msgstr "Εγκατάσταση"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "Λήψη"
@@ -2643,14 +2572,11 @@ msgstr ""
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
 
 #: src/bz-safety-dialog.blp:53
@@ -2974,7 +2900,8 @@ msgstr "Αντιγραφή συνδέσμου"
 msgid "Timeline"
 msgstr "Χρονοδιάγραμμα"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Εγκαταστάσεις:"
@@ -3041,7 +2968,8 @@ msgstr "Διαγραφή δεδομένων"
 #, fuzzy
 #| msgid "Permanently remove app data to save space"
 msgid "Permanently erase user data to save space"
-msgstr "Διαγράψτε μόνιμα τα δεδομένα των εφαρμογών για να εξοικονομήσετε χώρο"
+msgstr ""
+"Διαγράψτε μόνιμα τα δεδομένα των εφαρμογών για να εξοικονομήσετε χώρο"
 
 #: src/bz-transaction-dialog.c:189
 #, c-format
@@ -3064,23 +2992,16 @@ msgstr ""
 
 #: src/bz-transaction-dialog.c:221
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
 
 #: src/bz-transaction-dialog.c:230
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
 
 #: src/bz-transaction-dialog.c:246
@@ -3256,11 +3177,6 @@ msgstr "Αναζήτηση"
 msgid "Main Menu"
 msgstr "Κύριο μενού"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:235
-msgid "You are running a new version of Bazaar!"
-msgstr ""
-
 #: src/bz-window.blp:236
 msgid "See What's New"
 msgstr ""
@@ -3269,23 +3185,17 @@ msgstr ""
 msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
 msgstr ""
-"Έχετε σύνδεση στο δίκτυο, αλλά βλέπετε μια προσωρινά αποθηκευμένη έκδοση του "
-"Flathub"
+"Έχετε σύνδεση στο δίκτυο, αλλά βλέπετε μια προσωρινά αποθηκευμένη έκδοση "
+"του Flathub"
 
 #: src/bz-window.blp:254
 #, fuzzy
-#| msgid "Network connection is metered — automatic store data sync is paused"
+#| msgid ""
+#| "Network connection is metered — automatic store data sync is paused"
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr ""
 "Η σύνδεση δικτύου μετράται — η αυτόματη συγχρονισμός δεδομένων του "
 "καταστήματος έχει παυθεί"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:291
-#, fuzzy
-#| msgid "_Donate to Bazaar ❤️"
-msgid "_Donate to Bazaar"
-msgstr "_Δωρίστε στο Bazaar ❤️"
 
 #: src/bz-window.blp:297
 #, fuzzy
@@ -3312,26 +3222,9 @@ msgstr "_Προτιμήσεις"
 msgid "_Keyboard Shortcuts"
 msgstr "_Συντομεύσεις πληκτρολογίου"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:324
-msgid "_About Bazaar"
-msgstr "_Σχετικά με το Bazaar"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:331
-msgid "_Quit Bazaar"
-msgstr "_Κλείστε το Bazaar"
-
 #: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "Αποσύνδεση"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:440
-#, fuzzy, c-format
-#| msgid "Bazaar"
-msgid "Bazaar — %s"
-msgstr "Bazaar"
 
 #: src/bz-window.c:720 src/bz-window.c:769
 msgid "Failed to launch application"
@@ -3339,11 +3232,6 @@ msgstr ""
 
 #: src/bz-window.c:848
 msgid "Could not open link"
-msgstr ""
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1057
-msgid "You can't remove Bazaar from Bazaar!"
 msgstr ""
 
 #: src/bz-window.c:1441 src/bz-window.c:1475
@@ -3431,7 +3319,8 @@ msgstr "Ιδιόκτητο λογισμικό"
 msgid "Special License: %s"
 msgstr "Ειδική άδεια: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 #, fuzzy
 #| msgid "Free software"
@@ -3670,7 +3559,8 @@ msgstr "Άλλες εφαρμογές από αυτόν τον προγραμμ�
 #| msgid ""
 #| "The ownership of the %s app ID has been manually verified by the Flathub "
 #| "team."
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr ""
 "Η ιδιοκτησία του αναγνωριστικού εφαρμογής %s έχει επαληθευτεί χειροκίνητα "
 "από την ομάδα του Flathub."
@@ -3693,8 +3583,8 @@ msgstr ""
 
 #: src/safety-calculator.c:394
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
 
 #: src/safety-calculator.c:532
@@ -3837,13 +3727,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr ""
 
-#: src/shortcuts-dialog.blp:52
-#, fuzzy
-#| msgid "_Quit Bazaar"
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "_Κλείστε το Bazaar"
-
 #: src/transaction-notification.c:133
 #, fuzzy, c-format
 #| msgid "Installed"
@@ -3887,6 +3770,18 @@ msgstr ""
 msgid "Includes %s, %s and %s."
 msgstr ""
 
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "Κατάστημα"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Κατάστημα — %s"
+
 #~ msgid "Hide EOL Entries"
 #~ msgstr "Απόκρυψη καταχωρήσεων EOL"
 
@@ -3915,21 +3810,6 @@ msgstr ""
 
 #~ msgid "Saved Window Dimensions"
 #~ msgstr "Αποθηκευμένες διαστάσεις παραθύρου"
-
-#~ msgid "The window dimensions to be used by the next Bazaar window"
-#~ msgstr ""
-#~ "Οι διαστάσεις του παραθύρου που θα χρησιμοποιηθούν από το επόμενο "
-#~ "παράθυρο Bazaar"
-
-#~ msgid ""
-#~ "It emphasizes supporting the developers who make the Linux desktop "
-#~ "possible. Bazaar features a \"curated\" tab that can be configured by "
-#~ "distributors to allow for a more localized experience."
-#~ msgstr ""
-#~ "Δίνει έμφαση στην υποστήριξη των προγραμματιστών που καθιστούν δυνατή τη "
-#~ "λειτουργία του Linux desktop. Το Bazaar διαθέτει μια καρτέλα \"curated\" "
-#~ "που μπορεί να διαμορφωθεί από τους διανομείς ώστε να προσφέρει μια πιο "
-#~ "τοπική εμπειρία."
 
 #~ msgid "Nucleus app page"
 #~ msgstr "Σελίδα εφαρμογής Nucleus"
@@ -4133,9 +4013,6 @@ msgstr ""
 #~ msgid "Flathub"
 #~ msgstr "Flathub"
 
-#~ msgid "Open Bazaar Inspector"
-#~ msgstr "Άνοιγμα Επιθεωρητή Bazaar"
-
 #, c-format
 #~ msgid "%d Update Available"
 #~ msgid_plural "%d Updates Available"
@@ -4143,16 +4020,13 @@ msgstr ""
 #~ msgstr[1] "%d Διαθέσιμες ενημερώσεις"
 
 #~ msgid ""
-#~ "The ability to inspect and install local .flatpak bundle files is coming "
-#~ "soon! In the meantime, try running\n"
+#~ "The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
 #~ "on the command line."
 #~ msgstr ""
-#~ "Η δυνατότητα ελέγχου και εγκατάστασης τοπικών αρχείων πακέτων .flatpak θα "
-#~ "είναι διαθέσιμη σύντομα! Εν τω μεταξύ, δοκιμάστε να εκτελέσετε την "
-#~ "εντολή\n"
+#~ "Η δυνατότητα ελέγχου και εγκατάστασης τοπικών αρχείων πακέτων .flatpak θα είναι διαθέσιμη σύντομα! Εν τω μεταξύ, δοκιμάστε να εκτελέσετε την εντολή\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
@@ -4181,14 +4055,3 @@ msgstr ""
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
 #~ msgstr "Έξοδος"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "Κατάστημα"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "Κατάστημα — %s"

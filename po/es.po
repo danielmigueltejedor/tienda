@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2025 Spanish translations for bazaar package
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# SPDX-FileCopyrightText: 2025 Spanish translations for nodalix-store package
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2025.
 #
 # SPDX-FileCopyrightText: 2025 robotta <chriserizodos@gmail.com>
@@ -9,8 +9,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-06-27 10:28+0200\n"
 "PO-Revision-Date: 2026-11-13 05:30+0100\n"
 "Last-Translator: Óscar Fernández Díaz <oscfdezdz@tuta.io>\n"
@@ -21,12 +21,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 50.0\n"
-
-#: data/os.nodalix.Store.desktop.in:2 data/os.nodalix.Store.metainfo.xml.in:7
-#: src/bz-window.blp:46 src/bz-window.blp:202 src/bz-window.c:373
-#: src/bz-window.c:374
-msgid "Bazaar"
-msgstr "Bazar"
 
 #: data/os.nodalix.Store.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
@@ -49,8 +43,9 @@ msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"Una tienda de aplicaciones rápida y moderna para Linux enfocada en descubrir"
-" e instalar aplicaciones y complementos Flatpak, particularmente de Flathub."
+"Una tienda de aplicaciones rápida y moderna para Linux enfocada en "
+"descubrir e instalar aplicaciones y complementos Flatpak, particularmente "
+"de Flathub."
 
 #: data/os.nodalix.Store.metainfo.xml.in:15
 msgid "Queue multiple installs and keep browsing"
@@ -67,10 +62,6 @@ msgstr "Inicie sesión en Flathub para ver y gestionar sus favoritos"
 #: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Search apps directly from GNOME Shell"
 msgstr "Buscar aplicaciones directamente desde GNOME Shell"
-
-#: data/os.nodalix.Store.metainfo.xml.in:30 src/bz-application.c:786
-msgid "The Bazaar Contributors"
-msgstr "Los colaboradores de Bazar"
 
 #: data/os.nodalix.Store.metainfo.xml.in:55
 msgid "The home page displaying Flathub apps"
@@ -120,8 +111,8 @@ msgstr "No hay complementos visibles"
 
 #: src/bz-addons-dialog.blp:81
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
 "Sus preferencias de filtrado actuales ocultan todos los complementos "
 "conocidos. Intente ajustarlas."
@@ -406,7 +397,8 @@ msgstr "Compartir ubicación"
 #. TRANSLATORS: content rating description, see
 #. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr ""
 "No hay información sobre compartir la ubicación física con otros usuarios"
 
@@ -792,29 +784,9 @@ msgstr "Realizando la configuración…"
 msgid "Set Up System Flathub?"
 msgstr "¿Configurar Flathub en el sistema?"
 
-#: src/bz-application.c:1090
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be configured on the system Flatpak installation to browse and install applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"El repositorio remoto Flathub del sistema no está configurado. Bazar requiere que Flathub esté configurado en la instalación de Flatpak del sistema para explorar e instalar aplicaciones.\n"
-"\n"
-"Aún puede usar Bazar para explorar y eliminar aplicaciones ya instaladas."
-
 #: src/bz-application.c:1097
 msgid "Set Up Flathub?"
 msgstr "¿Configurar Flathub?"
-
-#: src/bz-application.c:1100
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub no está configurado en este sistema. No podrá explorar e instalar aplicaciones en Bazar si no está disponible.\n"
-"\n"
-"Aún puede usar Bazar para explorar y eliminar aplicaciones ya instaladas."
 
 #: src/bz-application.c:1106
 msgid "Later"
@@ -904,16 +876,6 @@ msgstr "Instalación de paquete independiente"
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
 msgstr "Las dependencias adicionales pueden requerir espacio extra"
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Instalar esta aplicación puede requerir añadir una nueva fuente de software. Otras aplicaciones de esta fuente aparecerán en Bazar.\n"
-"\n"
-"Solo añada esta fuente si está seguro de que confía en ella."
 
 #: src/bz-bundle-install-dialog.blp:412
 msgid "Successfully Installed!"
@@ -1148,8 +1110,8 @@ msgstr ""
 #, c-format
 msgid "The ownership of the %1$s app ID has been verified using %2$s."
 msgstr ""
-"La propiedad del identificador de aplicación %1$s ha sido verificada usando "
-"%2$s."
+"La propiedad del identificador de aplicación %1$s ha sido verificada usando"
+" %2$s."
 
 #: src/bz-developer-badge.c:264
 #, c-format
@@ -1164,18 +1126,6 @@ msgstr "Notas de lanzamiento completas"
 msgid "This release was made possible by users like you!"
 msgstr "¡Este lanzamiento fue posible gracias a usuarios como usted!"
 
-#: src/bz-donations-dialog.blp:116
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Me encanta crear Bazar, pero no puedo hacerlo solo. Ayude a apoyar el "
-"desarrollo continuo haciendo una donación en Ko-Fi."
-
-#: src/bz-donations-dialog.blp:131
-msgid "Donate to Bazaar"
-msgstr "Donar a Bazar"
-
 #. Translators: the %s format specifier will be something along the lines of
 #. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
@@ -1183,7 +1133,8 @@ msgstr "Donar a Bazar"
 msgid "What's New in %s?"
 msgstr "¿Qué hay de nuevo en %s?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Lanzado el %-e de %B de %Y"
@@ -1680,8 +1631,8 @@ msgstr "Contenido"
 msgid ""
 "This is a local preview, some details may differ from the published listing"
 msgstr ""
-"Esta es una vista previa local, algunos detalles pueden diferir de la lista "
-"publicada"
+"Esta es una vista previa local, algunos detalles pueden diferir de la lista"
+" publicada"
 
 #: src/bz-full-view.blp:109
 msgid "Preview Store Appearance"
@@ -1696,8 +1647,9 @@ msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr ""
-"Esta aplicación usa un entorno de ejecución que ya no recibe actualizaciones"
-" ni correcciones de seguridad. Puede llegar a ser inseguro usarlo."
+"Esta aplicación usa un entorno de ejecución que ya no recibe "
+"actualizaciones ni correcciones de seguridad. Puede llegar a ser inseguro "
+"usarlo."
 
 #: src/bz-full-view.blp:540
 msgid "Trash Data"
@@ -1733,8 +1685,8 @@ msgid ""
 "privately and cannot be audited by an independent third party."
 msgstr ""
 "Esta aplicación tiene una licencia propietaria, lo que significa que el "
-"código fuente se desarrolla de forma privada y no puede ser auditado por un "
-"tercero independiente."
+"código fuente se desarrolla de forma privada y no puede ser auditado por un"
+" tercero independiente."
 
 #: src/bz-full-view.c:207
 msgid "More Apps"
@@ -2065,7 +2017,8 @@ msgstr "Algo salió mal"
 #: src/bz-login-page.blp:46
 msgid "Log in to sync your favorited apps across devices"
 msgstr ""
-"Inicie sesión para sincronizar sus aplicaciones favoritas entre dispositivos"
+"Inicie sesión para sincronizar sus aplicaciones favoritas entre "
+"dispositivos"
 
 #: src/bz-login-page.blp:113
 msgid "Finish"
@@ -2101,7 +2054,8 @@ msgid "Preferences"
 msgstr "Preferencias"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 "La conexión de red es medida: se ha pausado la actualización automática de "
 "datos de la tienda"
@@ -2130,8 +2084,8 @@ msgstr "Solo resultados de Flathub"
 #: src/bz-preferences-dialog.blp:40
 msgid "Limit search and browse results to apps only available on Flathub"
 msgstr ""
-"Limitar los resultados de búsqueda y exploración a aplicaciones disponibles "
-"en Flathub"
+"Limitar los resultados de búsqueda y exploración a aplicaciones disponibles"
+" en Flathub"
 
 #: src/bz-preferences-dialog.blp:44
 msgid "Verified Results Only"
@@ -2148,7 +2102,8 @@ msgstr "Ocultar aplicaciones al final de su vida útil"
 #: src/bz-preferences-dialog.blp:50
 msgid "Hide apps which are no longer supported by their developers"
 msgstr ""
-"Ocultar aplicaciones que ya no cuentan con el soporte de sus desarrolladores"
+"Ocultar aplicaciones que ya no cuentan con el soporte de sus "
+"desarrolladores"
 
 #: src/bz-preferences-dialog.blp:55
 msgid "Progress Bar Theme"
@@ -2515,8 +2470,8 @@ msgstr "Sin acceso a servicios"
 #: src/safety-calculator.c:346
 msgid "Cannot access non-portal session or system services at all"
 msgstr ""
-"No puede acceder a servicios de sesión o del sistema que no sean portales en"
-" absoluto"
+"No puede acceder a servicios de sesión o del sistema que no sean portales "
+"en absoluto"
 
 #: src/safety-calculator.c:354
 msgid "Verified App Developer"
@@ -2546,8 +2501,8 @@ msgstr "Código auditable"
 
 #: src/safety-calculator.c:376
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
 "El código fuente es público y se puede auditar de forma independiente, lo "
 "que hace que la aplicación sea probablemente más segura"
@@ -2602,7 +2557,8 @@ msgstr "Ajustes globales de KDE"
 #: src/safety-calculator.c:566
 msgid "Can read KDE desktop preferences like fonts and colors"
 msgstr ""
-"Puede leer las preferencias del escritorio de KDE como tipografías y colores"
+"Puede leer las preferencias del escritorio de KDE como tipografías y "
+"colores"
 
 #: src/safety-calculator.c:571
 msgid "Secret Storage Service"
@@ -2669,8 +2625,8 @@ msgid ""
 "This app uses an outdated version of the software platform (SDK) and might "
 "contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
-"Esta aplicación usa una versión obsoleta de la plataforma de software (SDK) "
-"y podría contener errores o vulnerabilidades de seguridad que no se "
+"Esta aplicación usa una versión obsoleta de la plataforma de software (SDK)"
+" y podría contener errores o vulnerabilidades de seguridad que no se "
 "solucionarán."
 
 #: src/bz-safety-dialog.c:287
@@ -3215,10 +3171,6 @@ msgstr "Buscar"
 msgid "Main Menu"
 msgstr "Menú principal"
 
-#: src/bz-window.blp:226
-msgid "You are running a new version of Bazaar!"
-msgstr "¡Está ejecutando una nueva versión de Bazar!"
-
 #: src/bz-window.blp:227
 msgid "See What's New"
 msgstr "Ver las novedades"
@@ -3234,10 +3186,6 @@ msgid "Network connection is metered — automatic refreshes disabled"
 msgstr ""
 "La conexión de red es medida: se han desactivado las actualizaciones "
 "automáticas"
-
-#: src/bz-window.blp:290
-msgid "_Donate to Bazaar"
-msgstr "_Donar a Bazar"
 
 #: src/bz-window.blp:296
 msgid "_Refresh"
@@ -3259,31 +3207,13 @@ msgstr "_Preferencias"
 msgid "_Keyboard Shortcuts"
 msgstr "Atajos del _teclado"
 
-#: src/bz-window.blp:322
-msgid "_About Bazaar"
-msgstr "_Acerca de Bazar"
-
-#: src/bz-window.blp:328
-msgid "_Quit Bazaar"
-msgstr "_Salir de Bazaar"
-
 #: src/bz-window.blp:353
 msgid "Log Out"
 msgstr "Cerrar sesión"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:376
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
-
 #: src/bz-window.c:596 src/bz-window.c:634
 msgid "Failed to launch application"
 msgstr "Falló al iniciar la aplicación"
-
-#: src/bz-window.c:843
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "¡No puede quitar Bazaar desde el propio Bazaar!"
 
 #: src/bz-window.c:1132 src/bz-window.c:1166
 msgid "Can't do that right now!"
@@ -3346,14 +3276,10 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Cerrar ventana"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Salir de Bazaar"
-
 #: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
 msgid "Store"
 msgstr "Tienda"
 
@@ -3587,8 +3513,8 @@ msgid ""
 "Metainfo files don't include app icons by themselves. Would you like to "
 "select one manually?"
 msgstr ""
-"Los archivos metainfo no incluyen iconos de aplicación por sí solos. ¿Quiere"
-" elegir uno manualmente?"
+"Los archivos metainfo no incluyen iconos de aplicación por sí solos. "
+"¿Quiere elegir uno manualmente?"
 
 #: src/bz-metainfo-preview.c:111
 msgid "Skip"
@@ -3640,8 +3566,8 @@ msgid ""
 "Auto-updates will pause on metered networks or when power saving is on to "
 "save data and battery."
 msgstr ""
-"Las actualizaciones automáticas se pausarán en redes de uso medido o con el "
-"ahorro de energía activado, para ahorrar datos y batería."
+"Las actualizaciones automáticas se pausarán en redes de uso medido o con el"
+" ahorro de energía activado, para ahorrar datos y batería."
 
 #: src/bz-preferences-dialog.blp:36
 msgid "_Automatic"

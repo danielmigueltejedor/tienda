@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::DL-WORKER-SUBPROCESS"
+#define G_LOG_DOMAIN "NODALIX-STORE::DL-WORKER-SUBPROCESS"
 
 #include "env.h"
 #include "global-net.h"

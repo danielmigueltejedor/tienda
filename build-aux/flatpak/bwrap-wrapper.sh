@@ -7,7 +7,7 @@ user_dir=$(realpath ~/.local/share/flatpak)
 system_dir=/var/lib/flatpak
 
 fail () {
-  echo "bazaar-host-bwrap: $*" >&2
+  echo "store-host-bwrap: $*" >&2
   exit 1
 }
 
@@ -54,4 +54,4 @@ done
 exec flatpak-spawn --host --clear-env "${fds[@]}" \
   --env=PATH=/usr/local/bin:/usr/bin:/bin \
   sh -c 'b=/usr/libexec/flatpak-bwrap; [ -x "$b" ] || b=bwrap; exec "$b" "$@"' \
-  bazaar-host-bwrap "${args[@]}"
+  store-host-bwrap "${args[@]}"

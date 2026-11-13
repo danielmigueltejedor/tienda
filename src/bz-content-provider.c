@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::CONTENT-PROVIDER"
+#define G_LOG_DOMAIN "NODALIX-STORE::CONTENT-PROVIDER"
 
 #include "config.h"
 

@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::GLOBAL-NET"
+#define G_LOG_DOMAIN "NODALIX-STORE::GLOBAL-NET"
 
 #include "config.h"
 
@@ -197,7 +197,7 @@ bz_query_flathub_v2_json_authenticated_delete (const char *request,
 }
 
 DexFuture *
-bz_query_bazaar_json (const char *request)
+bz_query_catalog_json (const char *request)
 {
   g_autofree char *uri = NULL;
 

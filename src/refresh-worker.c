@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::REFRESH-WORKER"
+#define G_LOG_DOMAIN "NODALIX-STORE::REFRESH-WORKER"
 
 #include <bzvala.h>
 #include "bz-backend.h"

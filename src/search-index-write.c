@@ -20,8 +20,8 @@
 
 #include "config.h"
 
-#define G_LOG_DOMAIN  "BAZAAR::SEARCH-INDEX-WRITE"
-#define BAZAAR_MODULE "search-index-writer"
+#define G_LOG_DOMAIN  "NODALIX-STORE::SEARCH-INDEX-WRITE"
+#define STORE_MODULE "search-index-writer"
 
 #include "bz-entry-group.h"
 #include "search-index-write.h"

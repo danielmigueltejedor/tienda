@@ -40,7 +40,7 @@ bz_get_dex_stack_size (void)
          2025-10-21 22:47:02 eva */
       value = MAX (8388608, dex_get_min_stack_size ());
 
-      envvar = g_getenv ("BAZAAR_DEX_STACK_SIZE");
+      envvar = g_getenv ("STORE_DEX_STACK_SIZE");
       if (envvar != NULL)
         {
           g_autoptr (GError) local_error = NULL;
@@ -55,13 +55,13 @@ bz_get_dex_stack_size (void)
 
               parse_result = g_variant_get_uint64 (variant);
               if (parse_result < dex_get_min_stack_size ())
-                g_warning ("BAZAAR_DEX_STACK_SIZE must be greater than %zu on this system",
+                g_warning ("STORE_DEX_STACK_SIZE must be greater than %zu on this system",
                            dex_get_min_stack_size ());
               else
                 value = parse_result;
             }
           else
-            g_warning ("BAZAAR_DEX_STACK_SIZE is invalid: %s", local_error->message);
+            g_warning ("STORE_DEX_STACK_SIZE is invalid: %s", local_error->message);
         }
 
       g_once_init_leave (&stack_size, value);
@@ -83,7 +83,7 @@ bz_get_desktop_search_provider_icon_size (void)
       /* default 24x24 for the gnome-shell search provider */
       value = 24;
 
-      envvar = g_getenv ("BAZAAR_DESKTOP_SEARCH_PROVIDER_ICON_SIZE");
+      envvar = g_getenv ("STORE_DESKTOP_SEARCH_PROVIDER_ICON_SIZE");
       if (envvar != NULL)
         {
           g_autoptr (GError) local_error = NULL;
@@ -98,13 +98,13 @@ bz_get_desktop_search_provider_icon_size (void)
 
               parse_result = g_variant_get_uint64 (variant);
               if (parse_result == 0 || parse_result > 256)
-                g_warning ("BAZAAR_DESKTOP_SEARCH_PROVIDER_ICON_SIZE must be "
+                g_warning ("STORE_DESKTOP_SEARCH_PROVIDER_ICON_SIZE must be "
                            "greater than 0 but no greater than 256");
               else
                 value = parse_result;
             }
           else
-            g_warning ("BAZAAR_DESKTOP_SEARCH_PROVIDER_ICON_SIZE is invalid: %s", local_error->message);
+            g_warning ("STORE_DESKTOP_SEARCH_PROVIDER_ICON_SIZE is invalid: %s", local_error->message);
         }
 
       g_once_init_leave (&icon_size, value);

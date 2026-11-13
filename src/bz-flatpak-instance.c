@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::FLATPAK"
-#define BAZAAR_MODULE "flatpak"
+#define G_LOG_DOMAIN  "NODALIX-STORE::FLATPAK"
+#define STORE_MODULE "flatpak"
 
 #include <malloc.h>
 #include <xmlb.h>
@@ -1256,7 +1256,7 @@ load_local_ref_fiber (LoadLocalRefData *data)
           g_autofree char *remote_name            = NULL;
 
           /* Configure and sync the new remote */
-          remote_name = g_strdup_printf ("%s-bazaar-origin", name);
+          remote_name = g_strdup_printf ("%s-store-origin", name);
 
           config_remote = flatpak_remote_new (remote_name);
           flatpak_remote_set_url (config_remote, origin);

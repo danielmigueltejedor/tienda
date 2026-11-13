@@ -44,7 +44,7 @@
   <url type="contact">https://github.com/getnodalia/tienda/issues</url>
   <url type="contribute">https://github.com/getnodalia/tienda</url>
 
-  <translation type="gettext">bazaar</translation>
+  <translation type="gettext">nodalix-store</translation>
   <launchable type="desktop-id">os.nodalix.Store.desktop</launchable>
   <content_rating type="oars-1.1" />
 

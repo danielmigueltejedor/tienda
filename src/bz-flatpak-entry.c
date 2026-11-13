@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::FLATPAK-ENTRY"
-#define BAZAAR_MODULE "entry"
+#define G_LOG_DOMAIN  "NODALIX-STORE::FLATPAK-ENTRY"
+#define STORE_MODULE "entry"
 
 #include "config.h"
 

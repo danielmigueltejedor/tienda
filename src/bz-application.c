@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::CORE"
-#define BAZAAR_MODULE "core"
+#define G_LOG_DOMAIN  "NODALIX-STORE::CORE"
+#define STORE_MODULE "core"
 
 #define MAX_IDS_PER_BLOCKLIST 2048
 
@@ -4291,7 +4291,7 @@ make_sync_future (BzApplication *self)
   refresh_worker = g_subprocess_new (
       G_SUBPROCESS_FLAGS_NONE,
       &local_error,
-      BAZAAR_BIN_NAME,
+      STORE_BIN_NAME,
       REFRESH_WORKER_CLI_OPTION,
       NULL);
   if (refresh_worker == NULL)

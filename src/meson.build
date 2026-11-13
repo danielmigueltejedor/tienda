@@ -363,7 +363,7 @@ bz_vala_dep = declare_dependency(
 )
 bz_deps += [bz_vala_dep]
 
-executable(bazaar_bin_name, bz_sources + ['main.c'], marshalers,
+executable(store_bin_name, bz_sources + ['main.c'], marshalers,
            dependencies: bz_deps,
            export_dynamic: true,
            install: true,

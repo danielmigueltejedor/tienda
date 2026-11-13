@@ -1,12 +1,12 @@
-# Kazakh translation for bazaar.
-# Copyright (C) 2026 bazaar's COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Kazakh translation for nodalix-store.
+# Copyright (C) 2026 nodalix-store's COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-09-27 08:41+0000\n"
 "PO-Revision-Date: 2026-09-27 16:34+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
@@ -18,25 +18,20 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.9\n"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-window.blp:55 src/bz-window.blp:211 src/bz-window.c:438 src/bz-window.c:439
-msgid "Bazaar"
-msgstr "Bazaar"
-
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Қолданбалар дүкені"
 
 #: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
-msgstr "Бұл компьютерде flatpak бағдарламалық қамтамасын қосу, өшіру немесе жаңарту"
+msgstr ""
+"Бұл компьютерде flatpak бағдарламалық қамтамасын қосу, өшіру немесе жаңарту"
 
 #: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
-"System;Package;Manager;Discover;Flatpak;Software;App;Store;Жүйе;Десте;Басқарушы;Бағдарламалық "
-"қамтама;Қолданба;Дүкен;"
+"System;Package;Manager;Discover;Flatpak;Software;App;Store;Жүйе;Десте;Басқарушы;Бағдарламалық"
+" қамтама;Қолданба;Дүкен;"
 
 #: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
@@ -48,11 +43,11 @@ msgstr "Қолданбаларды шолу және орнату"
 
 #: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
-"A fast and modern app store for Linux with a focus on discovering and installing Flatpak apps "
-"and add-ons, particularly from Flathub."
+"A fast and modern app store for Linux with a focus on discovering and "
+"installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"Flatpak қолданбалары мен қосымшаларын, әсіресе Flathub-тан табуға және орнатуға бағытталған "
-"Linux үшін жылдам әрі заманауи қолданбалар дүкені."
+"Flatpak қолданбалары мен қосымшаларын, әсіресе Flathub-тан табуға және "
+"орнатуға бағытталған Linux үшін жылдам әрі заманауи қолданбалар дүкені."
 
 #: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
@@ -69,11 +64,6 @@ msgstr "Таңдаулыларыңызды көру және басқару үш
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Қолданбаларды тікелей GNOME Shell-ден іздеу"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:755
-msgid "The Bazaar Contributors"
-msgstr "Bazaar үлес қосушылары"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -95,7 +85,8 @@ msgstr "Іздеу беті"
 msgid "Category page"
 msgstr "Санат беті"
 
-#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54 src/bz-rich-app-tile.blp:143
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
+#: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "Жаңартуларды алу тоқтатылды"
 
@@ -115,8 +106,8 @@ msgstr "Орнату"
 msgid "Add-on"
 msgstr "Қосымша"
 
-#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22 src/bz-addons-dialog.blp:71
-#: src/bz-installed-tile.blp:94
+#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "Қосымшаларды басқару"
 
@@ -125,21 +116,25 @@ msgid "No Add-Ons Visible"
 msgstr "Көрінетін қосымшалар жоқ"
 
 #: src/bz-addons-dialog.blp:82
-msgid "Your current filter preferences are hiding all known add-ons. Try adjusting them."
+msgid ""
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
-"Ағымдағы сүзгі баптауларыңыз барлық белгілі қосымшаларды жасырып тұр. Оларды реттеп көріңіз."
+"Ағымдағы сүзгі баптауларыңыз барлық белгілі қосымшаларды жасырып тұр. "
+"Оларды реттеп көріңіз."
 
 #: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
 msgstr "Қосымша беті"
 
-#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:267 src/context-tile-callbacks.c:142
+#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:267
+#: src/context-tile-callbacks.c:142
 msgid "Download"
 msgstr "Жүктеп алу"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:282
-#: src/bz-releases-list.c:204
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356
+#: src/bz-full-view.blp:282 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "Орнатылған"
 
@@ -153,11 +148,11 @@ msgstr "Негізгі жаңартуларды алу тоқтатылды"
 
 #: src/bz-addons-dialog.blp:261
 msgid ""
-"This add-on uses a runtime that no longer receives updates or security fixes. It may become "
-"unsafe to use."
+"This add-on uses a runtime that no longer receives updates or security "
+"fixes. It may become unsafe to use."
 msgstr ""
-"Бұл қосымша бұдан былай жаңартуларды немесе қауіпсіздік түзетулерін алмайтын орындау ортасын "
-"пайдаланады. Оны пайдалану қауіпті болуы мүмкін."
+"Бұл қосымша бұдан былай жаңартуларды немесе қауіпсіздік түзетулерін "
+"алмайтын орындау ортасын пайдаланады. Оны пайдалану қауіпті болуы мүмкін."
 
 #: src/bz-addons-dialog.blp:346 src/bz-full-view.blp:602
 msgid "Other Sources"
@@ -172,7 +167,8 @@ msgstr "%s үшін қосымша"
 msgid "Show Less"
 msgstr "Азырақ көрсету"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:613
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Көбірек көрсету"
 
@@ -180,8 +176,9 @@ msgstr "Көбірек көрсету"
 msgid "Download Stats"
 msgstr "Жүктеп алу статистикасы"
 
-#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31 src/bz-age-rating-dialog.c:737
-#: src/context-tile-callbacks.c:194 src/context-tile-callbacks.c:201
+#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "Жас рейтингі"
 
@@ -190,7 +187,8 @@ msgstr "Жас рейтингі"
 msgid "Cartoon Violence"
 msgstr "Мультипликациялық зорлық-зомбылық"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Мультипликациялық зорлық-зомбылыққа қатысты ақпарат жоқ"
@@ -200,7 +198,8 @@ msgstr "Мультипликациялық зорлық-зомбылыққа қ�
 msgid "Fantasy Violence"
 msgstr "Фэнтезилік зорлық-зомбылық"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Фэнтезилік зорлық-зомбылыққа қатысты ақпарат жоқ"
@@ -210,7 +209,8 @@ msgstr "Фэнтезилік зорлық-зомбылыққа қатысты а
 msgid "Realistic Violence"
 msgstr "Шынайы зорлық-зомбылық"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Шынайы зорлық-зомбылыққа қатысты ақпарат жоқ"
@@ -220,7 +220,8 @@ msgstr "Шынайы зорлық-зомбылыққа қатысты ақпар
 msgid "Violence Depicting Bloodshed"
 msgstr "Қантөгісті бейнелейтін зорлық-зомбылық"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Қантөгіске қатысты ақпарат жоқ"
@@ -230,7 +231,8 @@ msgstr "Қантөгіске қатысты ақпарат жоқ"
 msgid "Sexual Violence"
 msgstr "Жыныстық сипаттағы зорлық-зомбылық"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Жыныстық сипаттағы зорлық-зомбылыққа қатысты ақпарат жоқ"
@@ -240,7 +242,8 @@ msgstr "Жыныстық сипаттағы зорлық-зомбылыққа қ
 msgid "Alcohol"
 msgstr "Алкоголь"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Алкоголь туралы сілтемелерге қатысты ақпарат жоқ"
@@ -250,7 +253,8 @@ msgstr "Алкоголь туралы сілтемелерге қатысты а
 msgid "Narcotics"
 msgstr "Есірткі"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "Заңсыз есірткілер туралы сілтемелерге қатысты ақпарат жоқ"
@@ -260,7 +264,8 @@ msgstr "Заңсыз есірткілер туралы сілтемелерге 
 msgid "Tobacco"
 msgstr "Темекі"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Темекі өнімдері туралы сілтемелерге қатысты ақпарат жоқ"
@@ -270,7 +275,8 @@ msgstr "Темекі өнімдері туралы сілтемелерге қа
 msgid "Nudity"
 msgstr "Жалаңаштық"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Кез келген түрдегі жалаңаштыққа қатысты ақпарат жоқ"
@@ -280,17 +286,20 @@ msgstr "Кез келген түрдегі жалаңаштыққа қатыст
 msgid "Sexual Themes"
 msgstr "Сексуалдық сипаттағы тақырыптар"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
-msgstr "Сексуалдық сипаттағы сілтемелерге немесе бейнелерге қатысты ақпарат жоқ"
+msgstr ""
+"Сексуалдық сипаттағы сілтемелерге немесе бейнелерге қатысты ақпарат жоқ"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:148
 msgid "Profanity"
 msgstr "Балағат сөздер"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Кез келген түрдегі балағат сөздерге қатысты ақпарат жоқ"
@@ -300,7 +309,8 @@ msgstr "Кез келген түрдегі балағат сөздерге қа�
 msgid "Inappropriate Humor"
 msgstr "Орынсыз юмор"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Орынсыз юморға қатысты ақпарат жоқ"
@@ -310,7 +320,8 @@ msgstr "Орынсыз юморға қатысты ақпарат жоқ"
 msgid "Discrimination"
 msgstr "Дискриминация"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Кез келген түрдегі кемсіту тіліне қатысты ақпарат жоқ"
@@ -320,7 +331,8 @@ msgstr "Кез келген түрдегі кемсіту тіліне қаты�
 msgid "Advertising"
 msgstr "Жарнама"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Кез келген түрдегі жарнамаға қатысты ақпарат жоқ"
@@ -330,7 +342,8 @@ msgstr "Кез келген түрдегі жарнамаға қатысты а�
 msgid "Gambling"
 msgstr "Құмар ойындар"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Кез келген құмар ойындарға қатысты ақпарат жоқ"
@@ -340,7 +353,8 @@ msgstr "Кез келген құмар ойындарға қатысты ақп�
 msgid "Purchasing"
 msgstr "Сатып алулар"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Ақша жұмсау мүмкіндігіне қатысты ақпарат жоқ"
@@ -350,7 +364,8 @@ msgstr "Ақша жұмсау мүмкіндігіне қатысты ақпар
 msgid "Chat Between Users"
 msgstr "Пайдаланушылар арасындағы чат"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "Басқа пайдаланушылармен чатта сөйлесу жолдары туралы ақпарат жоқ"
@@ -360,7 +375,8 @@ msgstr "Басқа пайдаланушылармен чатта сөйлесу 
 msgid "Audio Chat Between Users"
 msgstr "Пайдаланушылар арасындағы аудиочат"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "Басқа пайдаланушылармен сөйлесу жолдары туралы ақпарат жоқ"
@@ -370,39 +386,49 @@ msgstr "Басқа пайдаланушылармен сөйлесу жолда�
 msgid "Contact Details"
 msgstr "Байланыс деректері"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
-msgid "No information regarding sharing of social network usernames or email addresses"
+msgid ""
+"No information regarding sharing of social network usernames or email "
+"addresses"
 msgstr ""
-"Әлеуметтік желідегі пайдаланушы аттары немесе электрондық пошта мекенжайларымен бөлісуге "
-"қатысты ақпарат жоқ"
+"Әлеуметтік желідегі пайдаланушы аттары немесе электрондық пошта "
+"мекенжайларымен бөлісуге қатысты ақпарат жоқ"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:202
 msgid "Identifying Information"
 msgstr "Сәйкестендіру ақпараты"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
-msgstr "Пайдаланушы ақпаратын үшінші тараптармен бөлісуге қатысты ақпарат жоқ"
+msgid ""
+"No information regarding sharing of user information with third parties"
+msgstr ""
+"Пайдаланушы ақпаратын үшінші тараптармен бөлісуге қатысты ақпарат жоқ"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:208
 msgid "Location Sharing"
 msgstr "Орналасумен бөлісу"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
-msgstr "Басқа пайдаланушылармен физикалық орналасумен бөлісуге қатысты ақпарат жоқ"
+msgid ""
+"No information regarding sharing of physical location with other users"
+msgstr ""
+"Басқа пайдаланушылармен физикалық орналасумен бөлісуге қатысты ақпарат жоқ"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:214
 msgid "Prostitution"
 msgstr "Жезөкшелік"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Жезөкшелік туралы сілтемелерге қатысты ақпарат жоқ"
@@ -412,7 +438,8 @@ msgstr "Жезөкшелік туралы сілтемелерге қатыст�
 msgid "Adultery"
 msgstr "Неке адалдығын бұзу"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Неке адалдығын бұзу туралы сілтемелерге қатысты ақпарат жоқ"
@@ -422,7 +449,8 @@ msgstr "Неке адалдығын бұзу туралы сілтемелерг
 msgid "Sexualized Characters"
 msgstr "Сексуалдандырылған кейіпкерлер"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Сексуалдандырылған кейіпкерлерге қатысты ақпарат жоқ"
@@ -432,7 +460,8 @@ msgstr "Сексуалдандырылған кейіпкерлерге қаты
 msgid "Desecration"
 msgstr "Қасиетті нәрсені қорлау"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Қасиетті нәрсені қорлау туралы сілтемелерге қатысты ақпарат жоқ"
@@ -442,7 +471,8 @@ msgstr "Қасиетті нәрсені қорлау туралы сілтеме
 msgid "Human Remains"
 msgstr "Адам қалдықтары"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Адамның көрінетін мәйіт қалдықтарына қатысты ақпарат жоқ"
@@ -452,7 +482,8 @@ msgstr "Адамның көрінетін мәйіт қалдықтарына қ
 msgid "Slavery"
 msgstr "Құлдық"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Құлдық туралы сілтемелерге қатысты ақпарат жоқ"
@@ -462,7 +493,8 @@ msgid "Does not include references to drugs"
 msgstr "Есірткі туралы сілтемелерді қамтымайды"
 
 #: src/bz-age-rating-dialog.c:426
-msgid "Does not include swearing, profanity, and other kinds of strong language"
+msgid ""
+"Does not include swearing, profanity, and other kinds of strong language"
 msgstr "Бейәдеп сөздерді, балағатты және басқа да дөрекі сөздерді қамтымайды"
 
 #: src/bz-age-rating-dialog.c:428
@@ -736,12 +768,13 @@ msgstr "Қ/Ж"
 msgid "Storage"
 msgstr "Сақтау қоймасы"
 
-#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107
-#: src/bz-rich-app-tile.c:444
+#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98
+#: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "Расталған"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:758
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
@@ -758,28 +791,6 @@ msgstr "Сәтті шықтыңыз!"
 msgid "Notice for Ubuntu Users"
 msgstr "Ubuntu пайдаланушылары үшін ескерту"
 
-#: src/bz-application.c:1061
-msgid ""
-"Ubuntu 25.10 and newer have changed default security rules in a way that makes it "
-"<b>impossible to install apps</b> from the Flatpak version of Bazaar. For the time being, "
-"please use the apt package instead. Install it with\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"You can then remove this Flatpak version with\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-msgstr ""
-"Ubuntu 25.10 және одан жаңа нұсқалары үнсіз келісім бойынша қауіпсіздік ережелерін Bazaar-дың "
-"Flatpak нұсқасынан <b>қолданбаларды орнату мүмкін болмайтындай</b> етіп өзгертті. Әзірше оның "
-"орнына apt дестесін пайдаланыңыз. Оны келесі командамен орнатыңыз\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"Содан кейін бұл Flatpak нұсқасын келесі командамен өшіре аласыз\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-
 #: src/bz-application.c:1069
 msgid "Continue Anyway"
 msgstr "Сонда да жалғастыру"
@@ -792,35 +803,9 @@ msgstr "Баптау орындалуда…"
 msgid "Set Up System Flathub?"
 msgstr "Жүйелік Flathub баптау керек пе?"
 
-#: src/bz-application.c:1187
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be configured on the "
-"system Flatpak installation to browse and install applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Жүйелік қашықтағы Flathub бапталмаған. Қолданбаларды шолу және орнату үшін Bazaar жүйелік "
-"Flatpak орнатылымында Flathub бапталуын талап етеді.\n"
-"\n"
-"Сіз әлі де әлдеқашан орнатылған қолданбаларды шолу және өшіру үшін Bazaar қолданбасын "
-"пайдалана аласыз."
-
 #: src/bz-application.c:1194
 msgid "Set Up Flathub?"
 msgstr "Flathub баптау керек пе?"
-
-#: src/bz-application.c:1197
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and install applications "
-"in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub бұл жүйеде бапталмаған. Егер ол қолжетімсіз болса, Bazaar ішінде қолданбаларды шолу "
-"және орнату мүмкін болмайды.\n"
-"\n"
-"Сіз әлі де әлдеқашан орнатылған қолданбаларды шолу және өшіру үшін Bazaar қолданбасын "
-"пайдалана аласыз."
 
 #: src/bz-application.c:1203
 msgid "Later"
@@ -910,8 +895,12 @@ msgid_plural "Install %u Apps?"
 msgstr[0] "%u қолданбаны орнату керек пе?"
 
 #: src/bz-bulk-install-dialog.c:113
-msgid "The following will be installed. Additional shared components may also be installed"
-msgstr "Төмендегілер орнатылады. Сондай-ақ қосымша ортақ компоненттер орнатылуы мүмкін"
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr ""
+"Төмендегілер орнатылады. Сондай-ақ қосымша ортақ компоненттер орнатылуы "
+"мүмкін"
 
 #: src/bz-bulk-install-dialog.c:114
 #, c-format
@@ -938,18 +927,6 @@ msgstr "Буманы орнату"
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
 msgstr "Қосымша тәуелділіктер қосымша орын алуы мүмкін"
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps from this source "
-"will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Бұл қолданбаны орнату жаңа бағдарламалық қамтама дереккөзін қосуды талап етуі мүмкін. Осы "
-"дереккөзден басқа қолданбалар Bazaar ішінде көрсетіледі.\n"
-"\n"
-"Бұл дереккөзді оған сенімді болсаңыз ғана қосыңыз."
 
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
@@ -992,8 +969,11 @@ msgstr "Іріктеу жоқ"
 
 #: src/bz-curated-view.blp:29
 msgid ""
-"There is no curation information provided on this system. You can still browse apps on Flathub"
-msgstr "Бұл жүйеде іріктеу ақпараты берілмеген. Flathub ішінде қолданбаларды әлі де шола аласыз"
+"There is no curation information provided on this system. You can still "
+"browse apps on Flathub"
+msgstr ""
+"Бұл жүйеде іріктеу ақпараты берілмеген. Flathub ішінде қолданбаларды әлі де"
+" шола аласыз"
 
 #: src/bz-curated-view.blp:33
 msgid "Browse Flathub"
@@ -1034,19 +1014,29 @@ msgstr "Әзірлеуші туралы ақпарат қолжетімсіз."
 
 #: src/bz-developer-badge.c:219 src/bz-developer-badge.c:233
 #, c-format
-msgid "The ownership of the %s app ID has not been verified and it may be a community package."
+msgid ""
+"The ownership of the %s app ID has not been verified and it may be a "
+"community package."
 msgstr ""
-"%s қолданба идентификаторының иелігі расталмаған және ол қауымдастық дестесі болуы мүмкін."
+"%s қолданба идентификаторының иелігі расталмаған және ол қауымдастық "
+"дестесі болуы мүмкін."
 
 #: src/bz-developer-badge.c:237
 #, c-format
-msgid "The ownership of the %s app ID has been manually verified by the Flathub team."
-msgstr "%s қолданба идентификаторының иелігі Flathub командасымен қолмен расталған."
+msgid ""
+"The ownership of the %s app ID has been manually verified by the Flathub "
+"team."
+msgstr ""
+"%s қолданба идентификаторының иелігі Flathub командасымен қолмен расталған."
 
 #: src/bz-developer-badge.c:253
 #, c-format
-msgid "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on <b>%3$s</b>."
-msgstr "%1$s қолданба идентификаторының иелігін <b>%3$s</b> ішінде <b>%2$s</b> растады."
+msgid ""
+"The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
+"<b>%3$s</b>."
+msgstr ""
+"%1$s қолданба идентификаторының иелігін <b>%3$s</b> ішінде <b>%2$s</b> "
+"растады."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -1058,11 +1048,6 @@ msgstr "%1$s қолданба идентификаторының иелігі %2
 msgid "The ownership of the %s app ID has been verified."
 msgstr "%s қолданба идентификаторының иелігі расталды."
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "Bazaar шығарылымы"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Шығарылым туралы толық ақпарат"
@@ -1071,27 +1056,15 @@ msgstr "Шығарылым туралы толық ақпарат"
 msgid "This release was made possible by users like you!"
 msgstr "Бұл шығарылым сіз сияқты пайдаланушылардың арқасында мүмкін болды!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further development by donating "
-"on Ko-Fi."
-msgstr ""
-"Мен Bazaar жасағанды жақсы көремін, бірақ оны жалғыз істей алмаймын. Ko-Fi арқылы демеушілік "
-"көрсетіп, одан әрі әзірлеуге көмектесіңіз."
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "Bazaar-ға демеушілік ету"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "%s ішінде не жаңалық?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Шығарылған күні: %B %-e, %Y"
@@ -1102,11 +1075,14 @@ msgstr "Орнатуды таңдаңыз"
 
 #: src/bz-entry-group-util.c:76
 msgid ""
-"You have multiple versions of this app installed. Which one would you like to proceed with?"
-msgstr "Сізде бұл қолданбаның бірнеше нұсқасы орнатылған. Қайсысымен жалғастырғыңыз келеді?"
+"You have multiple versions of this app installed. Which one would you like "
+"to proceed with?"
+msgstr ""
+"Сізде бұл қолданбаның бірнеше нұсқасы орнатылған. Қайсысымен жалғастырғыңыз"
+" келеді?"
 
-#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88
-#: src/update-worker.c:473
+#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
+#: src/error.c:88 src/update-worker.c:473
 msgid "Details"
 msgstr "Толық ақпарат"
 
@@ -1115,7 +1091,8 @@ msgstr "Толық ақпарат"
 msgid "Copy"
 msgstr "Көшіру"
 
-#: src/bz-error-dialog.c:56 src/bz-screenshot-page.c:461 src/bz-share-list.c:364
+#: src/bz-error-dialog.c:56 src/bz-screenshot-page.c:461
+#: src/bz-share-list.c:364
 msgid "Copied!"
 msgstr "Көшірілді!"
 
@@ -1395,7 +1372,8 @@ msgstr "Саймандар"
 msgid "More Utilities"
 msgstr "Көбірек утилиталар"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106 src/bz-flathub-page.blp:138
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "Трендте"
 
@@ -1403,7 +1381,8 @@ msgstr "Трендте"
 msgid "More Trending"
 msgstr "Көбірек трендте"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112 src/bz-flathub-page.blp:171
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:171
 msgid "Popular"
 msgstr "Танымал"
 
@@ -1509,7 +1488,9 @@ msgstr "Жаңа жыл, жаңа жұмыс үрдістері"
 
 #: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
-msgstr "Жазбалар алуға, тапсырмаларды қадағалауға және жоспарлар жасауға арналған қолданбалар"
+msgstr ""
+"Жазбалар алуға, тапсырмаларды қадағалауға және жоспарлар жасауға арналған "
+"қолданбалар"
 
 #: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
@@ -1525,7 +1506,9 @@ msgstr "Шығармашылыққа бет бұрыңыз"
 
 #: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
-msgstr "Сурет салуға, фотоларды өңдеуге және цифрлық дизайнға арналған міндетті қолданбалар"
+msgstr ""
+"Сурет салуға, фотоларды өңдеуге және цифрлық дизайнға арналған міндетті "
+"қолданбалар"
 
 #: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
@@ -1541,7 +1524,8 @@ msgstr "Байланыста болу"
 
 #: src/bz-flathub-curated-section.vala:45
 msgid "Essential collaboration and communication apps"
-msgstr "Бірлесіп жұмыс істеуге және байланысуға арналған міндетті қолданбалар"
+msgstr ""
+"Бірлесіп жұмыс істеуге және байланысуға арналған міндетті қолданбалар"
 
 #: src/bz-flathub-curated-section.vala:46
 msgid "Ready for Vacations"
@@ -1549,7 +1533,8 @@ msgstr "Демалысқа дайын болу"
 
 #: src/bz-flathub-curated-section.vala:46
 msgid "Maps, transit, weather, and trip planning apps"
-msgstr "Карталар, қоғамдық көлік, ауа райы және саяхатты жоспарлау қолданбалары"
+msgstr ""
+"Карталар, қоғамдық көлік, ауа райы және саяхатты жоспарлау қолданбалары"
 
 #: src/bz-flathub-curated-section.vala:47
 msgid "Smarter Every Day"
@@ -1656,9 +1641,11 @@ msgid "Games and apps to run your favorite titles"
 msgstr "Таңдаулы туындыларыңызды орындауға арналған ойындар мен қолданбалар"
 
 #: src/bz-full-view.blp:93
-msgid "This is a local preview, some details may differ from the published listing"
+msgid ""
+"This is a local preview, some details may differ from the published listing"
 msgstr ""
-"Бұл жергілікті алдын ала қарау, кейбір толық ақпарат жарияланған тізімнен өзгеше болуы мүмкін"
+"Бұл жергілікті алдын ала қарау, кейбір толық ақпарат жарияланған тізімнен "
+"өзгеше болуы мүмкін"
 
 #: src/bz-full-view.blp:96
 msgid "Preview Store Appearance"
@@ -1670,11 +1657,11 @@ msgstr "Қ_олдау"
 
 #: src/bz-full-view.blp:455
 msgid ""
-"This app uses a runtime that no longer receives updates or security fixes. It may become "
-"unsafe to use."
+"This app uses a runtime that no longer receives updates or security fixes. "
+"It may become unsafe to use."
 msgstr ""
-"Бұл қолданба бұдан былай жаңартуларды немесе қауіпсіздік түзетулерін алмайтын орындау ортасын "
-"пайдаланады. Оны пайдалану қауіпті болуы мүмкін."
+"Бұл қолданба бұдан былай жаңартуларды немесе қауіпсіздік түзетулерін "
+"алмайтын орындау ортасын пайдаланады. Оны пайдалану қауіпті болуы мүмкін."
 
 #: src/bz-full-view.blp:533
 msgid "Trash Data"
@@ -1701,18 +1688,20 @@ msgid "No URL"
 msgstr "URL жоқ"
 
 #: src/bz-full-view.c:202
-msgid "This app has a FLOSS license, meaning the source code can be audited for safety."
+msgid ""
+"This app has a FLOSS license, meaning the source code can be audited for "
+"safety."
 msgstr ""
-"Бұл қолданбаның еркін (FLOSS) лицензиясы бар, бұл оның қауіпсіздігі үшін бастапқы кодын "
-"тексеруге болатынын білдіреді."
+"Бұл қолданбаның еркін (FLOSS) лицензиясы бар, бұл оның қауіпсіздігі үшін "
+"бастапқы кодын тексеруге болатынын білдіреді."
 
 #: src/bz-full-view.c:203
 msgid ""
-"This app has a proprietary license, meaning the source code is developed privately and cannot "
-"be audited by an independent third party."
+"This app has a proprietary license, meaning the source code is developed "
+"privately and cannot be audited by an independent third party."
 msgstr ""
-"Бұл қолданбаның проприетарлы лицензиясы бар, яғни бастапқы коды жабық түрде әзірленеді және "
-"оны тәуелсіз үшінші тарап тексере алмайды."
+"Бұл қолданбаның проприетарлы лицензиясы бар, яғни бастапқы коды жабық түрде"
+" әзірленеді және оны тәуелсіз үшінші тарап тексере алмайды."
 
 #: src/bz-full-view.c:210
 msgid "Other Apps From This Developer"
@@ -1857,7 +1846,8 @@ msgstr "Қолданбаны өшіру"
 msgid "_Remove"
 msgstr "Ө_шіру"
 
-#: src/bz-install-controls.blp:114 src/bz-updates-card.vala:178 src/bz-updates-card.vala:201
+#: src/bz-install-controls.blp:114 src/bz-updates-card.vala:178
+#: src/bz-updates-card.vala:201
 msgid "Update"
 msgstr "Жаңарту"
 
@@ -2001,26 +1991,21 @@ msgstr "Бұл қолданбаның лицензиясы белгісіз"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and released under the %s "
-"license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Бұл қолданба халықаралық қауымдастықпен ашық түрде әзірленеді және %s лицензиясымен "
-"шығарылады.\n"
+"Бұл қолданба халықаралық қауымдастықпен ашық түрде әзірленеді және %s лицензиясымен шығарылады.\n"
 "\n"
 "Сіз де қатысып, оны одан әрі жақсартуға көмектесе аласыз."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it works. It may be "
-"insecure in ways that are hard to detect, and it may change without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Бұл қолданба ашық түрде әзірленбейді, сондықтан оның қалай жұмыс істейтінін тек әзірлеушілері "
-"ғана біледі. Онда анықтау қиын қауіпсіздік кемшіліктері болуы мүмкін және ол бақылаусыз "
-"өзгеруі мүмкін.\n"
+"Бұл қолданба ашық түрде әзірленбейді, сондықтан оның қалай жұмыс істейтінін тек әзірлеушілері ғана біледі. Онда анықтау қиын қауіпсіздік кемшіліктері болуы мүмкін және ол бақылаусыз өзгеруі мүмкін.\n"
 "\n"
 "Сіз бұл қолданбаға үлес қоса алуыңыз немесе қоса алмауыңыз мүмкін."
 
@@ -2035,7 +2020,8 @@ msgstr ""
 "\n"
 "Сіз бұл қолданбаға үлес қоса алуыңыз немесе қоса алмауыңыз мүмкін."
 
-#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365 src/bz-safety-dialog.blp:103
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
+#: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "Лицензия"
 
@@ -2049,7 +2035,8 @@ msgstr "Бірдеңе дұрыс болмады"
 
 #: src/bz-login-page.blp:46
 msgid "Log in to sync your favorited apps across devices"
-msgstr "Таңдаулы қолданбаларыңызды құрылғылар арасында синхрондау үшін кіріңіз"
+msgstr ""
+"Таңдаулы қолданбаларыңызды құрылғылар арасында синхрондау үшін кіріңіз"
 
 #: src/bz-login-page.blp:113
 msgid "Finish"
@@ -2066,10 +2053,11 @@ msgstr "Таңбашаны метадеректерді алдын ала қар
 
 #: src/bz-metainfo-preview.c:108
 msgid ""
-"Metainfo files don't include app icons by themselves. Would you like to select one manually?"
+"Metainfo files don't include app icons by themselves. Would you like to "
+"select one manually?"
 msgstr ""
-"Метадеректер файлдары қолданба таңбашаларын өздігінен қамтымайды. Біреуін қолмен таңдағыңыз "
-"келе ме?"
+"Метадеректер файлдары қолданба таңбашаларын өздігінен қамтымайды. Біреуін "
+"қолмен таңдағыңыз келе ме?"
 
 #: src/bz-metainfo-preview.c:111
 msgid "Skip"
@@ -2125,12 +2113,14 @@ msgid "Preferences"
 msgstr "Баптаулар"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
-"Желі қосылымы трафикті есептейтін ретінде көрсетілген — дүкен деректерін автоматты жаңарту "
-"уақытша тоқтатылды"
+"Желі қосылымы трафикті есептейтін ретінде көрсетілген — дүкен деректерін "
+"автоматты жаңарту уақытша тоқтатылды"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244
+#: src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "Қолмен жаңарту"
 
@@ -2140,11 +2130,11 @@ msgstr "Қолданба жаңартулары"
 
 #: src/bz-preferences-dialog.blp:33
 msgid ""
-"Auto-updates will pause on metered networks or when power saving is on to save data and "
-"battery."
+"Auto-updates will pause on metered networks or when power saving is on to "
+"save data and battery."
 msgstr ""
-"Деректер мен батарея зарядын үнемдеу үшін трафикті есептейтін желілерде немесе қуат үнемдеу "
-"қосулы кезде автожаңартулар тоқтатылады."
+"Деректер мен батарея зарядын үнемдеу үшін трафикті есептейтін желілерде "
+"немесе қуат үнемдеу қосулы кезде автожаңартулар тоқтатылады."
 
 #: src/bz-preferences-dialog.blp:36
 msgid "_Automatic"
@@ -2188,7 +2178,9 @@ msgstr "Тек F_lathub нәтижелері"
 
 #: src/bz-preferences-dialog.blp:85
 msgid "Limit search and browse results to apps only available on Flathub"
-msgstr "Іздеу және шолу нәтижелерін тек Flathub ішінде қолжетімді қолданбалармен шектеу"
+msgstr ""
+"Іздеу және шолу нәтижелерін тек Flathub ішінде қолжетімді қолданбалармен "
+"шектеу"
 
 #: src/bz-preferences-dialog.blp:90
 msgid "_Verified Results Only"
@@ -2298,11 +2290,6 @@ msgstr "Фембой прайд түстері"
 msgid "Neutrois Pride Colors"
 msgstr "Нейтроис прайд түстері"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:286
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr "Қолданба жаңартуларын тексеру үшін Bazaar фонда орындалуы керек"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "Нұсқалар тарихы"
@@ -2316,7 +2303,8 @@ msgstr "Нұсқалар т_арихы"
 msgid "Today"
 msgstr "Бүгін"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "Кеше"
@@ -2372,30 +2360,28 @@ msgstr "Қосымша ақпарат алу"
 msgid "Uninstall"
 msgstr "Өшіру"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "Алу"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322 src/safety-calculator.c:158
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322
+#: src/safety-calculator.c:158
 msgid "Arbitrary Permissions"
 msgstr "Кез келген рұқсаттар"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any other permission "
-"it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, such as "
-"accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
 "Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
-"Бұл қолданбаның Flatpak оқшаулау ортасын айналып өтіп, өзіне <b>қалаған кез келген басқа "
-"рұқсатын беруге</b> жанама түрде мүмкіндік беретін рұқсаты бар.\n"
+"Бұл қолданбаның Flatpak оқшаулау ортасын айналып өтіп, өзіне <b>қалаған кез келген басқа рұқсатын беруге</b> жанама түрде мүмкіндік беретін рұқсаты бар.\n"
 "\n"
-"Сондықтан ол барлық файлдарыңызға қол жеткізу және интернетке қосылу сияқты артықшылықтары "
-"бар, оқшауланбаған қолданба жасай алатын кез келген әрекетті орындай алады.\n"
+"Сондықтан ол барлық файлдарыңызға қол жеткізу және интернетке қосылу сияқты артықшылықтары бар, оқшауланбаған қолданба жасай алатын кез келген әрекетті орындай алады.\n"
 "\n"
 "Басқа рұқсаттарды қарау қолданбаның не істей алатыны туралы жақсырақ түсінік беруі мүмкін."
 
@@ -2418,11 +2404,12 @@ msgstr "SDK"
 
 #: src/bz-safety-dialog.blp:157
 msgid ""
-"This app uses an outdated version of the software platform (SDK) and might contain bugs or "
-"security vulnerabilities which will not be fixed."
+"This app uses an outdated version of the software platform (SDK) and might "
+"contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
-"Бұл қолданба бағдарламалық жасақтама платформасының (SDK) ескірген нұсқасын пайдаланады және "
-"түзетілмейтін ақаулар немесе қауіпсіздік осалдықтары болуы мүмкін."
+"Бұл қолданба бағдарламалық жасақтама платформасының (SDK) ескірген нұсқасын"
+" пайдаланады және түзетілмейтін ақаулар немесе қауіпсіздік осалдықтары "
+"болуы мүмкін."
 
 #: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
@@ -2708,7 +2695,8 @@ msgstr "Сілтемені көшіру"
 msgid "Timeline"
 msgstr "Уақыт шкаласы"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Орнатулар:"
@@ -2790,31 +2778,21 @@ msgstr "“%s” қауіптілік деңгейі жоғары"
 
 #: src/bz-transaction-dialog.c:221
 msgid ""
-"This app has full access to your system, including all <b>your files, browser history, saved "
-"passwords</b>, and more. It also has access to the internet, meaning it could send your data "
-"to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
 "Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Бұл қолданбаның жүйеңізге, соның ішінде барлық <b>файлдарыңызға, браузер тарихына, сақталған "
-"парольдеріңізге</b> және басқаларына толық қолжетімділігі бар. Сондай-ақ оның интернетке "
-"қолжетімділігі бар, бұл оның деректеріңізді бөгде тараптарға жіберуі мүмкін екенін "
-"білдіреді.\n"
+"Бұл қолданбаның жүйеңізге, соның ішінде барлық <b>файлдарыңызға, браузер тарихына, сақталған парольдеріңізге</b> және басқаларына толық қолжетімділігі бар. Сондай-ақ оның интернетке қолжетімділігі бар, бұл оның деректеріңізді бөгде тараптарға жіберуі мүмкін екенін білдіреді.\n"
 "\n"
 "Қолданба проприетарлы болғандықтан, оның бұл рұқсаттармен не істейтінін тексеру мүмкін емес."
 
 #: src/bz-transaction-dialog.c:230
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, "
-"capture screenshots, and monitor other applications</b>. It also has access to the internet, "
-"meaning it could send your data to outside parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
 "Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Бұл қолданба ескірген X11 терезелік жүйесін пайдаланады, бұл оған <b>барлық басылған "
-"пернелерді жазуға, скриншоттар түсіруге және басқа қолданбаларды бақылауға</b> мүмкіндік "
-"береді. Сондай-ақ оның интернетке қолжетімділігі бар, бұл оның деректеріңізді бөгде "
-"тараптарға жіберуі мүмкін екенін білдіреді.\n"
+"Бұл қолданба ескірген X11 терезелік жүйесін пайдаланады, бұл оған <b>барлық басылған пернелерді жазуға, скриншоттар түсіруге және басқа қолданбаларды бақылауға</b> мүмкіндік береді. Сондай-ақ оның интернетке қолжетімділігі бар, бұл оның деректеріңізді бөгде тараптарға жіберуі мүмкін екенін білдіреді.\n"
 "\n"
 "Қолданба проприетарлы болғандықтан, оның бұл рұқсаттармен не істейтінін тексеру мүмкін емес."
 
@@ -2962,27 +2940,21 @@ msgstr "Іздеу"
 msgid "Main Menu"
 msgstr "Бас мәзір"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:235
-msgid "You are running a new version of Bazaar!"
-msgstr "Сіз Bazaar-дың жаңа нұсқасын іске қостыңыз!"
-
 #: src/bz-window.blp:236
 msgid "See What's New"
 msgstr "Жаңалықтарды қарау"
 
 #: src/bz-window.blp:243
-msgid "You have a network connection but are viewing a cached version of Flathub"
-msgstr "Желі қосылымы бар, бірақ сіз Flathub-тың кэштелген нұсқасын көріп отырсыз"
+msgid ""
+"You have a network connection but are viewing a cached version of Flathub"
+msgstr ""
+"Желі қосылымы бар, бірақ сіз Flathub-тың кэштелген нұсқасын көріп отырсыз"
 
 #: src/bz-window.blp:254
 msgid "Network connection is metered — automatic refreshes disabled"
-msgstr "Желі қосылымы трафикті есептейтін ретінде көрсетілген — автожаңартулар сөндірілген"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:291
-msgid "_Donate to Bazaar"
-msgstr "Bazaar-ға _демеушілік ету"
+msgstr ""
+"Желі қосылымы трафикті есептейтін ретінде көрсетілген — автожаңартулар "
+"сөндірілген"
 
 #: src/bz-window.blp:297
 msgid "_Refresh"
@@ -3004,25 +2976,9 @@ msgstr "_Баптаулар"
 msgid "_Keyboard Shortcuts"
 msgstr "_Пернетақта жарлықтары"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:324
-msgid "_About Bazaar"
-msgstr "Bazaar т_уралы"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:331
-msgid "_Quit Bazaar"
-msgstr "Bazaar-дан ш_ығу"
-
 #: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "Шығу"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:441
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
 
 #: src/bz-window.c:721 src/bz-window.c:770
 msgid "Failed to launch application"
@@ -3031,11 +2987,6 @@ msgstr "Қолданбаны іске қосу сәтсіз аяқталды"
 #: src/bz-window.c:849
 msgid "Could not open link"
 msgstr "Сілтемені ашу мүмкін болмады"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1058
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Сіз Bazaar-ды Bazaar ішінен өшіре алмайсыз!"
 
 #: src/bz-window.c:1442 src/bz-window.c:1476
 msgid "Can't do that right now!"
@@ -3117,7 +3068,8 @@ msgstr "Проприетарлы бағдарламалық қамтама"
 msgid "Special License: %s"
 msgstr "Арнайы лицензия: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "Еркін бағдарламалық қамтама"
@@ -3191,7 +3143,8 @@ msgstr "Пайдаланушы құрылғысына қол жеткізу"
 
 #: src/safety-calculator.c:115
 msgid "Can access devices such as webcams or gaming controllers"
-msgstr "Вебкамералар немесе ойын контроллері сияқты құрылғыларға қол жеткізе алады"
+msgstr ""
+"Вебкамералар немесе ойын контроллері сияқты құрылғыларға қол жеткізе алады"
 
 #: src/safety-calculator.c:117
 msgid "No User Device Access"
@@ -3199,7 +3152,9 @@ msgstr "Пайдаланушы құрылғыларына қолжетімділ
 
 #: src/safety-calculator.c:118
 msgid "Cannot access devices such as webcams or gaming controllers"
-msgstr "Вебкамералар немесе ойын контроллері сияқты құрылғыларға қол жеткізе алмайды"
+msgstr ""
+"Вебкамералар немесе ойын контроллері сияқты құрылғыларға қол жеткізе "
+"алмайды"
 
 #: src/safety-calculator.c:123
 msgid "Input Device Access"
@@ -3215,7 +3170,8 @@ msgstr "Микрофонға қол жеткізу және аудионы ой�
 
 #: src/safety-calculator.c:131
 msgid "Can listen using microphones and play audio without asking permission"
-msgstr "Микрофондар арқылы тыңдай алады және рұқсат сұрамай аудио ойната алады"
+msgstr ""
+"Микрофондар арқылы тыңдай алады және рұқсат сұрамай аудио ойната алады"
 
 #: src/safety-calculator.c:137
 msgid "System Device Access"
@@ -3223,7 +3179,8 @@ msgstr "Жүйелік құрылғыға қол жеткізу"
 
 #: src/safety-calculator.c:138
 msgid "Can access system devices which require elevated permissions"
-msgstr "Жоғары құқықтарды талап ететін жүйелік құрылғыларға қол жеткізе алады"
+msgstr ""
+"Жоғары құқықтарды талап ететін жүйелік құрылғыларға қол жеткізе алады"
 
 #: src/safety-calculator.c:144
 msgid "Screen Contents Access"
@@ -3291,7 +3248,8 @@ msgstr "Жүктеп алулар бумасына оқу/жазу рұқсат�
 
 #: src/safety-calculator.c:207
 msgid "Can read and write all data in your downloads directory"
-msgstr "Жүктеп алынған файлдар бумаңыздағы барлық деректерді оқи және жаза алады"
+msgstr ""
+"Жүктеп алынған файлдар бумаңыздағы барлық деректерді оқи және жаза алады"
 
 #: src/safety-calculator.c:217
 msgid "Download Folder Read Access"
@@ -3339,25 +3297,30 @@ msgstr "Қызметтерге қолжетімділік жоқ"
 
 #: src/safety-calculator.c:333
 msgid "Cannot access non-portal session or system services at all"
-msgstr "Порталдық емес сеанс немесе жүйелік қызметтерге мүлдем қол жеткізе алмайды"
+msgstr ""
+"Порталдық емес сеанс немесе жүйелік қызметтерге мүлдем қол жеткізе алмайды"
 
 #: src/safety-calculator.c:372
 msgid "Verified App Developer"
 msgstr "Расталған қолданба әзірлеушісі"
 
 #: src/safety-calculator.c:373
-msgid "The developer of this app has been verified to be who they say they are"
-msgstr "Бұл қолданбаның әзірлеушісі шын мәнінде өзі айтқан адам екені расталды"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
+msgstr ""
+"Бұл қолданбаның әзірлеушісі шын мәнінде өзі айтқан адам екені расталды"
 
 #: src/safety-calculator.c:382
 msgid "Proprietary Code"
 msgstr "Проприетарлы код"
 
 #: src/safety-calculator.c:383
-msgid "The source code is not public, so it cannot be independently audited and might be unsafe"
+msgid ""
+"The source code is not public, so it cannot be independently audited and "
+"might be unsafe"
 msgstr ""
-"Бастапқы код жария емес, сондықтан оны тәуелсіз тексеру мүмкін емес және ол қауіпті болуы "
-"мүмкін"
+"Бастапқы код жария емес, сондықтан оны тәуелсіз тексеру мүмкін емес және ол"
+" қауіпті болуы мүмкін"
 
 #: src/safety-calculator.c:393
 msgid "Auditable Code"
@@ -3365,11 +3328,11 @@ msgstr "Тексеруге болатын код"
 
 #: src/safety-calculator.c:394
 msgid ""
-"The source code is public and can be independently audited, which makes the app more likely "
-"to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
-"Бастапқы код ашық және тәуелсіз тексерілуі мүмкін, бұл қолданбаның қауіпсіз болу ықтималдығын "
-"арттырады"
+"Бастапқы код ашық және тәуелсіз тексерілуі мүмкін, бұл қолданбаның қауіпсіз"
+" болу ықтималдығын арттырады"
 
 #: src/safety-calculator.c:532
 #, c-format
@@ -3428,7 +3391,8 @@ msgstr "Құпияларды сақтау қызметі"
 
 #: src/safety-calculator.c:588
 msgid "Can store and retrieve its own passwords using the system keyring"
-msgstr "Жүйелік кілттер бауын пайдаланып өз парольдерін сақтай және ала алады"
+msgstr ""
+"Жүйелік кілттер бауын пайдаланып өз парольдерін сақтай және ала алады"
 
 #: src/safety-calculator.c:593
 msgid "Desktop Notifications Service"
@@ -3504,11 +3468,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Терезені жабу"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Bazaar-дан шығу"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3547,6 +3506,18 @@ msgstr "%s және %s жаңартылды."
 msgid "Includes %s, %s and %s."
 msgstr "%s, %s және %s қамтиды."
 
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "Дүкен"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Дүкен — %s"
+
 #~ msgid "For This User Only"
 #~ msgstr "Тек осы пайдаланушы үшін"
 
@@ -3560,8 +3531,10 @@ msgstr "%s, %s және %s қамтиды."
 #~ msgid "Install %s?"
 #~ msgstr "%s орнату керек пе?"
 
-#~ msgid "Select which version to install. May install additional shared components"
-#~ msgstr "Орнатылатын нұсқаны таңдаңыз. Қосымша ортақ компоненттер орнатылуы мүмкін"
+#~ msgid ""
+#~ "Select which version to install. May install additional shared components"
+#~ msgstr ""
+#~ "Орнатылатын нұсқаны таңдаңыз. Қосымша ортақ компоненттер орнатылуы мүмкін"
 
 #~ msgid "May install additional shared components"
 #~ msgstr "Қосымша ортақ компоненттер орнатылуы мүмкін"
@@ -3576,13 +3549,11 @@ msgstr "%s, %s және %s қамтиды."
 #~ msgstr "Қате пішімделген сілтеме"
 
 #~ msgid ""
-#~ "The link used to open this app has incorrect capitalization and may stop working in the "
-#~ "future.\n"
+#~ "The link used to open this app has incorrect capitalization and may stop working in the future.\n"
 #~ "\n"
 #~ "This is most likely caused by KRunner sending incorrect app IDs"
 #~ msgstr ""
-#~ "Бұл қолданбаны ашу үшін пайдаланылған сілтеменің регистрі қате және болашақта жұмыс "
-#~ "істемеуі мүмкін.\n"
+#~ "Бұл қолданбаны ашу үшін пайдаланылған сілтеменің регистрі қате және болашақта жұмыс істемеуі мүмкін.\n"
 #~ "\n"
 #~ "Бұған ең ықтималы KRunner қате қолданба идентификаторларын жіберуі себеп болды"
 
@@ -3591,14 +3562,3 @@ msgstr "%s, %s және %s қамтиды."
 
 #~ msgid "Try a different search query"
 #~ msgstr "Басқа іздеу сұранымын байқап көріңіз"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "Дүкен"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "Дүкен — %s"

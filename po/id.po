@@ -1,6 +1,6 @@
-# Indonesian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Indonesian translations for nodalix-store package.
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2025.
 #
 # SPDX-FileCopyrightText: 2025 asen23 <andersenlim23@gmail.com>
@@ -8,8 +8,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-07-03 15:21+0700\n"
 "PO-Revision-Date: 2026-07-03 17:38+0700\n"
 "Last-Translator: KiKaraage <kikaraage@tuta.io>\n"
@@ -21,12 +21,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 50.0\n"
 
-#: data/os.nodalix.Store.desktop.in:2
-#: data/os.nodalix.Store.metainfo.xml.in:7 src/bz-window.blp:47
-#: src/bz-window.blp:203 src/bz-window.c:386 src/bz-window.c:387
-msgid "Bazaar"
-msgstr "Bazaar"
-
 #: data/os.nodalix.Store.desktop.in:3
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Tambah, hapus atau perbarui aplikasi Flatpak pada komputer ini"
@@ -34,7 +28,8 @@ msgstr "Tambah, hapus atau perbarui aplikasi Flatpak pada komputer ini"
 # Added "Aplikasi" and "Pusat Aplikasi" (App Center) to search queries
 #: data/os.nodalix.Store.desktop.in:9
 msgid "GTK;System;PackageManager;Discover;Flatpak;Software;Store;"
-msgstr "GTK;Sistem;PackageManager;Discover;Flatpak;Aplikasi;Toko;PerangkatLunak;PusatAplikasi;ManajerPaket;"
+msgstr ""
+"GTK;Sistem;PackageManager;Discover;Flatpak;Aplikasi;Toko;PerangkatLunak;PusatAplikasi;ManajerPaket;"
 
 #: data/os.nodalix.Store.desktop.in:16
 msgid "New Window"
@@ -49,8 +44,9 @@ msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"Toko aplikasi Linux yang cepat dan modern, berfokus pada kemudahan menemukan "
-"serta memasang aplikasi dan modul tambahan Flatpak, terutama dari Flathub."
+"Toko aplikasi Linux yang cepat dan modern, berfokus pada kemudahan "
+"menemukan serta memasang aplikasi dan modul tambahan Flatpak, terutama dari"
+" Flathub."
 
 #: data/os.nodalix.Store.metainfo.xml.in:15
 msgid "Queue multiple installs and keep browsing"
@@ -67,10 +63,6 @@ msgstr "Masuk dengan Flathub untuk lihat dan kelola aplikasi favoritmu"
 #: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Search apps directly from GNOME Shell"
 msgstr "Cari aplikasi langsung dari bilah pencarian GNOME"
-
-#: data/os.nodalix.Store.metainfo.xml.in:30 src/bz-application.c:787
-msgid "The Bazaar Contributors"
-msgstr "Kontributor Bazaar"
 
 #: data/os.nodalix.Store.metainfo.xml.in:55
 msgid "The home page displaying Flathub apps"
@@ -120,8 +112,8 @@ msgstr "Tiada Modul Tambahan Nampak"
 
 #: src/bz-addons-dialog.blp:81
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
 "Opsi saringan Anda saat ini menyembunyikan semua modul tambahan. Coba atur "
 "ulang kembali."
@@ -156,7 +148,8 @@ msgstr "Modul Tambahan untuk %s"
 msgid "Show Less"
 msgstr "Sembunyikan"
 
-#: src/bz-addons-dialog.c:347 src/bz-full-view.c:626 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:347 src/bz-full-view.c:626
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Tampilkan Lebih Banyak"
 
@@ -175,7 +168,8 @@ msgstr "Peringkat Usia"
 msgid "Cartoon Violence"
 msgstr "Kekerasan (Kartun)"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Tidak ada info mengenai penggambaran kekerasan berbentuk kartun"
@@ -185,7 +179,8 @@ msgstr "Tidak ada info mengenai penggambaran kekerasan berbentuk kartun"
 msgid "Fantasy Violence"
 msgstr "Kekerasan (Fantasi)"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Tidak ada info mengenai penggambaran kekerasan berbentuk fantasi"
@@ -195,7 +190,8 @@ msgstr "Tidak ada info mengenai penggambaran kekerasan berbentuk fantasi"
 msgid "Realistic Violence"
 msgstr "Kekerasan (Nyata)"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Tidak ada info mengenai penggambaran kekerasan realistik"
@@ -205,7 +201,8 @@ msgstr "Tidak ada info mengenai penggambaran kekerasan realistik"
 msgid "Violence Depicting Bloodshed"
 msgstr "Kekerasan Menggambarkan Pertumpahan Darah"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Tidak ada info mengenai penggambaran pertumpahan darah"
@@ -215,7 +212,8 @@ msgstr "Tidak ada info mengenai penggambaran pertumpahan darah"
 msgid "Sexual Violence"
 msgstr "Kekerasan Seksual"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Tidak ada info mengenai penggambaran kekerasan seksual"
@@ -225,7 +223,8 @@ msgstr "Tidak ada info mengenai penggambaran kekerasan seksual"
 msgid "Alcohol"
 msgstr "Minuman Keras"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr ""
@@ -236,18 +235,21 @@ msgstr ""
 msgid "Narcotics"
 msgstr "Narkotika"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr ""
-"Tidak ada info mengenai referensi terkait narkotika dan obat-obatan terlarang"
+"Tidak ada info mengenai referensi terkait narkotika dan obat-obatan "
+"terlarang"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:130
 msgid "Tobacco"
 msgstr "Rokok"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Tidak ada info mengenai referensi terkait rokok "
@@ -257,7 +259,8 @@ msgstr "Tidak ada info mengenai referensi terkait rokok "
 msgid "Nudity"
 msgstr "Ketelanjangan"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Tidak ada info mengenai segala bentuk ketelanjangan"
@@ -267,7 +270,8 @@ msgstr "Tidak ada info mengenai segala bentuk ketelanjangan"
 msgid "Sexual Themes"
 msgstr "Tema Seksual"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr ""
@@ -278,7 +282,8 @@ msgstr ""
 msgid "Profanity"
 msgstr "Kata-Kata Kasar"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Tidak ada info mengenai segala penggunaan kata-kata kasar"
@@ -288,7 +293,8 @@ msgstr "Tidak ada info mengenai segala penggunaan kata-kata kasar"
 msgid "Inappropriate Humor"
 msgstr "Humor Tidak Pantas"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Tidak ada info mengenai penggunaan humor yang tidak pantas"
@@ -298,7 +304,8 @@ msgstr "Tidak ada info mengenai penggunaan humor yang tidak pantas"
 msgid "Discrimination"
 msgstr "Diskriminasi"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Tidak ada info mengenai segala penggunaan bahasa yang diskriminatif"
@@ -308,7 +315,8 @@ msgstr "Tidak ada info mengenai segala penggunaan bahasa yang diskriminatif"
 msgid "Advertising"
 msgstr "Iklan"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Tidak ada info mengenai semua bentuk iklan"
@@ -318,7 +326,8 @@ msgstr "Tidak ada info mengenai semua bentuk iklan"
 msgid "Gambling"
 msgstr "Judi"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr ""
@@ -329,7 +338,8 @@ msgstr ""
 msgid "Purchasing"
 msgstr "Jual Beli"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Tidak ada info mengenai kemampuan transaksi atau pembelian"
@@ -339,7 +349,8 @@ msgstr "Tidak ada info mengenai kemampuan transaksi atau pembelian"
 msgid "Chat Between Users"
 msgstr "Obrolan Antar Pengguna"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "Tidak ada info mengenai cara melakukan obrolan dengan pengguna lain"
@@ -349,7 +360,8 @@ msgstr "Tidak ada info mengenai cara melakukan obrolan dengan pengguna lain"
 msgid "Audio Chat Between Users"
 msgstr "Panggilan Antar Pengguna"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr ""
@@ -360,7 +372,8 @@ msgstr ""
 msgid "Contact Details"
 msgstr "Rincian Kontak"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
@@ -374,20 +387,25 @@ msgstr ""
 msgid "Identifying Information"
 msgstr "Informasi Identifikasi"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr ""
-"Tidak ada info terkait tindakan membagikan info pengguna dengan pihak ketiga "
+"Tidak ada info terkait tindakan membagikan info pengguna dengan pihak "
+"ketiga "
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:208
 msgid "Location Sharing"
 msgstr "Berbagi Lokasi"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr "Tidak ada info mengenai tindakan berbagi lokasi dengan pengguna lain"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -395,7 +413,8 @@ msgstr "Tidak ada info mengenai tindakan berbagi lokasi dengan pengguna lain"
 msgid "Prostitution"
 msgstr "Prostitusi"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Tidak ada info mengenai penyebutan referensi terkait prostitusi"
@@ -405,7 +424,8 @@ msgstr "Tidak ada info mengenai penyebutan referensi terkait prostitusi"
 msgid "Adultery"
 msgstr "Zina"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Tidak ada info mengenai penyebutan referensi terkait perzinaan"
@@ -415,7 +435,8 @@ msgstr "Tidak ada info mengenai penyebutan referensi terkait perzinaan"
 msgid "Sexualized Characters"
 msgstr "Karakter yang Diseksualisasi"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Tidak ada info mengenai karakter yang diseksualisasikan"
@@ -425,7 +446,8 @@ msgstr "Tidak ada info mengenai karakter yang diseksualisasikan"
 msgid "Desecration"
 msgstr "Penistaan"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Tidak ada info mengenai penyebutan referensi terkait penistaan"
@@ -435,7 +457,8 @@ msgstr "Tidak ada info mengenai penyebutan referensi terkait penistaan"
 msgid "Human Remains"
 msgstr "Jasad Manusia"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Tidak ada info mengenai terlihatnya sisa-sisa jasad manusia"
@@ -445,7 +468,8 @@ msgstr "Tidak ada info mengenai terlihatnya sisa-sisa jasad manusia"
 msgid "Slavery"
 msgstr "Perbudakan"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Tidak ada info mengenai penyebutan referensi terkait perbudakan"
@@ -741,7 +765,8 @@ msgstr "Terverifikasi"
 msgid "Installed"
 msgstr "Terpasang"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:790
 msgid "translator-credits"
 msgstr "KiKaraage <kikaraage@tuta.io>, 2025"
@@ -758,28 +783,6 @@ msgstr "Akun Berhasil Dikeluarkan!"
 msgid "Ubuntu Troubles!"
 msgstr "Masalah dengan Ubuntu!"
 
-#: src/bz-application.c:1041
-msgid ""
-"The more recent versions of Ubuntu have messed up default security rules, "
-"making it <b>impossible to install apps</b> from the Flatpak version of "
-"Bazaar, please just use the normal package for now by using\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"You can then remove this Flatpak version with\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-msgstr ""
-"Versi terbaru Ubuntu telah merubah peraturan keamanan umum, sehingga "
-"instalasi aplikasi tidak dapat dilakukan melalui versi Flatpak pada Bazaar. "
-"Saat ini Anda dapat memasang ulang Bazaar dengan\n"
-"\n"
-"<tt>sudo apt install bazaar<tt>\n"
-"\n"
-"Kemudian Anda dapat menghapus versi Flatpak ini dengan\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-
 #: src/bz-application.c:1047
 msgid "Continue Anyway"
 msgstr "Tetap Pasang"
@@ -792,37 +795,9 @@ msgstr "Melakukan pengaturan..."
 msgid "Set Up System Flathub?"
 msgstr "Atur Flathub pada Sistem?"
 
-#: src/bz-application.c:1158
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub belum diatur sebagai sumber Flatpak pada sistem ini. Bazaar "
-"membutuhkan Flathub terkonfigurasi sebagai sumber Flatpak sistem untuk "
-"mencari dan memasang aplikasi.\n"
-"\n"
-"Anda masih dapat menggunakan Bazaar untuk mencari dan menghapus aplikasi "
-"terpasang."
-
 #: src/bz-application.c:1165
 msgid "Set Up Flathub?"
 msgstr "Atur Flathub?"
-
-#: src/bz-application.c:1168
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub belum diatur pada sistem ini. Anda tidak dapat mencari dan memasang "
-"aplikasi lewat Bazaar jika Flathub belum tersedia.\n"
-"\n"
-"Anda masih dapat menggunakan Bazaar untuk mencari dan menghapus aplikasi "
-"terpasang."
 
 #: src/bz-application.c:1174
 msgid "Later"
@@ -867,16 +842,13 @@ msgstr "Format Tautan Salah"
 
 #: src/bz-application.c:3825
 msgid ""
-"The link used to open this app has incorrect capitalization and may stop "
-"working in the future.\n"
+"The link used to open this app has incorrect capitalization and may stop working in the future.\n"
 "\n"
 "This is most likely caused by KRunner sending incorrect app IDs"
 msgstr ""
-"Tautan untuk membuka aplikasi ini memiliki format kapitalisasi yang salah, "
-"dan mungkin tak berfungsi optimal di masa depan.\n"
+"Tautan untuk membuka aplikasi ini memiliki format kapitalisasi yang salah, dan mungkin tak berfungsi optimal di masa depan.\n"
 "\n"
-"Hal ini kemungkinan disebabkan oleh terkirimnya ID aplikasi yang tidak tepat "
-"oleh KRunner"
+"Hal ini kemungkinan disebabkan oleh terkirimnya ID aplikasi yang tidak tepat oleh KRunner"
 
 #: src/bz-application.c:3833
 msgid "Could not find app"
@@ -915,18 +887,6 @@ msgstr "Pemasangan Sekaligus"
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
 msgstr "Dependensi tambahan mungkin membutuhkan ruang tambahan"
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Pemasangan aplikasi ini mungkin membutuhkan sumber aplikasi tambahan. "
-"Aplikasi lain dari sumber yang sama akan muncul di Bazaar.\n"
-"\n"
-"Tambahkan sumber aplikasi ini hanya jika Anda yakin mempercayainya."
 
 #: src/bz-bundle-install-dialog.blp:412
 msgid "Successfully Installed!"
@@ -1041,7 +1001,8 @@ msgstr "Aplikasi dengan hak cipta khusus"
 msgid "Special License: %s"
 msgstr "Lisensi Khusus: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:282
 msgid "Free Software"
 msgstr "Aplikasi Bebas"
@@ -1153,8 +1114,8 @@ msgid ""
 "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
 "<b>%3$s</b>."
 msgstr ""
-"Kepemilikan ID aplikasi %1$s telah diverifikasi oleh <b>%2$s</b> di <b>%3$s</"
-"b>."
+"Kepemilikan ID aplikasi %1$s telah diverifikasi oleh <b>%2$s</b> di "
+"<b>%3$s</b>."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -1174,25 +1135,15 @@ msgstr "Catatan Rilis Lengkap"
 msgid "This release was made possible by users like you!"
 msgstr "Versi ini dapat rilis karena dukungan Anda!"
 
-#: src/bz-donations-dialog.blp:116
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Saya cinta Bazaar, namun saya tidak dapat mengembangkannya sendiri. Jika "
-"Anda ingin membantu pengembangan lebih lanjut, mari berdonasi lewat Ko-fi:"
-
-#: src/bz-donations-dialog.blp:131
-msgid "Donate to Bazaar"
-msgstr "Donasi ke Bazaar"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "Apa Yang Baru di %s?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Dirilis pada %-e %B %Y"
@@ -1206,8 +1157,8 @@ msgid ""
 "You have multiple versions of this app installed. Which one would you like "
 "to proceed with?"
 msgstr ""
-"Anda telah memasang beberapa versi aplikasi ini. Versi mana yang ingin Anda "
-"gunakan?"
+"Anda telah memasang beberapa versi aplikasi ini. Versi mana yang ingin Anda"
+" gunakan?"
 
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:233
 msgid "Cancel"
@@ -2023,27 +1974,21 @@ msgstr "Lisensi aplikasi ini tidak diketahui"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Aplikasi ini dikembangkan secara terbuka oleh komunitas dari seluruh dunia, "
-"dan dirilis di bawah lisensi %s.\n"
+"Aplikasi ini dikembangkan secara terbuka oleh komunitas dari seluruh dunia, dan dirilis di bawah lisensi %s.\n"
 "\n"
 "Anda dapat berpartisipasi membuat aplikasi ini lebih baik."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Aplikasi ini tidak dikembangkan secara terbuka, sehingga hanya pihak "
-"pengembang yang memahami penuh cara kerjanya. Pengawasan keamanan aplikasi "
-"ini mungkin lebih sulit, dan statusnya dapat berubah sewaktu-waktu.\n"
+"Aplikasi ini tidak dikembangkan secara terbuka, sehingga hanya pihak pengembang yang memahami penuh cara kerjanya. Pengawasan keamanan aplikasi ini mungkin lebih sulit, dan statusnya dapat berubah sewaktu-waktu.\n"
 "\n"
 "Anda mungkin tidak dapat berkontribusi pada aplikasi ini."
 
@@ -2108,10 +2053,13 @@ msgid "Preferences"
 msgstr "Preferensi"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
-msgstr "Koneksi jaringan dibatasi — sinkronisasi data otomatis saat ini dijeda"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
+msgstr ""
+"Koneksi jaringan dibatasi — sinkronisasi data otomatis saat ini dijeda"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:236 src/bz-window.blp:247
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:236
+#: src/bz-window.blp:247
 msgid "Refresh Manually"
 msgstr "Segarkan Langsung"
 
@@ -2149,7 +2097,8 @@ msgstr "Sembunyikan Aplikasi Tanpa Dukungan"
 
 #: src/bz-preferences-dialog.blp:50
 msgid "Hide apps which are no longer supported by their developers"
-msgstr "Sembunyikan aplikasi yang sudah tidak didukung oleh para pengembangnya"
+msgstr ""
+"Sembunyikan aplikasi yang sudah tidak didukung oleh para pengembangnya"
 
 #: src/bz-preferences-dialog.blp:55
 msgid "Progress Bar Theme"
@@ -2256,7 +2205,8 @@ msgstr "_Riwayat Versi"
 msgid "Today"
 msgstr "Hari Ini"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:125
 msgid "Yesterday"
 msgstr "Kemarin"
@@ -2312,7 +2262,8 @@ msgstr "Info Lebih Lanjut"
 msgid "Uninstall"
 msgstr "Bongkar"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:383
 msgid "Get"
 msgstr "Pasang"
@@ -2363,7 +2314,8 @@ msgstr "Tidak Ada Akses Perangkat Pengguna"
 
 #: src/safety-calculator.c:121
 msgid "Cannot access devices such as webcams or gaming controllers"
-msgstr "Tidak dapat mengakses perangkat seperti kamera atau pengontrol mainan"
+msgstr ""
+"Tidak dapat mengakses perangkat seperti kamera atau pengontrol mainan"
 
 #: src/safety-calculator.c:126
 msgid "Input Device Access"
@@ -2513,14 +2465,16 @@ msgstr "Tidak Ada Akses Layanan"
 
 #: src/safety-calculator.c:346
 msgid "Cannot access non-portal session or system services at all"
-msgstr "Tidak dapat mengakses layanan sistem atau sesi non-portal sama sekali"
+msgstr ""
+"Tidak dapat mengakses layanan sistem atau sesi non-portal sama sekali"
 
 #: src/safety-calculator.c:354
 msgid "Verified App Developer"
 msgstr "Pengembang Terverifikasi"
 
 #: src/safety-calculator.c:355
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr "Pengembang aplikasi ini sudah terverifikasi oleh Flathub"
 
 #: src/safety-calculator.c:364
@@ -2532,8 +2486,8 @@ msgid ""
 "The source code is not public, so it cannot be independently audited and "
 "might be unsafe"
 msgstr ""
-"Kode sumber aplikasi ini tidak bersifat publik, sehingga aplikasi ini tidak "
-"dapat diaudit secara independen dan mungkin tidak aman"
+"Kode sumber aplikasi ini tidak bersifat publik, sehingga aplikasi ini tidak"
+" dapat diaudit secara independen dan mungkin tidak aman"
 
 #: src/safety-calculator.c:375
 msgid "Auditable Code"
@@ -2541,8 +2495,8 @@ msgstr "Kode Dapat Diaudit"
 
 #: src/safety-calculator.c:376
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
 "Kode sumber aplikasi ini bersifat publik dan dapat diaudit secara "
 "independen, sehingga kemungkinan besar aplikasi ini aman"
@@ -2605,7 +2559,8 @@ msgstr "Layanan Penyimpanan Sandi"
 #: src/safety-calculator.c:572
 msgid "Can store and retrieve its own passwords using the system keyring"
 msgstr ""
-"Dapat menyimpan dan mengambil kata sandi menggunakan penyimpanan kunci sistem"
+"Dapat menyimpan dan mengambil kata sandi menggunakan penyimpanan kunci "
+"sistem"
 
 #: src/safety-calculator.c:577
 msgid "Desktop Notifications Service"
@@ -2634,23 +2589,17 @@ msgstr ""
 
 #: src/bz-safety-dialog.blp:48
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a normal, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a normal, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
-"Aplikasi ini memiliki izin yang secara tidak langsung memungkinkannya "
-"mendapatkan <b>izin sewenang-wenang</b>, melewati isolasi Flatpak.\n"
+"Aplikasi ini memiliki izin yang secara tidak langsung memungkinkannya mendapatkan <b>izin sewenang-wenang</b>, melewati isolasi Flatpak.\n"
 "\n"
-"Maka aplikasi ini dapat <b>melakukan aksi apapun tanpa isolasi</b>, seperti "
-"mengakses berkas Anda atau berkomunikasi melalui jaringan internet.\n"
+"Maka aplikasi ini dapat <b>melakukan aksi apapun tanpa isolasi</b>, seperti mengakses berkas Anda atau berkomunikasi melalui jaringan internet.\n"
 "\n"
-"Anda dapat melihat detail izin lainnya untuk mendapatkan gambaran apa saja "
-"yang dapat dilakukan aplikasi ini."
+"Anda dapat melihat detail izin lainnya untuk mendapatkan gambaran apa saja yang dapat dilakukan aplikasi ini."
 
 #: src/bz-safety-dialog.blp:52
 msgid "View Other Permissions"
@@ -3045,38 +2994,23 @@ msgstr "\"%s\" memiliki risiko tinggi"
 
 #: src/bz-transaction-dialog.c:250
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Aplikasi ini memiliki akses penuh pada sistem Anda, termasuk semua <b>file, "
-"riwayat peramban, kata sandi tersimpan</b>, dan data lainnya. Aplikasi ini "
-"juga memiliki akses internet, yang memungkinkannya mengirim data Anda ke "
-"pihak luar. \n"
+"Aplikasi ini memiliki akses penuh pada sistem Anda, termasuk semua <b>file, riwayat peramban, kata sandi tersimpan</b>, dan data lainnya. Aplikasi ini juga memiliki akses internet, yang memungkinkannya mengirim data Anda ke pihak luar. \n"
 "\n"
-"Karena kode sumbernya tidak terbuka, aplikasi ini tidak dapat diaudit "
-"terkait penggunaan izin-izin tersebut."
+"Karena kode sumbernya tidak terbuka, aplikasi ini tidak dapat diaudit terkait penggunaan izin-izin tersebut."
 
 #: src/bz-transaction-dialog.c:259
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Aplikasi ini menggunakan sistem jendela lawas X11, yang memungkinkannya "
-"<b>merekam semua penekanan tombol, mengambil tangkapan layar, dan memantau "
-"aplikasi lain</b>. Aplikasi ini juga memiliki akses internet, yang "
-"memungkinkannya mengirim data Anda ke pihak luar.\n"
+"Aplikasi ini menggunakan sistem jendela lawas X11, yang memungkinkannya <b>merekam semua penekanan tombol, mengambil tangkapan layar, dan memantau aplikasi lain</b>. Aplikasi ini juga memiliki akses internet, yang memungkinkannya mengirim data Anda ke pihak luar.\n"
 "\n"
-"Karena kode sumbernya tidak terbuka, aplikasi ini tidak dapat diaudit "
-"terkait penggunaan izin-izin tersebut."
+"Karena kode sumbernya tidak terbuka, aplikasi ini tidak dapat diaudit terkait penggunaan izin-izin tersebut."
 
 #: src/bz-transaction-dialog.c:275
 msgid "_Install Anyway"
@@ -3094,7 +3028,8 @@ msgstr "Semua aplikasi sudah terpasang."
 msgid "_OK"
 msgstr "_Ya"
 
-# %u is the number of apps to install, so the strings might have singular and plural versions depend on your language.
+# %u is the number of apps to install, so the strings might have singular and
+# plural versions depend on your language.
 #: src/bz-transaction-dialog.c:565
 #, c-format
 msgid "Install %u App?"
@@ -3226,26 +3161,13 @@ msgstr "Cari"
 msgid "Main Menu"
 msgstr "Menu Utama"
 
-#: src/bz-window.blp:227
-msgid "You are running a new version of Bazaar!"
-msgstr "Versi terbaru Bazaar telah terpasang!"
-
 #: src/bz-window.blp:228
 msgid "See What's New"
 msgstr "Lihat Yang Baru"
 
-#: src/bz-window.blp:235
-msgid ""
-"You have a network connection but are viewing a cached version of Flathub"
-msgstr "Saat ini Bazaar belum memuat halaman Flathub terbaru"
-
 #: src/bz-window.blp:246
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "Koneksi jaringan dibatasi — pemuatan ulang otomatis dinonaktifkan"
-
-#: src/bz-window.blp:292
-msgid "_Donate to Bazaar"
-msgstr "_Donasi ke Bazaar"
 
 #: src/bz-window.blp:298
 msgid "_Refresh"
@@ -3267,35 +3189,13 @@ msgstr "_Pengaturan"
 msgid "_Keyboard Shortcuts"
 msgstr "_Pintasan Papan Tik"
 
-#: src/bz-window.blp:324
-msgid "_About Bazaar"
-msgstr "_Tentang Bazaar"
-
-#: src/bz-window.blp:330
-msgid "_Quit Bazaar"
-msgstr "_Tutup Bazaar"
-
 #: src/bz-window.blp:355
 msgid "Log Out"
 msgstr "Keluar"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:389
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
-
 #: src/bz-window.c:609 src/bz-window.c:647
 msgid "Failed to launch application"
 msgstr "Gagal menjalankan aplikasi"
-
-#: src/bz-window.c:860
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Anda tidak dapat menghapus Bazaar dari dalam Bazaar."
-
-#: src/bz-window.c:1166 src/bz-window.c:1200
-msgid "Can't do that right now!"
-msgstr "Tunggu hingga Bazaar selesai memuat"
 
 #. Translators: As in, "1 Install" / "100 Installs"
 #: src/bz-world-map.c:604
@@ -3353,16 +3253,28 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Tutup Jendela"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Keluar dari Bazaar"
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "Toko"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Toko — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Tentang Toko"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "_Tutup Toko"
 
 #~ msgid "Adam Masciola"
 #~ msgstr "Adam Masciola"
-
-#~ msgid "_Donate to Bazaar ❤️"
-#~ msgstr "_Donasi ke Bazaar ❤️"
 
 #~ msgid "User Data Size"
 #~ msgstr "Ukuran Data Pengguna"
@@ -3395,11 +3307,6 @@ msgstr "Keluar dari Bazaar"
 
 #~ msgid "Download & Install Application"
 #~ msgstr "Unduh & Pasang Aplikasi"
-
-#~ msgid ""
-#~ "Connect your Flathub account to Bazaar to manage your favorited apps."
-#~ msgstr ""
-#~ "Hubungkan akun Flatpak ke Bazaar untuk mengelola aplikasi favorit Anda."
 
 #~ msgid "Delay Search Results"
 #~ msgstr "Tunda Hasil Pencarian"
@@ -3447,15 +3354,6 @@ msgstr "Keluar dari Bazaar"
 #~ msgid "Refresh"
 #~ msgstr "Muat ulang"
 
-#~ msgid ""
-#~ "It emphasizes supporting the developers who make the Linux desktop "
-#~ "possible. Bazaar features a \"curated\" tab that can be configured by "
-#~ "distributors to allow for a more localized experience."
-#~ msgstr ""
-#~ "Bazaar menekankan pentingnya mendukung para pengembang yang telah "
-#~ "memajukan desktop Linux. Bazaar juga memberi ruang distributor untuk "
-#~ "melakukan kurasi aplikasi \"pilihan\" untuk pengguna. "
-
 #~ msgid "_Synchronize Remotes"
 #~ msgstr "_Sinkronkan Dengan Server"
 
@@ -3477,9 +3375,6 @@ msgstr "Keluar dari Bazaar"
 
 #~ msgid "Open App"
 #~ msgstr "Buka Aplikasi"
-
-#~ msgid "Refreshing Store Content"
-#~ msgstr "Memuat Ulang Konten Bazaar"
 
 #~ msgid "No background tasks!"
 #~ msgstr "Tidak ada proses latar belakang!"
@@ -3574,14 +3469,8 @@ msgstr "Keluar dari Bazaar"
 #~ "Tunda masukan saat mengetik untuk mencegah hasil pencarian muncul terlalu "
 #~ "cepat"
 
-#~ msgid "Describes the look of the global progress bar"
-#~ msgstr "Pilih tampilan bilah kemajuan Bazaar"
-
 #~ msgid "Saved Window Dimensions"
 #~ msgstr "Dimensi Jendela Tersimpan"
-
-#~ msgid "The window dimensions to be used by the next Bazaar window"
-#~ msgstr "Dimensi jendela saat membuka jendela Bazaar berikutnya"
 
 #~ msgid "?"
 #~ msgstr "?"
@@ -3656,9 +3545,6 @@ msgstr "Keluar dari Bazaar"
 #~ msgid "%.2fK"
 #~ msgstr "%.2fK"
 
-#~ msgid "Bazaar Inspector"
-#~ msgstr "Pemeriksa Bazaar"
-
 #~ msgid "Enable Global Debug Mode"
 #~ msgstr "Nyalakan Mode Debug Global"
 
@@ -3683,16 +3569,6 @@ msgstr "Keluar dari Bazaar"
 #~ msgid "Show the star count of an application's source code repository"
 #~ msgstr "Tunjukkan jumlah bintang dari repositori sumber aplikasi"
 
-#~ msgid ""
-#~ "Bazaar can fetch and display the star count from an application's source "
-#~ "code repository on a remote Git forge. \n"
-#~ " For projects on GitHub, rate limits may cause them not to appear."
-#~ msgstr ""
-#~ "Bazaar dapat mengambil dan menampilkan jumlah bintang dari repositori Git "
-#~ "sumber kode aplikasi.\n"
-#~ "Untuk aplikasi dari GitHub, terdapat potensi terbatasnya muatan yang "
-#~ "mungkin menghambat munculnya data ini."
-
 #~ msgid "Inspect UI Entry"
 #~ msgstr "Periksa Masukan Antarmuka"
 
@@ -3711,19 +3587,14 @@ msgstr "Keluar dari Bazaar"
 #~ msgid "Sync"
 #~ msgstr "Sinkronisasi"
 
-#~ msgid "Open Bazaar Inspector"
-#~ msgstr "Buka Pemeriksa Bazaar"
-
 #~ msgid ""
-#~ "The ability to inspect and install local .flatpak bundle files is coming "
-#~ "soon! In the meantime, try running\n"
+#~ "The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
 #~ "on the command line."
 #~ msgstr ""
-#~ "Kemampuan membuka dan memasang file .flatpak secara lokal segera hadir! "
-#~ "Saat ini, coba jalankan\n"
+#~ "Kemampuan membuka dan memasang file .flatpak secara lokal segera hadir! Saat ini, coba jalankan\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
@@ -3747,9 +3618,6 @@ msgstr "Keluar dari Bazaar"
 
 #~ msgid "Keep the summary shorter, between 10 and 35 characters"
 #~ msgstr "Buat ringkasan pendek berkisar antara 10-35 karakter"
-
-#~ msgid "Main Bazaar window showing Blender"
-#~ msgstr "Jendela utama Bazaar yang menampilkan Blender"
 
 #~ msgid "This flatpak is verified by the original developers of the software."
 #~ msgstr "Flatpak ini telah diverifikasi oleh pengembang perangkat lunak asli"
@@ -3790,13 +3658,6 @@ msgstr "Keluar dari Bazaar"
 #~ msgid "robotta"
 #~ msgstr "robotta"
 
-#~ msgid ""
-#~ "Bazaar was not provided a curated content configuration. Contact your "
-#~ "operating system's support channels for assistance."
-#~ msgstr ""
-#~ "Konfigurasi kurasi konten Bazaar saat ini belum tersedia. Hubungi sistem "
-#~ "operasi anda untuk mendukung fitur ini."
-
 #~ msgid "Apps Of The Week"
 #~ msgstr "Aplikasi Minggu Ini"
 
@@ -3804,8 +3665,8 @@ msgstr "Keluar dari Bazaar"
 #~ "The number of downloads in the last 30 days. Click to view this "
 #~ "application's download statistics."
 #~ msgstr ""
-#~ "Jumlah unduhan pada 30 hari terakhir. Klik untuk melihat statistik "
-#~ "unduhan aplikasi ini."
+#~ "Jumlah unduhan pada 30 hari terakhir. Klik untuk melihat statistik unduhan "
+#~ "aplikasi ini."
 
 #~ msgid "Remote repo name"
 #~ msgstr "Nama repo remote"
@@ -3913,22 +3774,3 @@ msgstr "Keluar dari Bazaar"
 
 #~ msgid "Pause the execution of transactions"
 #~ msgstr "Hentikan sementara proses transaksi"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "Toko"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "Toko — %s"
-
-#: src/bz-window.blp:314
-msgid "_About Store"
-msgstr "_Tentang Toko"
-
-#: src/bz-window.blp:321
-msgid "_Quit Store"
-msgstr "_Tutup Toko"
