@@ -1,78 +1,69 @@
-# Nodalix Store
-
-Tienda de Nodalix OS, basada en Bazaar 0.9.11 (`8a7556f`) y que usa NXPM (gestor de paquetes de Nodalix OS, en el repositorio nodalix-os). La documentación de arquitectura, API, compilación y estado está en `docs/`. El texto que sigue es el README original de Bazaar.
-
 <h1 align="center">
 <img src="data/icons/hicolor/scalable/apps/os.nodalix.Store.svg" width="192" height="192" />
 <br/>
-Bazaar
-<br/>
-<a href="https://apps.gnome.org/Bazaar/">
-    <img src="https://circle.gnome.org/assets/button/badge.svg"
-         alt="GNOME Circle" />
-</a>
+Nodalix Store
 </h1>
 
-> [!NOTE]
-> If you are a distributor/packager who would like to learn how to customize
-> Bazaar, take a look at the [docs](/docs/overview.md).
+The app store of Nodalix OS. It browses and installs Flatpak apps from
+[Flathub](https://flathub.org/), shows the updates of the operating system, and works with NXPM, the
+Nodalix package manager, for the system's own packages. It uses the
+[Nodalia Design Language](https://github.com/danielmigueltejedor/nodalia-design) (NDL), like the other
+core apps of Nodalix OS. Its name on screen is *Store*, and *Tienda* in Spanish.
 
-> [!NOTE]
-> If you are interested in contributing code to Bazaar (Thank you!), please see
-> the [contributing guide](/CONTRIBUTING.md).
+## What it does today
 
-> [!NOTE]
-> If you are interested in contributing translations to Bazaar (Thank you!),
-> please see the [Damned Lies Module](https://l10n.gnome.org/module/bazaar/).
+| Area | State |
+| --- | --- |
+| Discover | Curated picks, the Flathub front page and its categories, apps made for your toolkit, and a page for every app with screenshots, release notes, permissions, age rating and licence. |
+| Search | Full-text search over the catalogue, with filters, and a GNOME Shell search provider. |
+| Library | What is installed, with its size on disk and the user data apps leave behind. |
+| Updates | Flatpak updates, and the updates of imported AppImages and of the system through NXPM. |
+| Install and remove | Flatpak installs for the user, one transaction list with progress and errors, and a Flathub account login for apps that need it. |
+| Looks | NDL colours, shapes and density in light, dark and high contrast, with the system font (Adwaita Sans). Nodalix-Icons for apps that are not installed yet. |
 
-Bazaar is a new app store for GNOME with a focus on discovering and installing
-apps and add-ons from Flatpak remotes, particularly
-[Flathub](https://flathub.org/). The UX emphasizes supporting the developers who
-make the Linux desktop possible. Bazaar features a "curated" tab that can be
-configured by distributors.
+The architecture, the permission policy and what is not done yet are in [`docs/`](docs/).
 
-Bazaar implements the gnome-shell search provider dbus interface. A krunner
-[plugin](https://github.com/bazaar-org/krunner-bazaar) is available for use on
-the KDE Plasma desktop.
+## Install
 
-Thanks to [Tobias Bernard](https://tobiasbernard.com/), [Jakub
-Steiner](http://jimmac.eu), and [Sam Hewitt](https://snwh.org) for designing
-Bazaar's market stall icon.
+Nodalix OS ships it: the `nodalix-store` package comes with the system and is the default handler for
+`appstream:` and `.flatpakref` links. To build the package yourself from a checkout of
+[nodalix-os](https://github.com/danielmigueltejedor/nodalix-os):
 
-### Installing
-
-Pre-built binaries are distributed via Flathub:
-
-<a href='https://flathub.org/apps/details/os.nodalix.Store'><img width='240' alt='Get it on Flathub' src='https://flathub.org/api/badge?svg&locale=en'/></a>
-
-You can also beta-test Bazaar using the gnome-nightly flatpak repository:
 ```sh
-flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+cd packaging/nodalix-store
+makepkg -si
 ```
 
-Then:
+Run it with `NODALIX_NDL=0 nodalix-store` to open it without NDL, which helps when you debug a style.
+
+## Build from source
+
+You need GTK 4.22, libadwaita 1.8, libflatpak, AppStream, libdex, libsoup 3, glycin, WebKitGTK 6,
+libsecret, Vala and `blueprint-compiler`; the full list with versions is in
+[`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 ```sh
-flatpak install gnome-nightly os.nodalix.Store
+meson setup build
+ninja -C build
+./build/src/nodalix-store
 ```
 
-There also exist packages for [Debian](https://tracker.debian.org/pkg/bazaar)
-and [Arch](https://archlinux.org/packages/extra/x86_64/bazaar/). These are not
-directly supported but should work fine. If you encounter a bug on any package
-of Bazaar other than the flatpak, ensure the bug also exists on the flatpak
-before reporting it here.
+How the NDL style sheets are loaded is in [`docs/NDL.md`](docs/NDL.md); how to debug the app is in
+[`docs/debugging.md`](docs/debugging.md). NXPM lives in nodalix-os and is documented in
+[`docs/NXPM.md`](docs/NXPM.md).
 
-### Supporting
+## Layout
 
-If you would like to support me and the development of this app (Thank you!), I
-have a ko-fi here! <https://ko-fi.com/kolunmi>
+| Path | What it is |
+| --- | --- |
+| `src/` | The application: the window and its pages, the Flatpak and NXPM backends, the search index and the background service. |
+| `src/ndl/` | The NDL style sheets, pinned to an exact commit of nodalia-design, and the one sheet that is Nodalix's own. |
+| `bge/` | The small library of GTK widgets the app is built on. |
+| `data/` | The desktop file, the metainfo, the settings schema, the D-Bus service and the icon. |
+| `po/` | Translations. |
+| `docs/` | Architecture, status, permission policy, NDL, NXPM and debugging. |
 
-[![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/kolunmi)
+## Licence
 
-Thanks to everyone in the GNOME development community for creating such an
-awesome desktop environment!
-
-#### Code of Conduct
-
-This project adheres to the [GNOME Code of Conduct](https://conduct.gnome.org/).
-By participating through any means, including PRs, Issues or Discussions, you
-are expected to uphold this code.
+GPL-3.0-or-later, see [`COPYING`](COPYING). The NDL style sheets are MIT, see
+[`src/ndl/LICENSE`](src/ndl/LICENSE). Where the code comes from is in [`docs/UPSTREAM.md`](docs/UPSTREAM.md).

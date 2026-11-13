@@ -1,6 +1,6 @@
-# Debugging Bazaar
+# Debugging Nodalix Store
 
-## Running Bazaar with Debug Messages Enabled
+## Running Nodalix Store with Debug Messages Enabled
 
 You do this the same as with any other GLib application:
 
@@ -12,9 +12,9 @@ This will produce a flood of output. If you know the specific log domain you
 want to see, you can replace `all` with that domain name, such as `flatpak` or
 `BAZAAR::CORE`.
 
-## Bazaar in GtkInspector
+## Nodalix Store in GtkInspector
 
-Bazaar has its own gtk inspector page, which you can spawn with the key combo
+Nodalix Store has its own gtk inspector page, which you can spawn with the key combo
 `control+shift+i`. This is meant to be useful for developers and distributors.
 
 The global debug mode toggle in this page enables some extra widgets in the UI
@@ -24,7 +24,7 @@ appid.
 
 You can also disable blocklists from this debug page. This is a temporary
 internal property, not a configuration option; It will not be saved for the next
-Bazaar process.
+Nodalix Store process.
 
 The rest of the contents of this page should be self-explanatory.
 
@@ -48,7 +48,7 @@ finished with debugging. This is quite a big download, please have patience.
 
 #### Actually Start Debugging
 
-Bazaar starts a background service once started, make sure it is not running first:
+Nodalix Store starts a background service once started, make sure it is not running first:
 
 ```sh
 flatpak kill os.nodalix.Store

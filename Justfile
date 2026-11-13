@@ -1,14 +1,14 @@
 # These are just convenience scripts, NOT a build system!
 
-appid := env("BAZAAR_APPID", "os.nodalix.Store")
+appid := env("STORE_APPID", "os.nodalix.Store")
 manifest := "./build-aux/flatpak/" + appid + ".json"
-branch := env("BAZAAR_BRANCH", "master")
+branch := env("STORE_BRANCH", "master")
 just := just_executable()
 
 alias run := run-base
 
 run-base: build-base
-    ./build/src/bazaar
+    ./build/src/nodalix-store
 
 build-base:
     meson setup build --wipe
@@ -45,43 +45,3 @@ build-flatpak-bundle $appid=appid: build-flatpak
 
     flatpak build-export repo "${FLATPAK_BUILDER_DIR}/build-dir"
     flatpak build-bundle repo "${appid}".flatpak "${appid}"
-
-build-rpm:
-    #!/usr/bin/env bash
-    mkdir -p rpmbuild
-    podman run --rm -i -v .:/build:Z -v ./rpmbuild:/root/rpmbuild:Z registry.fedoraproject.org/fedora:latest <<'EOF'
-    set -xeuo pipefail
-    dnf install -y rpmdevtools
-    mkdir -p $HOME/rpmbuild/SOURCES
-    RPMDIR="/build/build-aux/rpm"
-    cp "${RPMDIR}"/* $HOME/rpmbuild/SOURCES
-    spectool -agR "${RPMDIR}"/bazaar.spec
-    dnf builddep -y "${RPMDIR}"/bazaar.spec
-    rpmbuild -bb "${RPMDIR}"/bazaar.spec
-    EOF
-
-[private]
-default:
-    @{{ just }} --list
-
-# Check just Syntax
-[group('just')]
-check:
-    #!/usr/bin/bash
-    find . -type f -name "*.just" | while read -r file; do
-    	echo "Checking syntax: $file"
-    	{{ just }} --unstable --fmt --check -f $file
-    done
-    echo "Checking syntax: Justfile"
-    {{ just }} --unstable --fmt --check -f Justfile
-
-# Fix {{ just }} Syntax
-[group('{{ just }}')]
-fix:
-    #!/usr/bin/bash
-    find . -type f -name "*.just" | while read -r file; do
-    	echo "Checking syntax: $file"
-    	{{ just }} --unstable --fmt -f $file
-    done
-    echo "Checking syntax: Justfile"
-    {{ just }} --unstable --fmt -f Justfile || { exit 1; }

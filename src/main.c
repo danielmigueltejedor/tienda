@@ -56,7 +56,7 @@ main (int   argc,
     {
       g_autoptr (BzApplication) app = NULL;
 
-      /* Init Bazaar GTK Extensions (see ../bge/) */
+      /* Init GTK Extensions (bge) (see ../bge/) */
       bge_init ();
 
       app = g_object_new (

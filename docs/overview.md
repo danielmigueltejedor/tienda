@@ -1,10 +1,10 @@
-# Bazaar Overview
+# Nodalix Store Overview
 
-These docs are intended for distributors of Bazaar to learn how to configure the
+These docs are intended for distributors of Nodalix Store to learn how to configure the
 application.
 
 ## Features
-Here is a short list of some of the things Bazaar can do, beyond the basics of
+Here is a short list of some of the things Nodalix Store can do, beyond the basics of
 managing software through the GUI:
 
 * Queue an arbitrary number of transactions (a catch-all term for installations,
@@ -25,7 +25,7 @@ managing software through the GUI:
 
 * Run in the background and respond to desktop search queries with application
   info, using the same search routine as in-application
-  - GNOME will work out of the box, as Bazaar implements the
+  - GNOME will work out of the box, as Nodalix Store implements the
     `org.gnome.Shell.SearchProvider2` dbus interface
   - KDE Plasma will require a [krunner
     plugin](https://github.com/ublue-os/krunner-bazaar)
@@ -64,19 +64,19 @@ nodalix-store-daemon --no-window-refresh
 ```
 Running this automatically in the background after the first boot of the OS
 makes it so the user doesn't have to wait for the initial cache/remote sync
- when they open Bazaar for the first time, saving around 10s of waiting.
+ when they open Nodalix Store for the first time, saving around 10s of waiting.
 
 ## Comptime Configuration
 
 The only compile time meson option you should concern yourself with for
 production is `hardcoded_main_config_path`. This embeds a path to the main
-configuration file into Bazaar. If this is not defined at compile time, Bazaar
+configuration file into Nodalix Store. If this is not defined at compile time, Nodalix Store
 will never attempt to read a main config. See the next section of this document
 to see an example config file.
 
 ## Environment Variables
 
-Bazaar reads the following environment variables, which may be of interest:
+Nodalix Store reads the following environment variables, which may be of interest:
 
 * `BAZAAR_DESKTOP_SEARCH_PROVIDER_ICON_SIZE`: may be read as an unsigned integer
 from 1 to 256 to specify the square pixel size of icons sent to the desktop
@@ -133,18 +133,18 @@ otherwise widely used)
 ## Blocklists
 
 Blocklists are a way to ensure that users will never interact with a certain
-application inside Bazaar by searching or browsing, either on the Flathub page
+application inside Nodalix Store by searching or browsing, either on the Flathub page
 or via search.
 
 Blocked applications which are already installed still appear in
 the library or when there are updates available for them and via the system's
-flatpak configuration. Under no circumstance does Bazaar touch the underlying
+flatpak configuration. Under no circumstance does Nodalix Store touch the underlying
 flatpak configuration in order to block or allow apps. The `flatpak` command
 line tool is unaffected.
 
 ### Blocklist Types
 
-There are two kinds of blocklists supported by Bazaar:
+There are two kinds of blocklists supported by Nodalix Store:
 
 #### YAML Blocklists
 
@@ -184,13 +184,13 @@ For those who are learn more effectively by seeing an example:
 ```
 
 YAML blocklists files are comprised of a list of sub "blocklists," which to
-Bazaar means a **list of appids to block or allow**. These are optionally
+Nodalix Store means a **list of appids to block or allow**. These are optionally
 **applied based on a list of provided conditions** and **composed with other
 blocklists in the list based on a priority**.
 
 Each blocklist may contain these fields:
 
-* `priority`: a number which tells Bazaar how to layer this blocklist with the
+* `priority`: a number which tells Nodalix Store how to layer this blocklist with the
   others, or how "important" this blocklist is. **A lower number means more
   priority**.
 
@@ -207,7 +207,7 @@ Each blocklist may contain these fields:
 
 #### Basic Newline Separated TXT Blocklists
 
-This type of blocklist is what Bazaar originally supported. They still function,
+This type of blocklist is what Nodalix Store originally supported. They still function,
 but it is encouraged to use YAML blocklists if any sort of pattern matching or
 conditional inclusion is required.
 
@@ -233,7 +233,7 @@ com\.place\..*
 
 #### No Worky
 
-Check that the path of the blocklist exists and that Bazaar can access it. This command is useful for debugging this:
+Check that the path of the blocklist exists and that Nodalix Store can access it. This command is useful for debugging this:
 
 ```
 flatpak run --command=bash os.nodalix.Store
@@ -245,7 +245,7 @@ This means `/etc/bazaar/banner.png` turns into `/run/host/etc/bazaar/banner.png`
 
 #### I want to to block a list of applications all the time, and also another list only on desktop environment X:
 
-Say you want to block Bazaar and Steam unconditionally and Kate and KWrite if
+Say you want to block Nodalix Store and Steam unconditionally and Kate and KWrite if
 the desktop is Plasma. You can use an environment variable condition to check
 the value of `XDG_CURRENT_DESKTOP`:
 
@@ -357,11 +357,11 @@ blocklists:
 
 ## Curated Section
 
-If Bazaar is provided a non-zero amount of curated configs, an extra tab will
+If Nodalix Store is provided a non-zero amount of curated configs, an extra tab will
 appear on the window's header bar called "Curated". This section is intended for
 distributors to curate applications for users with a customizable interface.
-Curated configs are YAML files. They are constantly monitored by Bazaar for
-filesystem events, so when the config changes, Bazaar will automatically reload
+Curated configs are YAML files. They are constantly monitored by Nodalix Store for
+filesystem events, so when the config changes, Nodalix Store will automatically reload
 the content.
 
 Right now, curated configs are essentially composed of a vertical list of
@@ -369,9 +369,9 @@ elements which appear stacked on top of each other inside of a scrollable
 viewport in the order they appear in the YAML. Each element has certain
 properties you can customize.
 
-Bazaar maps the appids you provide to the best matching "entry group" from the
+Nodalix Store maps the appids you provide to the best matching "entry group" from the
 table of applications it was able to pull from remote sources (Simply put, an
-entry group in Bazaar is a collection of applications which share the same appid
+entry group in Nodalix Store is a collection of applications which share the same appid
 but come from different sources or installations). The entry group has a
 designated "ui entry" which was determined to have the most useful content
 associated with it as it pertains to presenting things like icons, descriptions,
@@ -389,7 +389,7 @@ An example can be found in docs/example.yaml
 
 For more practical examples check out the configuration from [Bluefin](https://github.com/projectbluefin/common/tree/a868eba107b91c4eae60b6d1d6d2e2cdf05eb1c8/system_files/bluefin/etc/bazaar) and [Aurora](https://github.com/get-aurora-dev/common/tree/0d86028dd0d737d1d0eee08205c33fc91997f155/system_files/shared/etc/bazaar).
 
-Bazaar by default looks for a config file in `/etc/bazaar` or `/run/host/etc/bazaar` inside the sandbox, this is [configured on build time](https://github.com/flathub/os.nodalix.Store/blob/709faccd8c4198c5fdabf20eb4a98db98a5aa1c6/os.nodalix.Store.yaml#L43-L46) This needs permission to `/etc` which can be granted with the `filesystem=host-etc` permission, the build on Flathub doesn't have this permission by default.
+Nodalix Store by default looks for a config file in `/etc/bazaar` or `/run/host/etc/bazaar` inside the sandbox, this is [configured on build time](https://github.com/flathub/os.nodalix.Store/blob/709faccd8c4198c5fdabf20eb4a98db98a5aa1c6/os.nodalix.Store.yaml#L43-L46) This needs permission to `/etc` which can be granted with the `filesystem=host-etc` permission, the build on Flathub doesn't have this permission by default.
 
 This is not super straightforward to setup currently as Flatpak doesn't support overriding permissions in `/etc` or `/usr` yet, so you have to resort to `systemd-tmpfiles` to create this permission override in `/var/lib/flatpak/overrides/os.nodalix.Store`.
 
@@ -444,7 +444,7 @@ top, so please do not include it in the markdown itself.
 
 ## Hooks
 
-Hooks are an advanced feature of Bazaar. In essence, they allow you to
+Hooks are an advanced feature of Nodalix Store. In essence, they allow you to
 programmatically react to events and define dialogs with which you can query
 user input. Currently, these are the event signals you can subscribe to:
 
@@ -462,7 +462,7 @@ Hooks are run like a signal emission. After an event occurs, hooks that are
 found to be of the appropriate type are evaluated in an order of priority.
 Higher priority hooks have the ability to stop the emission from propagating
 further downwards. In the case of some events, like "before-transaction", a hook
-can also hint to Bazaar some action to take, in this case whether the
+can also hint to Nodalix Store some action to take, in this case whether the
 transaction should be aborted.
 
 A shell snippet which is defined by you is evaluated with `/bin/sh -c` multiple
@@ -471,7 +471,7 @@ is referred to as a "stage". Your shell snippet (which of course could just
 invoke another script written in whatever language you prefer) will be provided
 a number of environment variables which together will describe the current
 stage. Your snippet must react accordingly by printing a response to stdout,
-which Bazaar will read back.
+which Nodalix Store will read back.
 
 This opens up a lot of possibilities for customization; here are a few examples:
 
@@ -485,7 +485,7 @@ This opens up a lot of possibilities for customization; here are a few examples:
   experience. A blocklist could achieve this, but you don't like the idea of
   hiding anything from the user. A hook subscribed to the "before-transaction"
   event could issue a warning and ask for extra confirmation. If the user
-  decides to listen to the warning, you can signal to Bazaar that the
+  decides to listen to the warning, you can signal to Nodalix Store that the
   transaction should be aborted.
 
 Here is an overview of the environment variables the shell snippet will receive:
@@ -511,12 +511,12 @@ Here is an overview of the environment variables the shell snippet will receive:
 * `BAZAAR_HOOK_DIALOG_RESPONSE_ID`: if applicable, the user response given
   through the current dialog
 
-* `BAZAAR_APPID`: if applicable, the appid of the entry Bazaar is currently
+* `BAZAAR_APPID`: if applicable, the appid of the entry Nodalix Store is currently
   dealing with. Use this for hooks that are not related to transactions. If your
   hook deals with transactions, such as `before-transaction` or
   `after-transaction`, use `BAZAAR_TS_APPID` instead.
 
-* `BAZAAR_TS_APPID`: if applicable, the appid of the entry Bazaar is currently
+* `BAZAAR_TS_APPID`: if applicable, the appid of the entry Nodalix Store is currently
   dealing with. Use this for hooks that are related to transactions. If your
   hook does not deal with transactions, such as `view-app`, use `BAZAAR_APPID`
   instead.
@@ -528,7 +528,7 @@ Here is an overview of the environment variables the shell snippet will receive:
   indicate what the shell body is instructed to do at this time. The shell body
   must respond by outputting to stdout with a valid answer; the structure of a
   valid answer will depend on the stage, and if the structure is not valid the
-  hook will be abandoned. The shell body might be run multiple times by Bazaar
+  hook will be abandoned. The shell body might be run multiple times by Nodalix Store
   over the course of a hook with this variable set to differing values in order
   know how to orchestrate events in the UI, so the shell body must be able to
   branch depending on the value. The value may be any of the following:
@@ -537,12 +537,12 @@ Here is an overview of the environment variables the shell snippet will receive:
     execution of this hook, or "pass" to skip it and move on to the
     next registered hook
 
-  * `setup-dialog` Bazaar is ready to ask the user a question with one of the
+  * `setup-dialog` Nodalix Store is ready to ask the user a question with one of the
     dialogs you've defined inside the "dialogs" mapping. `BAZAAR_HOOK_DIALOG_ID`
     will tell you which one. Respond with "ok" to spawn the dialog, or "pass" to
     skip the dialog.
 
-  * `teardown-dialog` Bazaar has received input from the user after asking them
+  * `teardown-dialog` Nodalix Store has received input from the user after asking them
     a question with one of the dialogs you've defined inside the "dialogs"
     mapping. `BAZAAR_HOOK_DIALOG_ID` will tell you which one.
     `BAZAAR_HOOK_DIALOG_RESPONSE_ID` will tell you the response the user chose.
@@ -554,12 +554,12 @@ Here is an overview of the environment variables the shell snippet will receive:
     execution of this hook should indeed skip to the teardown stage.
 
   * `action` Everything so far has gone according to plan, so it is time to take
-    whatever external action this hook exists for. Bazaar requires no response
+    whatever external action this hook exists for. Nodalix Store requires no response
     at this time.
 
   * `teardown` The hook is cleaning up. Respond with "continue" to propagate the
     signal emission to lower priority hooks, or "stop" to indicate the emission
-    should stop. Alternatively, if this hook type should hint to Bazaar an
+    should stop. Alternatively, if this hook type should hint to Nodalix Store an
     action to take (such as the "before-transaction" hook), respond with
     "confirm" to hint that the action should be taken, or "deny" to prevent the
     action from being taken. Both "confirm" and "deny" imply the effect of
@@ -635,7 +635,7 @@ hooks:
 
   handle_setup_dialog_stage() {
 
-      # we don't need to do anything here right now, just let Bazaar
+      # we don't need to do anything here right now, just let Nodalix Store
       # know we should continue setting up the dialog
       echo 'ok'
 
@@ -703,7 +703,7 @@ hooks:
 
 ## Search Biases
 
-Search biases are a mechanism provided by Bazaar to influence search results.
+Search biases are a mechanism provided by Nodalix Store to influence search results.
 Given a regex string with which to match a search query, a bias can replace the
 matched text with a new string and/or adjust the scores of certain appids
 according to a defined function if a match occurs. This is particularly useful
@@ -715,7 +715,7 @@ in the following cases:
   despite this.
 
 * You want an abbreviation or phrase to be expanded into a version which is more
-  likely to yield better results. For example, Bazaar hardcodes the expansion of
+  likely to yield better results. For example, Nodalix Store hardcodes the expansion of
   the abbreviation `dl` to `download`, which is more helpful when searching
   metadata.
 
@@ -792,7 +792,7 @@ search-biases:
       y-intercept: 5.0
 ```
 
-Pro tip: pressing `ctrl-alt-d` in Bazaar activates debug mode, which enables you
+Pro tip: pressing `ctrl-alt-d` in Nodalix Store activates debug mode, which enables you
 to see the scores of app results on the search page. This is useful for
 debugging search biases!
 

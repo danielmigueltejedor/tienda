@@ -1,11 +1,11 @@
-# Bazaar Code Style Rules
+# Nodalix Store Code Style Rules
 
-Thanks for your interest in contributing to Bazaar! Here are the code style
+Thanks for your interest in contributing to Nodalix Store! Here are the code style
 rules which you must adhere to in order to keep a clean and consistent codebase:
 
 ## Formatting
 
-Bazaar uses the GNU C style. The `.clang-format` file at the root project
+Nodalix Store uses the GNU C style. The `.clang-format` file at the root project
 directory will configure `clang-format` to follow the proper conventions.
 
 ## General Rules

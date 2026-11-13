@@ -1,1 +1,1 @@
-# Bazaar GTK Extensions
+# GTK Extensions

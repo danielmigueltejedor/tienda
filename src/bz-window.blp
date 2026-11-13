@@ -216,18 +216,6 @@ template $BzWindow: Adw.ApplicationWindow {
                   }
 
                   Adw.Banner {
-                    styles [
-                      "bz-donations-banner",
-                    ]
-
-                    revealed: bind $invert_boolean(template.state as <$BzStateInfo>.donation-prompt-dismissed as <bool>) as <bool>;
-                    // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-                    title: _("You are running a new version of Nodalix Store!");
-                    button-label: _("See What's New");
-                    action-name: "app.donate";
-                  }
-
-                  Adw.Banner {
                     sensitive: bind $invert_boolean(template.state as <$BzStateInfo>.syncing as <bool>) as <bool>;
                     revealed: bind $logical_and($invert_boolean(template.state as <$BzStateInfo>.metered_connection as <bool>) as <bool>, $logical_and(template.state as <$BzStateInfo>.have_connection as <bool>, $invert_boolean(template.state as <$BzStateInfo>.online as <bool>) as <bool>) as <bool>) as <bool>;
                     title: _("You have a network connection but are viewing a cached version of Flathub");
@@ -275,13 +263,6 @@ template $BzWindow: Adw.ApplicationWindow {
 }
 
 menu primary_menu {
-  section {
-    item {
-      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
-      label: _("_Donate to the Bazaar authors");
-      action: "app.donate";
-    }
-  }
   section {
     item {
       label: _("_Refresh");

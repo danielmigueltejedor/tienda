@@ -41,7 +41,6 @@
 #include <bzvala.h>
 #include "bz-bundle-install-dialog.h"
 #include "bz-content-provider.h"
-#include "bz-donations-dialog.h"
 #include "bz-download-worker.h"
 #include "bz-entry-cache-manager.h"
 #include "bz-entry-group.h"
@@ -512,9 +511,9 @@ bz_application_command_line (GApplication            *app,
           g_autofree char *help_text = NULL;
 
           if (self->running)
-            g_application_command_line_printerr (cmdline, "The Bazaar service is running.\n\n");
+            g_application_command_line_printerr (cmdline, "The Nodalix Store service is running.\n\n");
           else
-            g_application_command_line_printerr (cmdline, "The Bazaar service is not running.\n\n");
+            g_application_command_line_printerr (cmdline, "The Nodalix Store service is not running.\n\n");
 
           help_text = g_option_context_get_help (context, TRUE, NULL);
           g_application_command_line_printerr (cmdline, "%s\n", help_text);
@@ -552,7 +551,7 @@ bz_application_command_line (GApplication            *app,
       init_service_struct (self, blocklists, txt_blocklists, content_configs);
 
 #ifdef HARDCODED_BLOCKLIST
-      g_debug ("Bazaar was configured with a hardcoded txt blocklist at %s, adding that now...",
+      g_debug ("The Store was configured with a hardcoded txt blocklist at %s, adding that now...",
                HARDCODED_BLOCKLIST);
       gtk_string_list_append (txt_blocklists, HARDCODED_BLOCKLIST);
 #endif
@@ -564,7 +563,7 @@ bz_application_command_line (GApplication            *app,
             (const char *const *) blocklists_strv);
 
 #ifdef HARDCODED_CONTENT_CONFIG
-      g_debug ("Bazaar was configured with a hardcoded curated content config at %s, adding that now...",
+      g_debug ("The Store was configured with a hardcoded curated content config at %s, adding that now...",
                HARDCODED_CONTENT_CONFIG);
       gtk_string_list_append (content_configs, HARDCODED_CONTENT_CONFIG);
 #endif
@@ -676,24 +675,6 @@ bz_application_toggle_debug_mode_action (GSimpleAction *action,
 
   debug_mode = bz_state_info_get_debug_mode (self->state);
   bz_state_info_set_debug_mode (self->state, !debug_mode);
-}
-
-static void
-bz_application_donate_action (GSimpleAction *action,
-                              GVariant      *parameter,
-                              gpointer       user_data)
-{
-  BzApplication *self   = user_data;
-  GtkWindow     *window = NULL;
-  AdwDialog     *dialog = NULL;
-
-  g_assert (BZ_IS_APPLICATION (self));
-
-  window = get_or_create_window (self);
-  dialog = bz_donations_dialog_new ();
-  adw_dialog_present (dialog, GTK_WIDGET (window));
-
-  bz_state_info_set_donation_prompt_dismissed (self->state, TRUE);
 }
 
 static void
@@ -822,10 +803,10 @@ bz_application_about_action (GSimpleAction *action,
       // Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
       "translator-credits", _ ("translator-credits"),
       "version", PACKAGE_VCS_VERSION,
-      "copyright", "© 2025-2026 The Bazaar Contributors",
+      "copyright", "© 2025-2026 Nodalix and contributors",
       "license-type", GTK_LICENSE_GPL_3_0,
-      "website", "https://usebazaar.org",
-      "issue-url", "https://gitlab.gnome.org/World/bazaar/-/work_items",
+      "website", "https://github.com/getnodalia/tienda",
+      "issue-url", "https://github.com/getnodalia/tienda/issues",
       NULL);
 
   adw_about_dialog_add_acknowledgement_section (
@@ -980,7 +961,6 @@ static const GActionEntry app_actions[] = {
   {   "check-for-updates",   bz_application_check_for_updates_action,     NULL },
   {              "search",              bz_application_search_action,      "s" },
   {         "show-app-id",         bz_application_show_app_id_action,      "s" },
-  {              "donate",              bz_application_donate_action,     NULL },
   {   "toggle-debug-mode",   bz_application_toggle_debug_mode_action,     NULL },
   {       "open-location",       bz_application_open_location_action,      "s" },
 };
@@ -1118,8 +1098,8 @@ init_fiber (BzWeakRef *wr,
       adw_alert_dialog_format_body (
           ADW_ALERT_DIALOG (alert),
           _ ("Flathub is not set up on this system. "
-             "You will not be able to browse and install applications in Bazaar if its unavailable.\n\n"
-             "You can still use Bazaar to browse and remove already installed apps."));
+             "You will not be able to browse and install applications in the Store while it is unavailable.\n\n"
+             "You can still use the Store to browse and remove already installed apps."));
       adw_alert_dialog_add_responses (
           ADW_ALERT_DIALOG (alert),
           "later", _ ("Later"),
@@ -1177,7 +1157,7 @@ init_fiber (BzWeakRef *wr,
       g_clear_error (&local_error);
     }
 
-  /* Revive old cache from previous Bazaar process */
+  /* Revive old cache from previous Store process */
   cache_has_flathub = dex_await_boolean (
       dex_scheduler_spawnv (
           dex_scheduler_get_default (),

@@ -19,7 +19,7 @@ case "$INSTR" in
         ;;
     get-gitlab-release)
         TAG="v${VERSION}"
-        echo "https://gitlab.gnome.org/World/bazaar/-/releases/${TAG}"
+        echo "https://github.com/getnodalia/nodalix-os/releases"
         ;;
     get-cache)
         echo "${CACHE_VERSION}"
