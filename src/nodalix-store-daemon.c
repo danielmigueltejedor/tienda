@@ -893,9 +893,9 @@ static DBusHandlerResult
 handle_get_result_set (DBusConnection *connection, DBusMessage *message)
 {
   DBusMessageIter               iter;
-  _cleanup_ (strv_freep) char **previous = NULL;
-  _cleanup_ (strv_freep) char **terms    = NULL;
-  const char                   *sig      = NULL;
+  char       **previous = NULL;
+  char       **terms    = NULL;
+  const char  *sig      = NULL;
 
   arm_idle_timer ();
 
@@ -911,6 +911,9 @@ handle_get_result_set (DBusConnection *connection, DBusMessage *message)
   terms = read_strv_arg (&iter);
   build_and_send_search_reply (connection, message, terms);
 
+  strv_freep (&previous);
+  strv_freep (&terms);
+
   return DBUS_HANDLER_RESULT_HANDLED;
 }
 
@@ -921,7 +924,7 @@ handle_get_result_metas (DBusConnection *connection, DBusMessage *message)
   DBusMessage                  *reply = NULL;
   DBusMessageIter               reply_iter;
   DBusMessageIter               array_iter;
-  _cleanup_ (strv_freep) char **ids = NULL;
+  char                        **ids = NULL;
   char                        **p   = NULL;
 
   arm_idle_timer ();
@@ -933,7 +936,10 @@ handle_get_result_metas (DBusConnection *connection, DBusMessage *message)
 
   reply = dbus_message_new_method_return (message);
   if (reply == NULL)
-    return DBUS_HANDLER_RESULT_HANDLED;
+    {
+      strv_freep (&ids);
+      return DBUS_HANDLER_RESULT_HANDLED;
+    }
 
   dbus_message_iter_init_append (reply, &reply_iter);
   dbus_message_iter_open_container (&reply_iter, DBUS_TYPE_ARRAY, "a{sv}", &array_iter);
@@ -966,6 +972,7 @@ handle_get_result_metas (DBusConnection *connection, DBusMessage *message)
 
   dbus_connection_send (connection, reply, NULL);
   dbus_message_unref (reply);
+  strv_freep (&ids);
 
   return DBUS_HANDLER_RESULT_HANDLED;
 }
