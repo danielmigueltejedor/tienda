@@ -22,6 +22,13 @@ template $BzNxpmPage : Adw.Bin {
         group: updates_button;
         toggled => $nxpm_view_toggled(template);
       }
+
+      ToggleButton nodalia_button {
+        // Translators: the Nodalia suite of apps; it stays "Nodalia".
+        label: _("Nodalia");
+        group: updates_button;
+        toggled => $nxpm_view_toggled(template);
+      }
     }
 
     Adw.Clamp {
@@ -36,7 +43,7 @@ template $BzNxpmPage : Adw.Bin {
 
         SearchEntry search_entry {
           hexpand: true;
-          placeholder-text: _("Search Flatpak and official packages");
+          placeholder-text: _("Search Flatpak, Nodalia and official packages");
           activate => $nxpm_search_activate(template);
         }
 
@@ -100,7 +107,7 @@ template $BzNxpmPage : Adw.Bin {
 
         child: Adw.StatusPage empty_page {
           title: _("Software is up to date");
-          description: _("Flatpak applications and official packages have no pending updates. AUR and AppImage are not enabled.");
+          description: _("Flatpak applications, Nodalia apps and official packages have no pending updates.");
           icon-name: "emblem-ok-symbolic";
         };
       }

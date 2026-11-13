@@ -43,9 +43,8 @@ msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"Una tienda de aplicaciones rápida y moderna para Linux enfocada en "
-"descubrir e instalar aplicaciones y complementos Flatpak, particularmente "
-"de Flathub."
+"Una tienda de aplicaciones rápida y moderna para Linux enfocada en descubrir"
+" e instalar aplicaciones y complementos Flatpak, particularmente de Flathub."
 
 #: data/os.nodalix.Store.metainfo.xml.in:15
 msgid "Queue multiple installs and keep browsing"
@@ -111,8 +110,8 @@ msgstr "No hay complementos visibles"
 
 #: src/bz-addons-dialog.blp:81
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting"
-" them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting "
+"them."
 msgstr ""
 "Sus preferencias de filtrado actuales ocultan todos los complementos "
 "conocidos. Intente ajustarlas."
@@ -397,8 +396,7 @@ msgstr "Compartir ubicación"
 #. TRANSLATORS: content rating description, see
 #. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid ""
-"No information regarding sharing of physical location with other users"
+msgid "No information regarding sharing of physical location with other users"
 msgstr ""
 "No hay información sobre compartir la ubicación física con otros usuarios"
 
@@ -1110,8 +1108,8 @@ msgstr ""
 #, c-format
 msgid "The ownership of the %1$s app ID has been verified using %2$s."
 msgstr ""
-"La propiedad del identificador de aplicación %1$s ha sido verificada usando"
-" %2$s."
+"La propiedad del identificador de aplicación %1$s ha sido verificada usando "
+"%2$s."
 
 #: src/bz-developer-badge.c:264
 #, c-format
@@ -1631,8 +1629,8 @@ msgstr "Contenido"
 msgid ""
 "This is a local preview, some details may differ from the published listing"
 msgstr ""
-"Esta es una vista previa local, algunos detalles pueden diferir de la lista"
-" publicada"
+"Esta es una vista previa local, algunos detalles pueden diferir de la lista "
+"publicada"
 
 #: src/bz-full-view.blp:109
 msgid "Preview Store Appearance"
@@ -1647,9 +1645,8 @@ msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr ""
-"Esta aplicación usa un entorno de ejecución que ya no recibe "
-"actualizaciones ni correcciones de seguridad. Puede llegar a ser inseguro "
-"usarlo."
+"Esta aplicación usa un entorno de ejecución que ya no recibe actualizaciones"
+" ni correcciones de seguridad. Puede llegar a ser inseguro usarlo."
 
 #: src/bz-full-view.blp:540
 msgid "Trash Data"
@@ -1685,8 +1682,8 @@ msgid ""
 "privately and cannot be audited by an independent third party."
 msgstr ""
 "Esta aplicación tiene una licencia propietaria, lo que significa que el "
-"código fuente se desarrolla de forma privada y no puede ser auditado por un"
-" tercero independiente."
+"código fuente se desarrolla de forma privada y no puede ser auditado por un "
+"tercero independiente."
 
 #: src/bz-full-view.c:207
 msgid "More Apps"
@@ -2017,8 +2014,7 @@ msgstr "Algo salió mal"
 #: src/bz-login-page.blp:46
 msgid "Log in to sync your favorited apps across devices"
 msgstr ""
-"Inicie sesión para sincronizar sus aplicaciones favoritas entre "
-"dispositivos"
+"Inicie sesión para sincronizar sus aplicaciones favoritas entre dispositivos"
 
 #: src/bz-login-page.blp:113
 msgid "Finish"
@@ -2054,8 +2050,7 @@ msgid "Preferences"
 msgstr "Preferencias"
 
 #: src/bz-preferences-dialog.blp:25
-msgid ""
-"Network connection is metered — automatic store data refresh is paused"
+msgid "Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 "La conexión de red es medida: se ha pausado la actualización automática de "
 "datos de la tienda"
@@ -2084,8 +2079,8 @@ msgstr "Solo resultados de Flathub"
 #: src/bz-preferences-dialog.blp:40
 msgid "Limit search and browse results to apps only available on Flathub"
 msgstr ""
-"Limitar los resultados de búsqueda y exploración a aplicaciones disponibles"
-" en Flathub"
+"Limitar los resultados de búsqueda y exploración a aplicaciones disponibles "
+"en Flathub"
 
 #: src/bz-preferences-dialog.blp:44
 msgid "Verified Results Only"
@@ -2102,8 +2097,7 @@ msgstr "Ocultar aplicaciones al final de su vida útil"
 #: src/bz-preferences-dialog.blp:50
 msgid "Hide apps which are no longer supported by their developers"
 msgstr ""
-"Ocultar aplicaciones que ya no cuentan con el soporte de sus "
-"desarrolladores"
+"Ocultar aplicaciones que ya no cuentan con el soporte de sus desarrolladores"
 
 #: src/bz-preferences-dialog.blp:55
 msgid "Progress Bar Theme"
@@ -2470,8 +2464,8 @@ msgstr "Sin acceso a servicios"
 #: src/safety-calculator.c:346
 msgid "Cannot access non-portal session or system services at all"
 msgstr ""
-"No puede acceder a servicios de sesión o del sistema que no sean portales "
-"en absoluto"
+"No puede acceder a servicios de sesión o del sistema que no sean portales en"
+" absoluto"
 
 #: src/safety-calculator.c:354
 msgid "Verified App Developer"
@@ -2501,8 +2495,8 @@ msgstr "Código auditable"
 
 #: src/safety-calculator.c:376
 msgid ""
-"The source code is public and can be independently audited, which makes the"
-" app more likely to be safe"
+"The source code is public and can be independently audited, which makes the "
+"app more likely to be safe"
 msgstr ""
 "El código fuente es público y se puede auditar de forma independiente, lo "
 "que hace que la aplicación sea probablemente más segura"
@@ -2557,8 +2551,7 @@ msgstr "Ajustes globales de KDE"
 #: src/safety-calculator.c:566
 msgid "Can read KDE desktop preferences like fonts and colors"
 msgstr ""
-"Puede leer las preferencias del escritorio de KDE como tipografías y "
-"colores"
+"Puede leer las preferencias del escritorio de KDE como tipografías y colores"
 
 #: src/safety-calculator.c:571
 msgid "Secret Storage Service"
@@ -2625,8 +2618,8 @@ msgid ""
 "This app uses an outdated version of the software platform (SDK) and might "
 "contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
-"Esta aplicación usa una versión obsoleta de la plataforma de software (SDK)"
-" y podría contener errores o vulnerabilidades de seguridad que no se "
+"Esta aplicación usa una versión obsoleta de la plataforma de software (SDK) "
+"y podría contener errores o vulnerabilidades de seguridad que no se "
 "solucionarán."
 
 #: src/bz-safety-dialog.c:287
@@ -3277,9 +3270,8 @@ msgid "Close Window"
 msgstr "Cerrar ventana"
 
 #: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
-#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
-#: src/bz-window.c:436
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
+#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
 msgid "Store"
 msgstr "Tienda"
 
@@ -3513,8 +3505,8 @@ msgid ""
 "Metainfo files don't include app icons by themselves. Would you like to "
 "select one manually?"
 msgstr ""
-"Los archivos metainfo no incluyen iconos de aplicación por sí solos. "
-"¿Quiere elegir uno manualmente?"
+"Los archivos metainfo no incluyen iconos de aplicación por sí solos. ¿Quiere"
+" elegir uno manualmente?"
 
 #: src/bz-metainfo-preview.c:111
 msgid "Skip"
@@ -3566,8 +3558,8 @@ msgid ""
 "Auto-updates will pause on metered networks or when power saving is on to "
 "save data and battery."
 msgstr ""
-"Las actualizaciones automáticas se pausarán en redes de uso medido o con el"
-" ahorro de energía activado, para ahorrar datos y batería."
+"Las actualizaciones automáticas se pausarán en redes de uso medido o con el "
+"ahorro de energía activado, para ahorrar datos y batería."
 
 #: src/bz-preferences-dialog.blp:36
 msgid "_Automatic"
@@ -3745,3 +3737,78 @@ msgstr "Se actualizaron %s y %s."
 #, c-format
 msgid "Includes %s, %s and %s."
 msgstr "Incluye %s, %s y %s."
+
+#: src/bz-nxpm-page.blp:0
+msgid "Nodalia"
+msgstr "Nodalia"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Search Flatpak, Nodalia and official packages"
+msgstr "Buscar en Flatpak, Nodalia y paquetes oficiales"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Refresh updates"
+msgstr "Actualizar la lista"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Update official packages"
+msgstr "Actualizar paquetes oficiales"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Apply the pending official repository updates together"
+msgstr ""
+"Aplica juntas las actualizaciones pendientes de los repositorios oficiales"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Checking software"
+msgstr "Comprobando el software"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Asking NXPM for Flatpak and official repository updates."
+msgstr ""
+"Preguntando a NXPM por las actualizaciones de Flatpak y de los repositorios "
+"oficiales."
+
+#: src/bz-nxpm-page.blp:0
+msgid "Software is up to date"
+msgstr "El software está al día"
+
+#: src/bz-nxpm-page.blp:0
+msgid ""
+"Flatpak applications, Nodalia apps and official packages have no pending "
+"updates."
+msgstr ""
+"Las aplicaciones Flatpak, las de Nodalia y los paquetes oficiales no tienen "
+"actualizaciones pendientes."
+
+#: src/bz-nxpm-page.blp:0
+msgid "NXPM is unavailable"
+msgstr "NXPM no está disponible"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Waiting for NXPM…"
+msgstr "Esperando a NXPM…"
+
+#: src/bz-nxpm-page.blp:0
+msgid "NXPM is not connected."
+msgstr "NXPM no está conectado."
+
+#: src/bz-nxpm-page.blp:0
+msgid "Requesting the operation…"
+msgstr "Solicitando la operación…"
+
+#: src/bz-nxpm-page.blp:0
+msgid "update available"
+msgstr "actualización disponible"
+
+#: src/bz-nxpm-page.blp:0
+msgid "Nothing found"
+msgstr "No se encontró nada"
+
+#: src/bz-nxpm-page.blp:0
+msgid "NXPM found no installed software."
+msgstr "NXPM no encontró software instalado."
+
+#: src/bz-nxpm-page.blp:0
+msgid "NXPM has no Nodalia apps to offer."
+msgstr "NXPM no tiene apps de Nodalia que ofrecer."
