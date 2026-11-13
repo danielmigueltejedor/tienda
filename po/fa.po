@@ -1,14 +1,14 @@
-# Persian translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Persian translations for nodalix-store package.
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2025.
 # Goudarz Jafari <me@goudarzjafari.com>, 2025.
 # Danial Behzadi <dani.behzi@ubuntu.com>,  2006.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-10-30 20:14+0000\n"
 "PO-Revision-Date: 2026-11-01 17:01+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
@@ -20,12 +20,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Generator: Poedit 3.6\n"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3 data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:193 src/bz-window.c:435 src/bz-window.c:436
-msgid "Bazaar"
-msgstr "بازار"
-
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "فروشگاه کاره"
@@ -33,10 +27,6 @@ msgstr "فروشگاه کاره"
 #: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "افزودن، حذف یا به‌روزرسانی نرم‌افزارهای Flatpak در این رایانه"
-
-#: data/os.nodalix.Store.desktop.in:11
-msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
-msgstr "System;Package;Manager;Discover;Flatpak;Software;App;Store;Bazaar;سامانه;بسته;مدیر;کشف;فلت‌پک;نرم‌افزار;فروشگاه;کاره;"
 
 #: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
@@ -48,8 +38,8 @@ msgstr "کشف و نصب کاره‌ها"
 
 #: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
-"A fast and modern app store for Linux with a focus on discovering and installing Flatpak apps and add-ons, particularly "
-"from Flathub."
+"A fast and modern app store for Linux with a focus on discovering and "
+"installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
 
 #: data/os.nodalix.Store.metainfo.xml.in:16
@@ -66,11 +56,6 @@ msgstr ""
 
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
-msgstr ""
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:818
-msgid "The Bazaar Contributors"
 msgstr ""
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
@@ -93,7 +78,8 @@ msgstr "صفحهٔ جست‌وجو"
 msgid "Category page"
 msgstr "صفحهٔ دسته"
 
-#: src/bz-addon-tile.blp:62 src/bz-installed-tile.blp:53 src/bz-rich-app-tile.blp:142
+#: src/bz-addon-tile.blp:62 src/bz-installed-tile.blp:53
+#: src/bz-rich-app-tile.blp:142
 msgid "Stopped Receiving Updates"
 msgstr "توقّف گرفتن به‌روز رسانی‌ها"
 
@@ -102,8 +88,9 @@ msgctxt "Install Controls"
 msgid "Uninstall"
 msgstr "حذف"
 
-#: src/bz-addon-tile.c:170 src/bz-bundle-install-dialog.blp:148 src/bz-bundle-install-dialog.blp:162
-#: src/bz-favorites-tile.c:157 src/bz-install-controls.blp:49
+#: src/bz-addon-tile.c:170 src/bz-bundle-install-dialog.blp:148
+#: src/bz-bundle-install-dialog.blp:162 src/bz-favorites-tile.c:157
+#: src/bz-install-controls.blp:49
 msgctxt "Install Controls"
 msgid "Install"
 msgstr "نصب"
@@ -112,7 +99,8 @@ msgstr "نصب"
 msgid "Add-on"
 msgstr "افزونه"
 
-#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22 src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:93
+#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:93
 msgid "Manage Add-Ons"
 msgstr "مدیریت افزونه‌ها"
 
@@ -121,19 +109,23 @@ msgid "No Add-Ons Visible"
 msgstr "هیچ افزونه‌ای نمایان نیست"
 
 #: src/bz-addons-dialog.blp:82
-msgid "Your current filter preferences are hiding all known add-ons. Try adjusting them."
+msgid ""
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
 
 #: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
 msgstr "صفحهٔ افزونه"
 
-#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:266 src/context-tile-callbacks.c:142
+#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:266
+#: src/context-tile-callbacks.c:142
 msgid "Download"
 msgstr "بارگیری"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:361 src/bz-full-view.blp:281 src/bz-releases-list.c:203
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:361
+#: src/bz-full-view.blp:281 src/bz-releases-list.c:203
 msgid "Installed"
 msgstr "نصب شده"
 
@@ -146,7 +138,9 @@ msgid "Stopped Receiving Core Updates"
 msgstr "در حال بررسی برای به‌روزرسانی‌های هسته‌ای"
 
 #: src/bz-addons-dialog.blp:261
-msgid "This add-on uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
+msgid ""
+"This add-on uses a runtime that no longer receives updates or security "
+"fixes. It may become unsafe to use."
 msgstr ""
 
 #: src/bz-addons-dialog.blp:344 src/bz-full-view.blp:599
@@ -162,7 +156,8 @@ msgstr "افزونهٔ %s"
 msgid "Show Less"
 msgstr "نمایش کم‌تر"
 
-#: src/bz-addons-dialog.c:346 src/bz-full-view.c:607 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:346 src/bz-full-view.c:607
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "نمایش بیش‌تر"
 
@@ -170,8 +165,9 @@ msgstr "نمایش بیش‌تر"
 msgid "Download Stats"
 msgstr "آمار بارگیری‌ها"
 
-#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31 src/bz-age-rating-dialog.c:737
-#: src/context-tile-callbacks.c:194 src/context-tile-callbacks.c:201
+#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "رتبه‌بندی سنی"
 
@@ -180,7 +176,8 @@ msgstr "رتبه‌بندی سنی"
 msgid "Cartoon Violence"
 msgstr "خشونت کارتونی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "اطّلاعاتی دربارهٔ خشونت کارتونی موجود نیست"
@@ -190,7 +187,8 @@ msgstr "اطّلاعاتی دربارهٔ خشونت کارتونی موجود �
 msgid "Fantasy Violence"
 msgstr "خشونت فانتزی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "اطّلاعاتی دربارهٔ خشونت فانتزی موجود نیست"
@@ -200,7 +198,8 @@ msgstr "اطّلاعاتی دربارهٔ خشونت فانتزی موجود ن�
 msgid "Realistic Violence"
 msgstr "خشونت واقعی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "اطّلاعاتی دربارهٔ خشونت واقعی موجود نیست"
@@ -210,7 +209,8 @@ msgstr "اطّلاعاتی دربارهٔ خشونت واقعی موجود نی�
 msgid "Violence Depicting Bloodshed"
 msgstr "خشونت تجسّم خونباری"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "اطّلاعاتی دربارهٔ خون‌ریزی موجود نیست"
@@ -220,7 +220,8 @@ msgstr "اطّلاعاتی دربارهٔ خون‌ریزی موجود نیست"
 msgid "Sexual Violence"
 msgstr "خشونت جنسی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "اطّلاعاتی دربارهٔ خشونت جنسی موجود نیست"
@@ -230,7 +231,8 @@ msgstr "اطّلاعاتی دربارهٔ خشونت جنسی موجود نیس�
 msgid "Alcohol"
 msgstr "الکل"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "اطّلاعاتی دربارهٔ اشاره به نوشیدنی‌های الکلی موجود نیست"
@@ -240,7 +242,8 @@ msgstr "اطّلاعاتی دربارهٔ اشاره به نوشیدنی‌ها�
 msgid "Narcotics"
 msgstr "مواد مخدّر"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "اطّلاعاتی دربارهٔ اشاره به مخدّرهای غیرقانونی موجود نیست"
@@ -250,7 +253,8 @@ msgstr "اطّلاعاتی دربارهٔ اشاره به مخدّرهای غی�
 msgid "Tobacco"
 msgstr "دخانیات"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "اطّلاعاتی دربارهٔ اشاره به محصولات تنباکو موجود نیست"
@@ -260,7 +264,8 @@ msgstr "اطّلاعاتی دربارهٔ اشاره به محصولات تنب�
 msgid "Nudity"
 msgstr "برهنگی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "اطّلاعاتی دربارهٔ هیچ نوع برهنگی موجود نیست"
@@ -270,7 +275,8 @@ msgstr "اطّلاعاتی دربارهٔ هیچ نوع برهنگی موجود 
 msgid "Sexual Themes"
 msgstr "زمینه‌های جنسی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr "اطّلاعاتی دربارهٔ اشاره یا ترسیم طبیعت جنسی موجود نیست"
@@ -280,7 +286,8 @@ msgstr "اطّلاعاتی دربارهٔ اشاره یا ترسیم طبیعت 
 msgid "Profanity"
 msgstr "فحّاشی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "اطّلاعاتی دربارهٔ هیچ نوع ناسزا موجود نیست"
@@ -290,7 +297,8 @@ msgstr "اطّلاعاتی دربارهٔ هیچ نوع ناسزا موجود ن
 msgid "Inappropriate Humor"
 msgstr "شوخی‌های نامربوط"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "اطّلاعاتی دربارهٔ شوخی‌های نامربوط موجود نیست"
@@ -300,7 +308,8 @@ msgstr "اطّلاعاتی دربارهٔ شوخی‌های نامربوط مو�
 msgid "Discrimination"
 msgstr "تبعیض"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "اطّلاعاتی دربارهٔ هیچ نوع زبان تبعیض‌آمیز موجود نیست"
@@ -310,7 +319,8 @@ msgstr "اطّلاعاتی دربارهٔ هیچ نوع زبان تبعیض‌آ
 msgid "Advertising"
 msgstr "تبلیغات"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "اطّلاعاتی دربارهٔ هیچ نوع تبلیغات موجود نیست"
@@ -320,7 +330,8 @@ msgstr "اطّلاعاتی دربارهٔ هیچ نوع تبلیغات موجو�
 msgid "Gambling"
 msgstr "قمار"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "اطّلاعاتی دربارهٔ هیچ نوع قمار موجود نیست"
@@ -330,7 +341,8 @@ msgstr "اطّلاعاتی دربارهٔ هیچ نوع قمار موجود نی
 msgid "Purchasing"
 msgstr "خرید"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "اطّلاعاتی دربارهٔ امکان خرج کردن پول موجود نیست"
@@ -340,7 +352,8 @@ msgstr "اطّلاعاتی دربارهٔ امکان خرج کردن پول مو
 msgid "Chat Between Users"
 msgstr "گپ میان کاربران"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "اطّلاعاتی دربارهٔ امکان گپ با دیگر کاربران موجود نیست"
@@ -350,7 +363,8 @@ msgstr "اطّلاعاتی دربارهٔ امکان گپ با دیگر کارب
 msgid "Audio Chat Between Users"
 msgstr "گپ صوتی میان کاربران"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "اطّلاعاتی دربارهٔ امکان صحبت با دیگر کاربران موجود نیست"
@@ -360,19 +374,26 @@ msgstr "اطّلاعاتی دربارهٔ امکان صحبت با دیگر کا
 msgid "Contact Details"
 msgstr "جزئیات تماس"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
-msgid "No information regarding sharing of social network usernames or email addresses"
-msgstr "اطّلاعاتی دربارهٔ هم‌رسانی نام‌کاربری شبکه‌های اجتماعی یا نشانی‌های رایانامه موجود نیست"
+msgid ""
+"No information regarding sharing of social network usernames or email "
+"addresses"
+msgstr ""
+"اطّلاعاتی دربارهٔ هم‌رسانی نام‌کاربری شبکه‌های اجتماعی یا نشانی‌های "
+"رایانامه موجود نیست"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:202
 msgid "Identifying Information"
 msgstr "اطّلاعات تشخیصی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr "اطّلاعاتی دربارهٔ هم‌رسانی اطّلاعات کاربر با سوم‌شخص‌ها موجود نیست"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -380,9 +401,11 @@ msgstr "اطّلاعاتی دربارهٔ هم‌رسانی اطّلاعات ک�
 msgid "Location Sharing"
 msgstr "هم‌رسانی مکان"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr "اطّلاعاتی دربارهٔ هم‌رسانی مکان فیزیکی با دیگر کاربران موجود نیست"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -390,7 +413,8 @@ msgstr "اطّلاعاتی دربارهٔ هم‌رسانی مکان فیزیک�
 msgid "Prostitution"
 msgstr "روسپیگری"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "اطّلاعاتی دربارهٔ اشاره به فاحشگی موجود نیست"
@@ -400,7 +424,8 @@ msgstr "اطّلاعاتی دربارهٔ اشاره به فاحشگی موجو�
 msgid "Adultery"
 msgstr "بی‌عفّتی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "اطّلاعاتی دربارهٔ اشاره به زنا موجود نیست"
@@ -410,7 +435,8 @@ msgstr "اطّلاعاتی دربارهٔ اشاره به زنا موجود نی
 msgid "Sexualized Characters"
 msgstr "شخصیت‌های جنسیت‌زده"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "اطّلاعاتی دربارهٔ شخصیت‌های جنسیت‌زده موجود نیست"
@@ -420,7 +446,8 @@ msgstr "اطّلاعاتی دربارهٔ شخصیت‌های جنسیت‌زد�
 msgid "Desecration"
 msgstr "بی‌حرمتی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "اطّلاعاتی دربارهٔ اشاره به هتک حرمت موجود نیست"
@@ -430,7 +457,8 @@ msgstr "اطّلاعاتی دربارهٔ اشاره به هتک حرمت موج
 msgid "Human Remains"
 msgstr "بقایای انسانی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "اطّلاعاتی دربارهٔ نمایانی بقایای جسد انسانی موجود نیست"
@@ -440,7 +468,8 @@ msgstr "اطّلاعاتی دربارهٔ نمایانی بقایای جسد ا�
 msgid "Slavery"
 msgstr "بردگی"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "اطّلاعاتی دربارهٔ اشاره به بردگی موجود نیست"
@@ -450,7 +479,8 @@ msgid "Does not include references to drugs"
 msgstr "شامل اشاره به مواد مخدّر نیست"
 
 #: src/bz-age-rating-dialog.c:426
-msgid "Does not include swearing, profanity, and other kinds of strong language"
+msgid ""
+"Does not include swearing, profanity, and other kinds of strong language"
 msgstr "شامل فحش، بی‌حرمتی یا دیگر گونه‌های زبان خشن نیست"
 
 #: src/bz-age-rating-dialog.c:428
@@ -714,8 +744,9 @@ msgstr "اندازهٔ زمان اجرای نصب شده"
 msgid "Runtime Download Size"
 msgstr "اندازهٔ بارگیری زمان اجرا"
 
-#: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:183 src/context-tile-callbacks.c:104
-#: src/context-tile-callbacks.c:401 src/context-tile-callbacks.c:423
+#: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:183
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:401
+#: src/context-tile-callbacks.c:423
 msgid "N/A"
 msgstr "نامربوط"
 
@@ -723,11 +754,13 @@ msgstr "نامربوط"
 msgid "Storage"
 msgstr "ذخیره‌سازی"
 
-#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:106 src/bz-rich-app-tile.c:441
+#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98
+#: src/bz-rich-app-tile.blp:106 src/bz-rich-app-tile.c:441
 msgid "Verified"
 msgstr "تأیید شده"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:821
 msgid "translator-credits"
 msgstr ""
@@ -749,14 +782,6 @@ msgstr "اجرا کردن برپایی…"
 #: src/bz-application.c:1115
 msgid "Set Up Flathub?"
 msgstr "برپایی فلت‌هاب؟"
-
-#: src/bz-application.c:1118
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and install applications in Bazaar if its "
-"unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
 
 #: src/bz-application.c:1123
 msgid "Later"
@@ -848,7 +873,9 @@ msgstr[0] "نصب %Iu کاره؟"
 msgstr[1] "نصب %Iu کاره؟"
 
 #: src/bz-bulk-install-dialog.c:114
-msgid "The following will be installed. Additional shared components may also be installed"
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
 msgstr ""
 
 #: src/bz-bulk-install-dialog.c:115
@@ -860,7 +887,8 @@ msgstr "تعداد %Id افزنه نصب خواهد شد."
 msgid "Additionally, addons will be installed."
 msgstr "به علاوه افزونه‌هایی نصب خواهند شد."
 
-#: src/bz-bulk-install-dialog.c:117 src/bz-transaction-dialog.c:199 src/bz-transaction-dialog.c:244
+#: src/bz-bulk-install-dialog.c:117 src/bz-transaction-dialog.c:199
+#: src/bz-transaction-dialog.c:244
 msgid "_Cancel"
 msgstr "_لغو"
 
@@ -876,20 +904,13 @@ msgstr "نصب بسته"
 msgid "Additional dependencies may take extra space"
 msgstr ""
 
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "با موفّقیت نصب شد!"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526 src/bz-rich-app-tile.blp:199
-#: src/bz-transaction-tile.blp:328
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
+#: src/bz-rich-app-tile.blp:199 src/bz-transaction-tile.blp:328
 msgid "Open"
 msgstr "گشودن"
 
@@ -926,7 +947,8 @@ msgstr ""
 msgid "Choose where to add this applet."
 msgstr ""
 
-#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:231
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80
+#: src/bz-rich-app-tile.blp:231
 msgid "Cancel"
 msgstr "لغو"
 
@@ -943,7 +965,9 @@ msgid "No Curation"
 msgstr "بدون پیشنهاد"
 
 #: src/bz-curated-view.blp:29
-msgid "There is no curation information provided on this system. You can still browse apps on Flathub"
+msgid ""
+"There is no curation information provided on this system. You can still "
+"browse apps on Flathub"
 msgstr ""
 
 #: src/bz-curated-view.blp:33
@@ -964,17 +988,23 @@ msgstr "اطّلعات توسعه‌دهنده در دسترس نیست."
 
 #: src/bz-developer-badge.c:219 src/bz-developer-badge.c:233
 #, c-format
-msgid "The ownership of the %s app ID has not been verified and it may be a community package."
+msgid ""
+"The ownership of the %s app ID has not been verified and it may be a "
+"community package."
 msgstr ""
 
 #: src/bz-developer-badge.c:237
 #, c-format
-msgid "The ownership of the %s app ID has been manually verified by the Flathub team."
+msgid ""
+"The ownership of the %s app ID has been manually verified by the Flathub "
+"team."
 msgstr ""
 
 #: src/bz-developer-badge.c:253
 #, c-format
-msgid "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on <b>%3$s</b>."
+msgid ""
+"The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
+"<b>%3$s</b>."
 msgstr ""
 
 #: src/bz-developer-badge.c:260
@@ -987,11 +1017,6 @@ msgstr ""
 msgid "The ownership of the %s app ID has been verified."
 msgstr ""
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "ارائه بازار"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "یادداشت‌های انتشار کامل"
@@ -1000,23 +1025,15 @@ msgstr "یادداشت‌های انتشار کامل"
 msgid "This release was made possible by users like you!"
 msgstr "این ارائه به دست کاربرانی چون شما ممکن شد!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid "I love making Bazaar, but I cannot do it alone. Help support further development by donating on Ko-Fi."
-msgstr ""
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "اعانه به بازار"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "چیزهای جدید در %s؟"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "منتشر شده در %%Oe %OB %Oy"
@@ -1026,10 +1043,13 @@ msgid "Choose an Installation"
 msgstr "گزینش نصب"
 
 #: src/bz-entry-group-util.c:76
-msgid "You have multiple versions of this app installed. Which one would you like to proceed with?"
+msgid ""
+"You have multiple versions of this app installed. Which one would you like "
+"to proceed with?"
 msgstr "چند نگارش از این کاره نصب شده‌اند می‌خواهید با کدامشان ادامه دهید؟"
 
-#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88 src/update-worker.c:495
+#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
+#: src/error.c:88 src/update-worker.c:495
 msgid "Details"
 msgstr "جزییات"
 
@@ -1038,7 +1058,8 @@ msgstr "جزییات"
 msgid "Copy"
 msgstr "رونوشت"
 
-#: src/bz-error-dialog.c:56 src/bz-screenshot-page.vala:532 src/bz-share-list.vala:58
+#: src/bz-error-dialog.c:56 src/bz-screenshot-page.vala:532
+#: src/bz-share-list.vala:58
 msgid "Copied!"
 msgstr "رونوشت شد!"
 
@@ -1318,7 +1339,8 @@ msgstr "ابزارها"
 msgid "More Utilities"
 msgstr "ابزارهای بیشتر"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106 src/bz-flathub-page.blp:138
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "محبوب‌ها"
 
@@ -1326,7 +1348,8 @@ msgstr "محبوب‌ها"
 msgid "More Trending"
 msgstr "داغ‌های بیش‌تر"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112 src/bz-flathub-page.blp:173
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:173
 msgid "Popular"
 msgstr "پرطرفدار"
 
@@ -1579,7 +1602,8 @@ msgid "Games and apps to run your favorite titles"
 msgstr ""
 
 #: src/bz-full-view.blp:94
-msgid "This is a local preview, some details may differ from the published listing"
+msgid ""
+"This is a local preview, some details may differ from the published listing"
 msgstr ""
 
 #: src/bz-full-view.blp:97
@@ -1591,7 +1615,9 @@ msgid "_Support"
 msgstr "_پشتیبانی"
 
 #: src/bz-full-view.blp:452
-msgid "This app uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
+msgid ""
+"This app uses a runtime that no longer receives updates or security fixes. "
+"It may become unsafe to use."
 msgstr ""
 
 #: src/bz-full-view.blp:530
@@ -1619,14 +1645,20 @@ msgid "No URL"
 msgstr "بدون نشانی اینترنتی"
 
 #: src/bz-full-view.c:197
-msgid "This app has a FLOSS license, meaning the source code can be audited for safety."
-msgstr "این برنامه پروانه‌ای آزاد داشته که به معنی بازرسی‌پذیر بودن کد مبدأ برای ایمنیست."
+msgid ""
+"This app has a FLOSS license, meaning the source code can be audited for "
+"safety."
+msgstr ""
+"این برنامه پروانه‌ای آزاد داشته که به معنی بازرسی‌پذیر بودن کد مبدأ برای "
+"ایمنیست."
 
 #: src/bz-full-view.c:198
 msgid ""
-"This app has a proprietary license, meaning the source code is developed privately and cannot be audited by an independent "
-"third party."
-msgstr "این برنامه پروانه‌ای مالکیتی داشته که به معنی توسعهٔ محرمانه‌اش است که بازرسی امنیتش را غیرممکن می‌کند."
+"This app has a proprietary license, meaning the source code is developed "
+"privately and cannot be audited by an independent third party."
+msgstr ""
+"این برنامه پروانه‌ای مالکیتی داشته که به معنی توسعهٔ محرمانه‌اش است که "
+"بازرسی امنیتش را غیرممکن می‌کند."
 
 #: src/bz-full-view.c:205
 msgid "Other Apps From This Developer"
@@ -1778,7 +1810,8 @@ msgstr "حذف نصب برنامه"
 msgid "_Remove"
 msgstr "_برداشتن"
 
-#: src/bz-install-controls.blp:148 src/bz-updates-card.vala:178 src/bz-updates-card.vala:201
+#: src/bz-install-controls.blp:148 src/bz-updates-card.vala:178
+#: src/bz-updates-card.vala:201
 msgid "Update"
 msgstr "به‌روزرسانی"
 
@@ -1922,8 +1955,7 @@ msgstr ""
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard "
-"to detect, and it may change without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
@@ -1936,7 +1968,8 @@ msgid ""
 "You may or may not be able to contribute to this app."
 msgstr ""
 
-#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365 src/bz-safety-dialog.blp:103
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
+#: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "پروانه"
 
@@ -1966,7 +1999,9 @@ msgid "Add Icon to Metainfo Preview?"
 msgstr ""
 
 #: src/bz-metainfo-preview.c:108
-msgid "Metainfo files don't include app icons by themselves. Would you like to select one manually?"
+msgid ""
+"Metainfo files don't include app icons by themselves. Would you like to "
+"select one manually?"
 msgstr ""
 
 #: src/bz-metainfo-preview.c:111
@@ -2026,10 +2061,12 @@ msgid "Preferences"
 msgstr "تنظیمات"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226 src/bz-window.blp:237
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226
+#: src/bz-window.blp:237
 msgid "Refresh Manually"
 msgstr "تازه‌سازی دستی"
 
@@ -2038,7 +2075,9 @@ msgid "App Updates"
 msgstr "به‌روز رسانی‌های کاره"
 
 #: src/bz-preferences-dialog.blp:33
-msgid "Auto-updates will pause on metered networks or when power saving is on to save data and battery."
+msgid ""
+"Auto-updates will pause on metered networks or when power saving is on to "
+"save data and battery."
 msgstr ""
 
 #: src/bz-preferences-dialog.blp:36
@@ -2193,11 +2232,6 @@ msgstr ""
 msgid "Neutrois Pride Colors"
 msgstr ""
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:287
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr ""
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "تاریخچهٔ نگارش"
@@ -2207,7 +2241,8 @@ msgstr "تاریخچهٔ نگارش"
 msgid "Today"
 msgstr "امروز"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:122
 msgid "Yesterday"
 msgstr "دیروز"
@@ -2271,22 +2306,22 @@ msgstr ""
 msgid "Uninstall"
 msgstr "حذف"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:381
 msgid "Get"
 msgstr ""
 
-#: src/bz-safety-dialog.blp:30 src/bz-safety-dialog.c:237 src/safety-calculator.c:158
+#: src/bz-safety-dialog.blp:30 src/bz-safety-dialog.c:237
+#: src/safety-calculator.c:158
 msgid "Arbitrary Permissions"
 msgstr "اجازه‌های دلخواه"
 
 #: src/bz-safety-dialog.blp:47
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the "
-"Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and "
-"connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
 "Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
@@ -2310,8 +2345,8 @@ msgstr "کیت توسعهٔ نرم‌افزار"
 
 #: src/bz-safety-dialog.blp:157
 msgid ""
-"This app uses an outdated version of the software platform (SDK) and might contain bugs or security vulnerabilities which "
-"will not be fixed."
+"This app uses an outdated version of the software platform (SDK) and might "
+"contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
 
 #: src/bz-safety-dialog.c:228 src/bz-safety-dialog.c:256
@@ -2601,7 +2636,8 @@ msgstr "بیانیه"
 msgid "Timeline"
 msgstr "خط زمانی"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "نصب‌ها:"
@@ -2640,8 +2676,9 @@ msgstr "هیچ نتیجه‌ای پیدا نشد"
 msgid "Search failed"
 msgstr "جست‌وجو شکست خورد"
 
-#: src/bz-transaction-dialog.c:117 src/context-tile-callbacks.c:251 src/context-tile-callbacks.c:256
-#: src/context-tile-callbacks.c:284 src/context-tile-callbacks.c:293
+#: src/bz-transaction-dialog.c:117 src/context-tile-callbacks.c:251
+#: src/context-tile-callbacks.c:256 src/context-tile-callbacks.c:284
+#: src/context-tile-callbacks.c:293
 msgid "Unknown"
 msgstr "ناشناخته"
 
@@ -2682,16 +2719,14 @@ msgstr ""
 
 #: src/bz-transaction-dialog.c:220
 msgid ""
-"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It "
-"also has access to the internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
 "Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
 
 #: src/bz-transaction-dialog.c:229
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and "
-"monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
 "Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
@@ -2839,27 +2874,18 @@ msgstr "جست‌وجو"
 msgid "Main Menu"
 msgstr "منوی اصلی"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:217
-msgid "You are running a new version of Bazaar!"
-msgstr ""
-
 #: src/bz-window.blp:218
 msgid "See What's New"
 msgstr ""
 
 #: src/bz-window.blp:225
-msgid "You have a network connection but are viewing a cached version of Flathub"
+msgid ""
+"You have a network connection but are viewing a cached version of Flathub"
 msgstr ""
 
 #: src/bz-window.blp:236
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr ""
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:273
-msgid "_Donate to Bazaar"
-msgstr "_اعانه به بازار"
 
 #: src/bz-window.blp:279
 msgid "_Refresh"
@@ -2881,25 +2907,9 @@ msgstr "_ترجیحات"
 msgid "_Keyboard Shortcuts"
 msgstr "_میان‌برهای صفحه‌کلید"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:306
-msgid "_About Bazaar"
-msgstr "_دربارهٔ بازار"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:313
-msgid "_Quit Bazaar"
-msgstr "_خروج از بازار"
-
 #: src/bz-window.blp:329
 msgid "Log Out"
 msgstr "خروج"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:438
-#, c-format
-msgid "Bazaar — %s"
-msgstr "بازار— %s"
 
 #: src/bz-window.c:718 src/bz-window.c:767
 msgid "Failed to launch application"
@@ -2907,11 +2917,6 @@ msgstr "شکست در اجرای برنامه"
 
 #: src/bz-window.c:846
 msgid "Could not open link"
-msgstr ""
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1055
-msgid "You can't remove Bazaar from Bazaar!"
 msgstr ""
 
 #: src/bz-window.c:1439 src/bz-window.c:1473
@@ -2994,7 +2999,8 @@ msgstr ""
 msgid "Special License: %s"
 msgstr ""
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr ""
@@ -3092,7 +3098,8 @@ msgstr "دسترسی صدابَر و پخش صدا"
 
 #: src/safety-calculator.c:131
 msgid "Can listen using microphones and play audio without asking permission"
-msgstr "می‌تواند بدون اجازه گرفتن با استفاده از صدابَر شنود کرده و صدا پخش کند"
+msgstr ""
+"می‌تواند بدون اجازه گرفتن با استفاده از صدابَر شنود کرده و صدا پخش کند"
 
 #: src/safety-calculator.c:137
 msgid "System Device Access"
@@ -3100,7 +3107,9 @@ msgstr "دسترسی ‌افزارهٔ سامانه"
 
 #: src/safety-calculator.c:138
 msgid "Can access system devices which require elevated permissions"
-msgstr "می‌تواند به افزاره‌های سامانه‌ای که نیازمند اجازه‌های زیادند دسترسی داشته باشد"
+msgstr ""
+"می‌تواند به افزاره‌های سامانه‌ای که نیازمند اجازه‌های زیادند دسترسی داشته "
+"باشد"
 
 #: src/safety-calculator.c:144
 msgid "Screen Contents Access"
@@ -3168,7 +3177,8 @@ msgstr "دسترسی خواندن و نوشتن روی شاخهٔ بارگیری
 
 #: src/safety-calculator.c:207
 msgid "Can read and write all data in your downloads directory"
-msgstr "می‌تواند تمامی داده‌ها در شاخهٔ بارگیری‌هایتان را خوانده و رویشان بنویسد"
+msgstr ""
+"می‌تواند تمامی داده‌ها در شاخهٔ بارگیری‌هایتان را خوانده و رویشان بنویسد"
 
 #: src/safety-calculator.c:217
 msgid "Download Folder Read Access"
@@ -3216,14 +3226,16 @@ msgstr "بدون دسترسی خدمت"
 
 #: src/safety-calculator.c:333
 msgid "Cannot access non-portal session or system services at all"
-msgstr "به کل نمی‌تواند به خدمت‌های سامانه یا نشست غیردروازه‌ای دسترسی داشته باشد"
+msgstr ""
+"به کل نمی‌تواند به خدمت‌های سامانه یا نشست غیردروازه‌ای دسترسی داشته باشد"
 
 #: src/safety-calculator.c:372
 msgid "Verified App Developer"
 msgstr ""
 
 #: src/safety-calculator.c:373
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr "تأیید شده توسعه‌دهندهٔ این کاره، همانیست که می‌گوید"
 
 #: src/safety-calculator.c:382
@@ -3231,16 +3243,24 @@ msgid "Proprietary Code"
 msgstr "کد مالکیتی"
 
 #: src/safety-calculator.c:383
-msgid "The source code is not public, so it cannot be independently audited and might be unsafe"
-msgstr "کد منبع عمومی نیست، پس نمی‌تواند مستقلانه بررسی شود و به صورت بالقوه ناامن است"
+msgid ""
+"The source code is not public, so it cannot be independently audited and "
+"might be unsafe"
+msgstr ""
+"کد منبع عمومی نیست، پس نمی‌تواند مستقلانه بررسی شود و به صورت بالقوه ناامن "
+"است"
 
 #: src/safety-calculator.c:393
 msgid "Auditable Code"
 msgstr "کد بازرسی‌پذیر"
 
 #: src/safety-calculator.c:394
-msgid "The source code is public and can be independently audited, which makes the app more likely to be safe"
-msgstr "کد منبع عمومی است و می‌تواند مستقلانه بررسی شود که کاره را بیش‌تر به امن بودن نزدیک می‌کند"
+msgid ""
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
+msgstr ""
+"کد منبع عمومی است و می‌تواند مستقلانه بررسی شود که کاره را بیش‌تر به امن "
+"بودن نزدیک می‌کند"
 
 #: src/safety-calculator.c:532
 #, c-format
@@ -3375,11 +3395,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "بستن پنجره"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "خروج از بازار"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3419,6 +3434,18 @@ msgstr "%s و %s به‌روز شدند."
 msgid "Includes %s, %s and %s."
 msgstr "شامل %s، %s و %s."
 
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "فروشگاه"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "فروشگاه — %s"
+
 #~ msgid "Set Up System Flathub?"
 #~ msgstr "برپایی فلت‌هاب سامانه؟"
 
@@ -3430,9 +3457,6 @@ msgstr "شامل %s، %s و %s."
 
 #~ msgid "Keep the summary shorter, between 10 and 35 characters"
 #~ msgstr "خلاصه را کوتاه نگه دارید، بین ۱۰ تا ۳۵ نویسه"
-
-#~ msgid "Main Bazaar window showing Blender"
-#~ msgstr "پنجره‌ی اصلی بازار که Blender را نمایش می‌دهد"
 
 #~ msgid "Release description"
 #~ msgstr "توضیح‌های نگارش"
@@ -3489,11 +3513,6 @@ msgstr "شامل %s، %s و %s."
 #~ msgid "Empty"
 #~ msgstr "خالی"
 
-#~ msgid ""
-#~ "Bazaar was not provided a curated content configuration. Contact your operating system's support channels for assistance."
-#~ msgstr ""
-#~ "هیچ پیکربندی‌ای برای محتوای انتخاب‌شده به بازار ارائه نشده است. برای دریافت کمک با پشتیبانی سیستم‌عامل خود تماس بگیرید."
-
 #~ msgid "Close"
 #~ msgstr "بستن"
 
@@ -3512,8 +3531,12 @@ msgstr "شامل %s، %s و %s."
 #~ msgid "Download and install this application"
 #~ msgstr "بارگیری و نصب این برنامه"
 
-#~ msgid "The number of downloads in the last 30 days. Click to view this application's download statistics."
-#~ msgstr "تعداد بارگیری در ۳۰ روز گذشته. برای مشاهده‌ی آمار بارگیری این برنامه کلیک کنید."
+#~ msgid ""
+#~ "The number of downloads in the last 30 days. Click to view this "
+#~ "application's download statistics."
+#~ msgstr ""
+#~ "تعداد بارگیری در ۳۰ روز گذشته. برای مشاهده‌ی آمار بارگیری این برنامه کلیک "
+#~ "کنید."
 
 #~ msgid "Remote repo name"
 #~ msgstr "نام مخزن راه‌دور"
@@ -3563,12 +3586,19 @@ msgstr "شامل %s، %s و %s."
 #~ msgid "Removing"
 #~ msgstr "در حال حذف"
 
-#~ msgid "The following applications are eligible for updates. Would you like to install them?"
-#~ msgstr "برنامه‌های زیر واجد شرایط به‌روزرسانی هستند. آیا مایل به نصب آن‌ها هستید؟"
+#~ msgid ""
+#~ "The following applications are eligible for updates. Would you like to "
+#~ "install them?"
+#~ msgstr ""
+#~ "برنامه‌های زیر واجد شرایط به‌روزرسانی هستند. آیا مایل به نصب آن‌ها هستید؟"
 
 #, c-format
-#~ msgid "%d runtimes and/or addons are eligible for updates. Would you like to install them?"
-#~ msgstr "%d محیط اجرایی و/یا افزونه برای به‌روزرسانی واجد شرایط هستند. آیا مایل به نصب آن‌ها هستید؟"
+#~ msgid ""
+#~ "%d runtimes and/or addons are eligible for updates. Would you like to "
+#~ "install them?"
+#~ msgstr ""
+#~ "%d محیط اجرایی و/یا افزونه برای به‌روزرسانی واجد شرایط هستند. آیا مایل به "
+#~ "نصب آن‌ها هستید؟"
 
 #~ msgid "Halt the execution of transactions"
 #~ msgstr "توقف اجرای تراکنش‌ها"
@@ -3656,14 +3686,3 @@ msgstr "شامل %s، %s و %s."
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
 #~ msgstr "خروج"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "فروشگاه"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "فروشگاه — %s"

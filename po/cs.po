@@ -1,6 +1,6 @@
-# Czech translations for bazaar package.
-# Copyright (C) 2025 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Czech translations for nodalix-store package.
+# Copyright (C) 2025 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2025.
 # Vlastimil Dědek <dedek.vlastimil2@proton.me>, 2025.
 # Pavel Borecki <pavel@borecki.cz>, 2026.
@@ -8,8 +8,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-10-16 17:44+0000\n"
 "PO-Revision-Date: 2026-10-17 02:52+0200\n"
 "Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
@@ -20,13 +20,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Poedit 3.9\n"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:193 src/bz-window.c:437 src/bz-window.c:438
-msgid "Bazaar"
-msgstr "Bazaar"
 
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
@@ -55,8 +48,8 @@ msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"Rychlý a moderní obchod s aplikacemi pro Linux se zaměřením na objevování a "
-"instalaci aplikací a doplňků Flatpaku, zejména z Flathubu."
+"Rychlý a moderní obchod s aplikacemi pro Linux se zaměřením na objevování a"
+" instalaci aplikací a doplňků Flatpaku, zejména z Flathubu."
 
 #: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
@@ -74,11 +67,6 @@ msgstr ""
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Vyhledávejte aplikace přímo z GNOME Shellu"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:825
-msgid "The Bazaar Contributors"
-msgstr "Přispěvatelé aplikace Bazaar"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -132,8 +120,8 @@ msgstr "Žádné viditelné doplňky"
 
 #: src/bz-addons-dialog.blp:82
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
 "Vaše aktuální nastavení filtrů skrývají všechny známé doplňky. Zkuste je "
 "upravit."
@@ -148,8 +136,8 @@ msgid "Download"
 msgstr "Stáhnout"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:283
-#: src/bz-releases-list.c:204
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356
+#: src/bz-full-view.blp:283 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "Nainstalováno"
 
@@ -166,8 +154,8 @@ msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
 msgstr ""
-"Tento doplněk používá běhové prostředí, které již nedostává aktualizace ani "
-"opravy zabezpečení. Jeho používání nemusí být bezpečné."
+"Tento doplněk používá běhové prostředí, které již nedostává aktualizace ani"
+" opravy zabezpečení. Jeho používání nemusí být bezpečné."
 
 #: src/bz-addons-dialog.blp:346 src/bz-full-view.blp:603
 msgid "Other Sources"
@@ -182,7 +170,8 @@ msgstr "Doplněk pro %s"
 msgid "Show Less"
 msgstr "Zobrazit méně"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:612 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:612
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Zobrazit více"
 
@@ -201,7 +190,8 @@ msgstr "Vhodné od věku"
 msgid "Cartoon Violence"
 msgstr "Kreslené násilí"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Bez informací o kresleném násilí"
@@ -211,7 +201,8 @@ msgstr "Bez informací o kresleném násilí"
 msgid "Fantasy Violence"
 msgstr "Násilí ve fantasy"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Bez informací o násilí ve fantasy"
@@ -221,7 +212,8 @@ msgstr "Bez informací o násilí ve fantasy"
 msgid "Realistic Violence"
 msgstr "Realistické násilí"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Bez informací o realistickém násilí"
@@ -231,7 +223,8 @@ msgstr "Bez informací o realistickém násilí"
 msgid "Violence Depicting Bloodshed"
 msgstr "Násilí zobrazující krvácení"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Bez informací o krvácení"
@@ -241,7 +234,8 @@ msgstr "Bez informací o krvácení"
 msgid "Sexual Violence"
 msgstr "Sexuální násilí"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Bez informací o sexuálním násilí"
@@ -251,7 +245,8 @@ msgstr "Bez informací o sexuálním násilí"
 msgid "Alcohol"
 msgstr "Alkohol"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Bez informací o odkazech na alkohol"
@@ -261,7 +256,8 @@ msgstr "Bez informací o odkazech na alkohol"
 msgid "Narcotics"
 msgstr "Narkotika"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "Bez informací o odkazech na nezákonné drogy"
@@ -271,7 +267,8 @@ msgstr "Bez informací o odkazech na nezákonné drogy"
 msgid "Tobacco"
 msgstr "Tabák"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Bez informací o odkazech na tabákové produkty"
@@ -281,7 +278,8 @@ msgstr "Bez informací o odkazech na tabákové produkty"
 msgid "Nudity"
 msgstr "Nahota"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Bez informací o nahotě jakéhokoliv typu"
@@ -291,7 +289,8 @@ msgstr "Bez informací o nahotě jakéhokoliv typu"
 msgid "Sexual Themes"
 msgstr "Sexuální tématika"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr "Bez informací o odkazech na nebo vyobrazení sexuální tématiky"
@@ -301,7 +300,8 @@ msgstr "Bez informací o odkazech na nebo vyobrazení sexuální tématiky"
 msgid "Profanity"
 msgstr "Vulgarismy"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Bez informací o vulgaritách jakéhokoliv typu"
@@ -311,7 +311,8 @@ msgstr "Bez informací o vulgaritách jakéhokoliv typu"
 msgid "Inappropriate Humor"
 msgstr "Nepřiměřený humor"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Bez informací o nepřiměřeném humoru"
@@ -321,7 +322,8 @@ msgstr "Bez informací o nepřiměřeném humoru"
 msgid "Discrimination"
 msgstr "Diskriminace"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Bez informací o diskriminačních projevech jakéhokoliv typu"
@@ -331,7 +333,8 @@ msgstr "Bez informací o diskriminačních projevech jakéhokoliv typu"
 msgid "Advertising"
 msgstr "Reklamy"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Bez informací o reklamách jakéhokoliv typu"
@@ -341,7 +344,8 @@ msgstr "Bez informací o reklamách jakéhokoliv typu"
 msgid "Gambling"
 msgstr "Hazard"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Bez informací o hazardu jakéhokoliv typu"
@@ -351,7 +355,8 @@ msgstr "Bez informací o hazardu jakéhokoliv typu"
 msgid "Purchasing"
 msgstr "Nakupování"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Bez informací o možnosti utrácet peníze"
@@ -361,7 +366,8 @@ msgstr "Bez informací o možnosti utrácet peníze"
 msgid "Chat Between Users"
 msgstr "Konverzace mezi uživateli"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "Bez informací o způsobech konverzace mezi uživateli"
@@ -371,7 +377,8 @@ msgstr "Bez informací o způsobech konverzace mezi uživateli"
 msgid "Audio Chat Between Users"
 msgstr "Hlasová konverzace mezi uživateli"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "Bez informací o způsobech hlasové komunikace mezi uživateli"
@@ -381,23 +388,26 @@ msgstr "Bez informací o způsobech hlasové komunikace mezi uživateli"
 msgid "Contact Details"
 msgstr "Kontaktní údaje"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
 "addresses"
 msgstr ""
-"Bez informací o sdílení uživatelských jmen ze sociálních sítí nebo e-"
-"mailových adres"
+"Bez informací o sdílení uživatelských jmen ze sociálních sítí nebo "
+"e-mailových adres"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:202
 msgid "Identifying Information"
 msgstr "Identifikační údaje"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr "Bez informací o sdílení údajů o uživatelích se třetími stranami"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -405,9 +415,11 @@ msgstr "Bez informací o sdílení údajů o uživatelích se třetími stranami
 msgid "Location Sharing"
 msgstr "Sdílení polohy"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr "Bez informací o sdílení fyzické polohy s ostatními uživateli"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -415,7 +427,8 @@ msgstr "Bez informací o sdílení fyzické polohy s ostatními uživateli"
 msgid "Prostitution"
 msgstr "Prostituce"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Bez informací o odkazech na prostituci"
@@ -425,7 +438,8 @@ msgstr "Bez informací o odkazech na prostituci"
 msgid "Adultery"
 msgstr "Cizoložství"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Bez informací o odkazech na cizoložství"
@@ -435,7 +449,8 @@ msgstr "Bez informací o odkazech na cizoložství"
 msgid "Sexualized Characters"
 msgstr "Sexualizované postavy"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Bez informací o sexualizovaných postavách"
@@ -445,7 +460,8 @@ msgstr "Bez informací o sexualizovaných postavách"
 msgid "Desecration"
 msgstr "Znesvěcení"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Bez informací o odkazech na znesvěcení"
@@ -455,7 +471,8 @@ msgstr "Bez informací o odkazech na znesvěcení"
 msgid "Human Remains"
 msgstr "Lidské ostatky"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Bez informací o viditelných ostatcích mrtvých lidí"
@@ -465,7 +482,8 @@ msgstr "Bez informací o viditelných ostatcích mrtvých lidí"
 msgid "Slavery"
 msgstr "Otroctví"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Bez informací o odkazech na otroctví"
@@ -755,7 +773,8 @@ msgstr "Úložiště"
 msgid "Verified"
 msgstr "Ověřeno"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:828
 msgid "translator-credits"
 msgstr ""
@@ -779,37 +798,9 @@ msgstr "Provádí se nastavení…"
 msgid "Set Up System Flathub?"
 msgstr "Nastavit systémový Flathub?"
 
-#: src/bz-application.c:1126
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Systémový repozitář Flathub není nastaven. Bazaar vyžaduje, aby byl Flathub "
-"nastaven na systémové Flatpak instalaci pro procházení a instalaci "
-"aplikací.\n"
-"\n"
-"Bazaar můžete i nadále používat k procházení a odstraňování již "
-"nainstalovaných aplikací."
-
 #: src/bz-application.c:1133
 msgid "Set Up Flathub?"
 msgstr "Nastavit Flathub?"
-
-#: src/bz-application.c:1136
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub není v tomto systému nastaven. Pokud není k dispozici, nebudete moci "
-"procházet a instalovat aplikace v Bazaaru.\n"
-"\n"
-"Bazaar můžete i nadále používat k procházení a odstraňování již "
-"nainstalovaných aplikací."
 
 #: src/bz-application.c:1142
 msgid "Later"
@@ -907,8 +898,8 @@ msgid ""
 "The following will be installed. Additional shared components may also be "
 "installed"
 msgstr ""
-"Následující aplikace budou nainstalovány. Mohou být také nainstalovány další "
-"sdílené komponenty"
+"Následující aplikace budou nainstalovány. Mohou být také nainstalovány "
+"další sdílené komponenty"
 
 #: src/bz-bulk-install-dialog.c:114
 #, c-format
@@ -935,18 +926,6 @@ msgstr "Instalace balíčku"
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
 msgstr "Dodatečné závislosti mohou zabírat další místo"
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Instalace této aplikace může vyžadovat přidání nového zdroje softwaru. "
-"Ostatní aplikace z tohoto zdroje se zobrazí v Bazaaru.\n"
-"\n"
-"Tento zdroj přidejte, pouze pokud jste si jisti, že mu důvěřujete."
 
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
@@ -1054,8 +1033,8 @@ msgid ""
 "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
 "<b>%3$s</b>."
 msgstr ""
-"Vlastnictví ID aplikace %1$s bylo ověřeno uživatelem <b>%2$s</b> na <b>%3$s</"
-"b>."
+"Vlastnictví ID aplikace %1$s bylo ověřeno uživatelem <b>%2$s</b> na "
+"<b>%3$s</b>."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -1067,11 +1046,6 @@ msgstr "Vlastnictví ID aplikace %1$s bylo ověřeno pomocí %2$s."
 msgid "The ownership of the %s app ID has been verified."
 msgstr "Vlastnictví ID aplikace %s bylo ověřeno."
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "Vydání Bazaaru"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Úplné poznámky k vydání"
@@ -1080,27 +1054,15 @@ msgstr "Úplné poznámky k vydání"
 msgid "This release was made possible by users like you!"
 msgstr "Toto vydání bylo možné díky uživatelům, jako jste vy!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Miluji vytváření Bazaaru, ale nedokážu to sám. Pomozte podpořit další vývoj "
-"darováním na Ko-Fi."
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "Podpořit Bazaar"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "Co je nového ve verzi %s?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Vydáno %-e. %B %Y"
@@ -1524,7 +1486,8 @@ msgstr "S novým rokem nové postupy"
 #: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
 msgstr ""
-"Aplikace pro pořizování poznámek, udržování si přehledu o úkolech a plánování"
+"Aplikace pro pořizování poznámek, udržování si přehledu o úkolech a "
+"plánování"
 
 #: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
@@ -1674,7 +1637,8 @@ msgstr "Hry a aplikace pro spuštění vašich oblíbených titulů"
 msgid ""
 "This is a local preview, some details may differ from the published listing"
 msgstr ""
-"Toto je místní náhled, některé podrobnosti se mohou lišit od zveřejněné verze"
+"Toto je místní náhled, některé podrobnosti se mohou lišit od zveřejněné "
+"verze"
 
 #: src/bz-full-view.blp:97
 msgid "Preview Store Appearance"
@@ -1689,8 +1653,8 @@ msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr ""
-"Tato aplikace používá běhové prostředí, které již nedostává aktualizace ani "
-"opravy zabezpečení. Její používání nemusí být bezpečné."
+"Tato aplikace používá běhové prostředí, které již nedostává aktualizace ani"
+" opravy zabezpečení. Její používání nemusí být bezpečné."
 
 #: src/bz-full-view.blp:534
 msgid "Trash Data"
@@ -2025,27 +1989,21 @@ msgstr "Licence této aplikace není známa"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Tato aplikace je otevřeně vyvíjena mezinárodní komunitou a je uvolněna pod "
-"licencí %s.\n"
+"Tato aplikace je otevřeně vyvíjena mezinárodní komunitou a je uvolněna pod licencí %s.\n"
 "\n"
 "Můžete se zapojit a pomoci ji ještě vylepšit."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Tato aplikace není vyvíjena otevřeně, takže o jejím fungování vědí pouze "
-"její vývojáři. Může být nezabezpečena způsobem, který je těžké odhalit, a "
-"může se měnit, aniž byste o tom věděli.\n"
+"Tato aplikace není vyvíjena otevřeně, takže o jejím fungování vědí pouze její vývojáři. Může být nezabezpečena způsobem, který je těžké odhalit, a může se měnit, aniž byste o tom věděli.\n"
 "\n"
 "Můžete nebo nemusíte být schopni do této aplikace přispívat."
 
@@ -2075,7 +2033,8 @@ msgstr "Něco se pokazilo"
 
 #: src/bz-login-page.blp:46
 msgid "Log in to sync your favorited apps across devices"
-msgstr "Přihlaste se a synchronizujte své oblíbené aplikace napříč zařízeními"
+msgstr ""
+"Přihlaste se a synchronizujte své oblíbené aplikace napříč zařízeními"
 
 #: src/bz-login-page.blp:113
 msgid "Finish"
@@ -2095,8 +2054,8 @@ msgid ""
 "Metainfo files don't include app icons by themselves. Would you like to "
 "select one manually?"
 msgstr ""
-"Soubory Metainfo neobsahují ikony aplikací samy o sobě. Chcete jednu vybrat "
-"ručně?"
+"Soubory Metainfo neobsahují ikony aplikací samy o sobě. Chcete jednu vybrat"
+" ručně?"
 
 #: src/bz-metainfo-preview.c:111
 msgid "Skip"
@@ -2158,11 +2117,14 @@ msgid "Preferences"
 msgstr "Předvolby"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
-"Připojení k síti je měřené – automatické obnovení dat obchodu je pozastaveno"
+"Připojení k síti je měřené – automatické obnovení dat obchodu je "
+"pozastaveno"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226 src/bz-window.blp:237
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226
+#: src/bz-window.blp:237
 msgid "Refresh Manually"
 msgstr "Obnovit ručně"
 
@@ -2330,11 +2292,6 @@ msgstr "Barvy hrdosti femboyů"
 msgid "Neutrois Pride Colors"
 msgstr "Barvy neutrois hrdosti"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:286
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr "Bazaar musí běžet na pozadí, aby mohl kontrolovat aktualizace aplikací"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "Historie verzí"
@@ -2344,7 +2301,8 @@ msgstr "Historie verzí"
 msgid "Today"
 msgstr "dnes"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "včera"
@@ -2412,7 +2370,8 @@ msgstr "Historie _verzí"
 msgid "Uninstall"
 msgstr "Odinstalovat"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "Získat"
@@ -2424,23 +2383,17 @@ msgstr "Libovolná oprávnění"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
-"Tato aplikace má oprávnění, které jí nepřímo umožňuje udělit si <b>jakékoli "
-"jiné oprávnění, které chce</b>, a obejít tak izolované prostředí Flatpaku.\n"
+"Tato aplikace má oprávnění, které jí nepřímo umožňuje udělit si <b>jakékoli jiné oprávnění, které chce</b>, a obejít tak izolované prostředí Flatpaku.\n"
 "\n"
-"Může tedy dělat cokoli, co privilegovaná aplikace bez izolovaného prostředí, "
-"například přistupovat ke všem vašim souborům a připojením k internetu.\n"
+"Může tedy dělat cokoli, co privilegovaná aplikace bez izolovaného prostředí, například přistupovat ke všem vašim souborům a připojením k internetu.\n"
 "\n"
-"Zobrazení dalších oprávnění vám může stále poskytnout lepší představu o tom, "
-"co aplikace pravděpodobně udělá."
+"Zobrazení dalších oprávnění vám může stále poskytnout lepší představu o tom, co aplikace pravděpodobně udělá."
 
 #: src/bz-safety-dialog.blp:53
 msgid "View Other Permissions"
@@ -2751,7 +2704,8 @@ msgstr "Kopírovat odkaz"
 msgid "Timeline"
 msgstr "Časová osa"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Počet instalací:"
@@ -2833,38 +2787,23 @@ msgstr "Aplikace „%s“ je vysoce riziková"
 
 #: src/bz-transaction-dialog.c:221
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Tato aplikace má plný přístup k vašemu systému, včetně všech <b>vašich "
-"souborů, historie prohlížení, uložených hesel</b> a dalších údajů. Má také "
-"přístup k internetu, což znamená, že může odesílat vaše data externím "
-"stranám.\n"
+"Tato aplikace má plný přístup k vašemu systému, včetně všech <b>vašich souborů, historie prohlížení, uložených hesel</b> a dalších údajů. Má také přístup k internetu, což znamená, že může odesílat vaše data externím stranám.\n"
 "\n"
-"Protože je aplikace uzavřený software, nelze auditovat, co s těmito "
-"oprávněními dělá."
+"Protože je aplikace uzavřený software, nelze auditovat, co s těmito oprávněními dělá."
 
 #: src/bz-transaction-dialog.c:230
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Tato aplikace používá starší okenní systém X11, který jí umožňuje "
-"<b>zaznamenávat všechny stisky kláves, pořizovat snímky obrazovky a "
-"monitorovat další aplikace</b>. Má také přístup k internetu, což znamená, že "
-"může odesílat vaše data externím stranám.\n"
+"Tato aplikace používá starší okenní systém X11, který jí umožňuje <b>zaznamenávat všechny stisky kláves, pořizovat snímky obrazovky a monitorovat další aplikace</b>. Má také přístup k internetu, což znamená, že může odesílat vaše data externím stranám.\n"
 "\n"
-"Protože je aplikace uzavřený software, nelze auditovat, co s těmito "
-"oprávněními dělá."
+"Protože je aplikace uzavřený software, nelze auditovat, co s těmito oprávněními dělá."
 
 #: src/bz-transaction-dialog.c:246
 msgid "_Install Anyway"
@@ -3018,11 +2957,6 @@ msgstr "Vyhledávání"
 msgid "Main Menu"
 msgstr "Hlavní nabídka"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:217
-msgid "You are running a new version of Bazaar!"
-msgstr "Používáte novou verzi Bazaaru!"
-
 #: src/bz-window.blp:218
 msgid "See What's New"
 msgstr "Podívejte se, co je nového"
@@ -3031,16 +2965,12 @@ msgstr "Podívejte se, co je nového"
 msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
 msgstr ""
-"Máte připojení k síti, ale prohlížíte si verzi Flathubu uloženou v mezipaměti"
+"Máte připojení k síti, ale prohlížíte si verzi Flathubu uloženou v "
+"mezipaměti"
 
 #: src/bz-window.blp:236
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "Připojení k síti je měřené – automatická obnovení jsou zakázána"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:273
-msgid "_Donate to Bazaar"
-msgstr "Po_dpořit Bazaar"
 
 #: src/bz-window.blp:279
 msgid "_Refresh"
@@ -3062,25 +2992,9 @@ msgstr "_Předvolby"
 msgid "_Keyboard Shortcuts"
 msgstr "_Klávesové zkratky"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:306
-msgid "_About Bazaar"
-msgstr "O _aplikaci Bazaar"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:313
-msgid "_Quit Bazaar"
-msgstr "_Ukončit Bazaar"
-
 #: src/bz-window.blp:329
 msgid "Log Out"
 msgstr "Odhlásit se"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:440
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar – %s"
 
 #: src/bz-window.c:720 src/bz-window.c:769
 msgid "Failed to launch application"
@@ -3089,11 +3003,6 @@ msgstr "Aplikaci se nezdařilo spustit"
 #: src/bz-window.c:848
 msgid "Could not open link"
 msgstr "Nezdařilo se otevřít odkaz"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1057
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Bazaar nelze odstranit z Bazaaru!"
 
 #: src/bz-window.c:1441 src/bz-window.c:1475
 msgid "Can't do that right now!"
@@ -3175,7 +3084,8 @@ msgstr "Uzavřený software"
 msgid "Special License: %s"
 msgstr "Zvláštní licence: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "Svobodné"
@@ -3257,7 +3167,8 @@ msgstr "Žádný přístup k uživatelským zařízením"
 
 #: src/safety-calculator.c:118
 msgid "Cannot access devices such as webcams or gaming controllers"
-msgstr "Nemůže přistupovat k zařízením jako jsou webkamery nebo herní ovladače"
+msgstr ""
+"Nemůže přistupovat k zařízením jako jsou webkamery nebo herní ovladače"
 
 #: src/safety-calculator.c:123
 msgid "Input Device Access"
@@ -3351,7 +3262,8 @@ msgstr "Přístup ke složce se staženými soubory pro čtení/zápis"
 
 #: src/safety-calculator.c:207
 msgid "Can read and write all data in your downloads directory"
-msgstr "Může číst a zapisovat všechna data ve vaší složce se staženými soubory"
+msgstr ""
+"Může číst a zapisovat všechna data ve vaší složce se staženými soubory"
 
 #: src/safety-calculator.c:217
 msgid "Download Folder Read Access"
@@ -3406,7 +3318,8 @@ msgid "Verified App Developer"
 msgstr "Ověřený vývojář aplikace"
 
 #: src/safety-calculator.c:373
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr "Vývojář této aplikace byl ověřen jako ten, za koho se vydává"
 
 #: src/safety-calculator.c:382
@@ -3427,8 +3340,8 @@ msgstr "Otevřený kód"
 
 #: src/safety-calculator.c:394
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
 "Zdrojový kód je veřejný a může být nezávisle kontrolován, což zvyšuje "
 "pravděpodobnost, že je aplikace bezpečná"
@@ -3566,11 +3479,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Zavřít okno"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Ukončit Bazaar"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3611,40 +3519,10 @@ msgstr "Aplikace %s a %s byly aktualizovány."
 msgid "Includes %s, %s and %s."
 msgstr "Včetně %s, %s a %s."
 
-#~ msgid "Notice for Ubuntu Users"
-#~ msgstr "Upozornění pro uživatele Ubuntu"
-
-#~ msgid ""
-#~ "Ubuntu 25.10 and newer have changed default security rules in a way that "
-#~ "makes it <b>impossible to install apps</b> from the Flatpak version of "
-#~ "Bazaar. For the time being, please use the apt package instead. Install "
-#~ "it with\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "You can then remove this Flatpak version with\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
-#~ msgstr ""
-#~ "Ubuntu 25.10 a novější změnily výchozí bezpečnostní pravidla tak, že "
-#~ "<b>není možné instalovat aplikace</b> z Flatpak verze Bazaaru. Prozatím "
-#~ "prosím použijte místo toho balíček apt. Nainstalujte jej pomocí\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "Tuto Flatpak verzi pak můžete odstranit pomocí\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
-
-#~ msgid "Continue Anyway"
-#~ msgstr "Přesto pokračovat"
-
-#~ msgid "Inspector Menu"
-#~ msgstr "Nabídka inspektora"
-
 #: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
 msgid "Store"
 msgstr "Obchod"
 
@@ -3652,3 +3530,12 @@ msgstr "Obchod"
 #, c-format
 msgid "Store — %s"
 msgstr "Obchod — %s"
+
+#~ msgid "Notice for Ubuntu Users"
+#~ msgstr "Upozornění pro uživatele Ubuntu"
+
+#~ msgid "Continue Anyway"
+#~ msgstr "Přesto pokračovat"
+
+#~ msgid "Inspector Menu"
+#~ msgstr "Nabídka inspektora"

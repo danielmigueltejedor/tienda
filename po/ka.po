@@ -1,12 +1,12 @@
-# Georgian translation for bazaar.
-# Copyright (C) 2026 bazaar's authors
-# This file is distributed under the same license as the bazaar package.
+# Georgian translation for nodalix-store.
+# Copyright (C) 2026 nodalix-store's authors
+# This file is distributed under the same license as the nodalix-store package.
 # Ekaterine Papava <papava.e@gtu.ge>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-10-19 20:52+0000\n"
 "PO-Revision-Date: 2026-10-20 06:41+0200\n"
 "Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
@@ -18,12 +18,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.10\n"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-window.blp:55 src/bz-window.blp:193 src/bz-window.c:435 src/bz-window.c:436
-msgid "Bazaar"
-msgstr "Bazaar"
-
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "აპლიკაციების მაღაზია"
@@ -34,7 +28,8 @@ msgstr "დაამატეთ, წაშალეთ და განაა�
 
 #: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
-msgstr "System;Package;Manager;Discover;Flatpak;Software;App;Store;სისტემა;პაკეტები;მართვა;მაღაზია;პროგრამები;"
+msgstr ""
+"System;Package;Manager;Discover;Flatpak;Software;App;Store;სისტემა;პაკეტები;მართვა;მაღაზია;პროგრამები;"
 
 #: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
@@ -46,11 +41,11 @@ msgstr "აღმოაჩინეთ და დააყენეთ აპე
 
 #: data/os.nodalix.Store.metainfo.xml.in:11
 msgid ""
-"A fast and modern app store for Linux with a focus on discovering and installing Flatpak apps and add-ons, "
-"particularly from Flathub."
+"A fast and modern app store for Linux with a focus on discovering and "
+"installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"სწრაფი და თანამედროვე აპების მაღაზია Linux-ისთვის Flatpak-ის აპების დამატებების ადვილად დასაყენებლად. "
-"განსაკუთრებით Flathub-იდან."
+"სწრაფი და თანამედროვე აპების მაღაზია Linux-ისთვის Flatpak-ის აპების "
+"დამატებების ადვილად დასაყენებლად. განსაკუთრებით Flathub-იდან."
 
 #: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
@@ -67,11 +62,6 @@ msgstr "შედით Flathub-ში რჩეულების სამა�
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "მოძებნეთ აპები პირდაპირ GNOME Shell-დან"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:818
-msgid "The Bazaar Contributors"
-msgstr "Bazaar-ის მოხალისეები"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -93,7 +83,8 @@ msgstr "გვერდის მოძებნა"
 msgid "Category page"
 msgstr "კატეგორიის გვერდი"
 
-#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54 src/bz-rich-app-tile.blp:143
+#: src/bz-addon-tile.blp:63 src/bz-installed-tile.blp:54
+#: src/bz-rich-app-tile.blp:143
 msgid "Stopped Receiving Updates"
 msgstr "განახლებების მიღება შეჩერებულია"
 
@@ -102,8 +93,9 @@ msgctxt "Install Controls"
 msgid "Uninstall"
 msgstr "წაშლა"
 
-#: src/bz-addon-tile.c:170 src/bz-bundle-install-dialog.blp:148 src/bz-bundle-install-dialog.blp:162
-#: src/bz-favorites-tile.c:157 src/bz-install-controls.blp:44
+#: src/bz-addon-tile.c:170 src/bz-bundle-install-dialog.blp:148
+#: src/bz-bundle-install-dialog.blp:162 src/bz-favorites-tile.c:157
+#: src/bz-install-controls.blp:44
 msgctxt "Install Controls"
 msgid "Install"
 msgstr "დაყენება"
@@ -112,8 +104,8 @@ msgstr "დაყენება"
 msgid "Add-on"
 msgstr "დამატება"
 
-#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22 src/bz-addons-dialog.blp:71
-#: src/bz-installed-tile.blp:94
+#: src/bz-addons-dialog.blp:15 src/bz-addons-dialog.blp:22
+#: src/bz-addons-dialog.blp:71 src/bz-installed-tile.blp:94
 msgid "Manage Add-Ons"
 msgstr "დამატებების მართვა"
 
@@ -122,19 +114,25 @@ msgid "No Add-Ons Visible"
 msgstr "ხილული დამატებების გარეშე"
 
 #: src/bz-addons-dialog.blp:82
-msgid "Your current filter preferences are hiding all known add-ons. Try adjusting them."
-msgstr "თქვენი მიმდინარე ფილტრის პარამეტრები მალავს ყველა ცნობილ დამატებას. სცადეთ, დააზუსტოთ ფილტრები."
+msgid ""
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
+msgstr ""
+"თქვენი მიმდინარე ფილტრის პარამეტრები მალავს ყველა ცნობილ დამატებას. სცადეთ,"
+" დააზუსტოთ ფილტრები."
 
 #: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
 msgstr "დამატების გვერდი"
 
-#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:266 src/context-tile-callbacks.c:142
+#: src/bz-addons-dialog.blp:172 src/bz-full-view.blp:266
+#: src/context-tile-callbacks.c:142
 msgid "Download"
 msgstr "გადმოწერა"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:281 src/bz-releases-list.c:204
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356
+#: src/bz-full-view.blp:281 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "დაყენებულია"
 
@@ -148,10 +146,11 @@ msgstr "ძირითადი განახლებების მიღ�
 
 #: src/bz-addons-dialog.blp:261
 msgid ""
-"This add-on uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
+"This add-on uses a runtime that no longer receives updates or security "
+"fixes. It may become unsafe to use."
 msgstr ""
-"ეს დამატება იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და უსაფრთხოების პაჩებს. ის, შეიძლება "
-"სახიფათო გახდეს გამოსაყენებლად."
+"ეს დამატება იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და "
+"უსაფრთხოების პაჩებს. ის, შეიძლება სახიფათო გახდეს გამოსაყენებლად."
 
 #: src/bz-addons-dialog.blp:344 src/bz-full-view.blp:599
 msgid "Other Sources"
@@ -166,7 +165,8 @@ msgstr "დამატება %s-ისთვის"
 msgid "Show Less"
 msgstr "ნაკლების ჩვენება"
 
-#: src/bz-addons-dialog.c:363 src/bz-full-view.c:610 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:363 src/bz-full-view.c:610
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "მეტის ჩვენება"
 
@@ -174,8 +174,9 @@ msgstr "მეტის ჩვენება"
 msgid "Download Stats"
 msgstr "გადმოწერის სტატისტიკა"
 
-#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31 src/bz-age-rating-dialog.c:737
-#: src/context-tile-callbacks.c:194 src/context-tile-callbacks.c:201
+#: src/bz-age-rating-dialog.blp:7 src/bz-age-rating-dialog.blp:31
+#: src/bz-age-rating-dialog.c:737 src/context-tile-callbacks.c:194
+#: src/context-tile-callbacks.c:201
 msgid "Age Rating"
 msgstr "ასაკის რეიტინგი"
 
@@ -184,7 +185,8 @@ msgstr "ასაკის რეიტინგი"
 msgid "Cartoon Violence"
 msgstr "მულტფილმში ძალადობით"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "ინფორმაცია მულტფილმში ძალადობის შესახებ არ არსებობს"
@@ -194,7 +196,8 @@ msgstr "ინფორმაცია მულტფილმში ძალ�
 msgid "Fantasy Violence"
 msgstr "წარმოსადგენი ძალადობა"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "ინფორმაცია წარმოსადგენი ძალადობის შესახებ არ არსებობს"
@@ -204,7 +207,8 @@ msgstr "ინფორმაცია წარმოსადგენი ძ�
 msgid "Realistic Violence"
 msgstr "რეალისტური ძალადობა"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "ინფორმაცია რეალისტური ძალადობის შესახებ არ არსებობს"
@@ -214,7 +218,8 @@ msgstr "ინფორმაცია რეალისტური ძალ�
 msgid "Violence Depicting Bloodshed"
 msgstr "სისხლიანი ძალადობა"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "ინფორმაცია სისხლიანი ძალადობის შესახებ არ არსებობს"
@@ -224,7 +229,8 @@ msgstr "ინფორმაცია სისხლიანი ძალა�
 msgid "Sexual Violence"
 msgstr "სექსუალური ძალადობა"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "ინფორმაცია სექსუალური ძალადობის შესახებ არ არსებობს"
@@ -234,7 +240,8 @@ msgstr "ინფორმაცია სექსუალური ძალ�
 msgid "Alcohol"
 msgstr "ალკოჰოლი"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "ინფორმაცია ალკოჰოლზე მიმართვის შესახებ არ არსებობს"
@@ -244,7 +251,8 @@ msgstr "ინფორმაცია ალკოჰოლზე მიმა�
 msgid "Narcotics"
 msgstr "ნარკოტიკები"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "ინფორმაცია ნარკოტინებზე მიმართვის შესახებ არ არსებობს"
@@ -254,7 +262,8 @@ msgstr "ინფორმაცია ნარკოტინებზე მ�
 msgid "Tobacco"
 msgstr "თამბაქო"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "ინფორმაცია თამბაქოს პროდუქტების შესახებ არ არსებობს"
@@ -264,7 +273,8 @@ msgstr "ინფორმაცია თამბაქოს პროდუ�
 msgid "Nudity"
 msgstr "სიშიშვლე"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "ინფორმაცია სიშიშვლის შესახებ არ არსებობს"
@@ -274,7 +284,8 @@ msgstr "ინფორმაცია სიშიშვლის შესა�
 msgid "Sexual Themes"
 msgstr "სექსუალური თემები"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr "ინფორმაცია სექსუალური ხასიათის მითითების შესახებ არ არსებობს"
@@ -284,7 +295,8 @@ msgstr "ინფორმაცია სექსუალური ხას�
 msgid "Profanity"
 msgstr "პროფანაცია"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "ინფორმაცია პროფანაციის შესახებ არ არსებობს"
@@ -294,7 +306,8 @@ msgstr "ინფორმაცია პროფანაციის შე�
 msgid "Inappropriate Humor"
 msgstr "შეუსაბამო იუმორი"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "ინფორმაცია შეუსაბამო იუმორის შესახებ არ არსებობს"
@@ -304,7 +317,8 @@ msgstr "ინფორმაცია შეუსაბამო იუმო�
 msgid "Discrimination"
 msgstr "დისკრიმინაცია"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "ინფორმაცია დისკრიმინაციული ენის შესახებ არ არსებობს"
@@ -314,7 +328,8 @@ msgstr "ინფორმაცია დისკრიმინაციუ�
 msgid "Advertising"
 msgstr "რეკლამირება"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "ინფორმაცია რაიმე სახის რეკლამების შესახებ არ არსებობს"
@@ -324,7 +339,8 @@ msgstr "ინფორმაცია რაიმე სახის რეკ
 msgid "Gambling"
 msgstr "ფულზე თამაში"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "ინფორმაცია რაიმე სახით გემბლინგის შესახებ არ არსებობს"
@@ -334,7 +350,8 @@ msgstr "ინფორმაცია რაიმე სახით გემ
 msgid "Purchasing"
 msgstr "შეძენები"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "ინფორმაცია მასში ფულის დახარჯვის შესახებ არ არსებობს"
@@ -344,7 +361,8 @@ msgstr "ინფორმაცია მასში ფულის დახ
 msgid "Chat Between Users"
 msgstr "საუბარი მომხმარებლებს შორის"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "ინფორმაცია სხვა მომხმარებლებთან ჩატის შესახებ არ არსებობს"
@@ -354,7 +372,8 @@ msgstr "ინფორმაცია სხვა მომხმარებ�
 msgid "Audio Chat Between Users"
 msgstr "ხმოვანი საუბარი მომხმარებლებს შორის"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "ინფორმაცია სხვა მომხმარებლებთან საუბრის შესახებ არ არსებობს"
@@ -364,37 +383,51 @@ msgstr "ინფორმაცია სხვა მომხმარებ�
 msgid "Contact Details"
 msgstr "კონტაქტის დეტალები"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
-msgid "No information regarding sharing of social network usernames or email addresses"
-msgstr "ინფორმაცია სოციალური ქსელის მომხმარებლის ან ელფოსტის მისამართის გაზიარების შესახებ არ არსებობს"
+msgid ""
+"No information regarding sharing of social network usernames or email "
+"addresses"
+msgstr ""
+"ინფორმაცია სოციალური ქსელის მომხმარებლის ან ელფოსტის მისამართის გაზიარების "
+"შესახებ არ არსებობს"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:202
 msgid "Identifying Information"
 msgstr "ინფორმაციის იდენტიფიკაცია"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
-msgstr "ინფორმაცია მომხმარებლის ინფორმაციის მესამე პირებისთვის გადაცემის შესახებ არ არსებობს"
+msgid ""
+"No information regarding sharing of user information with third parties"
+msgstr ""
+"ინფორმაცია მომხმარებლის ინფორმაციის მესამე პირებისთვის გადაცემის შესახებ არ"
+" არსებობს"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:208
 msgid "Location Sharing"
 msgstr "მდებარეობის გაზიარება"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
-msgstr "ინფორმაცია სხვა მომხმარებლებისთვის ფიზიკური მდებარეობის გაზიარების შესახებ არ არსებობს"
+msgid ""
+"No information regarding sharing of physical location with other users"
+msgstr ""
+"ინფორმაცია სხვა მომხმარებლებისთვის ფიზიკური მდებარეობის გაზიარების შესახებ "
+"არ არსებობს"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:214
 msgid "Prostitution"
 msgstr "პროსტიტუცია"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "ინფორმაცია პროსტიტუციაზე მიმართვების შესახებ არ არსებობს"
@@ -404,7 +437,8 @@ msgstr "ინფორმაცია პროსტიტუციაზე �
 msgid "Adultery"
 msgstr "მრუშობა"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "ინფორმაცია მრუშობაზე მიმართვის შესახებ არ არსებობს"
@@ -414,7 +448,8 @@ msgstr "ინფორმაცია მრუშობაზე მიმა�
 msgid "Sexualized Characters"
 msgstr "სექსუალიზებული პერსონაჟები"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "ინფორმაცია ზედმეტად სექსუალიზებული ადამიანების შესახებ არ არსებობს"
@@ -424,7 +459,8 @@ msgstr "ინფორმაცია ზედმეტად სექსუ�
 msgid "Desecration"
 msgstr "შეურაცხყოფა"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "ინფორმაცია შეურაცხყოფაზე მიმართვის შესახებ არ არსებობს"
@@ -434,7 +470,8 @@ msgstr "ინფორმაცია შეურაცხყოფაზე �
 msgid "Human Remains"
 msgstr "ადამიანის ნარჩენები"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "ინფორმაცია ადამიანის ხილული ნარჩენების შესახებ არ არსებობს"
@@ -444,7 +481,8 @@ msgstr "ინფორმაცია ადამიანის ხილუ�
 msgid "Slavery"
 msgstr "მონობა"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "ინფორმაცია მონობაზე მიმართვის შესახებ არ არსებობს"
@@ -454,7 +492,8 @@ msgid "Does not include references to drugs"
 msgstr "ნარკოტიკებზე მიმართვას არ შეიცავს"
 
 #: src/bz-age-rating-dialog.c:426
-msgid "Does not include swearing, profanity, and other kinds of strong language"
+msgid ""
+"Does not include swearing, profanity, and other kinds of strong language"
 msgstr "არ შეიცავს მიმართვას გინებაზე, პროფანულობაზე ან სხვა უხეშ ენაზე"
 
 #: src/bz-age-rating-dialog.c:428
@@ -718,8 +757,9 @@ msgstr "დაყენებული გაშვების გარემ�
 msgid "Runtime Download Size"
 msgstr "გაშვების გარემოს გადმოსაწერი ზომა"
 
-#: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:183 src/context-tile-callbacks.c:104
-#: src/context-tile-callbacks.c:401 src/context-tile-callbacks.c:423
+#: src/bz-app-size-dialog.c:111 src/bz-bundle-install-dialog.c:183
+#: src/context-tile-callbacks.c:104 src/context-tile-callbacks.c:401
+#: src/context-tile-callbacks.c:423
 msgid "N/A"
 msgstr "ა/მ"
 
@@ -727,11 +767,13 @@ msgstr "ა/მ"
 msgid "Storage"
 msgstr "საცავი"
 
-#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98 src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
+#: src/bz-app-tile.blp:55 src/bz-developer-badge.c:98
+#: src/bz-rich-app-tile.blp:107 src/bz-rich-app-tile.c:444
 msgid "Verified"
 msgstr "დამოწმებულია"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:821
 msgid "translator-credits"
 msgstr "ეკატერინე პაპავა"
@@ -752,33 +794,9 @@ msgstr "მორგების შესრულება…"
 msgid "Set Up System Flathub?"
 msgstr "გნებავთ სისტემური Flathub-ის მორგება?"
 
-#: src/bz-application.c:1119
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be configured on the system Flatpak "
-"installation to browse and install applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"სისტემური Flathub-ის დაშორებული მორგებული არაა. Bazaar-ს სჭირდება, რომ Flathub მორგებული იყოს სისტემურ "
-"Flatpak-ზე აპლიკაციების მოსაძებნად და დასაყენებლად.\n"
-"\n"
-"Bazaar-ის გამოყენება ჯერ კიდევ შეგიძლიათ უკვე დაყენებული აპების დასათვალიერებლად და წასაშლელად."
-
 #: src/bz-application.c:1126
 msgid "Set Up Flathub?"
 msgstr "გნებავთ Flathub-ის მორგება?"
-
-#: src/bz-application.c:1129
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and install applications in Bazaar if "
-"its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub ამ სისტემაზე მორგებული არაა. თუ ის ხელმისაწვდომი არაა, Bazaar-ით პროგრამების ძებნას და დაყენებას ვერ "
-"შეძლებთ.\n"
-"\n"
-"Bazaar-ის გამოყენება ჯერ კიდევ შეგიძლიათ უკვე დაყენებული აპების დასათვალიერებლად და წასაშლელად."
 
 #: src/bz-application.c:1135
 msgid "Later"
@@ -870,8 +888,12 @@ msgstr[0] "დავაყენო %u აპლიკაცია?"
 msgstr[1] "დავაყენო %u აპლიკაცია?"
 
 #: src/bz-bulk-install-dialog.c:114
-msgid "The following will be installed. Additional shared components may also be installed"
-msgstr "მოხდება შემდეგის დაყენება. ასევე, შეიძლება, მოხდეს დამატებითი გაზიარებული კომპონენტების დაყენება"
+msgid ""
+"The following will be installed. Additional shared components may also be "
+"installed"
+msgstr ""
+"მოხდება შემდეგის დაყენება. ასევე, შეიძლება, მოხდეს დამატებითი გაზიარებული "
+"კომპონენტების დაყენება"
 
 #: src/bz-bulk-install-dialog.c:115
 #, c-format
@@ -882,7 +904,8 @@ msgstr "მოხდება %d დამატების დაყენე�
 msgid "Additionally, addons will be installed."
 msgstr "დამატებით მოხდება დამატებების დაყენება."
 
-#: src/bz-bulk-install-dialog.c:117 src/bz-transaction-dialog.c:199 src/bz-transaction-dialog.c:244
+#: src/bz-bulk-install-dialog.c:117 src/bz-transaction-dialog.c:199
+#: src/bz-transaction-dialog.c:244
 msgid "_Cancel"
 msgstr "გაუ_ქმება"
 
@@ -898,25 +921,13 @@ msgstr "პაკეტის დაყენება"
 msgid "Additional dependencies may take extra space"
 msgstr "დამატებით დამოკიდებულებებს, შეიძლება, დამატებითი ადგილი დასჭირდეს"
 
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps from this source will show up in "
-"Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"ამ აპის დაყენებას, შეიძლება, ახალი პროგრამების დაყენების წყაროს დამატება დასჭირდეთ. Bazaar-ში ამ წყაროდან "
-"სხვა აპებიც გამოჩნდება.\n"
-"\n"
-"დაამატეთ წყარო, მხოლოდ, მაშინ, თუ მას ენდობით."
-
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "დაყენება წარმატებულია!"
 
 #. TRANSLATORS: Button to launch an installed app
-#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526 src/bz-rich-app-tile.blp:200
-#: src/bz-transaction-tile.blp:328
+#: src/bz-bundle-install-dialog.blp:440 src/bz-bundle-install-dialog.blp:526
+#: src/bz-rich-app-tile.blp:200 src/bz-transaction-tile.blp:328
 msgid "Open"
 msgstr "გახსნა"
 
@@ -953,7 +964,8 @@ msgstr "აპლეტის მოთავსება"
 msgid "Choose where to add this applet."
 msgstr "აირჩიეთ, სად დაემატება ეს აპლეტი."
 
-#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:232
+#: src/bz-cosmic-place-applet-dialog.vala:29 src/bz-entry-group-util.c:80
+#: src/bz-rich-app-tile.blp:232
 msgid "Cancel"
 msgstr "გაუქმება"
 
@@ -970,8 +982,12 @@ msgid "No Curation"
 msgstr "კურაციის გარეშე"
 
 #: src/bz-curated-view.blp:29
-msgid "There is no curation information provided on this system. You can still browse apps on Flathub"
-msgstr "ამ სისტემაზე კურაციის ინფორმაცია მოწოდებული არაა. Flathub-ზე პროგრამების დათვალიერება მაინც შეგიძლიათ"
+msgid ""
+"There is no curation information provided on this system. You can still "
+"browse apps on Flathub"
+msgstr ""
+"ამ სისტემაზე კურაციის ინფორმაცია მოწოდებული არაა. Flathub-ზე პროგრამების "
+"დათვალიერება მაინც შეგიძლიათ"
 
 #: src/bz-curated-view.blp:33
 msgid "Browse Flathub"
@@ -991,18 +1007,29 @@ msgstr "პროგრამისტის ინფორმაცია ხ�
 
 #: src/bz-developer-badge.c:219 src/bz-developer-badge.c:233
 #, c-format
-msgid "The ownership of the %s app ID has not been verified and it may be a community package."
-msgstr "%s აპის ID-ის მფლობელობა გადამოწმებული არაა და ის შეიძლება, საზოგადოებრივი პაკეტი იყოს."
+msgid ""
+"The ownership of the %s app ID has not been verified and it may be a "
+"community package."
+msgstr ""
+"%s აპის ID-ის მფლობელობა გადამოწმებული არაა და ის შეიძლება, საზოგადოებრივი "
+"პაკეტი იყოს."
 
 #: src/bz-developer-badge.c:237
 #, c-format
-msgid "The ownership of the %s app ID has been manually verified by the Flathub team."
-msgstr "%s აპის ID-ის მფლობელობა ხელით იქნა გადამოწმებული Flathub-ის გუნდის მიერ."
+msgid ""
+"The ownership of the %s app ID has been manually verified by the Flathub "
+"team."
+msgstr ""
+"%s აპის ID-ის მფლობელობა ხელით იქნა გადამოწმებული Flathub-ის გუნდის მიერ."
 
 #: src/bz-developer-badge.c:253
 #, c-format
-msgid "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on <b>%3$s</b>."
-msgstr "%1$s აპის ID-ის მფლობელობა ხელით იქნა გადამოწმებული <b>%2$s</b>-ის მიერ <b>%3$s</b>-ზე."
+msgid ""
+"The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
+"<b>%3$s</b>."
+msgstr ""
+"%1$s აპის ID-ის მფლობელობა ხელით იქნა გადამოწმებული <b>%2$s</b>-ის მიერ "
+"<b>%3$s</b>-ზე."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -1014,37 +1041,25 @@ msgstr "%1$s აპის ID-ის მფლობელობა გადა�
 msgid "The ownership of the %s app ID has been verified."
 msgstr "%s app ID-ის მფლობელობა გადამოწმებულია."
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "Bazaar-ის ვერსია"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "ვერსიის შენიშვნები"
 
 #: src/bz-donations-dialog.blp:112
 msgid "This release was made possible by users like you!"
-msgstr "ამ ვერსიის არსებობა შესაძლებელია ისეთი მომხმარებლების არსებობით, როგორიც თქვენ ბრძანდებით!"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid "I love making Bazaar, but I cannot do it alone. Help support further development by donating on Ko-Fi."
 msgstr ""
-"მე მიყვარს Bazaar-ის შექმნა, მაგრამ ამას მარტო ვერ ვიზამ. დაგვეხმარეთ მის განვითარებაში Ko-Fi-ზე შეწირვით."
+"ამ ვერსიის არსებობა შესაძლებელია ისეთი მომხმარებლების არსებობით, როგორიც "
+"თქვენ ბრძანდებით!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "შესწირეთ Bazaar-ს"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "რა არის ახალი %s-ში?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "გამოსვლის დრო %B %-e, %Y"
@@ -1054,11 +1069,13 @@ msgid "Choose an Installation"
 msgstr "დაყენების არჩევა"
 
 #: src/bz-entry-group-util.c:76
-msgid "You have multiple versions of this app installed. Which one would you like to proceed with?"
+msgid ""
+"You have multiple versions of this app installed. Which one would you like "
+"to proceed with?"
 msgstr "გაქვთ ამ აპის ერზე მეტი ვერსია დაყენებული. რომელზე გნებავთ მუშაობა?"
 
-#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69 src/error.c:88
-#: src/update-worker.c:473
+#: src/bz-error-dialog.blp:36 src/bz-safety-dialog.blp:100 src/error.c:69
+#: src/error.c:88 src/update-worker.c:473
 msgid "Details"
 msgstr "დეტალები"
 
@@ -1067,7 +1084,8 @@ msgstr "დეტალები"
 msgid "Copy"
 msgstr "კოპირება"
 
-#: src/bz-error-dialog.c:56 src/bz-screenshot-page.vala:526 src/bz-share-list.c:364
+#: src/bz-error-dialog.c:56 src/bz-screenshot-page.vala:526
+#: src/bz-share-list.c:364
 msgid "Copied!"
 msgstr "კოპირებულია!"
 
@@ -1347,7 +1365,8 @@ msgstr "ხელსაწყოები"
 msgid "More Utilities"
 msgstr "მეტი ხელსაწყო"
 
-#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106 src/bz-flathub-page.blp:138
+#: src/bz-flathub-category.c:144 src/bz-flathub-page.blp:106
+#: src/bz-flathub-page.blp:138
 msgid "Trending"
 msgstr "ტრენდები"
 
@@ -1355,7 +1374,8 @@ msgstr "ტრენდები"
 msgid "More Trending"
 msgstr "მეტი ტენდენცია"
 
-#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112 src/bz-flathub-page.blp:173
+#: src/bz-flathub-category.c:145 src/bz-flathub-page.blp:112
+#: src/bz-flathub-page.blp:173
 msgid "Popular"
 msgstr "პოპულარული"
 
@@ -1461,7 +1481,9 @@ msgstr "ახალი წელი, ახალი სამუშაო ნ�
 
 #: src/bz-flathub-curated-section.vala:41
 msgid "Apps to take notes, track tasks, and make plans"
-msgstr "აპლიკაციები შენიშვნების გასაკეთებლად, ამოცანების თვალყურის დევნებისთვის და გეგმების შედგენისთვის"
+msgstr ""
+"აპლიკაციები შენიშვნების გასაკეთებლად, ამოცანების თვალყურის დევნებისთვის და "
+"გეგმების შედგენისთვის"
 
 #: src/bz-flathub-curated-section.vala:42
 msgid "Staff Picks"
@@ -1477,7 +1499,9 @@ msgstr "იყავით კრეატიული"
 
 #: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
-msgstr "აუცილებელი აპლიკაციები ხატვის, ფოტოების რედაქტირებისა და ციფრული დიზაინისთვის"
+msgstr ""
+"აუცილებელი აპლიკაციები ხატვის, ფოტოების რედაქტირებისა და ციფრული "
+"დიზაინისთვის"
 
 #: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
@@ -1517,7 +1541,9 @@ msgstr "გახდით მყუდრო"
 
 #: src/bz-flathub-curated-section.vala:48
 msgid "Great apps for reading, watching movies, and playing games"
-msgstr "შესანიშნავი აპლიკაციები კითხვისთვის, ფილმების ყურებისთვის და თამაშების სათამაშოდ"
+msgstr ""
+"შესანიშნავი აპლიკაციები კითხვისთვის, ფილმების ყურებისთვის და თამაშების "
+"სათამაშოდ"
 
 #: src/bz-flathub-curated-section.vala:49
 msgid "Web Developer Essentials"
@@ -1565,7 +1591,8 @@ msgstr "Flathub დამატებული არაა"
 
 #: src/bz-flathub-page.blp:23
 msgid "The Flathub remote was not found on any of your Flatpak installations"
-msgstr "Flathub-ის დაშორებული თქვენს არცერთ Flatpak-ის ვერსიაშია ხელმისაწვდომი"
+msgstr ""
+"Flathub-ის დაშორებული თქვენს არცერთ Flatpak-ის ვერსიაშია ხელმისაწვდომი"
 
 #: src/bz-flathub-page.blp:32
 msgid "Can't Reach Flathub"
@@ -1608,8 +1635,11 @@ msgid "Games and apps to run your favorite titles"
 msgstr "თამაშები და პროგრამები თქვენი რჩეული პროგრამების გასაშვებად"
 
 #: src/bz-full-view.blp:94
-msgid "This is a local preview, some details may differ from the published listing"
-msgstr "ეს ლოკალური მინიატურაა. ზოგიერთი დეტალები შეიძლება განსხვავდებოდეს გამოქვეყნებული სიისგან"
+msgid ""
+"This is a local preview, some details may differ from the published listing"
+msgstr ""
+"ეს ლოკალური მინიატურაა. ზოგიერთი დეტალები შეიძლება განსხვავდებოდეს "
+"გამოქვეყნებული სიისგან"
 
 #: src/bz-full-view.blp:97
 msgid "Preview Store Appearance"
@@ -1620,10 +1650,12 @@ msgid "_Support"
 msgstr "მხარდა_ჭერა"
 
 #: src/bz-full-view.blp:452
-msgid "This app uses a runtime that no longer receives updates or security fixes. It may become unsafe to use."
+msgid ""
+"This app uses a runtime that no longer receives updates or security fixes. "
+"It may become unsafe to use."
 msgstr ""
-"ეს აპი იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და უსაფრთხოების პაჩებს. ის, შეიძლება სახიფათო "
-"გახდეს გამოსაყენებლად."
+"ეს აპი იყენებს ბიბლიოთეკას, რომელიც აღარ იღებს განახლებებს და უსაფრთხოების "
+"პაჩებს. ის, შეიძლება სახიფათო გახდეს გამოსაყენებლად."
 
 #: src/bz-full-view.blp:530
 msgid "Trash Data"
@@ -1650,16 +1682,21 @@ msgid "No URL"
 msgstr "ბმულის გარეშე"
 
 #: src/bz-full-view.c:199
-msgid "This app has a FLOSS license, meaning the source code can be audited for safety."
-msgstr "ამ აპს აქვს FLOSS ლიცენზია, რას ნიშნავს, რომ შესაძლებელია მისი წყარო კოდის აუდიტი უსაფრთხოებაზე."
+msgid ""
+"This app has a FLOSS license, meaning the source code can be audited for "
+"safety."
+msgstr ""
+"ამ აპს აქვს FLOSS ლიცენზია, რას ნიშნავს, რომ შესაძლებელია მისი წყარო კოდის "
+"აუდიტი უსაფრთხოებაზე."
 
 #: src/bz-full-view.c:200
 msgid ""
-"This app has a proprietary license, meaning the source code is developed privately and cannot be audited by "
-"an independent third party."
+"This app has a proprietary license, meaning the source code is developed "
+"privately and cannot be audited by an independent third party."
 msgstr ""
-"ამ აპს აქვს საკუთრების ლიცენზია, რას ნიშნავს, რომ მისი წყარო კოდი შემუშავებულია კონფიდენციალურად და მისი "
-"აუდიტი დამოუკიდებელ მესამე პირს არ შეუძლია."
+"ამ აპს აქვს საკუთრების ლიცენზია, რას ნიშნავს, რომ მისი წყარო კოდი "
+"შემუშავებულია კონფიდენციალურად და მისი აუდიტი დამოუკიდებელ მესამე პირს არ "
+"შეუძლია."
 
 #: src/bz-full-view.c:207
 msgid "Other Apps From This Developer"
@@ -1673,7 +1710,8 @@ msgstr "სხვა აპები %s-სგან"
 #: src/bz-full-view.c:223
 #, c-format
 msgid "%s is not installed, but it still has <b>%s</b> of data present."
-msgstr "%s არ არის დაინსტალირებული, მაგრამ მას ჯერ კიდევ აქვს <b>%s</b> მონაცემები."
+msgstr ""
+"%s არ არის დაინსტალირებული, მაგრამ მას ჯერ კიდევ აქვს <b>%s</b> მონაცემები."
 
 #: src/bz-full-view.c:306
 #, c-format
@@ -1811,7 +1849,8 @@ msgstr "აპლიკაციის წაშლა"
 msgid "_Remove"
 msgstr "_წაშლა"
 
-#: src/bz-install-controls.blp:143 src/bz-updates-card.vala:178 src/bz-updates-card.vala:201
+#: src/bz-install-controls.blp:143 src/bz-updates-card.vala:178
+#: src/bz-updates-card.vala:201
 msgid "Update"
 msgstr "განახლება"
 
@@ -1958,13 +1997,11 @@ msgstr ""
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways "
-"that are hard to detect, and it may change without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"ეს პროგრამა არ დაწერილა ღიად და მხოლოდ მისმა ავტორმა იცის, როგორ მუშაობს. ის შეიძლება მოწყვლადი იყოს ძნელად "
-"აღმოსაჩენი შეცდომებით, და შეიძლება, გაუფრთხილებლად შეიცვალოს.\n"
+"ეს პროგრამა არ დაწერილა ღიად და მხოლოდ მისმა ავტორმა იცის, როგორ მუშაობს. ის შეიძლება მოწყვლადი იყოს ძნელად აღმოსაჩენი შეცდომებით, და შეიძლება, გაუფრთხილებლად შეიცვალოს.\n"
 "\n"
 "აპისთვის შეწირვა ან შეგიძლიათ, ან არა."
 
@@ -1979,7 +2016,8 @@ msgstr ""
 "\n"
 "აპისთვის შეწირვა ან შეგიძლიათ, ან არა."
 
-#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365 src/bz-safety-dialog.blp:103
+#: src/bz-license-dialog.c:346 src/bz-license-dialog.c:365
+#: src/bz-safety-dialog.blp:103
 msgid "License"
 msgstr "ლიცენზია"
 
@@ -1993,7 +2031,8 @@ msgstr "რაღაც არასწორად წავიდა"
 
 #: src/bz-login-page.blp:46
 msgid "Log in to sync your favorited apps across devices"
-msgstr "შედით თქვენი რჩეული აპების ყველა თქვენს მოწყობილობაზე სინქრონიზაციისთვის"
+msgstr ""
+"შედით თქვენი რჩეული აპების ყველა თქვენს მოწყობილობაზე სინქრონიზაციისთვის"
 
 #: src/bz-login-page.blp:113
 msgid "Finish"
@@ -2009,8 +2048,12 @@ msgid "Add Icon to Metainfo Preview?"
 msgstr "დაემატოს ხატულა მეტაინფორმაციიის მინიატურას?"
 
 #: src/bz-metainfo-preview.c:108
-msgid "Metainfo files don't include app icons by themselves. Would you like to select one manually?"
-msgstr "მეტაინფორმაციის ფაილები თავის ტავში აპის ხატულებს არ შეიცავენ. გნებავთ მისი ხელით არჩევა?"
+msgid ""
+"Metainfo files don't include app icons by themselves. Would you like to "
+"select one manually?"
+msgstr ""
+"მეტაინფორმაციის ფაილები თავის ტავში აპის ხატულებს არ შეიცავენ. გნებავთ მისი"
+" ხელით არჩევა?"
 
 #: src/bz-metainfo-preview.c:111
 msgid "Skip"
@@ -2069,10 +2112,14 @@ msgid "Preferences"
 msgstr "მორგება"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
-msgstr "ქსელთან კავშირი გაზომვადია — მაღაზიის მონაცემების ავტომატური განახლება შეჩერდა"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
+msgstr ""
+"ქსელთან კავშირი გაზომვადია — მაღაზიის მონაცემების ავტომატური განახლება "
+"შეჩერდა"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226 src/bz-window.blp:237
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226
+#: src/bz-window.blp:237
 msgid "Refresh Manually"
 msgstr "ხელით განახლება"
 
@@ -2081,8 +2128,12 @@ msgid "App Updates"
 msgstr "აპლიკაციის განახლებები"
 
 #: src/bz-preferences-dialog.blp:33
-msgid "Auto-updates will pause on metered networks or when power saving is on to save data and battery."
-msgstr "ავტომატური განახლებები, მათი დაზოგვის მიზნით, შეჩერდება გაზომვად ქსელებზე, ან ელემენტზე მუშაობისას."
+msgid ""
+"Auto-updates will pause on metered networks or when power saving is on to "
+"save data and battery."
+msgstr ""
+"ავტომატური განახლებები, მათი დაზოგვის მიზნით, შეჩერდება გაზომვად ქსელებზე, "
+"ან ელემენტზე მუშაობისას."
 
 #: src/bz-preferences-dialog.blp:36
 msgid "_Automatic"
@@ -2126,7 +2177,9 @@ msgstr "მხოლოდ F_lathub-ის შედეგები"
 
 #: src/bz-preferences-dialog.blp:85
 msgid "Limit search and browse results to apps only available on Flathub"
-msgstr "ძებნისა და თვალიერების შეზღუდვა აპებზე, რომლებიც, მხოლოდ, Flathub-ზეა ხელმისაწვდომი"
+msgstr ""
+"ძებნისა და თვალიერების შეზღუდვა აპებზე, რომლებიც, მხოლოდ, Flathub-ზეა "
+"ხელმისაწვდომი"
 
 #: src/bz-preferences-dialog.blp:90
 msgid "_Verified Results Only"
@@ -2236,11 +2289,6 @@ msgstr "ფემბოიების სიამაყის ფერებ�
 msgid "Neutrois Pride Colors"
 msgstr "ნიუტრას სიამაყის ფერები"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:287
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr "პროგრამის განახლებების შესამოწმებლად Bazaar-ს ფონურად გაშვება სჭირდება"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "ვერსიის ისტორია"
@@ -2250,7 +2298,8 @@ msgstr "ვერსიის ისტორია"
 msgid "Today"
 msgstr "დღეს"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "გუშინ"
@@ -2314,30 +2363,28 @@ msgstr "_ვერსიის ისტორია"
 msgid "Uninstall"
 msgstr "წაშლა"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "გადმოწერა"
 
-#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322 src/safety-calculator.c:158
+#: src/bz-safety-dialog.blp:32 src/bz-safety-dialog.c:322
+#: src/safety-calculator.c:158
 msgid "Arbitrary Permissions"
 msgstr "ჩვეულებრივი წვდომები"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, "
-"bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your "
-"files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
 "Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
-"ამ აპს აქვს ნებართვა, რომელიც ირიბად აძლევს საშუალებას მას მისცეს <b>საკუთარ თავს ნებისმიერი სხვა ნებართვა, "
-"რომელიც მას სურს</b>, Flatpak-ის სენდბოქსის გვერდის ავლით.\n"
+"ამ აპს აქვს ნებართვა, რომელიც ირიბად აძლევს საშუალებას მას მისცეს <b>საკუთარ თავს ნებისმიერი სხვა ნებართვა, რომელიც მას სურს</b>, Flatpak-ის სენდბოქსის გვერდის ავლით.\n"
 "\n"
-"ამიტომ მას შეუძლია გააკეთოს ყველაფერი, რისი გაკეთებაც პრივილეგირებული, არა-სენდბოქსში გაშვებულ აპლიკაციას "
-"შეუძლია, როგორიცაა თქვენს ყველა ფაილზე წვდომა და ინტერნეტთან დაკავშირება.\n"
+"ამიტომ მას შეუძლია გააკეთოს ყველაფერი, რისი გაკეთებაც პრივილეგირებული, არა-სენდბოქსში გაშვებულ აპლიკაციას შეუძლია, როგორიცაა თქვენს ყველა ფაილზე წვდომა და ინტერნეტთან დაკავშირება.\n"
 "\n"
 "სხვა ნებართვების ნახვამ, შეიძლება, მაინც უკეთესი წარმოდგენა მოგცეთ იმის შესახებ, თუ რას გააკეთებს აპლიკაცია."
 
@@ -2360,11 +2407,12 @@ msgstr "SDK"
 
 #: src/bz-safety-dialog.blp:157
 msgid ""
-"This app uses an outdated version of the software platform (SDK) and might contain bugs or security "
-"vulnerabilities which will not be fixed."
+"This app uses an outdated version of the software platform (SDK) and might "
+"contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
-"ეს აპი პროგრამული პლატფორმის (SDK) მოძველებულ ვერსიას იყენებს და შეიძლება, შეცდომებს და უსაფრთხოების "
-"მოწყვლადობებს შეიცავდეს, რომლებიც აღარ გასწორდება."
+"ეს აპი პროგრამული პლატფორმის (SDK) მოძველებულ ვერსიას იყენებს და შეიძლება, "
+"შეცდომებს და უსაფრთხოების მოწყვლადობებს შეიცავდეს, რომლებიც აღარ "
+"გასწორდება."
 
 #: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
@@ -2653,7 +2701,8 @@ msgstr "ბმულის კოპირება"
 msgid "Timeline"
 msgstr "დროის ხაზი"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "აყენებს:"
@@ -2692,8 +2741,9 @@ msgstr "შედეგების გარეშე"
 msgid "Search failed"
 msgstr "ძებნის შეცდომა"
 
-#: src/bz-transaction-dialog.c:117 src/context-tile-callbacks.c:251 src/context-tile-callbacks.c:256
-#: src/context-tile-callbacks.c:284 src/context-tile-callbacks.c:293
+#: src/bz-transaction-dialog.c:117 src/context-tile-callbacks.c:251
+#: src/context-tile-callbacks.c:256 src/context-tile-callbacks.c:284
+#: src/context-tile-callbacks.c:293
 msgid "Unknown"
 msgstr "უცნობი"
 
@@ -2734,32 +2784,23 @@ msgstr "“%s” მაღალი რისკითაა"
 
 #: src/bz-transaction-dialog.c:220
 msgid ""
-"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, "
-"and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
 "Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"ამ აპს აქვს სრული წვდომა თქვენს სისტემაზე, მათ შორის <b>ყველა თქვენს ფაილზე, ბრაუზერის ისტორიაზე, შენახულ "
-"პაროლებზე</b> და სხვ. მას ასევე აქვს წვდომა ინტერნეტზე, რაც იმას ნიშნავს, რომ მას შეუძლია თქვენი მონაცემების "
-"გაგზავნა მესამე პირებისთვის.\n"
+"ამ აპს აქვს სრული წვდომა თქვენს სისტემაზე, მათ შორის <b>ყველა თქვენს ფაილზე, ბრაუზერის ისტორიაზე, შენახულ პაროლებზე</b> და სხვ. მას ასევე აქვს წვდომა ინტერნეტზე, რაც იმას ნიშნავს, რომ მას შეუძლია თქვენი მონაცემების გაგზავნა მესამე პირებისთვის.\n"
 "\n"
-"იმის გამო, რომ აპლიკაცია დახურული კოდითაა, მისი აუდიტი შეუძლებელია იმის შესახებ, თუ რას აკეთებს ის ამ "
-"ნებართვებით."
+"იმის გამო, რომ აპლიკაცია დახურული კოდითაა, მისი აუდიტი შეუძლებელია იმის შესახებ, თუ რას აკეთებს ის ამ ნებართვებით."
 
 #: src/bz-transaction-dialog.c:229
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture "
-"screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send "
-"your data to outside parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
 "Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"ეს აპლიკაცია იყენებს ძველ X11 ფანჯრის სისტემას, რომელიც საშუალებას აძლევს მას <b>ჩაიწეროს ყველა ღილაკის "
-"დაჭერა, გადაიღოს ეკრანის ანაბეჭდები და აკონტროლოს სხვა აპლიკაციები</b>. მას ასევე აქვს წვდომა ინტერნეტზე, "
-"რაც იმას ნიშნავს, რომ მას შეუძლია თქვენი მონაცემების გაგზავნა მესამე პირებისთვის.\n"
+"ეს აპლიკაცია იყენებს ძველ X11 ფანჯრის სისტემას, რომელიც საშუალებას აძლევს მას <b>ჩაიწეროს ყველა ღილაკის დაჭერა, გადაიღოს ეკრანის ანაბეჭდები და აკონტროლოს სხვა აპლიკაციები</b>. მას ასევე აქვს წვდომა ინტერნეტზე, რაც იმას ნიშნავს, რომ მას შეუძლია თქვენი მონაცემების გაგზავნა მესამე პირებისთვის.\n"
 "\n"
-"იმის გამო, რომ აპლიკაცია დახურული კოდითაა, შეუძლებელია მისი აუდიტი იმის შესახებ, თუ რას აკეთებს ის ამ "
-"ნებართვებით."
+"იმის გამო, რომ აპლიკაცია დახურული კოდითაა, შეუძლებელია მისი აუდიტი იმის შესახებ, თუ რას აკეთებს ის ამ ნებართვებით."
 
 #: src/bz-transaction-dialog.c:245
 msgid "_Install Anyway"
@@ -2904,27 +2945,19 @@ msgstr "ძებნა"
 msgid "Main Menu"
 msgstr "მთავარი მენიუ"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:217
-msgid "You are running a new version of Bazaar!"
-msgstr "გაშვებული გაქვთ Bazaar-ის ახალი ვერსია!"
-
 #: src/bz-window.blp:218
 msgid "See What's New"
 msgstr "ნახეთ, რა არის ახალი"
 
 #: src/bz-window.blp:225
-msgid "You have a network connection but are viewing a cached version of Flathub"
-msgstr "თქვენ გაქვთ ქსელთან კავშირი, მაგრამ ათვალიერებთ Flathub-ის დაკეშილ ვერსიას"
+msgid ""
+"You have a network connection but are viewing a cached version of Flathub"
+msgstr ""
+"თქვენ გაქვთ ქსელთან კავშირი, მაგრამ ათვალიერებთ Flathub-ის დაკეშილ ვერსიას"
 
 #: src/bz-window.blp:236
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "ქსელთან კავშირი გაზომვადია — ავტომატური განახლებები გაითიშა"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:273
-msgid "_Donate to Bazaar"
-msgstr "_შესწირეთ Bazaar-ს"
 
 #: src/bz-window.blp:279
 msgid "_Refresh"
@@ -2946,25 +2979,9 @@ msgstr "_მორგება"
 msgid "_Keyboard Shortcuts"
 msgstr "_კლავიატურის მალსახმობები"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:306
-msgid "_About Bazaar"
-msgstr "Bazaar-ის შეს_ახებ"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:313
-msgid "_Quit Bazaar"
-msgstr "_გასვლა Bazaar-დან"
-
 #: src/bz-window.blp:329
 msgid "Log Out"
 msgstr "გასვლა"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:438
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
 
 #: src/bz-window.c:718 src/bz-window.c:767
 msgid "Failed to launch application"
@@ -2973,11 +2990,6 @@ msgstr "აპლიკაციის გაშვება ჩავარდ�
 #: src/bz-window.c:846
 msgid "Could not open link"
 msgstr "ბმულის გახსნა შეუძლებელია"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1055
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Bazaar-ს Bazaar-დან ვერ წაშლით!"
 
 #: src/bz-window.c:1439 src/bz-window.c:1473
 msgid "Can't do that right now!"
@@ -3059,7 +3071,8 @@ msgstr "საკუთრების პროგრამული უზრ�
 msgid "Special License: %s"
 msgstr "სპეციალური ლიცენზია: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "თავისუფალი პროგრამული უზრუნველყოფა"
@@ -3165,7 +3178,9 @@ msgstr "სისტემურ მოწყობილობასთან �
 
 #: src/safety-calculator.c:138
 msgid "Can access system devices which require elevated permissions"
-msgstr "აქვს წვდომა სისტემურ მოწყობილობებთან, რომლებსაც დამატებითი წვდომები ესაჭიროება"
+msgstr ""
+"აქვს წვდომა სისტემურ მოწყობილობებთან, რომლებსაც დამატებითი წვდომები "
+"ესაჭიროება"
 
 #: src/safety-calculator.c:144
 msgid "Screen Contents Access"
@@ -3281,14 +3296,16 @@ msgstr "სერვისთან წვდომის გარეშე"
 
 #: src/safety-calculator.c:333
 msgid "Cannot access non-portal session or system services at all"
-msgstr "საერთოდ არ აქვს წვდომა არა-პორტალის სესიებთან, ან სისტემურ სერვისებთან"
+msgstr ""
+"საერთოდ არ აქვს წვდომა არა-პორტალის სესიებთან, ან სისტემურ სერვისებთან"
 
 #: src/safety-calculator.c:372
 msgid "Verified App Developer"
 msgstr "დამოწმებული აპლიკაციის ავტორი"
 
 #: src/safety-calculator.c:373
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr "ამ პროგრამისტმა დაამტკიცა, რომ ისაა, ვისადაც თავი მოაქვს"
 
 #: src/safety-calculator.c:382
@@ -3296,18 +3313,24 @@ msgid "Proprietary Code"
 msgstr "დახურული კოდი"
 
 #: src/safety-calculator.c:383
-msgid "The source code is not public, so it cannot be independently audited and might be unsafe"
-msgstr "პროგრამის კოდი საჯარო არაა, ასე რომ, მას დამოუკიდებლად ვერ გადახედავთ, ამიტომ ის უსაფრთხო არაა"
+msgid ""
+"The source code is not public, so it cannot be independently audited and "
+"might be unsafe"
+msgstr ""
+"პროგრამის კოდი საჯარო არაა, ასე რომ, მას დამოუკიდებლად ვერ გადახედავთ, "
+"ამიტომ ის უსაფრთხო არაა"
 
 #: src/safety-calculator.c:393
 msgid "Auditable Code"
 msgstr "აუდიტირებადი კოდი"
 
 #: src/safety-calculator.c:394
-msgid "The source code is public and can be independently audited, which makes the app more likely to be safe"
+msgid ""
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
-"საწყისი კოდი საჯაროა და შეიძლება, დამოუკიდებელი აუდიტი ჩაუტარდეს, რაც აპს უფრო დიდ შანსს აძლევს, უსაფრთხო "
-"იყოს"
+"საწყისი კოდი საჯაროა და შეიძლება, დამოუკიდებელი აუდიტი ჩაუტარდეს, რაც აპს "
+"უფრო დიდ შანსს აძლევს, უსაფრთხო იყოს"
 
 #: src/safety-calculator.c:532
 #, c-format
@@ -3358,7 +3381,9 @@ msgstr "KDE-ის გლობალური პარამეტრები
 
 #: src/safety-calculator.c:582
 msgid "Can read KDE desktop preferences like fonts and colors"
-msgstr "შეუძლია KDE-ის სამსაო მაგიდის ისეთი პარამეტრები, როგორიცაა ფონტები და ფერები"
+msgstr ""
+"შეუძლია KDE-ის სამსაო მაგიდის ისეთი პარამეტრები, როგორიცაა ფონტები და "
+"ფერები"
 
 #: src/safety-calculator.c:587
 msgid "Secret Storage Service"
@@ -3366,7 +3391,8 @@ msgstr "საიდუმლოებების საცავის სე�
 
 #: src/safety-calculator.c:588
 msgid "Can store and retrieve its own passwords using the system keyring"
-msgstr "შეუძლია მისი საკუთარი პაროლების დამახსოვრება და მიღება სისტემური ბრელოკიდან"
+msgstr ""
+"შეუძლია მისი საკუთარი პაროლების დამახსოვრება და მიღება სისტემური ბრელოკიდან"
 
 #: src/safety-calculator.c:593
 msgid "Desktop Notifications Service"
@@ -3442,11 +3468,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "ფანჯრის დახურვა"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "გასვლა Bazaar-დან"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3486,29 +3507,20 @@ msgstr "%s და %s განახლდა."
 msgid "Includes %s, %s and %s."
 msgstr "შეიცავს %s-ს, %s-ს და %s-ს."
 
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "მაღაზია"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "მაღაზია — %s"
+
 #~ msgid "Notice for Ubuntu Users"
 #~ msgstr "გაფრთხილება Ubuntu-ის მომხმარებლებისთვის"
-
-#~ msgid ""
-#~ "Ubuntu 25.10 and newer have changed default security rules in a way that makes it <b>impossible to "
-#~ "install apps</b> from the Flatpak version of Bazaar. For the time being, please use the apt package "
-#~ "instead. Install it with\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "You can then remove this Flatpak version with\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
-#~ msgstr ""
-#~ "Ubuntu 25.10-ს და უფრო ახალ ვერსიებს ნაგულისხმევი უსაფრთოების წესები გაფუჭებული აქვთ, რის გამოც "
-#~ "<b>შეუძლებელია აპების დაყენება</b> Bazaar-ის Flatpak-ს ვერსიდან. ჯერჯერობით გამოიყენეთ apt-ის პაკეტი. "
-#~ "დააყენეთ ის ბრძანებით\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "ამ Flatpak-ის ვერსიის წაშლა შეგიძლიათ ბრძანებით\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
 
 #~ msgid "Continue Anyway"
 #~ msgstr "მაინც გაგრძელება"
@@ -3532,8 +3544,11 @@ msgstr "შეიცავს %s-ს, %s-ს და %s-ს."
 #~ msgid "Install %s?"
 #~ msgstr "დავაყენო %s?"
 
-#~ msgid "Select which version to install. May install additional shared components"
-#~ msgstr "აირჩიეთ, რომელი ვერსიის დაყენება გნებავთ. შეიძლება, დააყენოს დამატებითი გაზიარებული კომპონენტები"
+#~ msgid ""
+#~ "Select which version to install. May install additional shared components"
+#~ msgstr ""
+#~ "აირჩიეთ, რომელი ვერსიის დაყენება გნებავთ. შეიძლება, დააყენოს დამატებითი "
+#~ "გაზიარებული კომპონენტები"
 
 #~ msgid "May install additional shared components"
 #~ msgstr "შეუძლია დამატებითი გაზიარებული კომპონენტების დაყენება"
@@ -3561,14 +3576,3 @@ msgstr "შეიცავს %s-ს, %s-ს და %s-ს."
 
 #~ msgid "Try a different search query"
 #~ msgstr "სცადეთ შეცვალოთ ძებნის მოთხოვნა"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "მაღაზია"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "მაღაზია — %s"

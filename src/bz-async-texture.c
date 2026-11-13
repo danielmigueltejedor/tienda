@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::ASYNC-TEXTURE"
+#define G_LOG_DOMAIN "NODALIX-STORE::ASYNC-TEXTURE"
 
 #define MAX_CONCURRENT_IO      8
 #define MAX_CONCURRENT_GLYCIN  32
@@ -755,7 +755,6 @@ load_fiber_work (LoadData *data)
          processors divided by 2
 
         See:
-          https://gitlab.gnome.org/World/bazaar/-/work_items/497
           https://docs.gtk.org/glib/func.get_num_processors.html
 
         Eva Thu, 23 Oct 2025 14:19:44 -0700

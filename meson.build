@@ -1,4 +1,4 @@
-project('bazaar', ['c', 'vala'],
+project('nodalix-store', ['c', 'vala'],
           version: run_command('version.sh', 'get-vcs').stdout().strip(),
     meson_version: '>= 1.0.0',
   default_options: [
@@ -95,14 +95,14 @@ else
     config_h.set_quoted('PACKAGE_VERSION', bz_version)
     config_h.set_quoted('PACKAGE_VCS_VERSION', bz_vcs_version)
     config_h.set_quoted('CACHE_VERSION', bz_cache_version)
-    config_h.set_quoted('GETTEXT_PACKAGE', 'bazaar')
+    config_h.set_quoted('GETTEXT_PACKAGE', 'nodalix-store')
     config_h.set_quoted('APPLICATION_ID', 'os.nodalix.Store')
     config_h.set_quoted('LOCALEDIR', get_option('prefix') / get_option('localedir'))
-    config_h.set_quoted('DONATE_LINK', 'https://ko-fi.com/kolunmi')
+    config_h.set_quoted('DONATE_LINK', 'https://github.com/getnodalia/tienda')
     config_h.set_quoted('RELEASE_PAGE', run_command('version.sh', 'get-gitlab-release').stdout().strip())
 
-    bazaar_bin_name = 'nodalix-store'
-    config_h.set_quoted('BAZAAR_BIN_NAME', bazaar_bin_name)
+    store_bin_name = 'nodalix-store'
+    config_h.set_quoted('STORE_BIN_NAME', store_bin_name)
     config_h.set_quoted('REFRESH_WORKER_CLI_OPTION', '--run-refresh-worker')
     config_h.set_quoted('UPDATE_WORKER_CLI_OPTION', '--run-update-worker')
 
@@ -112,9 +112,9 @@ else
     daemon_bin_name = 'nodalix-store-daemon'
     config_h.set_quoted('DAEMON_BIN_NAME', daemon_bin_name)
 
-    bazaar_bin_name = 'nodalix-store'
-    config_h.set_quoted('BAZAAR_BIN_NAME', bazaar_bin_name)
-    config_h.set_quoted('BAZAAR_BIN_PATH', get_option('prefix') / get_option('bindir') / bazaar_bin_name)
+    store_bin_name = 'nodalix-store'
+    config_h.set_quoted('STORE_BIN_NAME', store_bin_name)
+    config_h.set_quoted('STORE_BIN_PATH', get_option('prefix') / get_option('bindir') / store_bin_name)
 
     login_page_module_dir = get_option('libdir') / 'nodalix-store'
     config_h.set_quoted('LOGIN_PAGE_MODULE_PATH', get_option('prefix') / login_page_module_dir / 'libnodalix-store-login-page.so')

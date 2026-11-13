@@ -1,13 +1,13 @@
-# Chinese translation for bazaar.
+# Chinese translation for nodalix-store.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# This file is distributed under the same license as the nodalix-store package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # lumingzh <lumingzh@qq.com>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-10-15 23:00+0000\n"
 "PO-Revision-Date: 2026-10-16 08:11+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
@@ -16,15 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 51.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:193 src/bz-window.c:437 src/bz-window.c:438
-msgid "Bazaar"
-msgstr "Bazaar"
+"X-Generator: Gtranslator 51.0\n"
 
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
@@ -37,8 +30,7 @@ msgstr "添加、移除或更新此电脑上的 Flatpak 软件"
 #: data/os.nodalix.Store.desktop.in:11
 msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
 msgstr ""
-"System;Package;Manager;Discover;Flatpak;Software;App;Store;系统;软件包;管理"
-"器;软件;应用;商店;"
+"System;Package;Manager;Discover;Flatpak;Software;App;Store;系统;软件包;管理器;软件;应用;商店;"
 
 #: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
@@ -52,9 +44,7 @@ msgstr "发现和安装应用"
 msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
-msgstr ""
-"一款用于 Linux 致力于发现和安装 Flatpak 应用及附加组件（特别是从 Flathub）的"
-"快速且现代的应用商店。"
+msgstr "一款用于 Linux 致力于发现和安装 Flatpak 应用及附加组件（特别是从 Flathub）的快速且现代的应用商店。"
 
 #: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
@@ -71,11 +61,6 @@ msgstr "登录 Flathub 以查看和管理收藏项目"
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "直接从 GNOME Shell 搜索应用"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:825
-msgid "The Bazaar Contributors"
-msgstr "Bazaar 贡献者"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -129,8 +114,8 @@ msgstr "无可见附加组件"
 
 #: src/bz-addons-dialog.blp:82
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr "您当前的筛选首选项隐藏了所有已知附加组件。请尝试调整它们。"
 
 #: src/bz-addons-dialog.blp:89
@@ -143,8 +128,8 @@ msgid "Download"
 msgstr "下载"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:283
-#: src/bz-releases-list.c:204
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356
+#: src/bz-full-view.blp:283 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "已安装"
 
@@ -160,8 +145,7 @@ msgstr "已停止接收核心更新"
 msgid ""
 "This add-on uses a runtime that no longer receives updates or security "
 "fixes. It may become unsafe to use."
-msgstr ""
-"此附加组件使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
+msgstr "此附加组件使用的运行时已不再接收更新或安全修复。使用它可能存在安全隐患。"
 
 #: src/bz-addons-dialog.blp:346 src/bz-full-view.blp:603
 msgid "Other Sources"
@@ -176,7 +160,8 @@ msgstr "%s 的附加组件"
 msgid "Show Less"
 msgstr "显示更少"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:612 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:612
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "显示更多"
 
@@ -195,7 +180,8 @@ msgstr "年龄分级"
 msgid "Cartoon Violence"
 msgstr "卡通暴力"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "没有关于卡通暴力的信息"
@@ -205,7 +191,8 @@ msgstr "没有关于卡通暴力的信息"
 msgid "Fantasy Violence"
 msgstr "幻想暴力"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "没有关于幻想暴力的信息"
@@ -215,7 +202,8 @@ msgstr "没有关于幻想暴力的信息"
 msgid "Realistic Violence"
 msgstr "写实暴力"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "没有关于写实暴力的信息"
@@ -225,7 +213,8 @@ msgstr "没有关于写实暴力的信息"
 msgid "Violence Depicting Bloodshed"
 msgstr "描述血腥的暴力"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "没有关于血腥暴力的信息"
@@ -235,7 +224,8 @@ msgstr "没有关于血腥暴力的信息"
 msgid "Sexual Violence"
 msgstr "性暴力"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "没有关于性暴力的信息"
@@ -245,7 +235,8 @@ msgstr "没有关于性暴力的信息"
 msgid "Alcohol"
 msgstr "酒精"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "没有关于酒精的信息"
@@ -255,7 +246,8 @@ msgstr "没有关于酒精的信息"
 msgid "Narcotics"
 msgstr "毒品"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "没有关于违禁药品的信息"
@@ -265,7 +257,8 @@ msgstr "没有关于违禁药品的信息"
 msgid "Tobacco"
 msgstr "烟草"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "没有关于烟草产品的信息"
@@ -275,7 +268,8 @@ msgstr "没有关于烟草产品的信息"
 msgid "Nudity"
 msgstr "裸体"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "没有关于任何形式裸体的信息"
@@ -285,7 +279,8 @@ msgstr "没有关于任何形式裸体的信息"
 msgid "Sexual Themes"
 msgstr "性主题"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr "没有关于性主题或对其描述的信息"
@@ -295,7 +290,8 @@ msgstr "没有关于性主题或对其描述的信息"
 msgid "Profanity"
 msgstr "猥亵语言"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "没有关于任何类型猥亵语言的信息"
@@ -305,7 +301,8 @@ msgstr "没有关于任何类型猥亵语言的信息"
 msgid "Inappropriate Humor"
 msgstr "不良笑话"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "没有关于不良笑话的信息"
@@ -315,7 +312,8 @@ msgstr "没有关于不良笑话的信息"
 msgid "Discrimination"
 msgstr "歧视"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "没有关于任何类型歧视性语言的信息"
@@ -325,7 +323,8 @@ msgstr "没有关于任何类型歧视性语言的信息"
 msgid "Advertising"
 msgstr "广告"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "没有关于任何类型广告的信息"
@@ -335,7 +334,8 @@ msgstr "没有关于任何类型广告的信息"
 msgid "Gambling"
 msgstr "赌博"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "没有关于任何类型赌博的信息"
@@ -345,7 +345,8 @@ msgstr "没有关于任何类型赌博的信息"
 msgid "Purchasing"
 msgstr "购买"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "没有关于花费金钱功能的信息"
@@ -355,7 +356,8 @@ msgstr "没有关于花费金钱功能的信息"
 msgid "Chat Between Users"
 msgstr "用户间聊天"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "没有关于与其他用户聊天方式的信息"
@@ -365,7 +367,8 @@ msgstr "没有关于与其他用户聊天方式的信息"
 msgid "Audio Chat Between Users"
 msgstr "用户间语音聊天"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "没有关于与其他用户语音交流方式的信息"
@@ -375,7 +378,8 @@ msgstr "没有关于与其他用户语音交流方式的信息"
 msgid "Contact Details"
 msgstr "联系人详情"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
@@ -387,9 +391,11 @@ msgstr "没有关于共享社交网络用户名或电子邮箱地址的信息"
 msgid "Identifying Information"
 msgstr "身份信息"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr "没有关于与第三方组织共享用户信息的信息"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -397,9 +403,11 @@ msgstr "没有关于与第三方组织共享用户信息的信息"
 msgid "Location Sharing"
 msgstr "位置分享"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr "没有关于与其他用户共享物理定位的信息"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -407,7 +415,8 @@ msgstr "没有关于与其他用户共享物理定位的信息"
 msgid "Prostitution"
 msgstr "卖淫"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "没有关于卖淫的信息"
@@ -417,7 +426,8 @@ msgstr "没有关于卖淫的信息"
 msgid "Adultery"
 msgstr "通奸"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "没有关于通奸的信息"
@@ -427,7 +437,8 @@ msgstr "没有关于通奸的信息"
 msgid "Sexualized Characters"
 msgstr "性暗示角色"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "没有关于性暗示角色的信息"
@@ -437,7 +448,8 @@ msgstr "没有关于性暗示角色的信息"
 msgid "Desecration"
 msgstr "亵渎"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "没有关于亵渎行为的信息"
@@ -447,7 +459,8 @@ msgstr "没有关于亵渎行为的信息"
 msgid "Human Remains"
 msgstr "人体残骸"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "没有关于可见死亡人类遗骸的信息"
@@ -457,7 +470,8 @@ msgstr "没有关于可见死亡人类遗骸的信息"
 msgid "Slavery"
 msgstr "奴隶"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "没有关于奴役的信息"
@@ -747,7 +761,8 @@ msgstr "存储"
 msgid "Verified"
 msgstr "已验证"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:828
 msgid "translator-credits"
 msgstr ""
@@ -770,34 +785,9 @@ msgstr "正在执行部署…"
 msgid "Set Up System Flathub?"
 msgstr "部署系统 Flathub 吗？"
 
-#: src/bz-application.c:1126
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"未部署系统 Flathub 远程仓库。Bazaar 需要在系统级 Flatpak 安装中配置 Flathub "
-"才能浏览和安装应用程序。\n"
-"\n"
-"您仍然可以使用 Bazaar 来浏览和移除已安装的应用。"
-
 #: src/bz-application.c:1133
 msgid "Set Up Flathub?"
 msgstr "部署 Flathub 吗？"
-
-#: src/bz-application.c:1136
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"此系统未部署 Flathub。如果 Flathub 不可用，您将无法在 Bazaar 中浏览和安装应用"
-"程序。\n"
-"\n"
-"您仍可使用 Bazaar 浏览和移除已安装的应用。"
 
 #: src/bz-application.c:1142
 msgid "Later"
@@ -918,18 +908,6 @@ msgstr "捆绑包安装"
 msgid "Additional dependencies may take extra space"
 msgstr "附加的依赖可能会占用额外空间"
 
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"安装此应用可能需要添加新的软件源。其他来自此软件源的应用将会显示在 Bazaar "
-"中。\n"
-"\n"
-"请仅在您信任它的情况下添加此软件源。"
-
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "成功安装！"
@@ -1043,11 +1021,6 @@ msgstr "%1$s 应用 ID 的所有权已使用 %2$s 验证。"
 msgid "The ownership of the %s app ID has been verified."
 msgstr "%s 应用 ID 的所有权已通过验证。"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "Bazaar 发布"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "完整发布说明"
@@ -1056,26 +1029,15 @@ msgstr "完整发布说明"
 msgid "This release was made possible by users like you!"
 msgstr "正是因为有了您这样的用户才能有此次发行！"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"我热爱开发 Bazaar，但我一个人的力量有限。请考虑在 Ko-Fi 捐助以支持后续开发。"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "向 Bazaar 捐助"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "查看 %s 新特性？"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "发布于 %Y年%-m月%-d日"
@@ -1209,7 +1171,8 @@ msgstr "动作"
 msgid "Adventure"
 msgstr "冒险"
 
-# 不用“街机“遵从 https://flathub.org/zh-Hans/apps/category/game/subcategories/ArcadeGame 的翻译
+# 不用“街机“遵从 https://flathub.org/zh-
+# Hans/apps/category/game/subcategories/ArcadeGame 的翻译
 #: src/bz-flathub-category.c:111
 msgid "Arcade"
 msgstr "街机"
@@ -1697,8 +1660,7 @@ msgstr "该应用具有 FLOSS 许可证，这意味着可以审核源代码的�
 msgid ""
 "This app has a proprietary license, meaning the source code is developed "
 "privately and cannot be audited by an independent third party."
-msgstr ""
-"该应用具有专有许可证，这意味着源代码是私人开发的且无法由独立第三方审核。"
+msgstr "该应用具有专有许可证，这意味着源代码是私人开发的且无法由独立第三方审核。"
 
 #: src/bz-full-view.c:209
 msgid "Other Apps From This Developer"
@@ -1984,8 +1946,7 @@ msgstr "此应用的许可证未知"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
@@ -1995,14 +1956,11 @@ msgstr ""
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"此应用未开放开发，因此只有开发者知道其运作机制。它可能存在难以检测的安全问"
-"题，且可能在缺乏监管的情况下进行更改。\n"
+"此应用未开放开发，因此只有开发者知道其运作机制。它可能存在难以检测的安全问题，且可能在缺乏监管的情况下进行更改。\n"
 "\n"
 "您可能无法为此应用作出贡献。"
 
@@ -2107,10 +2065,12 @@ msgid "Preferences"
 msgstr "首选项"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr "正在使用数据网络 - 已暂停自动刷新商店数据"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226 src/bz-window.blp:237
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226
+#: src/bz-window.blp:237
 msgid "Refresh Manually"
 msgstr "手动刷新"
 
@@ -2276,11 +2236,6 @@ msgstr "伪娘骄傲色"
 msgid "Neutrois Pride Colors"
 msgstr "中性骄傲色"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:286
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr "Bazaar 需要后台运行以检查应用更新"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "版本历史"
@@ -2290,7 +2245,8 @@ msgstr "版本历史"
 msgid "Today"
 msgstr "今天"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "昨天"
@@ -2350,7 +2306,8 @@ msgstr "版本历史(_V)"
 msgid "Uninstall"
 msgstr "卸载"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "获取"
@@ -2362,19 +2319,15 @@ msgstr "任意权限"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
 "此应用通过绕过 Flatpak 沙盒具有了间接允许其获取<b>任意其他权限</b>的权限。\n"
 "\n"
-"因此它可以做任何有特权非沙盒应用程序可以做的事情，比如访问所有您的文件和连接"
-"互联网。\n"
+"因此它可以做任何有特权非沙盒应用程序可以做的事情，比如访问所有您的文件和连接互联网。\n"
 "\n"
 "查看其他权限仍会让您了解该应用可能会做的事情。"
 
@@ -2399,8 +2352,7 @@ msgstr "SDK"
 msgid ""
 "This app uses an outdated version of the software platform (SDK) and might "
 "contain bugs or security vulnerabilities which will not be fixed."
-msgstr ""
-"此应用使用了过时的软件平台（SDK）版本，可能包含不会修复的缺陷或安全漏洞。"
+msgstr "此应用使用了过时的软件平台（SDK）版本，可能包含不会修复的缺陷或安全漏洞。"
 
 #: src/bz-safety-dialog.c:308 src/bz-safety-dialog.c:341
 msgid "Safety"
@@ -2686,7 +2638,8 @@ msgstr "复制链接"
 msgid "Timeline"
 msgstr "时间轴"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "安装："
@@ -2768,31 +2721,21 @@ msgstr "“%s”是高风险的"
 
 #: src/bz-transaction-dialog.c:221
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"此应用拥有对您系统的完全访问权限，包括<b>您的所有文件、浏览历史、已保存密码</"
-"b>等。它还能访问互联网，这意味着它可能将您的数据发送给外部第三方。\n"
+"此应用拥有对您系统的完全访问权限，包括<b>您的所有文件、浏览历史、已保存密码</b>等。它还能访问互联网，这意味着它可能将您的数据发送给外部第三方。\n"
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。\t"
 
 #: src/bz-transaction-dialog.c:230
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"此应用使用过时的 X11 窗口系统，这使其能够<b>记录所有按键、捕获屏幕截图和监控"
-"其他应用程序</b>。它还能访问互联网，这意味着它可能将您的数据发送给外部第三"
-"方。\n"
+"此应用使用过时的 X11 窗口系统，这使其能够<b>记录所有按键、捕获屏幕截图和监控其他应用程序</b>。它还能访问互联网，这意味着它可能将您的数据发送给外部第三方。\n"
 "\n"
 "由于该应用是专有的，其如何利用权限也无法审查。"
 
@@ -2944,11 +2887,6 @@ msgstr "搜索"
 msgid "Main Menu"
 msgstr "主菜单"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:217
-msgid "You are running a new version of Bazaar!"
-msgstr "您正在运行新版本的 Bazaar！"
-
 #: src/bz-window.blp:218
 msgid "See What's New"
 msgstr "查看新特性"
@@ -2961,11 +2899,6 @@ msgstr "您已连接网络，但正在查看 Flathub 的缓存版本"
 #: src/bz-window.blp:236
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "正在使用数据网络 — 已禁用自动刷新"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:273
-msgid "_Donate to Bazaar"
-msgstr "向 Bazaar 捐助(_D)"
 
 #: src/bz-window.blp:279
 msgid "_Refresh"
@@ -2987,25 +2920,9 @@ msgstr "首选项(_P)"
 msgid "_Keyboard Shortcuts"
 msgstr "键盘快捷键(_K)"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:306
-msgid "_About Bazaar"
-msgstr "关于 Bazaar(_A)"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:313
-msgid "_Quit Bazaar"
-msgstr "退出 Bazaar(_Q)"
-
 #: src/bz-window.blp:329
 msgid "Log Out"
 msgstr "登出"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:440
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
 
 #: src/bz-window.c:720 src/bz-window.c:769
 msgid "Failed to launch application"
@@ -3014,11 +2931,6 @@ msgstr "启动应用程序失败"
 #: src/bz-window.c:848
 msgid "Could not open link"
 msgstr "无法打开链接"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1057
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "您无法从 Bazaar 移除 Bazaar！"
 
 #: src/bz-window.c:1441 src/bz-window.c:1475
 msgid "Can't do that right now!"
@@ -3100,7 +3012,8 @@ msgstr "专有软件"
 msgid "Special License: %s"
 msgstr "特殊许可证：%s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "自由软件"
@@ -3329,7 +3242,8 @@ msgid "Verified App Developer"
 msgstr "应用开发者已验证"
 
 #: src/safety-calculator.c:373
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr "此应用的开发者已经被验证为他们所声称的人"
 
 #: src/safety-calculator.c:382
@@ -3348,8 +3262,8 @@ msgstr "可审计代码"
 
 #: src/safety-calculator.c:394
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr "源代码是公开的且可以被独立地审计，这使得应用可以更安全"
 
 #: src/safety-calculator.c:532
@@ -3485,11 +3399,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "关闭窗口"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "退出 Bazaar"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3528,29 +3437,28 @@ msgstr "%s 和 %s 已经更新。"
 msgid "Includes %s, %s and %s."
 msgstr "包括 %s、%s 和 %s。"
 
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "商店"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "商店 — %s"
+
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "关于商店(_A)"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "退出商店(_Q)"
+
 #~ msgid "Notice for Ubuntu Users"
 #~ msgstr "对 Ubuntu 用户的提示"
-
-#~ msgid ""
-#~ "Ubuntu 25.10 and newer have changed default security rules in a way that "
-#~ "makes it <b>impossible to install apps</b> from the Flatpak version of "
-#~ "Bazaar. For the time being, please use the apt package instead. Install "
-#~ "it with\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "You can then remove this Flatpak version with\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
-#~ msgstr ""
-#~ "Ubuntu 25.10 和更新版本更改了默认的安全规则，使其通过 Flatpak 版本 Bazaar "
-#~ "<b>无法安装应用</b>。在这期间，请使用 apt 软件包代替。安装命令：\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "然后您可以移除此 Flatpak 版本：\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
 
 #~ msgid "Continue Anyway"
 #~ msgstr "仍然继续"
@@ -3588,8 +3496,7 @@ msgstr "包括 %s、%s 和 %s。"
 #~ msgstr "格式错误的链接"
 
 #~ msgid ""
-#~ "The link used to open this app has incorrect capitalization and may stop "
-#~ "working in the future.\n"
+#~ "The link used to open this app has incorrect capitalization and may stop working in the future.\n"
 #~ "\n"
 #~ "This is most likely caused by KRunner sending incorrect app IDs"
 #~ msgstr ""
@@ -3644,10 +3551,6 @@ msgstr "包括 %s、%s 和 %s。"
 #~ msgid "Tags:"
 #~ msgstr "标签："
 
-#~ msgid ""
-#~ "Connect your Flathub account to Bazaar to manage your favorited apps."
-#~ msgstr "将您的 Flathub 账户连接到 Bazaar，以便管理您收藏的应用程序。"
-
 #~ msgid "Select Metainfo File"
 #~ msgstr "选择元信息文件"
 
@@ -3690,22 +3593,11 @@ msgstr "包括 %s、%s 和 %s。"
 #~ msgid "Refresh"
 #~ msgstr "刷新"
 
-#~ msgid ""
-#~ "It emphasizes supporting the developers who make the Linux desktop "
-#~ "possible. Bazaar features a \"curated\" tab that can be configured by "
-#~ "distributors to allow for a more localized experience."
-#~ msgstr ""
-#~ "其强调支持那些使 Linux 桌面成为可能的开发者。Bazaar 设有一个\"精选\"标签，"
-#~ "可由发行商配置，以提供更本地化的体验。"
-
 #~ msgid "Adam Masciola"
 #~ msgstr "Adam Masciola"
 
 #~ msgid "Nucleus app page"
 #~ msgstr "Nucleus 应用页"
-
-#~ msgid "_Donate to Bazaar ❤️"
-#~ msgstr "_向 Bazaar 捐助 ❤️"
 
 #~ msgid "_Synchronize Remotes"
 #~ msgstr "_同步远程"
@@ -3808,15 +3700,13 @@ msgstr "包括 %s、%s 和 %s。"
 #~ msgstr "立即更新"
 
 #~ msgid ""
-#~ "The ability to inspect and install local .flatpak bundle files is coming "
-#~ "soon! In the meantime, try running\n"
+#~ "The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
 #~ "on the command line."
 #~ msgstr ""
-#~ "检查和安装本地 .flatpak 包文件的功能即将推出！在此期间，请尝试在命令行运"
-#~ "行\n"
+#~ "检查和安装本地 .flatpak 包文件的功能即将推出！在此期间，请尝试在命令行运行\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
@@ -3840,9 +3730,6 @@ msgstr "包括 %s、%s 和 %s。"
 
 #~ msgid "Keep the summary shorter, between 10 and 35 characters"
 #~ msgstr "保持摘要简短，在 10 至 35 字之间"
-
-#~ msgid "Main Bazaar window showing Blender"
-#~ msgstr "Bazaar 主窗口正在展示 Blender"
 
 #~ msgid "This flatpak is verified by the original developers of the software."
 #~ msgstr "此 Flatpak 已由软件原开发者认证。"
@@ -3882,11 +3769,6 @@ msgstr "包括 %s、%s 和 %s。"
 #~ msgctxt "About Dialog Translator Credit"
 #~ msgid "robotta"
 #~ msgstr "robotta"
-
-#~ msgid ""
-#~ "Bazaar was not provided a curated content configuration. Contact your "
-#~ "operating system's support channels for assistance."
-#~ msgstr "Bazaar 未被提供精选内容配置。联系您的操作系统的支持频道寻求协助。"
 
 #~ msgid "Apps Of The Week"
 #~ msgstr "本周热门应用程序"
@@ -4002,22 +3884,3 @@ msgstr "包括 %s、%s 和 %s。"
 
 #~ msgid "Pause the execution of transactions"
 #~ msgstr "暂停事务执行"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "商店"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "商店 — %s"
-
-#: src/bz-window.blp:314
-msgid "_About Store"
-msgstr "关于商店(_A)"
-
-#: src/bz-window.blp:321
-msgid "_Quit Store"
-msgstr "退出商店(_Q)"

@@ -1,4 +1,4 @@
-/* bge.h - Bazaar GTK Extensions
+/* bge.h - GTK Extensions
  *
  * Copyright 2026 Eva M
  *

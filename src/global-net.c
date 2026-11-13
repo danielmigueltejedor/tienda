@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::GLOBAL-NET"
+#define G_LOG_DOMAIN "NODALIX-STORE::GLOBAL-NET"
 
 #include "config.h"
 
@@ -124,7 +124,7 @@ bz_https_query_json (const char *uri)
 
   message = soup_message_new (SOUP_METHOD_GET, uri);
   headers = soup_message_get_request_headers (message);
-  soup_message_headers_append (headers, "User-Agent", "Bazaar");
+  soup_message_headers_append (headers, "User-Agent", "NodalixStore");
 
   output = g_memory_output_stream_new_resizable ();
 
@@ -197,7 +197,7 @@ bz_query_flathub_v2_json_authenticated_delete (const char *request,
 }
 
 DexFuture *
-bz_query_bazaar_json (const char *request)
+bz_query_catalog_json (const char *request)
 {
   g_autofree char *uri = NULL;
 
@@ -220,7 +220,7 @@ query_uri_json_with_method (const char *uri,
   message = soup_message_new (method, uri);
   headers = soup_message_get_request_headers (message);
 
-  soup_message_headers_append (headers, "User-Agent", "Bazaar");
+  soup_message_headers_append (headers, "User-Agent", "NodalixStore");
 
   if (token != NULL && token[0] != '\0')
     {
@@ -408,7 +408,7 @@ bz_fetch_uri_contents (const char *uri)
             uri);
 
       headers = soup_message_get_request_headers (message);
-      soup_message_headers_append (headers, "User-Agent", "Bazaar");
+      soup_message_headers_append (headers, "User-Agent", "NodalixStore");
 
       output = g_memory_output_stream_new_resizable ();
       future = bz_send_with_global_http_session_then_splice_into (message, output);

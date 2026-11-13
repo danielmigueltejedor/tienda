@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::INSPECTOR"
+#define G_LOG_DOMAIN "NODALIX-STORE::INSPECTOR"
 
 #include "config.h"
 
@@ -307,7 +307,7 @@ bz_inspector_init (BzInspector *self)
 
   serialize_all_entries_output = g_build_filename (
       g_get_home_dir (),
-      "BAZAAR_SERIALIZED_ENTRIES.TXT",
+      "STORE_SERIALIZED_ENTRIES.TXT",
       NULL);
   gtk_editable_set_text (
       self->serialize_all_entries_path_entry,
@@ -674,7 +674,7 @@ void
 bz_inspector_page_register (void)
 {
   if (g_io_extension_point_lookup ("gtk-inspector-page") != NULL)
-    g_io_extension_point_implement ("gtk-inspector-page", BZ_TYPE_INSPECTOR_PAGE, "bazaar", 10);
+    g_io_extension_point_implement ("gtk-inspector-page", BZ_TYPE_INSPECTOR_PAGE, "nodalix-store", 10);
 }
 
 /* End of bz-inspector.c */

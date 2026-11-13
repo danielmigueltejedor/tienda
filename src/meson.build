@@ -42,7 +42,7 @@ dl_worker_exe = executable(dl_worker_bin_name, dl_worker_sources,
 
 
 daemon_sources = [
-  'bazaar-daemon.c',
+  'nodalix-store-daemon.c',
   'search-index.c',
 ]
 daemon_exe = executable(daemon_bin_name, daemon_sources,
@@ -87,7 +87,6 @@ bz_sources = files(
   'bz-curated-view.c',
   'bz-data-graph.c',
   'bz-developer-badge.c',
-  'bz-donations-dialog.c',
   'bz-download-worker.c',
   'bz-dynamic-list-view.c',
   'bz-entry-cache-manager.c',
@@ -176,7 +175,7 @@ bz_sources = files(
 subdir('progress-bar-designs')
 
 bz_deps = [
-  # Bazaar GTK Extensions; see ../bge/
+  # GTK Extensions (bge); see ../bge/
   bge_dep,
 
   math,
@@ -218,7 +217,6 @@ blueprints = custom_target('blueprints',
     'bz-curated-view.blp',
     'bz-decorated-screenshot.blp',
     'bz-developer-badge.blp',
-    'bz-donations-dialog.blp',
     'bz-entry-inspector.blp',
     'bz-error-dialog.blp',
     'bz-favorite-button.blp',
@@ -297,7 +295,7 @@ countries_gvariant = custom_target(
 )
 
 bz_resources = gnome.compile_resources('bz-resources',
-  'bazaar.gresource.xml',
+  'nodalix-store.gresource.xml',
   c_name: 'bz',
   source_dir: meson.current_build_dir(),
   dependencies: [blueprints, release_notes, countries_gvariant],
@@ -340,7 +338,7 @@ vala_sources = files(
 )
 
 vala_args = [
-  '--gresources=' + meson.current_source_dir() / 'bazaar.gresource.xml',
+  '--gresources=' + meson.current_source_dir() / 'nodalix-store.gresource.xml',
   '--gresourcesdir=' + meson.current_build_dir(),
 ]
 
@@ -365,7 +363,7 @@ bz_vala_dep = declare_dependency(
 )
 bz_deps += [bz_vala_dep]
 
-executable(bazaar_bin_name, bz_sources + ['main.c'], marshalers,
+executable(store_bin_name, bz_sources + ['main.c'], marshalers,
            dependencies: bz_deps,
            export_dynamic: true,
            install: true,

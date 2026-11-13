@@ -18,8 +18,8 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN  "BAZAAR::ENTRY-GROUP"
-#define BAZAAR_MODULE "entry-group"
+#define G_LOG_DOMAIN  "NODALIX-STORE::ENTRY-GROUP"
+#define STORE_MODULE "entry-group"
 
 #include "bz-entry-group.h"
 #include <bzvala.h>

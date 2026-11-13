@@ -21,7 +21,7 @@
 
     <file>internal-config.yaml</file>
     <file alias="pride-flags.yaml">progress-bar-designs/pride/pride-flags.yaml</file>
-    <file alias="bazaar.desktop">bazaar-autostart.desktop</file>
+    <file alias="nodalix-store.desktop">nodalix-store-autostart.desktop</file>
 
     <file preprocess="xml-stripblanks">internal-config-schema.xml</file>
     <file preprocess="xml-stripblanks">main-config-schema.xml</file>
@@ -50,7 +50,6 @@
     <file preprocess="xml-stripblanks">bz-curated-view.ui</file>
     <file preprocess="xml-stripblanks">bz-decorated-screenshot.ui</file>
     <file preprocess="xml-stripblanks">bz-developer-badge.ui</file>
-    <file preprocess="xml-stripblanks">bz-donations-dialog.ui</file>
     <file preprocess="xml-stripblanks">bz-entry-inspector.ui</file>
     <file preprocess="xml-stripblanks">bz-error-dialog.ui</file>
     <file preprocess="xml-stripblanks">bz-favorite-button.ui</file>
@@ -211,25 +210,25 @@
     <file preprocess="xml-stripblanks">icons/scalable/actions/on-the-go-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/scalable/actions/we-love-games-symbolic.svg</file>
 
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Create.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Develop.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Learn.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Play.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Network.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Work.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Audiovideo.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Science.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.System.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Utilities.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Create.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Develop.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Learn.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Play.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Network.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Work.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Audiovideo.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Science.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.System.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Utilities.svg</file>
     <file preprocess="xml-stripblanks">icons/system-component-runtime.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Mobile.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Trending.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Popular.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.New.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Updated.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Adwaita.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Kde.svg</file>
-    <file preprocess="xml-stripblanks">icons/io.github.kolumni.Bazaar.Cosmic.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Mobile.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Trending.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Popular.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.New.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Updated.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Adwaita.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Kde.svg</file>
+    <file preprocess="xml-stripblanks">icons/os.nodalix.Store.Cosmic.svg</file>
 
     <file preprocess="xml-stripblanks">icons/os.nodalix.Store.login-github.svg</file>
     <file preprocess="xml-stripblanks">icons/os.nodalix.Store.login-gitlab.svg</file>

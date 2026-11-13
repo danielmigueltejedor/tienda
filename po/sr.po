@@ -1,12 +1,12 @@
-# Serbian translation for bazaar.
-# Copyright (C) 2026 bazaar's COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Serbian translation for nodalix-store.
+# Copyright (C) 2026 nodalix-store's COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Марко Костић <marko.m.kostic@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar main\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-09-12 21:13+0000\n"
 "PO-Revision-Date: 2026-08-30 10:05+0200\n"
 "Last-Translator: Марко Костић <marko.m.kostic@gmail.com>\n"
@@ -15,16 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 3.9\n"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:211 src/bz-window.c:379 src/bz-window.c:380
-msgid "Bazaar"
-msgstr "Пијаца"
 
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
@@ -70,11 +62,6 @@ msgstr ""
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Претражи програме директно из Гномове шкољке"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:754
-msgid "The Bazaar Contributors"
-msgstr "Доприносиоци Пијаце"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -128,11 +115,11 @@ msgstr "Нема видљивих додатака"
 
 #: src/bz-addons-dialog.blp:82
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
-"Ваше тренутне поставке филтера скривају све познате додатке. Покушајте да их "
-"прилагодите."
+"Ваше тренутне поставке филтера скривају све познате додатке. Покушајте да "
+"их прилагодите."
 
 #: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
@@ -167,7 +154,8 @@ msgstr "Додатак за %s"
 msgid "Show Less"
 msgstr "Прикажи мање"
 
-#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:365 src/bz-full-view.c:616
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Прикажи више"
 
@@ -186,7 +174,8 @@ msgstr "Оцена старосне прикладности"
 msgid "Cartoon Violence"
 msgstr "Цртано насиље"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Нема података о цртаном насиљу"
@@ -196,7 +185,8 @@ msgstr "Нема података о цртаном насиљу"
 msgid "Fantasy Violence"
 msgstr "Фантазијско насиље"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Нема података о фантазијском насиљу"
@@ -206,7 +196,8 @@ msgstr "Нема података о фантазијском насиљу"
 msgid "Realistic Violence"
 msgstr "Реалистично насиље"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Нема података о реалистичном насиљу"
@@ -216,7 +207,8 @@ msgstr "Нема података о реалистичном насиљу"
 msgid "Violence Depicting Bloodshed"
 msgstr "Насиље са крвопролићем"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Нема података о крвопролићу"
@@ -226,7 +218,8 @@ msgstr "Нема података о крвопролићу"
 msgid "Sexual Violence"
 msgstr "Сексуално насиље"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Нема података о сексуалном насиљу"
@@ -236,7 +229,8 @@ msgstr "Нема података о сексуалном насиљу"
 msgid "Alcohol"
 msgstr "Алкохол"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Нема података о помињању алкохола"
@@ -246,7 +240,8 @@ msgstr "Нема података о помињању алкохола"
 msgid "Narcotics"
 msgstr "Наркотици"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "Нема података о помињању забрањених дрога"
@@ -256,7 +251,8 @@ msgstr "Нема података о помињању забрањених др�
 msgid "Tobacco"
 msgstr "Дуван"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Нема података о помињању дуванских производа"
@@ -266,7 +262,8 @@ msgstr "Нема података о помињању дуванских про�
 msgid "Nudity"
 msgstr "Нудизам"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Нема података о било каквој нагости"
@@ -276,7 +273,8 @@ msgstr "Нема података о било каквој нагости"
 msgid "Sexual Themes"
 msgstr "Сексуалне теме"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr "Нема података о помињању или приказима сексуалне природе"
@@ -286,7 +284,8 @@ msgstr "Нема података о помињању или приказима 
 msgid "Profanity"
 msgstr "Псовке"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Нема података о било каквим псовкама"
@@ -296,7 +295,8 @@ msgstr "Нема података о било каквим псовкама"
 msgid "Inappropriate Humor"
 msgstr "Неприкладан хумор"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Нема података о неприкладном хумору"
@@ -306,7 +306,8 @@ msgstr "Нема података о неприкладном хумору"
 msgid "Discrimination"
 msgstr "Дискриминација"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Нема података о било каквом дискриминационом говору"
@@ -316,7 +317,8 @@ msgstr "Нема података о било каквом дискримина�
 msgid "Advertising"
 msgstr "Маркетинг"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Нема података о било каквом маркетингу"
@@ -326,7 +328,8 @@ msgstr "Нема података о било каквом маркетингу"
 msgid "Gambling"
 msgstr "Коцкање"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Нема података о било каквом коцкању"
@@ -336,7 +339,8 @@ msgstr "Нема података о било каквом коцкању"
 msgid "Purchasing"
 msgstr "Куповина"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Нема података о могућности трошења новца"
@@ -346,7 +350,8 @@ msgstr "Нема података о могућности трошења нов�
 msgid "Chat Between Users"
 msgstr "Ћаскање између корисника"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "Нема података о начинима за ћаскање са другим корисницима"
@@ -356,7 +361,8 @@ msgstr "Нема података о начинима за ћаскање са �
 msgid "Audio Chat Between Users"
 msgstr "Звучно ћаскање између корисника"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "Нема података о начинима за разговор са другим корисницима"
@@ -366,7 +372,8 @@ msgstr "Нема података о начинима за разговор са
 msgid "Contact Details"
 msgstr "Контакт детаљи"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
@@ -380,9 +387,11 @@ msgstr ""
 msgid "Identifying Information"
 msgstr "Идентификујући подаци"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr "Нема података о дељењу корисничких података са трећим странама"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -390,9 +399,11 @@ msgstr "Нема података о дељењу корисничких под�
 msgid "Location Sharing"
 msgstr "Дељење локације"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr "Нема података о дељењу стварне локације са другим корисницима"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -400,7 +411,8 @@ msgstr "Нема података о дељењу стварне локациј�
 msgid "Prostitution"
 msgstr "Проституција"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Нема података о упућивањима на проституцију"
@@ -410,7 +422,8 @@ msgstr "Нема података о упућивањима на простит�
 msgid "Adultery"
 msgstr "Прељубништво"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Нема података о упућивањима на прељубништво"
@@ -420,7 +433,8 @@ msgstr "Нема података о упућивањима на прељубн�
 msgid "Sexualized Characters"
 msgstr "Сексуални ликови"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Нема података о сексуализованим ликовима"
@@ -430,7 +444,8 @@ msgstr "Нема података о сексуализованим ликови
 msgid "Desecration"
 msgstr "Скрнављење"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Нема података о упућивањима на скрнављење"
@@ -440,7 +455,8 @@ msgstr "Нема података о упућивањима на скрнављ�
 msgid "Human Remains"
 msgstr "Људски остаци"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Нема података о видљивим људским остацима"
@@ -450,7 +466,8 @@ msgstr "Нема података о видљивим људским остац�
 msgid "Slavery"
 msgstr "Робовласништво"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Нема података о упућивањима на робовласништво"
@@ -745,7 +762,8 @@ msgstr "Потврђено"
 msgid "Installed"
 msgstr "Инсталирано"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:757
 msgid "translator-credits"
 msgstr ""
@@ -764,30 +782,6 @@ msgstr "Успешно одјављено!"
 msgid "Notice for Ubuntu Users"
 msgstr "Напомена за кориснике Убунтуа"
 
-#: src/bz-application.c:1060
-msgid ""
-"Ubuntu 25.10 and newer have changed default security rules in a way that "
-"makes it <b>impossible to install apps</b> from the Flatpak version of "
-"Bazaar. For the time being, please use the apt package instead. Install it "
-"with\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"You can then remove this Flatpak version with\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-msgstr ""
-"Убунту 25.10 и новија издања су променила подразумевана правила безбедности "
-"на начин који чини <b>немогућим инсталирање програма</b> из Флетпек издања "
-"Пијаце. У овом тренутку, употребите уместо тога apt пакет. Инсталирајте га "
-"помоћу\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"Затим можете уклонити ово Флетпек издање помоћу\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-
 #: src/bz-application.c:1068
 msgid "Continue Anyway"
 msgstr "Ипак настави"
@@ -800,37 +794,9 @@ msgstr "Подешавам…"
 msgid "Set Up System Flathub?"
 msgstr "Подесити системски Флетхаб?"
 
-#: src/bz-application.c:1186
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Системски удаљени ресурс Флетхаб није подешен. Пијаца захтева да Флетхаб "
-"буде конфигурисан у системској Флетпек инсталацији за прегледање и "
-"инсталирање програма.\n"
-"\n"
-"И даље можете користити Пијацу за прегледање и уклањање већ инсталираних "
-"програма."
-
 #: src/bz-application.c:1193
 msgid "Set Up Flathub?"
 msgstr "Подесити Флетхаб?"
-
-#: src/bz-application.c:1196
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Флетхаб није подешен на овом систему. Нећете моћи да прегледате и "
-"инсталирате програме у Пијаци ако он није доступан.\n"
-"\n"
-"И даље можете користити Пијацу за прегледање и уклањање већ инсталираних "
-"програма."
 
 #: src/bz-application.c:1202
 msgid "Later"
@@ -959,18 +925,6 @@ msgstr "Инсталација комплета"
 msgid "Additional dependencies may take extra space"
 msgstr "Додатне зависности могу заузети више простора"
 
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Инсталирање овог програма може захтевати додавање новог извора програма. "
-"Остали програми из овог извора биће приказани у Пијаци.\n"
-"\n"
-"Додајте овај извор само ако сте сигурни да му верујете."
-
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
 msgstr "Успешно инсталирано!"
@@ -1077,7 +1031,8 @@ msgid ""
 "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
 "<b>%3$s</b>."
 msgstr ""
-"Власништво над ИД-јем програма %1$s потврдио је <b>%2$s</b> дана <b>%3$s</b>."
+"Власништво над ИД-јем програма %1$s потврдио је <b>%2$s</b> дана "
+"<b>%3$s</b>."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -1089,11 +1044,6 @@ msgstr "Власништво над ИД-јем програма %1$s потвр
 msgid "The ownership of the %s app ID has been verified."
 msgstr "Власништво над ИД-јем програма %s је потврђено."
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "Објава Пијаце"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Потпуне белешке о објави"
@@ -1102,27 +1052,15 @@ msgstr "Потпуне белешке о објави"
 msgid "This release was made possible by users like you!"
 msgstr "Ова објава је омогућена захваљујући корисницима као што сте ви!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Волим да радим на Пијаци, али то не могу сам. Подржите даљи развој донирањем "
-"на Ko-Fi-ју."
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "Донирај Пијаци"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "Шта је ново у %s?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Објављено %-e. %B %Y"
@@ -1549,7 +1487,8 @@ msgstr "Будите маштовити"
 
 #: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
-msgstr "Неопходни програми за цртање, уређивање фотографија и дигитални дизајн"
+msgstr ""
+"Неопходни програми за цртање, уређивање фотографија и дигитални дизајн"
 
 #: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
@@ -1638,7 +1577,8 @@ msgstr "Флетхаб није додат"
 #: src/bz-flathub-page.blp:23
 msgid "The Flathub remote was not found on any of your Flatpak installations"
 msgstr ""
-"Удаљени извор Флетхаба није пронађен ни у једној од ваших Флетпек инсталација"
+"Удаљени извор Флетхаба није пронађен ни у једној од ваших Флетпек "
+"инсталација"
 
 #: src/bz-flathub-page.blp:32
 msgid "Can't Reach Flathub"
@@ -2043,27 +1983,21 @@ msgstr "Дозвола овог програма није позната"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Овај програм развија међународна заједница на отвореном и објављен је под %s "
-"дозволом.\n"
+"Овај програм развија међународна заједница на отвореном и објављен је под %s дозволом.\n"
 "\n"
 "Можете учествовати и помоћи да он буде још бољи."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Овај програм се не развија отворено, па само његови програмери знају како он "
-"ради. Може бити небезбедан на начине које је тешко открити, и може се мењати "
-"без надзора.\n"
+"Овај програм се не развија отворено, па само његови програмери знају како он ради. Може бити небезбедан на начине које је тешко открити, и може се мењати без надзора.\n"
 "\n"
 "Можда ћете моћи, а можда и нећете моћи да допринесете овом програму."
 
@@ -2093,7 +2027,8 @@ msgstr "Нешто је пошло наопако"
 
 #: src/bz-login-page.blp:46
 msgid "Log in to sync your favorited apps across devices"
-msgstr "Пријавите се да бисте ускладили своје омиљене програме међу уређајима"
+msgstr ""
+"Пријавите се да бисте ускладили своје омиљене програме међу уређајима"
 
 #: src/bz-login-page.blp:113
 msgid "Finish"
@@ -2154,12 +2089,14 @@ msgid "Preferences"
 msgstr "Поставке"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 "Мрежна веза је ограничена - самостално освежавање података продавнице је "
 "паузирано"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244 src/bz-window.blp:255
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:244
+#: src/bz-window.blp:255
 msgid "Refresh Manually"
 msgstr "Освежи ручно"
 
@@ -2329,11 +2266,6 @@ msgstr "Боје фембој поноса"
 msgid "Neutrois Pride Colors"
 msgstr "Боје неутроис поноса"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:286
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr "Пијаца мора да ради у позадини како би проверила ажурирања програма"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
 msgid "Version History"
 msgstr "Историјат издања"
@@ -2347,7 +2279,8 @@ msgstr "_Историјат издања"
 msgid "Today"
 msgstr "Данас"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "Јуче"
@@ -2415,7 +2348,8 @@ msgstr "Набавите више података"
 msgid "Uninstall"
 msgstr "Деинсталирај"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "Преузми"
@@ -2427,24 +2361,17 @@ msgstr "Додатна овлашћења"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
-"Овај програм има овлашћење које му индиректно омогућава да себи омогући "
-"<b>било које друго овлашћење које жели</b>, заобилазећи Флетпек изолацију.\n"
+"Овај програм има овлашћење које му индиректно омогућава да себи омогући <b>било које друго овлашћење које жели</b>, заобилазећи Флетпек изолацију.\n"
 "\n"
-"Због тога он може да уради било шта што може овлашћен програм који није у "
-"изолацији, као што је приступ свим вашим датотекама и повезивање на "
-"интернет.\n"
+"Због тога он може да уради било шта што може овлашћен програм који није у изолацији, као што је приступ свим вашим датотекама и повезивање на интернет.\n"
 "\n"
-"Преглед осталих овлашћења и даље може дати бољу идеју о томе шта програм "
-"вероватно ради."
+"Преглед осталих овлашћења и даље може дати бољу идеју о томе шта програм вероватно ради."
 
 #: src/bz-safety-dialog.blp:53
 msgid "View Other Permissions"
@@ -2469,7 +2396,8 @@ msgid ""
 "contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
 "Овај програм користи застарело издање програмске платформе (СДК) и можда "
-"садржи програмске грешке или безбедносне пропусте који неће бити поправљени."
+"садржи програмске грешке или безбедносне пропусте који неће бити "
+"поправљени."
 
 #: src/bz-safety-dialog.c:293 src/bz-safety-dialog.c:326
 msgid "Safety"
@@ -2755,7 +2683,8 @@ msgstr "Копирај везу"
 msgid "Timeline"
 msgstr "Временска линија"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Инсталације:"
@@ -2837,37 +2766,23 @@ msgstr "„%s“ је високо ризично"
 
 #: src/bz-transaction-dialog.c:221
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Овај програм има пун приступ вашем систему, укључујући све ваше <b>датотеке, "
-"историју прегледача, сачуване лозинке</b> и остало. Такође има приступ "
-"интернету, што значи да ваше податке може послати спољним странама.\n"
+"Овај програм има пун приступ вашем систему, укључујући све ваше <b>датотеке, историју прегледача, сачуване лозинке</b> и остало. Такође има приступ интернету, што значи да ваше податке може послати спољним странама.\n"
 "\n"
-"Зато што је програм власнички, не може се проверити шта он ради са овим "
-"овлашћењима."
+"Зато што је програм власнички, не може се проверити шта он ради са овим овлашћењима."
 
 #: src/bz-transaction-dialog.c:230
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Овај програм користи застарели прозорски систем Икс-11, што му омогућава да "
-"<b>бележи све притиске тастатуре, прави снимке екрана и прати друге "
-"програме</b>. Такође има приступ интернету, што значи да ваше податке може "
-"послати спољним странама.\n"
+"Овај програм користи застарели прозорски систем Икс-11, што му омогућава да <b>бележи све притиске тастатуре, прави снимке екрана и прати друге програме</b>. Такође има приступ интернету, што значи да ваше податке може послати спољним странама.\n"
 "\n"
-"Зато што је програм власнички, не може се проверити шта он ради са овим "
-"овлашћењима."
+"Зато што је програм власнички, не може се проверити шта он ради са овим овлашћењима."
 
 #: src/bz-transaction-dialog.c:246
 msgid "_Install Anyway"
@@ -3015,11 +2930,6 @@ msgstr "Претражи"
 msgid "Main Menu"
 msgstr "Главни мени"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:235
-msgid "You are running a new version of Bazaar!"
-msgstr "Покрећете ново издање Пијаце!"
-
 #: src/bz-window.blp:236
 msgid "See What's New"
 msgstr "Види шта је ново"
@@ -3032,11 +2942,6 @@ msgstr "Имате мрежну везу, али прегледате кешир
 #: src/bz-window.blp:254
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr "Мрежна веза је ограничена - самостално освежавање је онемогућено"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:291
-msgid "_Donate to Bazaar"
-msgstr "_Донирај Пијаци"
 
 #: src/bz-window.blp:297
 msgid "_Refresh"
@@ -3058,25 +2963,9 @@ msgstr "_Поставке"
 msgid "_Keyboard Shortcuts"
 msgstr "_Пречице на тастатури"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:324
-msgid "_About Bazaar"
-msgstr "_О програму Пијаца"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:331
-msgid "_Quit Bazaar"
-msgstr "_Изађи из Пијаце"
-
 #: src/bz-window.blp:357
 msgid "Log Out"
 msgstr "Одјави се"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:382
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Пијаца - %s"
 
 #: src/bz-window.c:662 src/bz-window.c:711
 msgid "Failed to launch application"
@@ -3085,11 +2974,6 @@ msgstr "Не могу да покренем програм"
 #: src/bz-window.c:790
 msgid "Could not open link"
 msgstr "Не могу да отворим везу"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:999
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Не можете да уклоните Пијацу из Пијаце!"
 
 #: src/bz-window.c:1383 src/bz-window.c:1417
 msgid "Can't do that right now!"
@@ -3175,7 +3059,8 @@ msgstr "Власнички програми"
 msgid "Special License: %s"
 msgstr "Посебна дозвола: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "Слободни програми"
@@ -3249,7 +3134,8 @@ msgstr "Приступ корисничком уређају"
 
 #: src/safety-calculator.c:118
 msgid "Can access devices such as webcams or gaming controllers"
-msgstr "Може да приступи уређајима као што су веб камере или управљачи за игре"
+msgstr ""
+"Може да приступи уређајима као што су веб камере или управљачи за игре"
 
 #: src/safety-calculator.c:120
 msgid "No User Device Access"
@@ -3406,7 +3292,8 @@ msgid "Verified App Developer"
 msgstr "Потврђен програмер програма"
 
 #: src/safety-calculator.c:355
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr "Програмер овог програма је потврђен као особа за коју се издаје"
 
 #: src/safety-calculator.c:364
@@ -3427,11 +3314,11 @@ msgstr "Проверљив код"
 
 #: src/safety-calculator.c:376
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
-"Изворни код је јаван и може се независно проверити, што чини вероватније да "
-"је програм безбедан"
+"Изворни код је јаван и може се независно проверити, што чини вероватније да"
+" је програм безбедан"
 
 #: src/safety-calculator.c:516
 #, c-format
@@ -3491,7 +3378,8 @@ msgstr "Услуга за тајно складиштење"
 
 #: src/safety-calculator.c:572
 msgid "Can store and retrieve its own passwords using the system keyring"
-msgstr "Може да смести и преузме сопствене лозинке помоћу системског привезка"
+msgstr ""
+"Може да смести и преузме сопствене лозинке помоћу системског привезка"
 
 #: src/safety-calculator.c:577
 msgid "Desktop Notifications Service"
@@ -3567,11 +3455,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Затвори прозор"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Изађи из Пијаце"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3614,8 +3497,9 @@ msgid "Includes %s, %s and %s."
 msgstr "Укључује програме „%s“, „%s“ и „%s“."
 
 #: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
 msgid "Store"
 msgstr "Продавница"
 

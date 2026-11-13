@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::APPSTREAM-DESCRIPTION-RENDER"
+#define G_LOG_DOMAIN "NODALIX-STORE::APPSTREAM-DESCRIPTION-RENDER"
 
 #include "config.h"
 

@@ -20,8 +20,8 @@
 
 /* TODO: clean this mess up */
 
-#define G_LOG_DOMAIN  "BAZAAR::ENTRY"
-#define BAZAAR_MODULE "entry"
+#define G_LOG_DOMAIN  "NODALIX-STORE::ENTRY"
+#define STORE_MODULE "entry"
 
 #include <json-glib/json-glib.h>
 
@@ -2575,7 +2575,7 @@ query_flathub_fiber (QueryFlathubData *data)
     }
 
   if (prop == PROP_SIMILAR_APPS)
-    node = dex_await_boxed (bz_query_bazaar_json (request), &local_error);
+    node = dex_await_boxed (bz_query_catalog_json (request), &local_error);
   else
     node = dex_await_boxed (bz_query_flathub_v2_json (request), &local_error);
 

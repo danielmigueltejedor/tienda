@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: os.nodalix.Store master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-10-19 20:52+0000\n"
 "PO-Revision-Date: 2026-10-22 08:00+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
@@ -21,13 +21,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.9\n"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:8 src/bz-window.blp:55
-#: src/bz-window.blp:193 src/bz-window.c:435 src/bz-window.c:436
-msgid "Bazaar"
-msgstr "Bazaar"
-
 #: data/os.nodalix.Store.desktop.in:4
 msgid "App Store"
 msgstr "Uygulama Mağazası"
@@ -35,10 +28,6 @@ msgstr "Uygulama Mağazası"
 #: data/os.nodalix.Store.desktop.in:5
 msgid "Add, remove or update flatpak software on this computer"
 msgstr "Bu bilgisayara flatpak yazılımı ekle, kaldır ya da güncelle"
-
-#: data/os.nodalix.Store.desktop.in:11
-msgid "System;Package;Manager;Discover;Flatpak;Software;App;Store;"
-msgstr "Bazaar;System;Package;Manager;Discover;Flatpak;Software;App;Store;Paket;Yönetici;Keşfet;Yazılım;Uygulama;Mağaza;Program;Pazar;"
 
 #: data/os.nodalix.Store.desktop.in:18
 msgid "New Window"
@@ -53,8 +42,8 @@ msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and add-ons, particularly from Flathub."
 msgstr ""
-"Özellikle Flathubʼdan Flatpak uygulamalarını ve eklentilerini keşfetmeye ve "
-"kurmaya odaklanan, Linux için hızlı ve çağdaş uygulama mağazası."
+"Özellikle Flathubʼdan Flatpak uygulamalarını ve eklentilerini keşfetmeye ve"
+" kurmaya odaklanan, Linux için hızlı ve çağdaş uygulama mağazası."
 
 #: data/os.nodalix.Store.metainfo.xml.in:16
 msgid "Queue multiple installs and keep browsing"
@@ -71,11 +60,6 @@ msgstr "Gözdelerinizi görüntülemek ve yönetmek için Flathub ile oturum aç
 #: data/os.nodalix.Store.metainfo.xml.in:19
 msgid "Search apps directly from GNOME Shell"
 msgstr "Uygulamaları GNOME Shell üstünden ara"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: data/os.nodalix.Store.metainfo.xml.in:34 src/bz-application.c:818
-msgid "The Bazaar Contributors"
-msgstr "Bazaar Katkıcıları"
 
 #: data/os.nodalix.Store.metainfo.xml.in:59
 msgid "The home page displaying Flathub apps"
@@ -129,8 +113,8 @@ msgstr "Görünür Eklenti Yok"
 
 #: src/bz-addons-dialog.blp:82
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
 "Geçerli süzgeçleriniz, bilinen tüm eklentileri gizliyor. Süzgeç ayarlarını "
 "düzenleyin."
@@ -145,8 +129,8 @@ msgid "Download"
 msgstr "İndirme Boyutu"
 
 #. Translators: As in 'The app is installed'.
-#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356 src/bz-full-view.blp:281
-#: src/bz-releases-list.c:204
+#: src/bz-addons-dialog.blp:187 src/bz-app-tile.c:356
+#: src/bz-full-view.blp:281 src/bz-releases-list.c:204
 msgid "Installed"
 msgstr "Kurulu"
 
@@ -179,7 +163,8 @@ msgstr "%s Eklentisi"
 msgid "Show Less"
 msgstr "Daha Az Göster"
 
-#: src/bz-addons-dialog.c:363 src/bz-full-view.c:610 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:363 src/bz-full-view.c:610
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Daha Çok Göster"
 
@@ -201,7 +186,8 @@ msgstr ""
 msgid "Cartoon Violence"
 msgstr "Çizgi Dizisi Şiddeti"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Çizgi dizisi şiddetiyle ilgili bilgi yok"
@@ -211,7 +197,8 @@ msgstr "Çizgi dizisi şiddetiyle ilgili bilgi yok"
 msgid "Fantasy Violence"
 msgstr "Fantezi Şiddeti"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Fantezi şiddetiyle ilgili bilgi yok"
@@ -221,7 +208,8 @@ msgstr "Fantezi şiddetiyle ilgili bilgi yok"
 msgid "Realistic Violence"
 msgstr "Gerçekçi Şiddet"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Gerçekçi şiddetle ilgili bilgi yok"
@@ -231,7 +219,8 @@ msgstr "Gerçekçi şiddetle ilgili bilgi yok"
 msgid "Violence Depicting Bloodshed"
 msgstr "Kan Dökülmesini Betimleyen Şiddet"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Kan dökülmesiyle ilgili bilgi yok"
@@ -241,7 +230,8 @@ msgstr "Kan dökülmesiyle ilgili bilgi yok"
 msgid "Sexual Violence"
 msgstr "Cinsel Şiddet"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Cinsel şiddetle ilgili bilgi yok"
@@ -251,7 +241,8 @@ msgstr "Cinsel şiddetle ilgili bilgi yok"
 msgid "Alcohol"
 msgstr "Alkol"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Alkole atıflarla ilgili bilgi yok"
@@ -261,7 +252,8 @@ msgstr "Alkole atıflarla ilgili bilgi yok"
 msgid "Narcotics"
 msgstr "Uyuşturucu"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "Yasadışı ilaçlara atıflarla ilgili bilgi yok"
@@ -271,7 +263,8 @@ msgstr "Yasadışı ilaçlara atıflarla ilgili bilgi yok"
 msgid "Tobacco"
 msgstr "Tütün"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Tütün ürünlerine atıflarla ilgili bilgi yok"
@@ -281,7 +274,8 @@ msgstr "Tütün ürünlerine atıflarla ilgili bilgi yok"
 msgid "Nudity"
 msgstr "Çıplaklık"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Herhangi biçimde çıplaklıkla ilgili bilgi yok"
@@ -291,7 +285,8 @@ msgstr "Herhangi biçimde çıplaklıkla ilgili bilgi yok"
 msgid "Sexual Themes"
 msgstr "Cinsel Temalar"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr "Cinsel doğaya atıf ya da betimlemelerle ilgili bilgi yok"
@@ -301,7 +296,8 @@ msgstr "Cinsel doğaya atıf ya da betimlemelerle ilgili bilgi yok"
 msgid "Profanity"
 msgstr "Sövgü"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Herhangi türde küfürlerle ilgili bilgi yok"
@@ -311,7 +307,8 @@ msgstr "Herhangi türde küfürlerle ilgili bilgi yok"
 msgid "Inappropriate Humor"
 msgstr "Uygunsuz Mizah"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Uygunsuz mizahla ilgili bilgi yok"
@@ -321,7 +318,8 @@ msgstr "Uygunsuz mizahla ilgili bilgi yok"
 msgid "Discrimination"
 msgstr "Ayrımcılık"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Herhangi türde ayrımcı dille ilgili bilgi yok"
@@ -331,7 +329,8 @@ msgstr "Herhangi türde ayrımcı dille ilgili bilgi yok"
 msgid "Advertising"
 msgstr "Reklam"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Herhangi türde reklamla ilgili bilgi yok"
@@ -341,7 +340,8 @@ msgstr "Herhangi türde reklamla ilgili bilgi yok"
 msgid "Gambling"
 msgstr "Kumar"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Herhangi türde kumarla ilgili bilgi yok"
@@ -351,7 +351,8 @@ msgstr "Herhangi türde kumarla ilgili bilgi yok"
 msgid "Purchasing"
 msgstr "Satın Alım"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Para harcama yeteneğiyle ilgili bilgi yok"
@@ -361,7 +362,8 @@ msgstr "Para harcama yeteneğiyle ilgili bilgi yok"
 msgid "Chat Between Users"
 msgstr "Kullanıcılar Arası Sohbet"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr "Diğer kullanıcılarla sohbet etme yollarıyla ilgili bilgi yok"
@@ -371,7 +373,8 @@ msgstr "Diğer kullanıcılarla sohbet etme yollarıyla ilgili bilgi yok"
 msgid "Audio Chat Between Users"
 msgstr "Kullanıcılar Arası Sesli Sohbet"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "Diğer kullanıcılarla konuşma yollarıyla ilgili bilgi yok"
@@ -381,23 +384,26 @@ msgstr "Diğer kullanıcılarla konuşma yollarıyla ilgili bilgi yok"
 msgid "Contact Details"
 msgstr "Kişi Ayrıntıları"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
 "addresses"
 msgstr ""
-"Sosyal ağ kullanıcı adlarının ya da e-posta adreslerinin paylaşımıyla ilgili "
-"bilgi yok"
+"Sosyal ağ kullanıcı adlarının ya da e-posta adreslerinin paylaşımıyla "
+"ilgili bilgi yok"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:202
 msgid "Identifying Information"
 msgstr "Tanımlayıcı Bilgiler"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr "Üçüncü şahıslarla kullanıcı bilgisi paylaşımıyla ilgili bilgi yok"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -405,9 +411,11 @@ msgstr "Üçüncü şahıslarla kullanıcı bilgisi paylaşımıyla ilgili bilgi
 msgid "Location Sharing"
 msgstr "Konum Paylaşımı"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr "Diğer kullanıcılarla fiziksel konum paylaşımıyla ilgili bilgi yok"
 
 #. TRANSLATORS: content rating title, see https://hughsie.github.io/oars/
@@ -415,7 +423,8 @@ msgstr "Diğer kullanıcılarla fiziksel konum paylaşımıyla ilgili bilgi yok"
 msgid "Prostitution"
 msgstr "Fuhuş"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Fuhşa atıflarla ilgili bilgi yok"
@@ -425,7 +434,8 @@ msgstr "Fuhşa atıflarla ilgili bilgi yok"
 msgid "Adultery"
 msgstr "Zina"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Eş aldatmaya atıflarla ilgili bilgi yok"
@@ -435,7 +445,8 @@ msgstr "Eş aldatmaya atıflarla ilgili bilgi yok"
 msgid "Sexualized Characters"
 msgstr "Cinselleştirilmiş Karakterler"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Cinselleştirilmiş karakterlerle ilgili bilgi yok"
@@ -445,7 +456,8 @@ msgstr "Cinselleştirilmiş karakterlerle ilgili bilgi yok"
 msgid "Desecration"
 msgstr "Saygısızlık"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Kutsala saygısızlığa atıflarla ilgili bilgi yok"
@@ -455,7 +467,8 @@ msgstr "Kutsala saygısızlığa atıflarla ilgili bilgi yok"
 msgid "Human Remains"
 msgstr "İnsan Kalıntıları"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Görününür ölü insan kalıntılarıyla ilgili bilgi yok"
@@ -465,7 +478,8 @@ msgstr "Görününür ölü insan kalıntılarıyla ilgili bilgi yok"
 msgid "Slavery"
 msgstr "Kölelik"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Köleliğe atıflarla ilgili bilgi yok"
@@ -756,7 +770,8 @@ msgstr "Depolama"
 msgid "Verified"
 msgstr "Doğrulanmış"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:821
 msgid "translator-credits"
 msgstr ""
@@ -779,36 +794,9 @@ msgstr "Kurulum gerçekleştiriliyor…"
 msgid "Set Up System Flathub?"
 msgstr "Sistem Flathubʼı Kurulsun Mu?"
 
-#: src/bz-application.c:1119
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub sistem uzağı kurulmamış. Bazaar, uygulamalara göz atmak ve kurmak "
-"için Flatpak kurulumunda Flathubʼın sistem geneli olarak yapılandırılmasını "
-"gerektirir. \n"
-"Yine de Bazaarʼı kullanarak zaten kurulmuş uygulamalara göz atabilir ve "
-"kaldırabilirsiniz."
-
 #: src/bz-application.c:1126
 msgid "Set Up Flathub?"
 msgstr "Flathub Kurulsun Mu?"
-
-#: src/bz-application.c:1129
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Bu sistemde Flathub kurulmamış. Bu nedenle Bazaarʼdaki uygulamalara göz atıp "
-"kuramayabilirsiniz.\n"
-"\n"
-"Yine de Bazaarʼı kullanarak zaten kurulmuş uygulamalara göz atabilir ve "
-"kaldırabilirsiniz."
 
 #: src/bz-application.c:1135
 msgid "Later"
@@ -928,18 +916,6 @@ msgstr "Derleme Kur"
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
 msgstr "Ek bağımlılıklar fazladan alan kaplayabilir"
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"Bu uygulamayı kurmak için yeni yazılım kaynağı eklemeniz gerekebilir. Bu "
-"kaynaktan gelen diğer uygulamalar Bazaarʼda görünecek.\n"
-"\n"
-"Bu kaynağı yalnızca güveniyorsanız ekleyin."
 
 #: src/bz-bundle-install-dialog.blp:414
 msgid "Successfully Installed!"
@@ -1063,11 +1039,6 @@ msgstr "%1$s uygulama kimliğinin sahipliği %2$s kullanılarak doğrulandı."
 msgid "The ownership of the %s app ID has been verified."
 msgstr "%s uygulama kimliğinin sahipliği doğrulandı."
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:8
-msgid "Bazaar Release"
-msgstr "Bazaar Dağıtımı"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr "Tam Sürüm Notları"
@@ -1076,27 +1047,15 @@ msgstr "Tam Sürüm Notları"
 msgid "This release was made possible by users like you!"
 msgstr "Bu sürüm, sizin gibi kullanıcılar sayesinde mümkün oldu!"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:122
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Bazaar uygulamasını geliştirmeyi çok seviyorum, yine de bunu tek başıma "
-"yapamam. Ko-Fi ile bağış yaparak geliştirilmesine destek olun."
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-donations-dialog.blp:137
-msgid "Donate to Bazaar"
-msgstr "Bazaarʼa Bağış Yap"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "%s ile neler yeni?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Yayın tarihi: %-e %B %Y"
@@ -1159,7 +1118,8 @@ msgstr "Gözde Yok"
 msgid "Applications you mark as favorite will appear here"
 msgstr "Gözde olarak imlediğiniz uygulamalar burada görünecek"
 
-# "Bu Uygulamayı Destekle" diye de çevirmek mümkün fakat bağış daha doğru ve yerelleştirilmiş çeviri olacaktır. İşin içinde zaten para var.
+# "Bu Uygulamayı Destekle" diye de çevirmek mümkün fakat bağış daha doğru ve
+# yerelleştirilmiş çeviri olacaktır. İşin içinde zaten para var.
 #: src/bz-favorites-tile.blp:58
 msgid "Support This Application"
 msgstr "Bağış Yap"
@@ -1537,7 +1497,8 @@ msgstr "Yaratıcı Ol"
 
 #: src/bz-flathub-curated-section.vala:43
 msgid "Essential apps for drawing, editing photos, and digital design"
-msgstr "Çizim, fotoğraf düzenleme ve sayısal tasarım için gerekli uygulamalar"
+msgstr ""
+"Çizim, fotoğraf düzenleme ve sayısal tasarım için gerekli uygulamalar"
 
 #: src/bz-flathub-curated-section.vala:44
 msgid "Build Native Apps"
@@ -1688,8 +1649,8 @@ msgid ""
 "This app uses a runtime that no longer receives updates or security fixes. "
 "It may become unsafe to use."
 msgstr ""
-"Bu uygulama, artık güncelleme ya da güvenlik düzeltmesi almayan bir çalışma "
-"zamanı kullanıyor. Kullanımı güvenli olmayabilir."
+"Bu uygulama, artık güncelleme ya da güvenlik düzeltmesi almayan bir çalışma"
+" zamanı kullanıyor. Kullanımı güvenli olmayabilir."
 
 #: src/bz-full-view.blp:530
 msgid "Trash Data"
@@ -2004,8 +1965,7 @@ msgid ""
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Bu uygulama, uluslararası bir topluluk tarafından açık şekilde "
-"geliştirilmiştir. \n"
+"Bu uygulama, uluslararası bir topluluk tarafından açık şekilde geliştirilmiştir. \n"
 "\n"
 "Katılarak daha iyi olmasını sağlayabilirsiniz."
 
@@ -2016,27 +1976,21 @@ msgstr "Uygulamanın lisansı bilinmiyor"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Bu uygulama, uluslararası bir topluluk tarafından açık şekilde geliştirilmiş "
-"ve %s lisansıyla dağıtılmıştır.\n"
+"Bu uygulama, uluslararası bir topluluk tarafından açık şekilde geliştirilmiş ve %s lisansıyla dağıtılmıştır.\n"
 "\n"
 "Katılarak daha iyi olmasını sağlayabilirsiniz."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Bu uygulama açık olarak geliştirilmemiştir, nasıl çalıştığını yalnızca kendi "
-"geliştiricileri bilir. Saptanması zor biçimde güvensiz olabilir ve "
-"gözetimsizce değişebilir.\n"
+"Bu uygulama açık olarak geliştirilmemiştir, nasıl çalıştığını yalnızca kendi geliştiricileri bilir. Saptanması zor biçimde güvensiz olabilir ve gözetimsizce değişebilir.\n"
 "\n"
 "Bu uygulamaya katkıda bulunabilir ya da bulunamayabilirsiniz."
 
@@ -2066,7 +2020,8 @@ msgstr "Bir Şeyler Yanlış Gitti"
 
 #: src/bz-login-page.blp:46
 msgid "Log in to sync your favorited apps across devices"
-msgstr "Gözde uygulamalarınızı aygıtlar arasında eşzamanlamak için oturum açın"
+msgstr ""
+"Gözde uygulamalarınızı aygıtlar arasında eşzamanlamak için oturum açın"
 
 #: src/bz-login-page.blp:113
 msgid "Finish"
@@ -2086,8 +2041,8 @@ msgid ""
 "Metainfo files don't include app icons by themselves. Would you like to "
 "select one manually?"
 msgstr ""
-"Metainfo dosyaları kendi başlarına uygulama simgeleri içermez. Elle bir tane "
-"seçmek ister misiniz?"
+"Metainfo dosyaları kendi başlarına uygulama simgeleri içermez. Elle bir "
+"tane seçmek ister misiniz?"
 
 #: src/bz-metainfo-preview.c:111
 msgid "Skip"
@@ -2143,12 +2098,14 @@ msgid "Preferences"
 msgstr "Tercihler"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 "Ağ bağlantısı ölçülü — kendiliğinden mağaza verilerinin yenilenmesi "
 "duraklatıldı"
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226 src/bz-window.blp:237
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:226
+#: src/bz-window.blp:237
 msgid "Refresh Manually"
 msgstr "Elle Yenile"
 
@@ -2319,12 +2276,6 @@ msgstr "Femboy Pride Colors"
 msgid "Neutrois Pride Colors"
 msgstr "Neutrois Pride Colors"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-preferences-dialog.c:287
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr ""
-"Bazaar, uygulama güncellemelerini denetlemek için arka planda çalışmalıdır"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.vala:167
 msgid "Version History"
 msgstr "Sürüm Geçmişi"
@@ -2334,7 +2285,8 @@ msgstr "Sürüm Geçmişi"
 msgid "Today"
 msgstr "Bugün"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:123
 msgid "Yesterday"
 msgstr "Dün"
@@ -2394,7 +2346,8 @@ msgstr "_Sürüm Geçmişi"
 msgid "Uninstall"
 msgstr "Kaldır"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:384
 msgid "Get"
 msgstr "Al"
@@ -2406,23 +2359,17 @@ msgstr "İsteğe Bağlı İzinler"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
-"Bu uygulamanın Flatpak korumalı alanını atlayarak <b>istediği herhangi bir "
-"izni</b> kullanma izni var.\n"
+"Bu uygulamanın Flatpak korumalı alanını atlayarak <b>istediği herhangi bir izni</b> kullanma izni var.\n"
 "\n"
-"Bu nedenle tüm dosyalarınıza erişmek ve internete bağlanmak gibi öncelikli, "
-"korumalı alanda çalışmayan bir uygulamanın yapabileceği her şeyi yapabilir.\n"
+"Bu nedenle tüm dosyalarınıza erişmek ve internete bağlanmak gibi öncelikli, korumalı alanda çalışmayan bir uygulamanın yapabileceği her şeyi yapabilir.\n"
 "\n"
-"Diğer izinleri görüntülemek uygulamanın yapabilecekleriyle ilgili daha iyi "
-"fikir verebilir."
+"Diğer izinleri görüntülemek uygulamanın yapabilecekleriyle ilgili daha iyi fikir verebilir."
 
 #: src/bz-safety-dialog.blp:53
 msgid "View Other Permissions"
@@ -2441,7 +2388,8 @@ msgstr "Uygulama Kimliği"
 msgid "SDK"
 msgstr "SDK"
 
-# SDK vurgusu hatalı. Yazılımları genelde Platform ile paketleniyor, SDK ise derlenirken kullanılıyor.
+# SDK vurgusu hatalı. Yazılımları genelde Platform ile paketleniyor, SDK ise
+# derlenirken kullanılıyor.
 #: src/bz-safety-dialog.blp:157
 msgid ""
 "This app uses an outdated version of the software platform (SDK) and might "
@@ -2731,13 +2679,15 @@ msgstr "Manifesto"
 msgid "Copy Link"
 msgstr "Bağlantıyı Kopyala"
 
-# Konumu gereği başlık düzeni kullanıldı. Ayrıca Zaman Çizgisi yerine Zaman Çizelgesi çevirisi yeğlendi.
+# Konumu gereği başlık düzeni kullanıldı. Ayrıca Zaman Çizgisi yerine Zaman
+# Çizelgesi çevirisi yeğlendi.
 #. TRANSLATORS: page in the statistics dialog
 #: src/bz-stats-dialog.blp:28
 msgid "Timeline"
 msgstr "Zaman Çizelgesi"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Kurulum Sayısı:"
@@ -2819,34 +2769,21 @@ msgstr "“%s” Çok Riskli"
 
 #: src/bz-transaction-dialog.c:220
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Bu uygulama, <b>tüm dosyalarınız, tarayıcı geçmişiniz, kaydedilmiş "
-"parolalarınız</b> ve daha fazlası üzerinde sisteminize tam erişimi var. "
-"Ayrıca internete de erişebilir, yani verilerinizi dış taraflara "
-"gönderebilir.\n"
+"Bu uygulama, <b>tüm dosyalarınız, tarayıcı geçmişiniz, kaydedilmiş parolalarınız</b> ve daha fazlası üzerinde sisteminize tam erişimi var. Ayrıca internete de erişebilir, yani verilerinizi dış taraflara gönderebilir.\n"
 "\n"
 "Uygulama sahipli olduğundan, bu izinlerle ne yaptığı denetlenemez."
 
 #: src/bz-transaction-dialog.c:229
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Bu uygulama, <b>tüm tuş darbelerini kaydetmeye, ekran görüntülerini "
-"yakalamaya ve diğer uygulamaları izlemeye</b> izin veren eski X11 pencere "
-"sistemini kullanır. Ayrıca internete erişimi var, yani verilerinizi dış "
-"taraflara gönderebilir.\n"
+"Bu uygulama, <b>tüm tuş darbelerini kaydetmeye, ekran görüntülerini yakalamaya ve diğer uygulamaları izlemeye</b> izin veren eski X11 pencere sistemini kullanır. Ayrıca internete erişimi var, yani verilerinizi dış taraflara gönderebilir.\n"
 "\n"
 "Uygulama sahipli olduğundan, bu izinlerle ne yaptığı denetlenemez."
 
@@ -2908,7 +2845,8 @@ msgstr "Hata Bilgisini Göster"
 msgid "%s Freed"
 msgstr "%s Temizlendi"
 
-# Transaction dese de para ile ilgisi yok. O sebeple sadece İşlemler diye çevirdim.
+# Transaction dese de para ile ilgisi yok. O sebeple sadece İşlemler diye
+# çevirdim.
 #: src/bz-transaction-tile.c:360 src/bz-transaction-tile.c:363
 msgid "Transaction Error"
 msgstr "İşlem Hatası"
@@ -2948,7 +2886,8 @@ msgstr "Artık Kullanıcı Verisi Bulunamadı"
 #: src/bz-user-data-page.blp:33
 msgid "Personal data left behind by apps that were removed will show up here"
 msgstr ""
-"Kaldırılan uygulamalarca arkada bırakılan kişisel veriler burada görünecektir"
+"Kaldırılan uygulamalarca arkada bırakılan kişisel veriler burada "
+"görünecektir"
 
 #: src/bz-user-data-page.c:230
 #, c-format
@@ -2994,11 +2933,6 @@ msgstr "Ara"
 msgid "Main Menu"
 msgstr "Ana Menü"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:217
-msgid "You are running a new version of Bazaar!"
-msgstr "Bazaarʼın yeni bir sürümünü kullanıyorsunuz!"
-
 #: src/bz-window.blp:218
 msgid "See What's New"
 msgstr "Neler Yeni Gör"
@@ -3007,16 +2941,13 @@ msgstr "Neler Yeni Gör"
 msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
 msgstr ""
-"Ağ bağlantınız var ancak Flathubʼın önbelleklenmiş sürümünü görüntülüyorsunuz"
+"Ağ bağlantınız var ancak Flathubʼın önbelleklenmiş sürümünü "
+"görüntülüyorsunuz"
 
 #: src/bz-window.blp:236
 msgid "Network connection is metered — automatic refreshes disabled"
-msgstr "Ağ bağlantısı ölçülü — kendiliğinden yenilenmeler devre dışı bırakıldı"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:273
-msgid "_Donate to Bazaar"
-msgstr "Bazaarʼa _Bağış Yap"
+msgstr ""
+"Ağ bağlantısı ölçülü — kendiliğinden yenilenmeler devre dışı bırakıldı"
 
 #: src/bz-window.blp:279
 msgid "_Refresh"
@@ -3038,25 +2969,9 @@ msgstr "_Tercihler"
 msgid "_Keyboard Shortcuts"
 msgstr "_Klavye Kısayolları"
 
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:306
-msgid "_About Bazaar"
-msgstr "Bazaar _Hakkında"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.blp:313
-msgid "_Quit Bazaar"
-msgstr "Bazaarʼdan Çı_k"
-
 #: src/bz-window.blp:329
 msgid "Log Out"
 msgstr "Oturumu Kapat"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating. %s is the title of the current page.
-#: src/bz-window.c:438
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
 
 #: src/bz-window.c:718 src/bz-window.c:767
 msgid "Failed to launch application"
@@ -3065,11 +2980,6 @@ msgstr "Uygulama başlatılamadı"
 #: src/bz-window.c:846
 msgid "Could not open link"
 msgstr "Bağlantı açılamadı"
-
-#. Translators: Please treat "Bazaar" as a brand name and avoid translating.
-#: src/bz-window.c:1055
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Bazaarʼı Bazaar ile kaldıramazsınız!"
 
 #: src/bz-window.c:1439 src/bz-window.c:1473
 msgid "Can't do that right now!"
@@ -3151,7 +3061,8 @@ msgstr "Sahipli Yazılım"
 msgid "Special License: %s"
 msgstr "Özel Lisans: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:290
 msgid "Free Software"
 msgstr "Özgür Yazılım"
@@ -3383,7 +3294,8 @@ msgid "Verified App Developer"
 msgstr "Doğrulanmış Uygulama Geliştiricileri"
 
 #: src/safety-calculator.c:373
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr "Bu uygulamanın geliştiricisinin söylediği kişi olduğu doğrulandı"
 
 #: src/safety-calculator.c:382
@@ -3404,8 +3316,8 @@ msgstr "Denetlenebilir Kod"
 
 #: src/safety-calculator.c:394
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
 "Kaynak kod halka açıktır ve bağımsızca denetlenebilir, bu uygulamayı daha "
 "güvenilir kılar"
@@ -3545,11 +3457,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Pencereyi Kapat"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Bazaarʼdan Çık"
-
 #: src/transaction-notification.c:133
 #, c-format
 msgid "%s Installed"
@@ -3588,30 +3495,20 @@ msgstr "%s ve %s güncellendi."
 msgid "Includes %s, %s and %s."
 msgstr "%s, %s ve %s içerir."
 
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "Mağaza"
+
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Mağaza — %s"
+
 #~ msgid "Notice for Ubuntu Users"
 #~ msgstr "Ubuntu Kullanıcıları İçin Uyarı"
-
-#~ msgid ""
-#~ "Ubuntu 25.10 and newer have changed default security rules in a way that "
-#~ "makes it <b>impossible to install apps</b> from the Flatpak version of "
-#~ "Bazaar. For the time being, please use the apt package instead. Install "
-#~ "it with\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "You can then remove this Flatpak version with\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
-#~ msgstr ""
-#~ "Ubuntu 25.10 ve yenilerinde öntanımlı güvenlik kuralları Bazaarʼın "
-#~ "Flatpak sürümünden <b>uygulama kurmayı olanaksızlaştıracak</b> biçimde "
-#~ "değiştirilmiştir. Lütfen şimdilik apt paketini kullanın. Şununla kurun:\n"
-#~ "\n"
-#~ "<tt>sudo apt install bazaar</tt>\n"
-#~ "\n"
-#~ "Ardından bu Flatpak sürümünü şununla kaldırabilirsiniz:\n"
-#~ "\n"
-#~ "<tt>flatpak uninstall os.nodalix.Store</tt>"
 
 #~ msgid "Continue Anyway"
 #~ msgstr "Yine De Sürdür"
@@ -3621,14 +3518,3 @@ msgstr "%s, %s ve %s içerir."
 
 #~ msgid "Open Screenshot Viewer"
 #~ msgstr "Ekran Görüntüsü Görüntüleyiciyi Aç"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "Mağaza"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "Mağaza — %s"

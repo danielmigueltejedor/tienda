@@ -2,7 +2,7 @@
 
 ## Nodalix Store
 
-La tienda es una adaptación de Bazaar. Conserva GTK 4, Libadwaita y el navegador de Flatpak: curación, exploración de Flathub, biblioteca, búsqueda, instalación, permisos y transacciones que ya implementaba Bazaar.
+La tienda está escrita para Nodalix OS. Usa GTK 4, Libadwaita y el navegador de Flatpak: curación, exploración de Flathub, biblioteca, búsqueda, instalación, permisos y transacciones.
 
 Identidad:
 
@@ -14,9 +14,9 @@ Identidad:
 | Bus de búsqueda | `os.nodalix.Store.SearchProvider` |
 | Ajustes | esquema `os.nodalix.Store` |
 
-El dominio de traducciones sigue siendo `bazaar` para no invalidar los catálogos existentes. Las cadenas nuevas aparecen en inglés hasta que se traduzcan.
+El dominio de traducciones es `nodalix-store`.
 
-La navegación principal es Curated, Discover, Library, Search y Updates. Discover es la exploración de Flathub que Bazaar llamaba Explore. Updates habla con NXPM.
+La navegación principal es Curated, Discover, Library, Search y Updates. Discover es la exploración de Flathub. Updates habla con NXPM.
 
 ## Iconos
 

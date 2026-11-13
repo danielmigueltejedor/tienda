@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::FULL-VIEW-WIDGET"
+#define G_LOG_DOMAIN "NODALIX-STORE::FULL-VIEW-WIDGET"
 
 #include <bzvala.h>
 #include <glib/gi18n.h>

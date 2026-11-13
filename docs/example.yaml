@@ -12,7 +12,7 @@ rows:
       light-color: "linear-gradient(135deg, #2b1f3d 0%, #778cf7 100%)" # Can also be a type of gradient
       # light-color: "url('file:///var/home/xander/Downloads/Conservation-Quest-at-Windsor-Great-Park-3.jpg') center / cover no-repeat" # Even an image should be possible
   - section:
-      title: "Welcome to Bazaar"
+      title: "Welcome to Nodalix Store"
       subtitle:
         string: | # Basic markdown is supported here.
           Discover apps you'll love. Here's one to get you started: [GNOME Calculator](appstream://org.gnome.Calculator).
@@ -39,7 +39,7 @@ rows:
           - org.gnome.Logs
   - articles:
       aspect-ratio: 1.777 # aspect ratio of the thumbnails, per articles section
-      uri: https://usebazaar.org/curated/articles.yaml # Can be used as a feed.
+      uri: https://example.org/curated/articles.yaml # Can be used as a feed.
       list: # Used only if URI fails, or is not given.
         - title: "Introducing GNOME 50, “Tokyo”" # Also used as the title on the article page
           subtitle: "First Half of 2026"

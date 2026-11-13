@@ -2,12 +2,12 @@
 
 Welcome! We are glad that you are here! 💖
 
-If you are here to contribute translations, please refer to the [Damned Lies
-Module](https://l10n.gnome.org/module/bazaar/).
+Translations live in `po/`: edit the `.po` file of your language, or add one
+and list it in `po/LINGUAS`, and open a pull request.
 
 For code, first make sure to read the [style rules](/CODESTYLE.md).
 
-The easiest way to run Bazaar from source is to use the
+The easiest way to run Nodalix Store from source is to use the
 [foundry](https://gitlab.gnome.org/GNOME/foundry) cli:
 
 ```sh
@@ -26,7 +26,7 @@ Or without flatpak, if your system permits it:
 meson setup build --prefix=/usr --libdir=/usr/lib64
 ninja -C build
 sudo ninja -C build install
-bazaar
+nodalix-store
 ```
 
 You will need the following dependencies installed, along with a C compiler, meson, and ninja:

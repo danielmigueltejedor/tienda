@@ -196,12 +196,6 @@ public extern class Bz.DeveloperBadge : GLib.Object {
     protected DeveloperBadge ();
 }
 
-[CCode (cheader_filename = "bz-donations-dialog.h", type_id = "bz_donations_dialog_get_type ()")]
-public extern class Bz.DonationsDialog : GLib.Object {
-    [CCode (has_construct_function = false)]
-    protected DonationsDialog ();
-}
-
 [CCode (cheader_filename = "bz-download-worker.h", type_id = "bz_download_worker_get_type ()")]
 public extern class Bz.DownloadWorker : GLib.Object {
     [CCode (has_construct_function = false)]

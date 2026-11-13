@@ -1,30 +1,23 @@
-# Irish translations for bazaar package.
-# Copyright (C) 2026 THE bazaar'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# Irish translations for nodalix-store package.
+# Copyright (C) 2026 THE nodalix-store'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nodalix-store package.
 # Automatically generated, 2026.
 #
 # Aindriú Mac Giolla Eoin <aindriu80@yahoo.com>, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-05-24 13:42+0100\n"
 "PO-Revision-Date: 2026-05-24 13:17+0000\n"
 "Last-Translator: Aindriú Mac Giolla Eoin <aindriu80@yahoo.com>\n"
-"Language-Team: Irish <http://weblate.amgelocalnet.duckdns.org/projects/"
-"bazaar-translations/bazaar/ga/>\n"
+"Language-Team: Irish\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
 "X-Generator: Weblate 2026.5\n"
-
-#: data/os.nodalix.Store.desktop.in:3
-#: data/os.nodalix.Store.metainfo.xml.in:7 src/bz-window.blp:45
-#: src/bz-window.blp:199 src/bz-window.c:373 src/bz-window.c:374
-msgid "Bazaar"
-msgstr "Bazaar"
 
 #: data/os.nodalix.Store.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
@@ -48,8 +41,8 @@ msgid ""
 "A fast and modern app store for Linux with a focus on discovering and "
 "installing Flatpak apps and addons, particularly from Flathub."
 msgstr ""
-"Siopa aipeanna gasta agus nua-aimseartha do Linux le fócas ar aipeanna agus "
-"breiseáin Flatpak a aimsiú agus a shuiteáil, go háirithe ó Flathub."
+"Siopa aipeanna gasta agus nua-aimseartha do Linux le fócas ar aipeanna agus"
+" breiseáin Flatpak a aimsiú agus a shuiteáil, go háirithe ó Flathub."
 
 #: data/os.nodalix.Store.metainfo.xml.in:15
 msgid "Queue multiple installs and keep browsing"
@@ -68,10 +61,6 @@ msgstr ""
 #: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Search apps directly from GNOME Shell"
 msgstr "Cuardaigh aipeanna go díreach ó GNOME Shell"
-
-#: data/os.nodalix.Store.metainfo.xml.in:30 src/bz-application.c:762
-msgid "The Bazaar Contributors"
-msgstr "Rannpháirtithe an Bazaar"
 
 #: data/os.nodalix.Store.metainfo.xml.in:55
 msgid "The home page displaying Flathub apps"
@@ -121,11 +110,11 @@ msgstr "Gan Breiseáin le Feiceáil"
 
 #: src/bz-addons-dialog.blp:81
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
-"Tá do chuid roghanna scagaire reatha ag cur breiseáin aitheanta i bhfolach. "
-"Bain triail as iad a choigeartú."
+"Tá do chuid roghanna scagaire reatha ag cur breiseáin aitheanta i bhfolach."
+" Bain triail as iad a choigeartú."
 
 #: src/bz-addons-dialog.blp:88
 msgid "Add-on Page"
@@ -145,8 +134,8 @@ msgid ""
 "fixes. It may become unsafe to use."
 msgstr ""
 "Úsáideann an breiseán seo am rith nach bhfaigheann nuashonruithe ná "
-"socruithe slándála a thuilleadh. D’fhéadfadh sé a bheith neamhshábháilte le "
-"húsáid."
+"socruithe slándála a thuilleadh. D’fhéadfadh sé a bheith neamhshábháilte le"
+" húsáid."
 
 #: src/bz-addons-dialog.c:333
 #, c-format
@@ -176,7 +165,8 @@ msgstr "Rátáil Aois"
 msgid "Cartoon Violence"
 msgstr "Foréigean Cartúin"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Gan aon eolas maidir le foréigean cartúin"
@@ -186,7 +176,8 @@ msgstr "Gan aon eolas maidir le foréigean cartúin"
 msgid "Fantasy Violence"
 msgstr "Foréigean Fantaisíochta"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Gan aon eolas maidir le foréigean fantaisíochta"
@@ -196,7 +187,8 @@ msgstr "Gan aon eolas maidir le foréigean fantaisíochta"
 msgid "Realistic Violence"
 msgstr "Foréigean Réalaíoch"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Gan aon fhaisnéis maidir le foréigean réalaíoch"
@@ -206,7 +198,8 @@ msgstr "Gan aon fhaisnéis maidir le foréigean réalaíoch"
 msgid "Violence Depicting Bloodshed"
 msgstr "Foréigean a léiríonn fuildhoirteadh"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Gan aon eolas faoi fhuildhoirteadh"
@@ -216,7 +209,8 @@ msgstr "Gan aon eolas faoi fhuildhoirteadh"
 msgid "Sexual Violence"
 msgstr "Foréigean Gnéasach"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Gan aon eolas maidir le foréigean gnéasach"
@@ -226,7 +220,8 @@ msgstr "Gan aon eolas maidir le foréigean gnéasach"
 msgid "Alcohol"
 msgstr "Alcól"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Gan aon fhaisnéis maidir le tagairtí d'alcól"
@@ -236,7 +231,8 @@ msgstr "Gan aon fhaisnéis maidir le tagairtí d'alcól"
 msgid "Narcotics"
 msgstr "Támhshuanacha"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "Gan aon fhaisnéis maidir le tagairtí do dhrugaí mídhleathacha"
@@ -246,7 +242,8 @@ msgstr "Gan aon fhaisnéis maidir le tagairtí do dhrugaí mídhleathacha"
 msgid "Tobacco"
 msgstr "Tobac"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Gan aon fhaisnéis maidir le tagairtí do tháirgí tobac"
@@ -256,7 +253,8 @@ msgstr "Gan aon fhaisnéis maidir le tagairtí do tháirgí tobac"
 msgid "Nudity"
 msgstr "Nochtacht"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Gan aon fhaisnéis maidir le nochtas de chineál ar bith"
@@ -266,7 +264,8 @@ msgstr "Gan aon fhaisnéis maidir le nochtas de chineál ar bith"
 msgid "Sexual Themes"
 msgstr "Téamaí Gnéis"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr "Gan aon fhaisnéis maidir le tagairtí nó léirithe de chineál gnéasach"
@@ -276,7 +275,8 @@ msgstr "Gan aon fhaisnéis maidir le tagairtí nó léirithe de chineál gnéasa
 msgid "Profanity"
 msgstr "Maslaí"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Gan aon fhaisnéis maidir le maslaí de chineál ar bith"
@@ -286,7 +286,8 @@ msgstr "Gan aon fhaisnéis maidir le maslaí de chineál ar bith"
 msgid "Inappropriate Humor"
 msgstr "Greann Míchuí"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Gan aon eolas maidir le greann míchuí"
@@ -296,7 +297,8 @@ msgstr "Gan aon eolas maidir le greann míchuí"
 msgid "Discrimination"
 msgstr "Idirdhealú"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Gan aon fhaisnéis maidir le teanga idirdhealaitheach d'aon chineál"
@@ -306,7 +308,8 @@ msgstr "Gan aon fhaisnéis maidir le teanga idirdhealaitheach d'aon chineál"
 msgid "Advertising"
 msgstr "Fógraíocht"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Gan aon fhaisnéis maidir le fógraíocht d'aon chineál"
@@ -316,7 +319,8 @@ msgstr "Gan aon fhaisnéis maidir le fógraíocht d'aon chineál"
 msgid "Gambling"
 msgstr "Cearrbhachas"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Gan aon fhaisnéis maidir le cearrbhachas d'aon chineál"
@@ -326,7 +330,8 @@ msgstr "Gan aon fhaisnéis maidir le cearrbhachas d'aon chineál"
 msgid "Purchasing"
 msgstr "Ceannach"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Gan aon eolas maidir leis an gcumas airgead a chaitheamh"
@@ -336,7 +341,8 @@ msgstr "Gan aon eolas maidir leis an gcumas airgead a chaitheamh"
 msgid "Chat Between Users"
 msgstr "Comhrá idir Úsáideoirí"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr ""
@@ -347,7 +353,8 @@ msgstr ""
 msgid "Audio Chat Between Users"
 msgstr "Comhrá Fuaime Idir Úsáideoirí"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr "Gan aon eolas maidir le bealaí chun labhairt le húsáideoirí eile"
@@ -357,7 +364,8 @@ msgstr "Gan aon eolas maidir le bealaí chun labhairt le húsáideoirí eile"
 msgid "Contact Details"
 msgstr "Sonraí Teagmhála"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
@@ -371,9 +379,11 @@ msgstr ""
 msgid "Identifying Information"
 msgstr "Faisnéis Aitheantais"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr ""
 "Gan aon fhaisnéis maidir le faisnéis úsáideora a roinnt le tríú páirtithe"
 
@@ -382,9 +392,11 @@ msgstr ""
 msgid "Location Sharing"
 msgstr "Comhroinnt Suímh"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr ""
 "Gan aon fhaisnéis maidir le suíomh fisiceach a roinnt le húsáideoirí eile"
 
@@ -393,7 +405,8 @@ msgstr ""
 msgid "Prostitution"
 msgstr "Striapachas"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Gan aon fhaisnéis maidir le tagairtí do striapachas"
@@ -403,7 +416,8 @@ msgstr "Gan aon fhaisnéis maidir le tagairtí do striapachas"
 msgid "Adultery"
 msgstr "Adaltranas"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Gan aon fhaisnéis maidir le tagairtí d'adhaltranas"
@@ -413,7 +427,8 @@ msgstr "Gan aon fhaisnéis maidir le tagairtí d'adhaltranas"
 msgid "Sexualized Characters"
 msgstr "Carachtair Ghnéasaithe"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Gan aon fhaisnéis maidir le carachtair ghnéasaithe"
@@ -423,7 +438,8 @@ msgstr "Gan aon fhaisnéis maidir le carachtair ghnéasaithe"
 msgid "Desecration"
 msgstr "Mí-naomhú"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Gan aon fhaisnéis maidir le tagairtí do dhí-sheacracht"
@@ -433,7 +449,8 @@ msgstr "Gan aon fhaisnéis maidir le tagairtí do dhí-sheacracht"
 msgid "Human Remains"
 msgstr "Iarsmaí Daonna"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Gan aon fhaisnéis maidir le hiarsmaí daonna marbha infheicthe"
@@ -443,7 +460,8 @@ msgstr "Gan aon fhaisnéis maidir le hiarsmaí daonna marbha infheicthe"
 msgid "Slavery"
 msgstr "Sclábhaíocht"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Gan aon fhaisnéis maidir le tagairtí don sclábhaíocht"
@@ -733,7 +751,8 @@ msgstr "Fíoraithe"
 msgid "Installed"
 msgstr "Suiteáilte"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:765
 msgid "translator-credits"
 msgstr "Aindriú Mac Giolla Eoin"
@@ -754,37 +773,9 @@ msgstr "Ag déanamh an socraithe…"
 msgid "Set Up System Flathub?"
 msgstr "Córas Flathub a Chur Ar Bun?"
 
-#: src/bz-application.c:1058
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Níl an cianrialtán Flathub córais socraithe. Éilíonn Bazaar go mbeidh "
-"Flathub cumraithe ar shuiteáil Flatpak an chórais chun brabhsáil agus "
-"feidhmchláir a shuiteáil.\n"
-"\n"
-"Is féidir leat Bazaar a úsáid fós chun brabhsáil agus aipeanna atá "
-"suiteáilte cheana féin a bhaint."
-
 #: src/bz-application.c:1065
 msgid "Set Up Flathub?"
 msgstr "Suiteáil Flathub?"
-
-#: src/bz-application.c:1068
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Níl Flathub socraithe ar an gcóras seo. Ní bheidh tú in ann brabhsáil agus "
-"feidhmchláir a shuiteáil i Bazaar mura bhfuil sé ar fáil.\n"
-"\n"
-"Is féidir leat Bazaar a úsáid fós chun brabhsáil agus aipeanna atá "
-"suiteáilte cheana féin a bhaint."
 
 #: src/bz-application.c:1074
 msgid "Later"
@@ -829,16 +820,13 @@ msgstr "Nasc Mífhoirmithe"
 
 #: src/bz-application.c:3502
 msgid ""
-"The link used to open this app has incorrect capitalization and may stop "
-"working in the future.\n"
+"The link used to open this app has incorrect capitalization and may stop working in the future.\n"
 "\n"
 "This is most likely caused by KRunner sending incorrect app IDs"
 msgstr ""
-"Tá caipitliú mícheart ar an nasc a úsáideadh chun an aip seo a oscailt agus "
-"d'fhéadfadh sé stopadh ag obair amach anseo.\n"
+"Tá caipitliú mícheart ar an nasc a úsáideadh chun an aip seo a oscailt agus d'fhéadfadh sé stopadh ag obair amach anseo.\n"
 "\n"
-"Is dóichí gur tharla sé seo mar gheall ar aitheantais aipeanna míchearta a "
-"sheoladh ag KRunner"
+"Is dóichí gur tharla sé seo mar gheall ar aitheantais aipeanna míchearta a sheoladh ag KRunner"
 
 #: src/bz-application.c:3510
 msgid "Could not find app"
@@ -873,19 +861,6 @@ msgstr "Suiteáil Pacáiste"
 #: src/bz-bundle-install-dialog.blp:147
 msgid "Additional dependencies may take extra space"
 msgstr "D’fhéadfadh spleáchais bhreise spás breise a thógáil"
-
-#: src/bz-bundle-install-dialog.blp:181
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
-msgstr ""
-"B’fhéidir go mbeadh gá le foinse bogearraí nua a chur leis agus an aip seo á "
-"shuiteáil. Beidh aipeanna eile ón bhfoinse seo le feiceáil i Bazaar.\n"
-"\n"
-"Ná cuir an fhoinse seo leis ach amháin má tá tú cinnte go bhfuil muinín agat "
-"aisti."
 
 #: src/bz-bundle-install-dialog.blp:357
 msgid "Successfully Installed!"
@@ -1064,8 +1039,8 @@ msgid ""
 "There is no curation information provided on this system. You can still "
 "browse applications on Flathub"
 msgstr ""
-"Níl aon fhaisnéis choimeádta curtha ar fáil ar an gcóras seo. Is féidir leat "
-"brabhsáil a dhéanamh ar fheidhmchláir ar Flathub fós"
+"Níl aon fhaisnéis choimeádta curtha ar fáil ar an gcóras seo. Is féidir "
+"leat brabhsáil a dhéanamh ar fheidhmchláir ar Flathub fós"
 
 #: src/bz-curated-view.blp:18
 msgid "Browse Flathub"
@@ -1108,7 +1083,8 @@ msgid ""
 "The ownership of the %s app ID has been manually verified by the Flathub "
 "team."
 msgstr ""
-"Tá úinéireacht an aitheantais aip %s fíoraithe de láimh ag foireann Flathub."
+"Tá úinéireacht an aitheantais aip %s fíoraithe de láimh ag foireann "
+"Flathub."
 
 #: src/bz-developer-badge.c:253
 #, c-format
@@ -1116,8 +1092,8 @@ msgid ""
 "The ownership of the %1$s app ID has been verified by <b>%2$s</b> on "
 "<b>%3$s</b>."
 msgstr ""
-"Tá úinéireacht an aitheantais aip %1$s fíoraithe ag <b>%2$s</b> ar <b>%3$s</"
-"b>."
+"Tá úinéireacht an aitheantais aip %1$s fíoraithe ag <b>%2$s</b> ar "
+"<b>%3$s</b>."
 
 #: src/bz-developer-badge.c:260
 #, c-format
@@ -1138,25 +1114,15 @@ msgid "This release was made possible by users like you!"
 msgstr ""
 "Rinneadh an eisiúint seo indéanta a bhuíochas d’úsáideoirí cosúil leatsa!"
 
-#: src/bz-donations-dialog.blp:116
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr ""
-"Is breá liom Bazaar a chruthú, ach ní féidir liom é a dhéanamh liom féin. "
-"Cabhraigh le forbairt bhreise a chothú trí bhronnadh a thabhairt ar Ko-Fi."
-
-#: src/bz-donations-dialog.blp:131
-msgid "Donate to Bazaar"
-msgstr "Tabhair síntiús don Bazaar"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:227
 #, c-format
 msgid "What's New in %s?"
 msgstr "Cad atá Nua i %s?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:243
 msgid "Released %B %-e, %Y"
 msgstr "Scaoilte %B %-e, %Y"
@@ -1237,7 +1203,8 @@ msgstr "Gan aon Ceanáin"
 
 #: src/bz-favorites-page.blp:50
 msgid "Applications you mark as favorite will appear here"
-msgstr "Beidh feidhmchláir a mharcálann tú mar is fearr leat le feiceáil anseo"
+msgstr ""
+"Beidh feidhmchláir a mharcálann tú mar is fearr leat le feiceáil anseo"
 
 #: src/bz-favorites-tile.blp:60 src/bz-installed-tile.blp:69
 msgid "Support This Application"
@@ -1540,7 +1507,8 @@ msgstr "Níor Cuireadh Flathub Leis"
 #: src/bz-flathub-page.blp:24
 msgid "The Flathub remote was not found on any of your Flatpak installations"
 msgstr ""
-"Ní bhfuarthas an cianrialtán Flathub ar aon cheann de do shuiteálacha Flatpak"
+"Ní bhfuarthas an cianrialtán Flathub ar aon cheann de do shuiteálacha "
+"Flatpak"
 
 #: src/bz-flathub-page.blp:35
 msgid "Flathub returned an error"
@@ -1644,8 +1612,8 @@ msgstr "Gan URL"
 
 #: src/bz-full-view.c:198
 msgid ""
-"This application has a FLOSS license, meaning the source code can be audited "
-"for safety."
+"This application has a FLOSS license, meaning the source code can be "
+"audited for safety."
 msgstr ""
 "Tá ceadúnas FLOSS ag an bhfeidhmchlár seo, rud a chiallaíonn gur féidir an "
 "cód foinse a iniúchadh ar mhaithe le sábháilteacht."
@@ -1656,8 +1624,8 @@ msgid ""
 "developed privately and cannot be audited by an independent third party."
 msgstr ""
 "Tá ceadúnas dílseánaigh ag an bhfeidhmchlár seo, rud a chiallaíonn go "
-"bhforbraítear an cód foinse go príobháideach agus nach féidir le tríú páirtí "
-"neamhspleách é a iniúchadh."
+"bhforbraítear an cód foinse go príobháideach agus nach féidir le tríú "
+"páirtí neamhspleách é a iniúchadh."
 
 #: src/bz-full-view.c:206
 msgid "More Apps"
@@ -1876,7 +1844,8 @@ msgstr "Méid"
 #, c-format
 msgid "No matches found for \"%s\" in the list of installed apps"
 msgstr ""
-"Níor aimsíodh aon mheaitseálacha do \"%s\" i liosta na n-aipeanna suiteáilte"
+"Níor aimsíodh aon mheaitseálacha do \"%s\" i liosta na n-aipeanna "
+"suiteáilte"
 
 #: src/bz-library-page.c:193 src/bz-updates-card.c:433
 #, c-format
@@ -1927,27 +1896,21 @@ msgstr "Níl ceadúnas an aip seo ar eolas"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Forbraíodh an aip seo go hoscailte ag pobal idirnáisiúnta, agus eisíodh í "
-"faoin gceadúnas %s.\n"
+"Forbraíodh an aip seo go hoscailte ag pobal idirnáisiúnta, agus eisíodh í faoin gceadúnas %s.\n"
 "\n"
 "Is féidir leat páirt a ghlacadh agus cabhrú le feabhas a chur uirthi."
 
 #: src/bz-license-dialog.c:220
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Níor forbraíodh an aip seo go hoscailte, mar sin níl a fhios ag ach a "
-"forbróirí conas a oibríonn sé. D’fhéadfadh sé a bheith neamhshábháilte ar "
-"bhealaí atá deacair a bhrath, agus d’fhéadfadh sé athrú gan mhaoirseacht.\n"
+"Níor forbraíodh an aip seo go hoscailte, mar sin níl a fhios ag ach a forbróirí conas a oibríonn sé. D’fhéadfadh sé a bheith neamhshábháilte ar bhealaí atá deacair a bhrath, agus d’fhéadfadh sé athrú gan mhaoirseacht.\n"
 "\n"
 "B’fhéidir go mbeidh tú in ann cur leis an aip seo nó nach mbeidh."
 
@@ -1973,12 +1936,6 @@ msgstr "Ceangail le Flathub"
 #: src/bz-login-page.blp:32
 msgid "Something Went Wrong"
 msgstr "Chuaigh rud éigin mícheart"
-
-#: src/bz-login-page.blp:43
-msgid "Connect your Flathub account to Bazaar to manage your favorited apps."
-msgstr ""
-"Ceangail do chuntas Flathub le Bazaar chun do chuid aipeanna is fearr leat a "
-"bhainistiú."
 
 #: src/bz-login-page.blp:110
 msgid "Finish"
@@ -2014,10 +1971,11 @@ msgid "Preferences"
 msgstr "Roghanna"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
-"Tá an nasc líonra méadraithe — tá athnuachan uathoibríoch sonraí stórála ar "
-"sos"
+"Tá an nasc líonra méadraithe — tá athnuachan uathoibríoch sonraí stórála ar"
+" sos"
 
 #: src/bz-preferences-dialog.blp:26 src/bz-window.blp:232
 msgid "Refresh Manually"
@@ -2194,7 +2152,8 @@ msgstr "_Stair Leagan"
 msgid "Today"
 msgstr "Inniu"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:125
 msgid "Yesterday"
 msgstr "Inné"
@@ -2258,7 +2217,8 @@ msgstr "Faigh Tuilleadh Eolais"
 msgid "Uninstall"
 msgstr "Díshuiteáil"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:369
 msgid "Get"
 msgstr "Faigh"
@@ -2302,8 +2262,8 @@ msgstr "Rochtain Gléas Úsáideora"
 #: src/safety-calculator.c:118
 msgid "Can access devices such as webcams or gaming controllers"
 msgstr ""
-"Is féidir rochtain a fháil ar fheistí ar nós ceamaraí gréasáin nó rialtóirí "
-"cearrbhachais"
+"Is féidir rochtain a fháil ar fheistí ar nós ceamaraí gréasáin nó rialtóirí"
+" cearrbhachais"
 
 #: src/safety-calculator.c:120
 msgid "No User Device Access"
@@ -2312,8 +2272,8 @@ msgstr "Gan Rochtain ar Ghléas Úsáideora"
 #: src/safety-calculator.c:121
 msgid "Cannot access devices such as webcams or gaming controllers"
 msgstr ""
-"Ní féidir rochtain a fháil ar fheistí ar nós ceamaraí gréasáin nó rialtóirí "
-"cearrbhachais"
+"Ní féidir rochtain a fháil ar fheistí ar nós ceamaraí gréasáin nó rialtóirí"
+" cearrbhachais"
 
 #: src/safety-calculator.c:126
 msgid "Input Device Access"
@@ -2424,7 +2384,8 @@ msgstr "Íoslódáil Rochtain Léitheoireachta Fillteáin"
 
 #: src/safety-calculator.c:221
 msgid "Can read all data in your downloads directory"
-msgstr "Is féidir leat na sonraí go léir i do chomhadlann íoslódálacha a léamh"
+msgstr ""
+"Is féidir leat na sonraí go léir i do chomhadlann íoslódálacha a léamh"
 
 #: src/safety-calculator.c:242
 msgid "Can read and write all data in the directory"
@@ -2465,15 +2426,16 @@ msgstr "Gan Rochtain Seirbhíse"
 #: src/safety-calculator.c:346
 msgid "Cannot access non-portal session or system services at all"
 msgstr ""
-"Ní féidir rochtain a fháil ar sheirbhísí seisiúin nó córais neamh-thairseach "
-"ar chor ar bith"
+"Ní féidir rochtain a fháil ar sheirbhísí seisiúin nó córais neamh-"
+"thairseach ar chor ar bith"
 
 #: src/safety-calculator.c:354
 msgid "Verified App Developer"
 msgstr "Forbróir Aipeanna Fíoraithe"
 
 #: src/safety-calculator.c:355
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr ""
 "Tá sé fíoraithe gurb é forbróir an aip seo an duine a deir siad a bheith"
 
@@ -2495,11 +2457,11 @@ msgstr "Cód Iniúchta"
 
 #: src/safety-calculator.c:376
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
-"Tá an cód foinse poiblí agus is féidir é a iniúchadh go neamhspleách, rud a "
-"fhágann go bhfuil an aip níos dóchúla a bheith sábháilte"
+"Tá an cód foinse poiblí agus is féidir é a iniúchadh go neamhspleách, rud a"
+" fhágann go bhfuil an aip níos dóchúla a bheith sábháilte"
 
 #: src/safety-calculator.c:516
 #, c-format
@@ -2600,8 +2562,8 @@ msgid ""
 "contain bugs or security vulnerabilities which will not be fixed."
 msgstr ""
 "Úsáideann an aip seo leagan atá as dáta den ardán bogearraí (SDK) agus "
-"d'fhéadfadh fabhtanna nó leochaileachtaí slándála a bheith ann nach ndéanfar "
-"a shocrú."
+"d'fhéadfadh fabhtanna nó leochaileachtaí slándála a bheith ann nach "
+"ndéanfar a shocrú."
 
 #: src/bz-safety-dialog.c:167
 msgid "Safety"
@@ -2926,8 +2888,8 @@ msgstr "Suiteáil %s?"
 msgid ""
 "Select which version to install. May install additional shared components"
 msgstr ""
-"Roghnaigh cén leagan atá le suiteáil. Féadfaidh comhpháirteanna comhroinnte "
-"breise a shuiteáil"
+"Roghnaigh cén leagan atá le suiteáil. Féadfaidh comhpháirteanna comhroinnte"
+" breise a shuiteáil"
 
 #: src/bz-transaction-dialog.c:197
 msgid "May install additional shared components"
@@ -2963,39 +2925,23 @@ msgstr "Tá “%s” i mbaol ard"
 
 #: src/bz-transaction-dialog.c:250
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Tá rochtain iomlán ag an aip seo ar do chóras, lena n-áirítear <b>do chuid "
-"comhad go léir, stair bhrabhsálaí, pasfhocail shábháilte</b>, agus "
-"tuilleadh. Tá rochtain aici ar an idirlíon freisin, rud a chiallaíonn go "
-"bhféadfadh sí do shonraí a sheoladh chuig páirtithe seachtracha.\n"
+"Tá rochtain iomlán ag an aip seo ar do chóras, lena n-áirítear <b>do chuid comhad go léir, stair bhrabhsálaí, pasfhocail shábháilte</b>, agus tuilleadh. Tá rochtain aici ar an idirlíon freisin, rud a chiallaíonn go bhféadfadh sí do shonraí a sheoladh chuig páirtithe seachtracha.\n"
 "\n"
-"Ós rud é gur aip dhílseánaigh í, ní féidir iniúchadh a dhéanamh uirthi "
-"maidir leis an méid a dhéanann sí leis na ceadanna seo."
+"Ós rud é gur aip dhílseánaigh í, ní féidir iniúchadh a dhéanamh uirthi maidir leis an méid a dhéanann sí leis na ceadanna seo."
 
 #: src/bz-transaction-dialog.c:259
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
-"Úsáideann an aip seo an seanchóras fuinneoige X11, rud a ligeann di <b>gach "
-"eochairbhuille a thaifeadadh, scáileáin a ghabháil, agus monatóireacht a "
-"dhéanamh ar fheidhmchláir eile</b>. Tá rochtain aici ar an idirlíon freisin, "
-"rud a chiallaíonn gur féidir léi do shonraí a sheoladh chuig páirtithe "
-"seachtracha.\n"
+"Úsáideann an aip seo an seanchóras fuinneoige X11, rud a ligeann di <b>gach eochairbhuille a thaifeadadh, scáileáin a ghabháil, agus monatóireacht a dhéanamh ar fheidhmchláir eile</b>. Tá rochtain aici ar an idirlíon freisin, rud a chiallaíonn gur féidir léi do shonraí a sheoladh chuig páirtithe seachtracha.\n"
 "\n"
-"Ós rud é gur aip dhílseánaigh í, ní féidir iniúchadh a dhéanamh uirthi "
-"maidir leis an méid a dhéanann sí leis na ceadanna seo."
+"Ós rud é gur aip dhílseánaigh í, ní féidir iniúchadh a dhéanamh uirthi maidir leis an méid a dhéanann sí leis na ceadanna seo."
 
 #: src/bz-transaction-dialog.c:275
 msgid "_Install Anyway"
@@ -3026,8 +2972,8 @@ msgid ""
 "The following will be installed. Additional shared components may also be "
 "installed"
 msgstr ""
-"Suiteálfar an méid seo a leanas. Féadfar comhpháirteanna comhroinnte breise "
-"a shuiteáil freisin"
+"Suiteálfar an méid seo a leanas. Féadfar comhpháirteanna comhroinnte breise"
+" a shuiteáil freisin"
 
 #: src/bz-transaction-dialog.c:574
 #, c-format
@@ -3141,10 +3087,6 @@ msgstr "Taiscéal"
 msgid "Main Menu"
 msgstr "Príomh-Roghchlár"
 
-#: src/bz-window.blp:223
-msgid "You are running a new version of Bazaar!"
-msgstr "Tá leagan nua de Bazaar á rith agat!"
-
 #: src/bz-window.blp:224
 msgid "See What's New"
 msgstr "Féach Cad atá Nua"
@@ -3154,10 +3096,6 @@ msgid ""
 "You have a network connection but are viewing a cached version of Flathub"
 msgstr ""
 "Tá nasc líonra agat ach tá leagan taisceáilte de Flathub á fheiceáil agat"
-
-#: src/bz-window.blp:276
-msgid "_Donate to Bazaar"
-msgstr "_Tabhair Síntiús do Bazaar"
 
 #: src/bz-window.blp:283
 msgid "_Refresh"
@@ -3179,31 +3117,13 @@ msgstr "_Bainistigh Sonraí Úsáideora atá Fágtha"
 msgid "_Keyboard Shortcuts"
 msgstr "_Aicearraí Méarchláir"
 
-#: src/bz-window.blp:309
-msgid "_About Bazaar"
-msgstr "_Maidir le Bazaar"
-
-#: src/bz-window.blp:316
-msgid "_Quit Bazaar"
-msgstr "_Scoir den Bazaar"
-
 #: src/bz-window.blp:341
 msgid "Log Out"
 msgstr "Logáil Amach"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:376
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
-
 #: src/bz-window.c:596 src/bz-window.c:634
 msgid "Failed to launch application"
 msgstr "Theip ar an bhfeidhmchlár a sheoladh"
-
-#: src/bz-window.c:843
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Ní féidir leat Bazaar a bhaint as Bazaar!"
 
 #: src/bz-window.c:1127 src/bz-window.c:1161
 msgid "Can't do that right now!"
@@ -3267,20 +3187,17 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Dún an Fhuinneog"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Scoir den Bazaar"
+#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
+#: src/bz-application.c:816 src/bz-donations-dialog.blp:8
+#: src/bz-window.blp:55 src/bz-window.blp:201 src/bz-window.c:435
+#: src/bz-window.c:436
+msgid "Store"
+msgstr "Siopa"
 
-#~ msgid ""
-#~ "It emphasizes supporting the developers who make the Linux desktop "
-#~ "possible. Bazaar features a \"curated\" tab that can be configured by "
-#~ "distributors to allow for a more localized experience."
-#~ msgstr ""
-#~ "Leagann sé béim ar thacaíocht a thabhairt do na forbróirí a chuireann ar "
-#~ "chumas an deasc Linux a bheith indéanta. Tá cluaisín \"coimeádta\" ar "
-#~ "fáil i Bazaar ar féidir le dáileoirí é a chumrú chun eispéireas níos "
-#~ "logánta a cheadú."
+#: src/bz-window.c:438
+#, c-format
+msgid "Store — %s"
+msgstr "Siopa — %s"
 
 #~ msgid "Adam Masciola"
 #~ msgstr "Adam Masciola"
@@ -3444,15 +3361,13 @@ msgstr "Scoir den Bazaar"
 #~ msgstr[2] "%d Nuashonruithe Ar Fáil"
 
 #~ msgid ""
-#~ "The ability to inspect and install local .flatpak bundle files is coming "
-#~ "soon! In the meantime, try running\n"
+#~ "The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
 #~ "on the command line."
 #~ msgstr ""
-#~ "Beidh an cumas comhaid phacáiste .flatpak áitiúla a iniúchadh agus a "
-#~ "shuiteáil ag teacht go luath! Idir an dá linn, bain triail as\n"
+#~ "Beidh an cumas comhaid phacáiste .flatpak áitiúla a iniúchadh agus a shuiteáil ag teacht go luath! Idir an dá linn, bain triail as\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
@@ -3475,14 +3390,3 @@ msgstr "Scoir den Bazaar"
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
 #~ msgstr "Scoir"
-
-#: data/os.nodalix.Store.desktop.in:5 data/os.nodalix.Store.metainfo.xml.in:8
-#: src/bz-application.c:816 src/bz-donations-dialog.blp:8 src/bz-window.blp:55
-#: src/bz-window.blp:201 src/bz-window.c:435 src/bz-window.c:436
-msgid "Store"
-msgstr "Siopa"
-
-#: src/bz-window.c:438
-#, c-format
-msgid "Store — %s"
-msgstr "Siopa — %s"

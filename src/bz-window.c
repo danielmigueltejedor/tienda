@@ -1042,17 +1042,16 @@ transact_fiber (TransactData *data)
   else
     id_dup = g_strdup (bz_entry_get_id (data->entry));
 
-  /* Prevent Bazaar from being removed by itself */
+  /* Prevent the Store from being removed by itself */
   if (data->remove)
     {
-      const char *bazaar_id = NULL;
+      const char *app_id = NULL;
 
-      bazaar_id = g_application_get_application_id (g_application_get_default ());
-      if (g_strcmp0 (id_dup, bazaar_id) == 0)
+      app_id = g_application_get_application_id (g_application_get_default ());
+      if (g_strcmp0 (id_dup, app_id) == 0)
         {
           GtkWidget *window = NULL;
           window            = GTK_WIDGET (gtk_application_get_active_window (GTK_APPLICATION (g_application_get_default ())));
-          // Translators: Please treat "Bazaar" as a brand name and avoid translating.
           bz_show_error_for_widget (window, _ ("You can't remove Nodalix Store from Nodalix Store!"), _ ("You can't remove Nodalix Store from Nodalix Store!"));
           return dex_future_new_false ();
         }

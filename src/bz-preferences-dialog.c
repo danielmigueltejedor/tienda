@@ -30,7 +30,7 @@
 #include "util.h"
 
 #define AUTOSTART_DESKTOP_FILE_NAME     "os.nodalix.Store.desktop"
-#define AUTOSTART_DESKTOP_RESOURCE_PATH "/os/nodalix/Store/bazaar.desktop"
+#define AUTOSTART_DESKTOP_RESOURCE_PATH "/os/nodalix/Store/nodalix-store.desktop"
 
 typedef struct
 {
@@ -276,14 +276,13 @@ request_autostart_fiber (gpointer user_data)
       return dex_future_new_for_error (g_steal_pointer (&local_error));
     }
 
-  token = g_strdup_printf ("bazaar_autostart_%u", request_count++);
+  token = g_strdup_printf ("store_autostart_%u", request_count++);
 
   options = g_variant_new_parsed (
       "{'handle_token': <%s>, 'reason': <%s>, "
       "'autostart': <%b>, 'dbus-activatable': <false>, "
       "'commandline': <['nodalix-store-daemon', '--no-window']>}",
       token,
-      // Translators: Please treat "Bazaar" as a brand name and avoid translating.
       _ ("Nodalix Store needs to run in the background to check for app updates"),
       enable);
 

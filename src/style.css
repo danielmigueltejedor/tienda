@@ -43,19 +43,6 @@
     padding-right: 2px;
 }
 
-.bz-donations-dialog {
-    background: linear-gradient(to bottom left, #1f2d8f, #159eff);
-    color: white;
-}
-
-.bz-donations-dialog button:focus {
-    outline-color: white;
-}
-
-.bz-donations-banner {
-    --banner-color: var(--accent-bg-color);
-}
-
 .search-box {
   outline: 0 solid transparent;
   outline-offset: 6px;

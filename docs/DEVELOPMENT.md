@@ -2,7 +2,7 @@
 
 ## Tienda
 
-Hace falta el entorno de compilación de Bazaar: GTK 4.22 o posterior, Libadwaita 1.8 o posterior, libflatpak, AppStream, libdex, libsoup, glycin, WebKitGTK 6, libsecret, libproxy, malcontent, gtksourceview 5 y `blueprint-compiler` 0.20 o posterior.
+Hace falta el entorno de compilación siguiente: GTK 4.22 o posterior, Libadwaita 1.8 o posterior, libflatpak, AppStream, libdex, libsoup, glycin, WebKitGTK 6, libsecret, libproxy, malcontent, gtksourceview 5 y `blueprint-compiler` 0.20 o posterior.
 
 En este equipo `blueprint-compiler` 0.22 se instaló en el prefijo del usuario porque no estaba en el sistema.
 
@@ -20,7 +20,7 @@ Para ejecutar la tienda sin instalarla:
 GSETTINGS_SCHEMA_DIR=build/data ./build/src/nodalix-store
 ```
 
-El servicio de usuario que Bazaar espera sigue siendo el demonio de la tienda. NXPM es otro servicio.
+El servicio de usuario que la tienda espera sigue siendo el demonio de la tienda. NXPM es otro servicio.
 
 ## NXPM
 

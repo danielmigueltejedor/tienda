@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::DL-WORKER-SUBPROCESS"
+#define G_LOG_DOMAIN "NODALIX-STORE::DL-WORKER-SUBPROCESS"
 
 #include "env.h"
 #include "global-net.h"
@@ -148,7 +148,7 @@ download_fiber (const char *src_uri,
 
   headers = soup_message_get_request_headers (message);
   soup_message_headers_append (headers, "Accept", "*/*");
-  soup_message_headers_append (headers, "User-Agent", "Bazaar");
+  soup_message_headers_append (headers, "User-Agent", "NodalixStore");
 
   success = dex_await (bz_send_with_global_http_session_then_splice_into (
                            message, G_OUTPUT_STREAM (dest_output)),

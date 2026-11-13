@@ -1,5 +1,5 @@
 {
-	"name": "Bazaar devcontainer",
+	"name": "Nodalix Store devcontainer",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},

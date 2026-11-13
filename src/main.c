@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::MAIN"
+#define G_LOG_DOMAIN "NODALIX-STORE::MAIN"
 
 #include "config.h"
 
@@ -56,7 +56,7 @@ main (int   argc,
     {
       g_autoptr (BzApplication) app = NULL;
 
-      /* Init Bazaar GTK Extensions (see ../bge/) */
+      /* Init GTK Extensions (bge) (see ../bge/) */
       bge_init ();
 
       app = g_object_new (

@@ -56,7 +56,7 @@ install_headers(
 
 pkg = import('pkgconfig')
 pkg.generate(
-  description: 'Bazaar GTK Extensions',
+  description: 'GTK Extensions',
     libraries: bge_lib,
          name: 'libbge',
      filebase: 'bge',

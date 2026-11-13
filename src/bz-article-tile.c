@@ -18,7 +18,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define BAZAAR_MODULE "article-tile"
+#define STORE_MODULE "article-tile"
 
 #include "config.h"
 

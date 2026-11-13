@@ -10,7 +10,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#define G_LOG_DOMAIN "BAZAAR::NDL"
+#define G_LOG_DOMAIN "NODALIX-STORE::NDL"
 
 #include "config.h"
 
@@ -86,6 +86,12 @@ bz_ndl_theme_init (void)
 
   installed = TRUE;
   manager   = adw_style_manager_get_for_display (display);
+
+  /* NDL windows have the three round controls. The desktop's own button
+   * layout often leaves only "close", so ask for all three here. */
+  g_object_set (gtk_settings_get_for_display (display),
+                "gtk-decoration-layout", ":minimize,maximize,close",
+                NULL);
 
   /* Order matters among providers of one priority: colours first, then the
    * metrics and the widget sheet that read them, then the Nodalix overrides. */

@@ -1,5 +1,5 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the bazaar package.
+# This file is distributed under the same license as the nodalix-store package.
 #
 # SPDX-FileCopyrightText: 2025, 2026 renner <renner0@posteo.de>
 # renner <renner0@posteo.de>, 2025.
@@ -9,8 +9,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bazaar\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/World/bazaar/-/work_items\n"
+"Project-Id-Version: nodalix-store\n"
+"Report-Msgid-Bugs-To: https://github.com/getnodalia/tienda/issues\n"
 "POT-Creation-Date: 2026-08-15 06:41+0000\n"
 "PO-Revision-Date: 2026-08-16 17:18+0200\n"
 "Last-Translator: Manuel Lukas Rottschäfer <rottscha@pm.me>\n"
@@ -22,19 +22,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 50.0\n"
 
-#: data/os.nodalix.Store.desktop.in:2
-#: data/os.nodalix.Store.metainfo.xml.in:7 src/bz-window.blp:47
-#: src/bz-window.blp:203 src/bz-window.c:391 src/bz-window.c:392
-msgid "Bazaar"
-msgstr "Bazaar"
-
 #: data/os.nodalix.Store.desktop.in:3
 msgid "App Store"
 msgstr "App-Marktplatz"
 
 #: data/os.nodalix.Store.desktop.in:4
 msgid "Add, remove or update flatpak software on this computer"
-msgstr "Hinzufügen, Entfernen oder Aktualisieren von Apps auf diesem Computer"
+msgstr ""
+"Hinzufügen, Entfernen oder Aktualisieren von Apps auf diesem Computer"
 
 #: data/os.nodalix.Store.desktop.in:10
 #, fuzzy
@@ -76,10 +71,6 @@ msgstr ""
 #: data/os.nodalix.Store.metainfo.xml.in:18
 msgid "Search apps directly from GNOME Shell"
 msgstr ""
-
-#: data/os.nodalix.Store.metainfo.xml.in:30 src/bz-application.c:723
-msgid "The Bazaar Contributors"
-msgstr "Die Bazaar Mitwirkenden"
 
 #: data/os.nodalix.Store.metainfo.xml.in:55
 msgid "The home page displaying Flathub apps"
@@ -133,11 +124,11 @@ msgstr "Keine Erweiterungen sichtbar"
 
 #: src/bz-addons-dialog.blp:82
 msgid ""
-"Your current filter preferences are hiding all known add-ons. Try adjusting "
-"them."
+"Your current filter preferences are hiding all known add-ons. Try adjusting"
+" them."
 msgstr ""
-"Ihre aktuellen Filtereinstellungen blenden alle bekannten Erweiterungen aus. "
-"Versuche Sie, sie anzupassen."
+"Ihre aktuellen Filtereinstellungen blenden alle bekannten Erweiterungen "
+"aus. Versuche Sie, sie anzupassen."
 
 #: src/bz-addons-dialog.blp:89
 msgid "Add-on Page"
@@ -158,7 +149,8 @@ msgid ""
 "fixes. It may become unsafe to use."
 msgstr ""
 "Diese Erweiterung verwendet eine Laufzeitumgebung, die keine Updates oder "
-"Sicherheitsaktualisierungen mehr erhält. Die Nutzung könnte unsicher werden."
+"Sicherheitsaktualisierungen mehr erhält. Die Nutzung könnte unsicher "
+"werden."
 
 #: src/bz-addons-dialog.c:346
 #, c-format
@@ -169,7 +161,8 @@ msgstr "Erweiterung für %s"
 msgid "Show Less"
 msgstr "Weniger anzeigen"
 
-#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590 src/bz-section-view.blp:72
+#: src/bz-addons-dialog.c:360 src/bz-full-view.c:590
+#: src/bz-section-view.blp:72
 msgid "Show More"
 msgstr "Mehr anzeigen"
 
@@ -188,7 +181,8 @@ msgstr "Alterseinstufung"
 msgid "Cartoon Violence"
 msgstr "Cartoon-Gewalt"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:90
 msgid "No information regarding cartoon violence"
 msgstr "Keine Informationen über Cartoon-Gewalt"
@@ -198,7 +192,8 @@ msgstr "Keine Informationen über Cartoon-Gewalt"
 msgid "Fantasy Violence"
 msgstr "Fantasie-Gewalt"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:96
 msgid "No information regarding fantasy violence"
 msgstr "Keine Informationen über Fantasie-Gewalt"
@@ -208,7 +203,8 @@ msgstr "Keine Informationen über Fantasie-Gewalt"
 msgid "Realistic Violence"
 msgstr "Realistische Gewalt"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:102
 msgid "No information regarding realistic violence"
 msgstr "Keine Informationen über realistische Gewaltdarstellung"
@@ -218,7 +214,8 @@ msgstr "Keine Informationen über realistische Gewaltdarstellung"
 msgid "Violence Depicting Bloodshed"
 msgstr "Darstellung von Blutvergießen"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:108
 msgid "No information regarding bloodshed"
 msgstr "Keine Informationen über Blutvergießen"
@@ -228,7 +225,8 @@ msgstr "Keine Informationen über Blutvergießen"
 msgid "Sexual Violence"
 msgstr "Sexuelle Gewalt"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:114
 msgid "No information regarding sexual violence"
 msgstr "Keine Informationen über Sexuelle Gewalt"
@@ -238,7 +236,8 @@ msgstr "Keine Informationen über Sexuelle Gewalt"
 msgid "Alcohol"
 msgstr "Alkohol"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:120
 msgid "No information regarding references to alcohol"
 msgstr "Keine Informationen über Alkohol"
@@ -248,7 +247,8 @@ msgstr "Keine Informationen über Alkohol"
 msgid "Narcotics"
 msgstr "Betäubungsmittel"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:126
 msgid "No information regarding references to illicit drugs"
 msgstr "Keine Informationen über unerlaubten Drogen/Medikamente"
@@ -258,7 +258,8 @@ msgstr "Keine Informationen über unerlaubten Drogen/Medikamente"
 msgid "Tobacco"
 msgstr "Tabak"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:132
 msgid "No information regarding references to tobacco products"
 msgstr "Keine Informationen über Tabakprodukte"
@@ -268,7 +269,8 @@ msgstr "Keine Informationen über Tabakprodukte"
 msgid "Nudity"
 msgstr "Nacktheit"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:138
 msgid "No information regarding nudity of any sort"
 msgstr "Keine Informationen über Nacktszenen irgendeiner Form"
@@ -278,7 +280,8 @@ msgstr "Keine Informationen über Nacktszenen irgendeiner Form"
 msgid "Sexual Themes"
 msgstr "Sexuelle Themen"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:144
 msgid "No information regarding references to or depictions of sexual nature"
 msgstr ""
@@ -289,7 +292,8 @@ msgstr ""
 msgid "Profanity"
 msgstr "Obszönität"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:150
 msgid "No information regarding profanity of any kind"
 msgstr "Keine Informationen über Obszönität irgendeiner Art"
@@ -299,7 +303,8 @@ msgstr "Keine Informationen über Obszönität irgendeiner Art"
 msgid "Inappropriate Humor"
 msgstr "Unangemessener Humor"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:156
 msgid "No information regarding inappropriate humor"
 msgstr "Keine Informationen über unangemessenen Humor"
@@ -309,7 +314,8 @@ msgstr "Keine Informationen über unangemessenen Humor"
 msgid "Discrimination"
 msgstr "Diskriminierung"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:162
 msgid "No information regarding discriminatory language of any kind"
 msgstr "Keine Informationen über diskriminierender Sprache irgendeiner Art"
@@ -319,7 +325,8 @@ msgstr "Keine Informationen über diskriminierender Sprache irgendeiner Art"
 msgid "Advertising"
 msgstr "Werbung"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:168
 msgid "No information regarding advertising of any kind"
 msgstr "Keine Informationen über Werbung irgendeiner Art"
@@ -329,7 +336,8 @@ msgstr "Keine Informationen über Werbung irgendeiner Art"
 msgid "Gambling"
 msgstr "Glücksspiel"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:174
 msgid "No information regarding gambling of any kind"
 msgstr "Keine Informationen über Glücksspiel irgendeiner Art"
@@ -339,7 +347,8 @@ msgstr "Keine Informationen über Glücksspiel irgendeiner Art"
 msgid "Purchasing"
 msgstr "Einkauf"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:180
 msgid "No information regarding the ability to spend money"
 msgstr "Keine Informationen über die Möglichkeit, reales Geld auszugeben"
@@ -349,7 +358,8 @@ msgstr "Keine Informationen über die Möglichkeit, reales Geld auszugeben"
 msgid "Chat Between Users"
 msgstr "Mit anderen Nutzern chatten"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:186
 msgid "No information regarding ways to chat with other users"
 msgstr ""
@@ -360,7 +370,8 @@ msgstr ""
 msgid "Audio Chat Between Users"
 msgstr "Audio-Chat zwischen Nutzern"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:192
 msgid "No information regarding ways to talk with other users"
 msgstr ""
@@ -371,7 +382,8 @@ msgstr ""
 msgid "Contact Details"
 msgstr "Kontaktdetails"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:198
 msgid ""
 "No information regarding sharing of social network usernames or email "
@@ -385,9 +397,11 @@ msgstr ""
 msgid "Identifying Information"
 msgstr "Identifizierende Informationen"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:204
-msgid "No information regarding sharing of user information with third parties"
+msgid ""
+"No information regarding sharing of user information with third parties"
 msgstr ""
 "Keine Informationen über das Teilen von Benutzerinformationen mit Dritten"
 
@@ -396,9 +410,11 @@ msgstr ""
 msgid "Location Sharing"
 msgstr "Standortfreigabe"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:210
-msgid "No information regarding sharing of physical location with other users"
+msgid ""
+"No information regarding sharing of physical location with other users"
 msgstr ""
 "Keine Informationen über das Teilen des physischen Aufenthaltsortes mit "
 "anderen Nutzern"
@@ -408,7 +424,8 @@ msgstr ""
 msgid "Prostitution"
 msgstr "Prostitution"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:216
 msgid "No information regarding references to prostitution"
 msgstr "Keine Informationen über die Erwähnung von Prostitution"
@@ -418,7 +435,8 @@ msgstr "Keine Informationen über die Erwähnung von Prostitution"
 msgid "Adultery"
 msgstr "Ehebruch"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:222
 msgid "No information regarding references to adultery"
 msgstr "Keine Informationen über die Erwähnung von Ehebruch"
@@ -428,7 +446,8 @@ msgstr "Keine Informationen über die Erwähnung von Ehebruch"
 msgid "Sexualized Characters"
 msgstr "Sexualisierten Figuren"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:228
 msgid "No information regarding sexualized characters"
 msgstr "Keine Informationen über sexualisierte Figuren"
@@ -438,7 +457,8 @@ msgstr "Keine Informationen über sexualisierte Figuren"
 msgid "Desecration"
 msgstr "Schändung"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:234
 msgid "No information regarding references to desecration"
 msgstr "Keine Informationen über Erwähnungen von Schändung"
@@ -448,7 +468,8 @@ msgstr "Keine Informationen über Erwähnungen von Schändung"
 msgid "Human Remains"
 msgstr "Menschliche Überreste"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:240
 msgid "No information regarding visible dead human remains"
 msgstr "Keine Informationen über sichtbare menschliche Überreste"
@@ -458,7 +479,8 @@ msgstr "Keine Informationen über sichtbare menschliche Überreste"
 msgid "Slavery"
 msgstr "Sklaverei"
 
-#. TRANSLATORS: content rating description, see https://hughsie.github.io/oars/
+#. TRANSLATORS: content rating description, see
+#. https://hughsie.github.io/oars/
 #: src/bz-age-rating-dialog.c:246
 msgid "No information regarding references to slavery"
 msgstr "Keine Informationen über die Erwähnung von Sklaverei"
@@ -756,7 +778,8 @@ msgstr "Verifiziert"
 msgid "Installed"
 msgstr "Installiert"
 
-#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#. Translators: Put one translator per line, in the form NAME <EMAIL>, YEAR1,
+#. YEAR2
 #: src/bz-application.c:726
 msgid "translator-credits"
 msgstr ""
@@ -776,19 +799,6 @@ msgstr "Erfolgreich abgemeldet!"
 msgid "Ubuntu Troubles!"
 msgstr ""
 
-#: src/bz-application.c:1003
-msgid ""
-"Ubuntu 25.10 and newer have messed up default security rules, making it "
-"<b>impossible to install apps</b> from the Flatpak version of Bazaar, please "
-"just use the normal package for now by using\n"
-"\n"
-"<tt>sudo apt install bazaar</tt>\n"
-"\n"
-"You can then remove this Flatpak version with\n"
-"\n"
-"<tt>flatpak uninstall os.nodalix.Store</tt>"
-msgstr ""
-
 #: src/bz-application.c:1009
 #, fuzzy
 msgid "Continue Anyway"
@@ -802,31 +812,9 @@ msgstr "Einrichtung wird durchgeführt…"
 msgid "Set Up System Flathub?"
 msgstr "Flathub auf diesem System einrichten?"
 
-#: src/bz-application.c:1127
-msgid ""
-"The system Flathub remote is not set up. Bazaar requires Flathub to be "
-"configured on the system Flatpak installation to browse and install "
-"applications.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-
 #: src/bz-application.c:1134
 msgid "Set Up Flathub?"
 msgstr "Flathub einrichten?"
-
-#: src/bz-application.c:1137
-msgid ""
-"Flathub is not set up on this system. You will not be able to browse and "
-"install applications in Bazaar if its unavailable.\n"
-"\n"
-"You can still use Bazaar to browse and remove already installed apps."
-msgstr ""
-"Flathub ist auf diesem System nicht eingerichtet. Es wird benötigt, um in "
-"Bazaar nach Anwendungen zu suchen und diese installieren zu können.\n"
-"\n"
-"Bazaar kann weiterhin verwendet werden, um nach installierten Apps zu suchen "
-"und diese zu verwalten."
 
 #: src/bz-application.c:1143
 msgid "Later"
@@ -875,8 +863,7 @@ msgstr "Ungültiger Link"
 
 #: src/bz-application.c:3917
 msgid ""
-"The link used to open this app has incorrect capitalization and may stop "
-"working in the future.\n"
+"The link used to open this app has incorrect capitalization and may stop working in the future.\n"
 "\n"
 "This is most likely caused by KRunner sending incorrect app IDs"
 msgstr ""
@@ -920,14 +907,6 @@ msgstr "Bundle-Installation"
 
 #: src/bz-bundle-install-dialog.blp:198
 msgid "Additional dependencies may take extra space"
-msgstr ""
-
-#: src/bz-bundle-install-dialog.blp:232
-msgid ""
-"Installing this app may require adding a new software source. Other apps "
-"from this source will show up in Bazaar.\n"
-"\n"
-"Only add this source if you're sure you trust it."
 msgstr ""
 
 #: src/bz-bundle-install-dialog.blp:412
@@ -1022,36 +1001,19 @@ msgstr ""
 msgid "The ownership of the %s app ID has been verified."
 msgstr ""
 
-#: src/bz-donations-dialog.blp:7
-#, fuzzy
-msgid "Bazaar Release"
-msgstr "Bazaar-Inspektor"
-
 #: src/bz-donations-dialog.blp:77
 msgid "Full Release Notes"
 msgstr ""
 
-#: src/bz-donations-dialog.blp:112
-msgid "This release was made possible by users like you!"
-msgstr "Diese Version von Bazaar wurde durch Nutzer wie dich möglich gemacht!"
-
-#: src/bz-donations-dialog.blp:121
-msgid ""
-"I love making Bazaar, but I cannot do it alone. Help support further "
-"development by donating on Ko-Fi."
-msgstr "Unterstütze meine Arbeit an Bazaar mit einer Spende auf Ko-Fi."
-
-#: src/bz-donations-dialog.blp:136
-msgid "Donate to Bazaar"
-msgstr "An Bazaar spenden"
-
-#. Translators: the %s format specifier will be something along the lines of "0.7.6" etc
+#. Translators: the %s format specifier will be something along the lines of
+#. "0.7.6" etc
 #: src/bz-donations-dialog.c:228
 #, c-format
 msgid "What's New in %s?"
 msgstr "Was ist neu in %s?"
 
-#. Translators: this is a release date label, like "Released February 9, 2026"
+#. Translators: this is a release date label, like "Released February 9,
+#. 2026"
 #: src/bz-donations-dialog.c:244
 msgid "Released %B %-e, %Y"
 msgstr "Veröffentlicht %B %-e, %Y"
@@ -1065,8 +1027,8 @@ msgid ""
 "You have multiple versions of this app installed. Which one would you like "
 "to proceed with?"
 msgstr ""
-"Sie haben mehrere Versionen dieser App installiert. Mit welcher möchten Sie "
-"fortfahren?"
+"Sie haben mehrere Versionen dieser App installiert. Mit welcher möchten Sie"
+" fortfahren?"
 
 #: src/bz-entry-group-util.c:80 src/bz-rich-app-tile.blp:233
 msgid "Cancel"
@@ -1702,8 +1664,8 @@ msgid ""
 "privately and cannot be audited by an independent third party."
 msgstr ""
 "Diese App hat eine proprietäre Lizenz, das bedeute, dass der Quellcode "
-"privat entwickelt wird und kann nicht von einer unabhängigen dritten Partei "
-"überprüft werden."
+"privat entwickelt wird und kann nicht von einer unabhängigen dritten Partei"
+" überprüft werden."
 
 #: src/bz-full-view.c:207
 msgid "More Apps"
@@ -1991,8 +1953,7 @@ msgid ""
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Diese App wird frei zugänglich von einer internationalen Gemeinschaft "
-"entwickelt.\n"
+"Diese App wird frei zugänglich von einer internationalen Gemeinschaft entwickelt.\n"
 "\n"
 "Auch Sie können dazu beitragen, diese App noch besser zu machen."
 
@@ -2003,27 +1964,22 @@ msgstr "Die Lizenz dieser App ist nicht bekannt"
 #: src/bz-license-dialog.c:212
 #, c-format
 msgid ""
-"This app is developed in the open by an international community, and "
-"released under the %s license.\n"
+"This app is developed in the open by an international community, and released under the %s license.\n"
 "\n"
 "You can participate and help make it even better."
 msgstr ""
-"Diese App wird frei zugänglich von einer internationalen Gemeinschaft "
-"entwickelt und unter der %s Lizenz bereitgestellt.\n"
+"Diese App wird frei zugänglich von einer internationalen Gemeinschaft entwickelt und unter der %s Lizenz bereitgestellt.\n"
 "\n"
 "Auch Sie können dazu beitragen, diese App noch besser zu machen."
 
 #: src/bz-license-dialog.c:220
 #, fuzzy
 msgid ""
-"This app is not developed in the open, so only its developers know how it "
-"works. It may be insecure in ways that are hard to detect, and it may change "
-"without oversight.\n"
+"This app is not developed in the open, so only its developers know how it works. It may be insecure in ways that are hard to detect, and it may change without oversight.\n"
 "\n"
 "You may or may not be able to contribute to this app."
 msgstr ""
-"Diese App wird nicht öffentlich zugänglich entwickelt. Sie kann dadurch "
-"Sicherheitslücken enthalten, die schwerer zu Entdecken sind.\n"
+"Diese App wird nicht öffentlich zugänglich entwickelt. Sie kann dadurch Sicherheitslücken enthalten, die schwerer zu Entdecken sind.\n"
 "\n"
 "Sie können möglicherweise dennoch zur Entwicklung dieser App beitragen."
 
@@ -2091,10 +2047,12 @@ msgid "Preferences"
 msgstr "Einstellungen"
 
 #: src/bz-preferences-dialog.blp:25
-msgid "Network connection is metered — automatic store data refresh is paused"
+msgid ""
+"Network connection is metered — automatic store data refresh is paused"
 msgstr ""
 
-#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:236 src/bz-window.blp:247
+#: src/bz-preferences-dialog.blp:26 src/bz-window.blp:236
+#: src/bz-window.blp:247
 msgid "Refresh Manually"
 msgstr "Manuell aktualisieren"
 
@@ -2265,10 +2223,6 @@ msgstr "Femboy-Pride-Farben"
 msgid "Neutrois Pride Colors"
 msgstr "Neutrois-Pride-Farben"
 
-#: src/bz-preferences-dialog.c:285
-msgid "Bazaar needs to run in the background to check for app updates"
-msgstr "Bazaar muss im Hintergrund laufen, um nach Updates für Apps suchen zu können"
-
 #: src/bz-releases-dialog.blp:5 src/bz-updates-card.c:159
 msgid "Version History"
 msgstr "Versionsverlauf"
@@ -2282,7 +2236,8 @@ msgstr "_Versionsverlauf"
 msgid "Today"
 msgstr "Heute"
 
-#. Translators: something happened more than a day ago but less than 2 days ago
+#. Translators: something happened more than a day ago but less than 2 days
+#. ago
 #: src/bz-releases-list.c:125
 msgid "Yesterday"
 msgstr "Gestern"
@@ -2342,7 +2297,8 @@ msgstr "Weitere Informationen erhalten"
 msgid "Uninstall"
 msgstr "Deinstallieren"
 
-#. Translators: If you can't find a short enough translation, use "/" to use an icon instead.
+#. Translators: If you can't find a short enough translation, use "/" to use
+#. an icon instead.
 #: src/bz-rich-app-tile.c:383
 msgid "Get"
 msgstr "Installieren"
@@ -2354,14 +2310,11 @@ msgstr "Willkürliche Berechtigungen"
 
 #: src/bz-safety-dialog.blp:49
 msgid ""
-"This app has a permission that indirectly allows it to grant itself <b>any "
-"other permission it wants</b>, bypassing the Flatpak sandbox.\n"
+"This app has a permission that indirectly allows it to grant itself <b>any other permission it wants</b>, bypassing the Flatpak sandbox.\n"
 "\n"
-"It can therefore do anything a privileged, non-sandboxed application can do, "
-"such as accessing all your files and connecting to the internet.\n"
+"It can therefore do anything a privileged, non-sandboxed application can do, such as accessing all your files and connecting to the internet.\n"
 "\n"
-"Viewing the other permissions may still give a better idea of what the app "
-"is likely to do."
+"Viewing the other permissions may still give a better idea of what the app is likely to do."
 msgstr ""
 
 #: src/bz-safety-dialog.blp:53
@@ -2671,7 +2624,8 @@ msgstr "Link kopieren"
 msgid "Timeline"
 msgstr "Zeitleiste"
 
-#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs: 42"
+#. TRANSLATORS: label prefix shown in graph tooltips, for example: "Installs:
+#. 42"
 #: src/bz-stats-dialog.blp:48
 msgid "Installs:"
 msgstr "Installationen:"
@@ -2774,23 +2728,16 @@ msgstr ""
 
 #: src/bz-transaction-dialog.c:250
 msgid ""
-"This app has full access to your system, including all <b>your files, "
-"browser history, saved passwords</b>, and more. It also has access to the "
-"internet, meaning it could send your data to outside parties.\n"
+"This app has full access to your system, including all <b>your files, browser history, saved passwords</b>, and more. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
 
 #: src/bz-transaction-dialog.c:259
 msgid ""
-"This app uses the legacy X11 windowing system, which allows it to <b>record "
-"all keystrokes, capture screenshots, and monitor other applications</b>. It "
-"also has access to the internet, meaning it could send your data to outside "
-"parties.\n"
+"This app uses the legacy X11 windowing system, which allows it to <b>record all keystrokes, capture screenshots, and monitor other applications</b>. It also has access to the internet, meaning it could send your data to outside parties.\n"
 "\n"
-"Because the app is proprietary, it can not be audited for what it does with "
-"these permissions."
+"Because the app is proprietary, it can not be audited for what it does with these permissions."
 msgstr ""
 
 #: src/bz-transaction-dialog.c:275
@@ -2959,10 +2906,6 @@ msgstr "Suchen"
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: src/bz-window.blp:227
-msgid "You are running a new version of Bazaar!"
-msgstr "Sie verwenden eine neue Version von Bazaar!"
-
 #: src/bz-window.blp:228
 msgid "See What's New"
 msgstr "Neuerungen ansehen"
@@ -2975,10 +2918,6 @@ msgstr ""
 #: src/bz-window.blp:246
 msgid "Network connection is metered — automatic refreshes disabled"
 msgstr ""
-
-#: src/bz-window.blp:282
-msgid "_Donate to Bazaar"
-msgstr "_An Bazaar spenden"
 
 #: src/bz-window.blp:288
 msgid "_Refresh"
@@ -3000,31 +2939,13 @@ msgstr "_Einstellungen"
 msgid "_Keyboard Shortcuts"
 msgstr "_Tastaturkurzbefehle"
 
-#: src/bz-window.blp:314
-msgid "_About Bazaar"
-msgstr "_Über Bazaar"
-
-#: src/bz-window.blp:320
-msgid "_Quit Bazaar"
-msgstr "_Bazaar beenden"
-
 #: src/bz-window.blp:345
 msgid "Log Out"
 msgstr "Abmelden"
 
-#. Translators: %s is the title of the current page
-#: src/bz-window.c:394
-#, c-format
-msgid "Bazaar — %s"
-msgstr "Bazaar — %s"
-
 #: src/bz-window.c:639 src/bz-window.c:677
 msgid "Failed to launch application"
 msgstr "Start der App fehlgeschlagen"
-
-#: src/bz-window.c:929
-msgid "You can't remove Bazaar from Bazaar!"
-msgstr "Bazaar kann nicht durch Bazaar selbst entfernt werden!"
 
 #: src/bz-window.c:1265 src/bz-window.c:1299
 msgid "Can't do that right now!"
@@ -3117,7 +3038,8 @@ msgstr "Proprietäre Software"
 msgid "Special License: %s"
 msgstr "Besondere Lizenz: %s"
 
-#. TRANSLATORS: You can omit the "software" part if your translation makes it obvious we're talking about "libre" and not "gratis"
+#. TRANSLATORS: You can omit the "software" part if your translation makes it
+#. obvious we're talking about "libre" and not "gratis"
 #: src/context-tile-callbacks.c:283
 #, fuzzy
 msgid "Free Software"
@@ -3347,7 +3269,8 @@ msgid "Verified App Developer"
 msgstr "Verifizierter App-Entwickler"
 
 #: src/safety-calculator.c:355
-msgid "The developer of this app has been verified to be who they say they are"
+msgid ""
+"The developer of this app has been verified to be who they say they are"
 msgstr ""
 
 #: src/safety-calculator.c:364
@@ -3366,8 +3289,8 @@ msgstr "Auditierbarer Code"
 
 #: src/safety-calculator.c:376
 msgid ""
-"The source code is public and can be independently audited, which makes the "
-"app more likely to be safe"
+"The source code is public and can be independently audited, which makes the"
+" app more likely to be safe"
 msgstr ""
 
 #: src/safety-calculator.c:516
@@ -3503,11 +3426,6 @@ msgctxt "shortcut window"
 msgid "Close Window"
 msgstr "Fenster schließen"
 
-#: src/shortcuts-dialog.blp:52
-msgctxt "shortcut window"
-msgid "Quit Bazaar"
-msgstr "Bazaar beenden"
-
 #: src/transaction-notification.c:133
 #, fuzzy, c-format
 msgid "%s Installed"
@@ -3549,6 +3467,14 @@ msgstr ""
 msgid "Includes %s, %s and %s."
 msgstr ""
 
+#: src/bz-window.blp:314
+msgid "_About Store"
+msgstr "_Über Store"
+
+#: src/bz-window.blp:321
+msgid "_Quit Store"
+msgstr "_Store beenden"
+
 #~ msgid "Free"
 #~ msgstr "Frei"
 
@@ -3579,12 +3505,6 @@ msgstr ""
 #~ msgid "Tags:"
 #~ msgstr "Stichwörter:"
 
-#~ msgid ""
-#~ "Connect your Flathub account to Bazaar to manage your favorited apps."
-#~ msgstr ""
-#~ "Verbinden Sie Ihr Flathub-Konto mit Bazaar, um Ihre favorisierten Apps zu "
-#~ "verwalten."
-
 #~ msgid "Delay Search Results"
 #~ msgstr "Suchergebnisse verzögern"
 
@@ -3599,16 +3519,6 @@ msgstr ""
 
 #~ msgid "Open Link"
 #~ msgstr "Link öffnen"
-
-#~ msgid ""
-#~ "It emphasizes supporting the developers who make the Linux desktop "
-#~ "possible. Bazaar features a \"curated\" tab that can be configured by "
-#~ "distributors to allow for a more localized experience."
-#~ msgstr ""
-#~ "Es legt Wert darauf, die Entwickler zu unterstützen, die den Linux-"
-#~ "Desktop möglich machen. Bazaar verfügt über ein „vorgestellt”-"
-#~ "Unterfenster, der von Distributoren eingerichtet werden kann, um eine "
-#~ "lokalisiertere Erfahrung zu ermöglichen."
 
 #~ msgid "Adam Masciola"
 #~ msgstr "Adam Masciola"
@@ -3679,8 +3589,8 @@ msgstr ""
 #~ "The following applications are eligible for updates. Would you like to "
 #~ "install them?"
 #~ msgstr ""
-#~ "Für die folgenden Apps sind Aktualisierungen erhältlich. Möchten Sie "
-#~ "diese installieren?"
+#~ "Für die folgenden Apps sind Aktualisierungen erhältlich. Möchten Sie diese "
+#~ "installieren?"
 
 #, c-format
 #~ msgid ""
@@ -3700,17 +3610,14 @@ msgstr ""
 #~ msgstr "Jetzt aktualisieren"
 
 #~ msgid ""
-#~ "The ability to inspect and install local .flatpak bundle files is coming "
-#~ "soon! In the meantime, try running\n"
+#~ "The ability to inspect and install local .flatpak bundle files is coming soon! In the meantime, try running\n"
 #~ "\n"
 #~ "flatpak install --bundle your-bundle.flatpak\n"
 #~ "\n"
 #~ "on the command line."
 #~ msgstr ""
-#~ "Die Möglichkeit, lokale .flatpak-Bundle-Dateien zu überprüfen und zu "
-#~ "installieren, wird in Kürze verfügbar sein!\n"
-#~ "In der Zwischenzeit können Sie versuchen, folgenden Befehl in der "
-#~ "Befehlszeile auszuführen:\n"
+#~ "Die Möglichkeit, lokale .flatpak-Bundle-Dateien zu überprüfen und zu installieren, wird in Kürze verfügbar sein!\n"
+#~ "In der Zwischenzeit können Sie versuchen, folgenden Befehl in der Befehlszeile auszuführen:\n"
 #~ "\n"
 #~ "flatpak install --bundle dein-bundle.flatpak"
 
@@ -3755,19 +3662,14 @@ msgstr ""
 
 #~ msgid "Add a delay before searching to prevent instant replies while typing"
 #~ msgstr ""
-#~ "Eine Verzögerung hinzufügen, um sofortige Antworten während der Eingabe "
-#~ "zu verhindern"
+#~ "Eine Verzögerung hinzufügen, um sofortige Antworten während der Eingabe zu "
+#~ "verhindern"
 
 #~ msgid "Describes the look of the global progress bar"
 #~ msgstr "Beschreibt das Aussehen des globalen Fortschrittsbalkens"
 
 #~ msgid "Saved Window Dimensions"
 #~ msgstr "Gespeicherte Fensterabmessungen"
-
-#~ msgid "The window dimensions to be used by the next Bazaar window"
-#~ msgstr ""
-#~ "Die Fensterabmessungen, die vom nächsten Bazaar-Fenster verwendet werden "
-#~ "sollen"
 
 #~ msgid "?"
 #~ msgstr "?"
@@ -3847,9 +3749,6 @@ msgstr ""
 #~ msgid "Display Star Count"
 #~ msgstr "Sterneanzahl anzeigen"
 
-#~ msgid "Open Bazaar Inspector"
-#~ msgstr "Bazaar-Inspektor öffnen"
-
 #, c-format
 #~ msgid "%s: %'u downloads"
 #~ msgstr "%s: %u Downloads"
@@ -3871,8 +3770,8 @@ msgstr ""
 #~ msgstr "Flathub ist auf diesem System nicht eingerichtet"
 
 #~ msgid ""
-#~ "Would you like to add Flathub as a remote? If you decline, the Flathub "
-#~ "page will not be available. You can change this later."
+#~ "Would you like to add Flathub as a remote? If you decline, the Flathub page"
+#~ " will not be available. You can change this later."
 #~ msgstr ""
 #~ "Möchten Sie Flathub hinzufügen? Wenn Sie ablehnen, ist die Flathub-Seite "
 #~ "nicht verfügbar. Sie können dies später ändern."
@@ -3980,19 +3879,10 @@ msgstr ""
 #~ msgstr "robotta"
 
 #, c-format
-#~ msgid ""
-#~ "Beginning remote entry retrieval while referencing %d blocklist(s)..."
+#~ msgid "Beginning remote entry retrieval while referencing %d blocklist(s)..."
 #~ msgstr ""
 #~ "Abfragenbeginn der Gegenstelleneinträge unter Bezugnahme auf %d "
 #~ "Blockliste(n) …"
-
-#~ msgid ""
-#~ "Bazaar was not provided a curated content configuration. Contact your "
-#~ "operating system's support channels for assistance."
-#~ msgstr ""
-#~ "Bazaar wurde nicht mit vorgestellten Inhalten eingerichtet. Nehmen Sie "
-#~ "Kontakt mit den Entwicklern Ihres Betriebssystems auf, um Hilfe zu "
-#~ "erhalten."
 
 #~ msgid "Graphics"
 #~ msgstr "Grafik"
@@ -4085,8 +3975,8 @@ msgstr ""
 #~ "It emphasizes supporting the developers who make the Linux desktop "
 #~ "possible."
 #~ msgstr ""
-#~ "Es legt Wert darauf, die Entwickler zu unterstützen, die den Linux-"
-#~ "Desktop möglich machen."
+#~ "Es legt Wert darauf, die Entwickler zu unterstützen, die den Linux-Desktop "
+#~ "möglich machen."
 
 #~ msgid "Calligraphy application page"
 #~ msgstr "Calligraphy"
@@ -4105,8 +3995,8 @@ msgstr ""
 #~ "The number of downloads in the last 30 days. Click to view this "
 #~ "application's download statistics."
 #~ msgstr ""
-#~ "Die Anzahl der Downloads in den letzten 30 Tagen. Klicken Sie hier, um "
-#~ "die Download-Statistiken für diese Anwendung anzuzeigen."
+#~ "Die Anzahl der Downloads in den letzten 30 Tagen. Klicken Sie hier, um die "
+#~ "Download-Statistiken für diese Anwendung anzuzeigen."
 
 #~ msgid "Remote repo name"
 #~ msgstr "Namen des Repository"
@@ -4194,20 +4084,8 @@ msgstr ""
 #~ msgid "Pause the execution of transactions"
 #~ msgstr "Die Ausführung von Transaktionen pausieren"
 
-#~ msgid "Main Bazaar window showing Blender"
-#~ msgstr "Bazaar-Hauptfenster zeigt Blender"
-
 #~ msgid "Match using regular expressions"
 #~ msgstr "Übereinstimmung mit regulären Ausdrücken"
 
 #~ msgid "Hide filtering and sorting behind a crossfade effect"
-#~ msgstr ""
-#~ "Filterung und Sortierung hinter einem Überblendungseffekt verstecken"
-
-#: src/bz-window.blp:314
-msgid "_About Store"
-msgstr "_Über Store"
-
-#: src/bz-window.blp:321
-msgid "_Quit Store"
-msgstr "_Store beenden"
+#~ msgstr "Filterung und Sortierung hinter einem Überblendungseffekt verstecken"
